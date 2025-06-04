@@ -1,0 +1,51 @@
+<xpml><page quantity='0' pitch='30.0 mm'></xpml>SIZE 57.5 mm, 30 mm 
+GAP 2 mm, 0 mm 
+DIRECTION 0,0 
+REFERENCE 0,0 
+OFFSET 0 mm 
+SET TEAR OFF 
+SET PEEL OFF 
+SET PARTIAL_CUTTER OFF 
+<xpml></page></xpml><xpml><page quantity='1' pitch='30.0 mm'></xpml>SET CUTTER 1 
+CLS 
+BOX 5,8,453,185,2 
+BAR 125,120, 288, 2 
+BAR 6,64, 407, 2 
+BAR 158,9, 2, 176 
+BAR 253,9, 2, 176 
+BAR 317,9, 2, 176 
+BAR 285,9, 2, 176 
+BAR 126,9, 2, 176 
+BAR 189,9, 2, 176 
+BAR 222,9, 2, 176 
+BAR 86,9, 2, 176 
+BAR 46,9, 2, 176 
+BAR 413,9, 2, 176 
+BAR 349,9, 2, 176 
+CODEPAGE 1252 
+TEXT 403,17,"0",90,7,7,"BLA" 
+TEXT 371,17,"0",90,7,7,"TAB" 
+TEXT 339,17,"0",90,7,7,"MIL" 
+TEXT 307,17,"0",90,7,7,"LUS" 
+TEXT 275,17,"0",90,7,7,"T.O." 
+TEXT 211,17,"0",90,7,7,"P.O." 
+TEXT 180,17,"0",90,7,7,"BRN" 
+TEXT 147,17,"0",90,7,7,"H&A" 
+TEXT 243,17,"0",90,7,7,"C.O." 
+TEXT 36,17,"0",90,7,7,"COM" 
+TEXT 116,17,"0",90,7,7,"DIS%" 
+BARCODE 453,228,"39",41,0,180,2,5,"Y30-8/" 
+TEXT 451,33,"0",90,11,11,"Y30-8" 
+BAR 381,9, 2, 176 
+TEXT 75,17,"0",90,7,7,"GRD" 
+TEXT 403,73,"0",90,7,7,"B0" 
+TEXT 371,73,"0",90,7,7," T0" 
+TEXT 339,73,"0",90,7,7,"M0" 
+TEXT 307,73,"0",90,7,7,"EX" 
+TEXT 275,73,"0",90,7,7,"" 
+TEXT 243,73,"0",90,7,7,"" 
+TEXT 211,73,"0",90,7,7,"" 
+TEXT 179,73,"0",90,7,7,"" 
+TEXT 151,81,"0",90,18,18,"" 
+PRINT 1,1 
+<xpml></page></xpml><xpml><end/></xpml> 

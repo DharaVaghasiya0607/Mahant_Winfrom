@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E644160-968F-4FD5-9012-B94264E5A619}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusLib</RootNamespace>
+    <AssemblyName>BusLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxonDataLib">
+      <HintPath>..\..\..\..\LIB\AxonDataLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>D:\DAKSHA\SOFTWARE\BouncyCastle.Crypto\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DataClass, Version=2012.3.0.74, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="DBClass, Version=2012.3.0.72, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SKrishnaDiasales\bin\Debug\DBClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\SKrishnaDiasales\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SDK_SC_RfidReader, Version=2012.3.0.134, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SKrishnaDiasales\bin\Debug\SDK_SC_RfidReader.dll</HintPath>
+    </Reference>
+    <Reference Include="SDK_SC_RFID_Devices, Version=2012.3.0.76, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SKrishnaDiasales\bin\Debug\SDK_SC_RFID_Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TcpIP_class, Version=2012.3.0.78, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TcpIP_class.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\BOACC_PolishRoughInward.cs" />
+    <Compile Include="Account\BOACC_FinanceJournalEntry.cs" />
+    <Compile Include="Account\ACC_BankConversionRateProperty.cs" />
+    <Compile Include="Account\BOLedgerTransaction.cs" />
+    <Compile Include="Configuration\BOConfiguration.cs" />
+    <Compile Include="BOComboFill.cs" />
+    <Compile Include="Configuration\BOFormPer.cs" />
+    <Compile Include="Configuration\BOEmailSettings.cs" />
+    <Compile Include="CRM\BOCRM_TargetCreateMaster.cs" />
+    <Compile Include="CRM\CRM_CustomerAutoMailCriteriaSave.cs" />
+    <Compile Include="E-Invoice\BOTRN_EInvoice.cs" />
+    <Compile Include="E-Invoice\BOTRN_EInvoiceAPI.cs" />
+    <Compile Include="Jewellery\BOMST_Collection.cs" />
+    <Compile Include="Jewellery\BOMST_Material.cs" />
+    <Compile Include="Jewellery\BOMST_MaterialType.cs" />
+    <Compile Include="Jewellery\BOMST_ProductCategory.cs" />
+    <Compile Include="Jewellery\BOMST_ProductSubCategory.cs" />
+    <Compile Include="Jewellery\BOMST_Style.cs" />
+    <Compile Include="Jewellery\BOMST_Subscribe.cs" />
+    <Compile Include="Jewellery\BOTRN_DailyMetalRate.cs" />
+    <Compile Include="Master\BOMST_Attedance.cs" />
+    <Compile Include="Master\BOMST_Attendance.cs" />
+    <Compile Include="Master\BOMST_Box.cs" />
+    <Compile Include="Master\BOMST_Banner.cs" />
+    <Compile Include="Master\BOMST_ClvMixRapSizeMapping.cs" />
+    <Compile Include="Master\BOMST_DelliveryChallan.cs" />
+    <Compile Include="Master\BOMST_DeptMixClarityPermission.cs" />
+    <Compile Include="Master\BOMST_ExcelSetting.cs" />
+    <Compile Include="Master\BOMST_FancyColor.cs" />
+    <Compile Include="Master\BOMST_Ledger.cs" />
+    <Compile Include="Master\BOMST_FormPermission.cs" />
+    <Compile Include="Master\BOMST_LedgerMapping.cs" />
+    <Compile Include="Master\BOMST_MixClarity.cs" />
+    <Compile Include="Master\BOMST_Parameter.cs" />
+    <Compile Include="Master\BOMST_PrdType.cs" />
+    <Compile Include="Master\BOMST_ReportMaster.cs" />
+    <Compile Include="Master\BOMST_Country.cs" />
+    <Compile Include="Master\BOMST_SerialNoSize.cs" />
+    <Compile Include="Master\BOMST_ShapeMaster.cs" />
+    <Compile Include="Master\BOMST_Size.cs" />
+    <Compile Include="Master\BOMST_StoneDay.cs" />
+    <Compile Include="Master\BOMST_Terms.cs" />
+    <Compile Include="Master\BOMST_Process.cs" />
+    <Compile Include="Master\BOMST_Currency.cs" />
+    <Compile Include="Master\BOMST_Year.cs" />
+    <Compile Include="Master\BOTRN_AccDailyRate.cs" />
+    <Compile Include="Master\BOTRN_DailyRate.cs" />
+    <Compile Include="Master\BOTRN_Invoice.cs" />
+    <Compile Include="Master\BOMST_Form.cs" />
+    <Compile Include="Master\BOMST_PriceDate.cs" />
+    <Compile Include="Master\BOMST_ParameterDiscount.cs" />
+    <Compile Include="Master\BOMST_RapSizeMapping.cs" />
+    <Compile Include="Master\BOMST_Narration.cs" />
+    <Compile Include="Parcel\BOTRN_ParcelStockTally.cs" />
+    <Compile Include="Parcel\BOTRN_ParcelBox.cs" />
+    <Compile Include="Parcel\BOTRN_KapanInward.cs" />
+    <Compile Include="Parcel\BOTRN_ParcelToParcel.cs" />
+    <Compile Include="Parcel\BOTRN_ShapeWiseAssortMerge.cs" />
+    <Compile Include="Parcel\BOTRN_StockPlusMinus.cs" />
+    <Compile Include="Pricing\BOMST_LabChargesUpload.cs" />
+    <Compile Include="Pricing\BOTRN_ParameterDiscount.cs" />
+    <Compile Include="Pricing\BOTRN_ParcelParameterDiscount.cs" />
+    <Compile Include="Pricing\RapNetStockSync.cs" />
+    <Compile Include="Rapaport\BOFindRap.cs" />
+    <Compile Include="ReportGrid\BOTRN_PredictionView.cs" />
+    <Compile Include="Report\BOTRN_StockTallyReport.cs" />
+    <Compile Include="Report\Report.cs" />
+    <Compile Include="TableName\AccDailyRateMasterProperty.cs" />
+    <Compile Include="TableName\AccountTypeMasterProperty.cs" />
+    <Compile Include="TableName\Acc_ConversionEntryProperty.cs" />
+    <Compile Include="TableName\ACC_DelliveryChallan.cs" />
+    <Compile Include="TableName\Acc_ImportPaymentDetail.cs" />
+    <Compile Include="TableName\ACC_JournalTransactionProperty.cs" />
+    <Compile Include="TableName\ACC_LedgerOpeningBalanceProperty.cs" />
+    <Compile Include="TableName\ACC_LedgerTranJournalProperty.cs" />
+    <Compile Include="TableName\Acc_PolishRoughInwardProperty.cs" />
+    <Compile Include="TableName\ApiSettingProperty.cs" />
+    <Compile Include="TableName\AttendanceEntryProperty.cs" />
+    <Compile Include="TableName\BannerMasterProperty.cs" />
+    <Compile Include="TableName\BombayShapeWiseAssortMergeProperty.cs" />
+    <Compile Include="TableName\BoxMasterProperty.cs" />
+    <Compile Include="TableName\BrokeragePaymentProperty.cs" />
+    <Compile Include="TableName\ClvMixRapSizeMappingProperty.cs" />
+    <Compile Include="TableName\CollectionProperty.cs" />
+    <Compile Include="TableName\DailyMatelRateProperty.cs" />
+    <Compile Include="TableName\MaterialMasterProperty.cs" />
+    <Compile Include="TableName\MaterialTypeProperty.cs" />
+    <Compile Include="TableName\NotificationSendAndReceive.cs" />
+    <Compile Include="TableName\ProductCategoryProperty.cs" />
+    <Compile Include="TableName\DeptWiseMixClaPermissionProperty.cs" />
+    <Compile Include="TableName\FancyColorMasterProperty.cs" />
+    <Compile Include="TableName\LabChargesUploadProperty.cs" />
+    <Compile Include="TableName\MST_ReportProperty.cs" />
+    <Compile Include="TableName\NarrationProperty.cs" />
+    <Compile Include="TableName\ParcelToParcelProperty.cs" />
+    <Compile Include="TableName\ProductSubCategoryProperty.cs" />
+    <Compile Include="TableName\PurchaseProperty.cs" />
+    <Compile Include="TableName\RapNetStockSyncProperty.cs" />
+    <Compile Include="TableName\ShapeMasterProperty.cs" />
+    <Compile Include="TableName\StockPlusMinusProperty.cs" />
+    <Compile Include="TableName\StockTallyProperty.cs" />
+    <Compile Include="TableName\RapSizeMappingProperty.cs" />
+    <Compile Include="TableName\ParameterDiscountMasterProperty.cs" />
+    <Compile Include="TableName\ParameterDiscountProperty.cs" />
+    <Compile Include="TableName\ParcelBoxMasterProperty.cs" />
+    <Compile Include="TableName\PriceDateMasterProperty.cs" />
+    <Compile Include="TableName\ParcelKapanInwardProperty.cs" />
+    <Compile Include="TableName\SingleStockUpdateProperty.cs" />
+    <Compile Include="TableName\KapanWiseMumbaiRateProperty.cs" />
+    <Compile Include="TableName\CRMCustomerAutoMailCriteriaProperty.cs" />
+    <Compile Include="TableName\ExpenseIncomeKuldeep.cs" />
+    <Compile Include="TableName\FormMasterProperty.cs" />
+    <Compile Include="TableName\EmailSettingProperty.cs" />
+    <Compile Include="TableName\LedgerMappingMasterProperty.cs" />
+    <Compile Include="TableName\LedgerTransactionProperty.cs" />
+    <Compile Include="TableName\MemoDetailEntryProperty.cs" />
+    <Compile Include="TableName\MemoEntryProperty.cs" />
+    <Compile Include="TableName\LiveStockProperty.cs" />
+    <Compile Include="TableName\DailyRateMasterProperty.cs" />
+    <Compile Include="TableName\CurrencyMasterProperty.cs" />
+    <Compile Include="TableName\ExcelSettingMasterProperty.cs" />
+    <Compile Include="TableName\MixClarityMasterProperty.cs" />
+    <Compile Include="TableName\ParcelPriceChartProperty.cs" />
+    <Compile Include="TableName\MSTAPIProperty.cs" />
+    <Compile Include="TableName\MSTPrdTypeMasterProperty.cs" />
+    <Compile Include="TableName\MstSerialNoSizeMasterProperty.cs" />
+    <Compile Include="TableName\ParcelMixToMixConvertProperty.cs" />
+    <Compile Include="TableName\PriceHeadDetailProperty.cs" />
+    <Compile Include="TableName\PriceHeadMasterProperty.cs" />
+    <Compile Include="TableName\ProcessMasterProperty.cs" />
+    <Compile Include="TableName\AccLedgerTransactionProperty.cs" />
+    <Compile Include="TableName\SingleFileUploadProperty.cs" />
+    <Compile Include="TableName\SizeMasterProperty.cs" />
+    <Compile Include="TableName\StoneDayProperty.cs" />
+    <Compile Include="TableName\StonePricingProperty.cs" />
+    <Compile Include="TableName\StyleMasterProperty.cs" />
+    <Compile Include="TableName\SubscribeProperty.cs" />
+    <Compile Include="TableName\TargetCreateMaster.cs" />
+    <Compile Include="TableName\TermsMasterProperty.cs" />
+    <Compile Include="TableName\EmployeeActionRightsProperty.cs" />
+    <Compile Include="TableName\MSTReportMasterProperty.cs" />
+    <Compile Include="TableName\TrnKapanAvgKapanProperty.cs" />
+    <Compile Include="TableName\TrnKapanCreateProperty.cs" />
+    <Compile Include="TableName\TrnKapanProperty.cs" />
+    <Compile Include="TableName\TrnPacketCreationProperty.cs" />
+    <Compile Include="TableName\TrnReportProperty.cs" />
+    <Compile Include="TableName\ParameterMasterProperty.cs" />
+    <Compile Include="TableName\CountryMasterProperty.cs" />
+    <Compile Include="TableName\TrnStockTallyProperty.cs" />
+    <Compile Include="TableName\TRN_InvoiceProperty.cs" />
+    <Compile Include="TableName\TRN_JangedProperty.cs" />
+    <Compile Include="TableName\Trn_RapSaveProperty.cs" />
+    <Compile Include="TableName\Trn_SinglePrdProperty.cs" />
+    <Compile Include="TableName\UserPermissionProperty.cs" />
+    <Compile Include="TableName\EmployeeMasterProperty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableName\LedgerMasterProperty.cs" />
+    <Compile Include="TableName\YearMasterProperty.cs" />
+    <Compile Include="TPV\BOMessage.cs" />
+    <Compile Include="TPV\BOSProc.cs" />
+    <Compile Include="TPV\BOTableName.cs" />
+    <Compile Include="Transaction\BOMST_Report.cs" />
+    <Compile Include="Transaction\BOTRN_Basket.cs" />
+    <Compile Include="Transaction\BOTRN_EmpMixClsPriceFinal.cs" />
+    <Compile Include="Transaction\BOTRN_Janged.cs" />
+    <Compile Include="Transaction\BOTRN_Kapan.cs" />
+    <Compile Include="Transaction\BOTRN_KapanAvgDetail.cs" />
+    <Compile Include="Transaction\BOTRN_KapanCreate.cs" />
+    <Compile Include="Transaction\BOTRN_KapanWiseMumbaiRate.cs" />
+    <Compile Include="Transaction\BOTRN_LedgerTransaction.cs" />
+    <Compile Include="Transaction\BOTRN_MixClarityPricing.cs" />
+    <Compile Include="Transaction\BOTRN_ParcelIssueReturn.cs" />
+    <Compile Include="Transaction\BOTRN_ParcelMerge.cs" />
+    <Compile Include="Transaction\BOTRN_PriceRevised.cs" />
+    <Compile Include="Transaction\BOTRN_Purchase.cs" />
+    <Compile Include="Transaction\BOTRN_RapnetPrieCostUpdate.cs" />
+    <Compile Include="Transaction\BOTRN_RFIDConnection.cs" />
+    <Compile Include="Transaction\BOTRN_RoughPurchase.cs" />
+    <Compile Include="Transaction\BOTRN_SingleFileUpload.cs" />
+    <Compile Include="Pricing\BOTRN_SingleStonePriceUpdate.cs" />
+    <Compile Include="Transaction\BOTRN_StockTally.cs" />
+    <Compile Include="Transaction\BOTRN_StockUpload.cs" />
+    <Compile Include="Transaction\BOTRN_MemoEntry.cs" />
+    <Compile Include="Transaction\BOTRN_StockUploadParcel.cs" />
+    <Compile Include="Transaction\BOTRN_StoneSystemPricing.cs" />
+    <Compile Include="Transaction\BOTRN_RFIDConnection_Old.cs" />
+    <Compile Include="Transaction\CoupleStoneProperty.cs" />
+    <Compile Include="Utility\BOMST_ApiSetting.cs" />
+    <Compile Include="Utility\BOMST_ApiSettingMaster.cs" />
+    <Compile Include="Utility\BOMST_ImageCertiFlagUpdate.cs" />
+    <Compile Include="Utility\BOTRN_StoneComment.cs" />
+    <Compile Include="View\BOTRN_RunninPossition.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

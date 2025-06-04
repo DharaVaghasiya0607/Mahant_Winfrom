@@ -1,0 +1,1 @@
+TYPE %1 > \\rh\tsc

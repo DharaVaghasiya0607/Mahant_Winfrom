@@ -1,0 +1,187 @@
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\TFS2023\JV\JVExportSales\JVExportSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\DAKSHA\PROJECT\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Gunjan\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\TFS2023\AJ\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Gunjan\AJ Mehta\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.Cache
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+E:\KEYUR WORK\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Git Repository\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Git Repository\Rijiya\RJ_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Git Repository\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Projects\Shivam\Shivam_SalesWinform\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Projects\Shivam\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Projects\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.exe
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\EncrDecr\EncrDecr\obj\Debug\EncrDecr.pdb

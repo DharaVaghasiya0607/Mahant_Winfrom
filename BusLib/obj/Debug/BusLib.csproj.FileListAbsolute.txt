@@ -1,0 +1,249 @@
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\bin\Debug\BusLib.dll
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\bin\Debug\BusLib.pdb
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\bin\Debug\BouncyCastle.Crypto.dll
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\obj\Debug\BusLib.dll
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\obj\Debug\BusLib.pdb
+D:\TFS2023\JV\JVExportSales\JVExportSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\bin\Debug\BusLib.dll
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\bin\Debug\BusLib.pdb
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\bin\Debug\AxonDataLib.dll
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\bin\Debug\BouncyCastle.Crypto.dll
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\obj\Debug\BusLib.dll
+D:\DAKSHA\PROJECT\AJMehtaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Gunjan\AJMehtaSales\BusLib\bin\Debug\BusLib.dll
+D:\Gunjan\AJMehtaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Gunjan\AJMehtaSales\BusLib\bin\Debug\AxonDataLib.dll
+D:\Gunjan\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Gunjan\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Gunjan\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Gunjan\AJMehtaSales\BusLib\obj\Debug\BusLib.dll
+D:\Gunjan\AJMehtaSales\BusLib\obj\Debug\BusLib.pdb
+D:\TFS2023\AJ\AJMehtaSales\BusLib\bin\Debug\BusLib.dll
+D:\TFS2023\AJ\AJMehtaSales\BusLib\bin\Debug\BusLib.pdb
+D:\TFS2023\AJ\AJMehtaSales\BusLib\bin\Debug\AxonDataLib.dll
+D:\TFS2023\AJ\AJMehtaSales\BusLib\bin\Debug\BouncyCastle.Crypto.dll
+D:\TFS2023\AJ\AJMehtaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\TFS2023\AJ\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\TFS2023\AJ\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\TFS2023\AJ\AJMehtaSales\BusLib\obj\Debug\BusLib.dll
+D:\TFS2023\AJ\AJMehtaSales\BusLib\obj\Debug\BusLib.pdb
+D:\TFS2023\AJ\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\bin\Debug\BusLib.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\bin\Debug\AxonDataLib.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\obj\Debug\BusLib.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\bin\Debug\BusLib.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.dll
+D:\Gunjan\AJ Mehta\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\BusLib\bin\Debug\BusLib.dll
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\BusLib\bin\Debug\BusLib.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.dll
+F:\LIVE WORK - KEYUR VAGHASIYA\AJMehtaSales_19082023\AJMehtaSales\AJMehtaSales\BusLib\obj\Debug\BusLib.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\bin\Debug\BusLib.dll
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\bin\Debug\BusLib.pdb
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\bin\Debug\AxonDataLib.dll
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.dll
+F:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.pdb
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\bin\Debug\BusLib.dll
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\bin\Debug\BusLib.pdb
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\bin\Debug\AxonDataLib.dll
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.dll
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.pdb
+E:\LIVE WORK - KEYUR VAGHASIYA\RijiyaGems_19082023\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\bin\Debug\BusLib.dll
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\bin\Debug\BusLib.pdb
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\obj\Debug\BusLib.dll
+D:\Gunjan\RijiyaGemsSales\RijiyaGems\BusLib\obj\Debug\BusLib.pdb
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\bin\Debug\BusLib.dll
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\bin\Debug\AxonDataLib.dll
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\obj\Debug\BusLib.dll
+E:\KEYUR WORK\RJ_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\RJ_SalesWinform\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\RJ_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\RJ_SalesWinform\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\RJ_SalesWinform\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\RJ_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Shivam\RJ_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Shivam\Shivam_SalesWinform\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Shivam\Shivam_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\bin\Debug\BusLib.dll
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.dll
+C:\Users\Admin\Desktop\TRPImpex\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\bin\Debug\BusLib.dll
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\bin\Debug\BusLib.pdb
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.dll
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\Shivam\Shivam_SalesWinform\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Projects\Shivam\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Projects\Shivam\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Projects\Shivam\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Projects\Shivam\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Projects\Shivam\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Projects\Shivam\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Projects\Shivam\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales_DharaMadam\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Projects\Element\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Projects\Element\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Projects\Element\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Projects\Element\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_09072024\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\AxonDataLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales (2)\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Projects\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Rijiya\AxoneDiaSales_09112024\AxoneDiaSales\BusLib\obj\Debug\BusLib.pdb
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\bin\Debug\BusLib.dll
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\bin\Debug\BusLib.pdb
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\bin\Debug\Newtonsoft.Json.dll
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\obj\Debug\BusLib.dll
+D:\Git Repository\Axone Infotech India\Axone Infotech India\BusLib\obj\Debug\BusLib.pdb
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\bin\Debug\BusLib.dll
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\bin\Debug\BusLib.pdb
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.dll
+D:\Rajvi\Rajvi Work\Solitaire\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.pdb
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\bin\Debug\BusLib.dll
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\bin\Debug\BusLib.pdb
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.dll
+C:\Users\dhara\OneDrive\Desktop\Axone Infotech India_15022025\Axone Infotech India\BusLib\obj\Debug\BusLib.pdb
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\bin\Debug\BusLib.dll
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\bin\Debug\BusLib.pdb
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\obj\Debug\BusLib.dll
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\obj\Debug\BusLib.pdb
+D:\Office\Axone\MahantExport\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\bin\Debug\BusLib.dll
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\bin\Debug\BusLib.pdb
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\obj\Debug\BusLib.dll
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\obj\Debug\BusLib.pdb
+D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech India\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\bin\Debug\BusLib.dll
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\bin\Debug\BusLib.pdb
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.csproj.CopyComplete
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.dll
+D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.pdb
