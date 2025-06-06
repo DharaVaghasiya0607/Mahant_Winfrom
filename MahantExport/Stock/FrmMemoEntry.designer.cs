@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMemoEntry));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode5 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             this.BtnSave = new DevControlLib.cDevSimpleButton(this.components);
             this.PnlButtons = new AxonContLib.cPanel(this.components);
             this.txtRemark = new AxonContLib.cTextBox(this.components);
@@ -59,7 +59,6 @@
             this.pnlButton = new AxonContLib.cPanel(this.components);
             this.BtnClientPreview = new DevControlLib.cDevSimpleButton(this.components);
             this.BtnExport = new DevControlLib.cDevSimpleButton(this.components);
-            this.BtnLedgerList = new DevControlLib.cDevSimpleButton(this.components);
             this.btnConsRetrun = new DevControlLib.cDevSimpleButton(this.components);
             this.btnAccPrint = new DevControlLib.cDevSimpleButton(this.components);
             this.btnTrialEInvoice = new DevExpress.XtraEditors.DropDownButton();
@@ -182,6 +181,7 @@
             this.txtGSTAmount = new AxonContLib.cTextBox(this.components);
             this.cLabel49 = new AxonContLib.cLabel(this.components);
             this.lblGrossAmountFESymbol = new AxonContLib.cLabel(this.components);
+            this.BtnLedgerList = new DevControlLib.cDevSimpleButton(this.components);
             this.PnlPrintState = new DevExpress.XtraEditors.PanelControl();
             this.btnPanlClose = new DevControlLib.cDevSimpleButton(this.components);
             this.txtAccState = new AxonContLib.cTextBox(this.components);
@@ -1186,6 +1186,7 @@
             this.repositoryItemButtonEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemCheckEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.gridView14 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.BtnAddNewLedger = new DevControlLib.cDevSimpleButton(this.components);
             this.PnlButtons.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChkSummuryPrint.Properties)).BeginInit();
@@ -1530,7 +1531,7 @@
             this.PnlButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlButtons.Location = new System.Drawing.Point(0, 588);
             this.PnlButtons.Name = "PnlButtons";
-            this.PnlButtons.Size = new System.Drawing.Size(1512, 168);
+            this.PnlButtons.Size = new System.Drawing.Size(1384, 168);
             this.PnlButtons.TabIndex = 2;
             // 
             // txtRemark
@@ -1882,7 +1883,7 @@
             this.pnlButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlButton.Location = new System.Drawing.Point(0, 95);
             this.pnlButton.Name = "pnlButton";
-            this.pnlButton.Size = new System.Drawing.Size(882, 71);
+            this.pnlButton.Size = new System.Drawing.Size(754, 71);
             this.pnlButton.TabIndex = 8;
             // 
             // BtnClientPreview
@@ -1913,21 +1914,6 @@
             this.BtnExport.TabIndex = 191;
             this.BtnExport.Text = "Export";
             this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click_1);
-            // 
-            // BtnLedgerList
-            // 
-            this.BtnLedgerList.Appearance.Font = new System.Drawing.Font("Verdana", 9F);
-            this.BtnLedgerList.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.BtnLedgerList.Appearance.Options.UseFont = true;
-            this.BtnLedgerList.Appearance.Options.UseForeColor = true;
-            this.BtnLedgerList.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.BtnLedgerList.ImageOptions.SvgImage = global::MahantExport.Properties.Resources.actions_addcircled;
-            this.BtnLedgerList.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnLedgerList.Location = new System.Drawing.Point(989, 42);
-            this.BtnLedgerList.Name = "BtnLedgerList";
-            this.BtnLedgerList.Size = new System.Drawing.Size(31, 26);
-            this.BtnLedgerList.TabIndex = 190;
-            this.BtnLedgerList.Click += new System.EventHandler(this.BtnLedgerList_Click);
             // 
             // btnConsRetrun
             // 
@@ -2024,7 +2010,7 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.barManager3;
-            this.barDockControl5.Size = new System.Drawing.Size(1512, 0);
+            this.barDockControl5.Size = new System.Drawing.Size(1384, 0);
             // 
             // barDockControl6
             // 
@@ -2032,7 +2018,7 @@
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl6.Location = new System.Drawing.Point(0, 756);
             this.barDockControl6.Manager = this.barManager3;
-            this.barDockControl6.Size = new System.Drawing.Size(1512, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(1384, 0);
             // 
             // barDockControl7
             // 
@@ -2046,7 +2032,7 @@
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(1512, 0);
+            this.barDockControl8.Location = new System.Drawing.Point(1384, 0);
             this.barDockControl8.Manager = this.barManager3;
             this.barDockControl8.Size = new System.Drawing.Size(0, 756);
             // 
@@ -2241,7 +2227,7 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.barManager2;
-            this.barDockControl1.Size = new System.Drawing.Size(1512, 0);
+            this.barDockControl1.Size = new System.Drawing.Size(1384, 0);
             // 
             // barDockControl2
             // 
@@ -2249,7 +2235,7 @@
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl2.Location = new System.Drawing.Point(0, 756);
             this.barDockControl2.Manager = this.barManager2;
-            this.barDockControl2.Size = new System.Drawing.Size(1512, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(1384, 0);
             // 
             // barDockControl3
             // 
@@ -2263,7 +2249,7 @@
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(1512, 0);
+            this.barDockControl4.Location = new System.Drawing.Point(1384, 0);
             this.barDockControl4.Manager = this.barManager2;
             this.barDockControl4.Size = new System.Drawing.Size(0, 756);
             // 
@@ -2386,7 +2372,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.PnlGSTDetail);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(882, 0);
+            this.panel1.Location = new System.Drawing.Point(754, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(628, 166);
             this.panel1.TabIndex = 8;
@@ -3849,6 +3835,21 @@
             this.lblGrossAmountFESymbol.Text = "₹";
             this.lblGrossAmountFESymbol.ToolTips = "";
             // 
+            // BtnLedgerList
+            // 
+            this.BtnLedgerList.Appearance.Font = new System.Drawing.Font("Verdana", 9F);
+            this.BtnLedgerList.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.BtnLedgerList.Appearance.Options.UseFont = true;
+            this.BtnLedgerList.Appearance.Options.UseForeColor = true;
+            this.BtnLedgerList.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.BtnLedgerList.ImageOptions.SvgImage = global::MahantExport.Properties.Resources.actions_addcircled;
+            this.BtnLedgerList.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.BtnLedgerList.Location = new System.Drawing.Point(1010, 44);
+            this.BtnLedgerList.Name = "BtnLedgerList";
+            this.BtnLedgerList.Size = new System.Drawing.Size(23, 21);
+            this.BtnLedgerList.TabIndex = 190;
+            this.BtnLedgerList.Click += new System.EventHandler(this.BtnLedgerList_Click);
+            // 
             // PnlPrintState
             // 
             this.PnlPrintState.Controls.Add(this.btnPanlClose);
@@ -4481,7 +4482,7 @@
             this.PnlAccPrint.Controls.Add(this.btnPrintLocal);
             this.PnlAccPrint.Controls.Add(this.btnPacktingListPrintRs);
             this.PnlAccPrint.Controls.Add(this.btnAccInvoicePrintRs);
-            this.PnlAccPrint.Location = new System.Drawing.Point(551, 133);
+            this.PnlAccPrint.Location = new System.Drawing.Point(487, 133);
             this.PnlAccPrint.Name = "PnlAccPrint";
             this.PnlAccPrint.Size = new System.Drawing.Size(438, 104);
             this.PnlAccPrint.TabIndex = 201;
@@ -4695,7 +4696,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1512, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1384, 0);
             // 
             // barDockControlBottom
             // 
@@ -4703,7 +4704,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 756);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1512, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1384, 0);
             // 
             // barDockControlLeft
             // 
@@ -4717,7 +4718,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1512, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1384, 0);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 756);
             // 
@@ -4747,7 +4748,7 @@
             this.PnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeader.Location = new System.Drawing.Point(0, 0);
             this.PnlHeader.Name = "PnlHeader";
-            this.PnlHeader.Size = new System.Drawing.Size(1512, 181);
+            this.PnlHeader.Size = new System.Drawing.Size(1384, 181);
             this.PnlHeader.TabIndex = 0;
             // 
             // xtraTabMasterPanel
@@ -4773,7 +4774,7 @@
             this.xtraTabMasterPanel.Location = new System.Drawing.Point(0, 32);
             this.xtraTabMasterPanel.Name = "xtraTabMasterPanel";
             this.xtraTabMasterPanel.SelectedTabPage = this.xtraTabPage6;
-            this.xtraTabMasterPanel.Size = new System.Drawing.Size(1512, 149);
+            this.xtraTabMasterPanel.Size = new System.Drawing.Size(1384, 149);
             this.xtraTabMasterPanel.TabIndex = 1;
             this.xtraTabMasterPanel.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage6,
@@ -4827,7 +4828,7 @@
             this.xtraTabPage6.Controls.Add(this.txtSellerName);
             this.xtraTabPage6.Controls.Add(this.ChkApprovedOrder);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(1510, 123);
+            this.xtraTabPage6.Size = new System.Drawing.Size(1382, 123);
             this.xtraTabPage6.Text = "Primary Detail";
             // 
             // IsConsiderBillingParty
@@ -4852,7 +4853,7 @@
             this.groupBox2.Controls.Add(this.cLabel32);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 6F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.groupBox2.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox2.Location = new System.Drawing.Point(286, 30);
+            this.groupBox2.Location = new System.Drawing.Point(304, 30);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(270, 89);
             this.groupBox2.TabIndex = 5;
@@ -4944,7 +4945,7 @@
             this.txtAdatExcRate.ForeColor = System.Drawing.Color.Black;
             this.txtAdatExcRate.Format = "###0.00";
             this.txtAdatExcRate.IsComplusory = false;
-            this.txtAdatExcRate.Location = new System.Drawing.Point(932, 67);
+            this.txtAdatExcRate.Location = new System.Drawing.Point(953, 67);
             this.txtAdatExcRate.MaxLength = 100;
             this.txtAdatExcRate.Name = "txtAdatExcRate";
             this.txtAdatExcRate.SelectAllTextOnFocus = true;
@@ -4966,7 +4967,7 @@
             this.txtBrokerExcRate.ForeColor = System.Drawing.Color.Black;
             this.txtBrokerExcRate.Format = "###0.00";
             this.txtBrokerExcRate.IsComplusory = false;
-            this.txtBrokerExcRate.Location = new System.Drawing.Point(932, 44);
+            this.txtBrokerExcRate.Location = new System.Drawing.Point(953, 44);
             this.txtBrokerExcRate.MaxLength = 100;
             this.txtBrokerExcRate.Name = "txtBrokerExcRate";
             this.txtBrokerExcRate.SelectAllTextOnFocus = true;
@@ -4985,7 +4986,7 @@
             this.cLabel73.AutoSize = true;
             this.cLabel73.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLabel73.ForeColor = System.Drawing.Color.Black;
-            this.cLabel73.Location = new System.Drawing.Point(820, 26);
+            this.cLabel73.Location = new System.Drawing.Point(841, 26);
             this.cLabel73.Name = "cLabel73";
             this.cLabel73.Size = new System.Drawing.Size(31, 13);
             this.cLabel73.TabIndex = 15;
@@ -4998,7 +4999,7 @@
             this.pnlConvRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlConvRate.Controls.Add(this.RbRupee);
             this.pnlConvRate.Controls.Add(this.RbDollar);
-            this.pnlConvRate.Location = new System.Drawing.Point(857, 21);
+            this.pnlConvRate.Location = new System.Drawing.Point(878, 21);
             this.pnlConvRate.Name = "pnlConvRate";
             this.pnlConvRate.Size = new System.Drawing.Size(71, 22);
             this.pnlConvRate.TabIndex = 235;
@@ -5047,7 +5048,7 @@
             this.txtAdatAmtFE.ForeColor = System.Drawing.Color.Black;
             this.txtAdatAmtFE.Format = "###0.000";
             this.txtAdatAmtFE.IsComplusory = false;
-            this.txtAdatAmtFE.Location = new System.Drawing.Point(870, 67);
+            this.txtAdatAmtFE.Location = new System.Drawing.Point(891, 67);
             this.txtAdatAmtFE.MaxLength = 100;
             this.txtAdatAmtFE.Name = "txtAdatAmtFE";
             this.txtAdatAmtFE.SelectAllTextOnFocus = true;
@@ -5068,7 +5069,7 @@
             this.txtBrokerAmtFE.ForeColor = System.Drawing.Color.Black;
             this.txtBrokerAmtFE.Format = "###0.000";
             this.txtBrokerAmtFE.IsComplusory = false;
-            this.txtBrokerAmtFE.Location = new System.Drawing.Point(870, 44);
+            this.txtBrokerAmtFE.Location = new System.Drawing.Point(891, 44);
             this.txtBrokerAmtFE.MaxLength = 100;
             this.txtBrokerAmtFE.Name = "txtBrokerAmtFE";
             this.txtBrokerAmtFE.SelectAllTextOnFocus = true;
@@ -5154,7 +5155,7 @@
             this.DTPTermsDate.Font = new System.Drawing.Font("Verdana", 8F);
             this.DTPTermsDate.ForeColor = System.Drawing.Color.Black;
             this.DTPTermsDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTPTermsDate.Location = new System.Drawing.Point(815, 90);
+            this.DTPTermsDate.Location = new System.Drawing.Point(836, 90);
             this.DTPTermsDate.Name = "DTPTermsDate";
             this.DTPTermsDate.Size = new System.Drawing.Size(117, 20);
             this.DTPTermsDate.TabIndex = 23;
@@ -5274,7 +5275,7 @@
             this.cLabel36.AutoSize = true;
             this.cLabel36.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLabel36.ForeColor = System.Drawing.Color.Black;
-            this.cLabel36.Location = new System.Drawing.Point(572, 94);
+            this.cLabel36.Location = new System.Drawing.Point(593, 94);
             this.cLabel36.Name = "cLabel36";
             this.cLabel36.Size = new System.Drawing.Size(48, 13);
             this.cLabel36.TabIndex = 12;
@@ -5290,7 +5291,7 @@
             this.txtCurrency.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtCurrency.Format = "";
             this.txtCurrency.IsComplusory = false;
-            this.txtCurrency.Location = new System.Drawing.Point(624, 21);
+            this.txtCurrency.Location = new System.Drawing.Point(645, 21);
             this.txtCurrency.MaxLength = 100;
             this.txtCurrency.Name = "txtCurrency";
             this.txtCurrency.SelectAllTextOnFocus = true;
@@ -5311,7 +5312,7 @@
             this.txtAdatPer.ForeColor = System.Drawing.Color.Black;
             this.txtAdatPer.Format = "###0.00";
             this.txtAdatPer.IsComplusory = false;
-            this.txtAdatPer.Location = new System.Drawing.Point(820, 67);
+            this.txtAdatPer.Location = new System.Drawing.Point(841, 67);
             this.txtAdatPer.MaxLength = 100;
             this.txtAdatPer.Name = "txtAdatPer";
             this.txtAdatPer.SelectAllTextOnFocus = true;
@@ -5328,7 +5329,7 @@
             this.cLabel35.AutoSize = true;
             this.cLabel35.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLabel35.ForeColor = System.Drawing.Color.Black;
-            this.cLabel35.Location = new System.Drawing.Point(554, 30);
+            this.cLabel35.Location = new System.Drawing.Point(575, 30);
             this.cLabel35.Name = "cLabel35";
             this.cLabel35.Size = new System.Drawing.Size(66, 13);
             this.cLabel35.TabIndex = 6;
@@ -5388,7 +5389,7 @@
             this.txtBaseBrokeragePer.ForeColor = System.Drawing.Color.Black;
             this.txtBaseBrokeragePer.Format = "###0.00";
             this.txtBaseBrokeragePer.IsComplusory = false;
-            this.txtBaseBrokeragePer.Location = new System.Drawing.Point(820, 44);
+            this.txtBaseBrokeragePer.Location = new System.Drawing.Point(841, 44);
             this.txtBaseBrokeragePer.MaxLength = 100;
             this.txtBaseBrokeragePer.Name = "txtBaseBrokeragePer";
             this.txtBaseBrokeragePer.SelectAllTextOnFocus = true;
@@ -5426,7 +5427,7 @@
             this.cLabel24.AutoSize = true;
             this.cLabel24.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLabel24.ForeColor = System.Drawing.Color.Black;
-            this.cLabel24.Location = new System.Drawing.Point(569, 48);
+            this.cLabel24.Location = new System.Drawing.Point(590, 48);
             this.cLabel24.Name = "cLabel24";
             this.cLabel24.Size = new System.Drawing.Size(51, 13);
             this.cLabel24.TabIndex = 8;
@@ -5438,7 +5439,7 @@
             this.cLabel26.AutoSize = true;
             this.cLabel26.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLabel26.ForeColor = System.Drawing.Color.Black;
-            this.cLabel26.Location = new System.Drawing.Point(569, 71);
+            this.cLabel26.Location = new System.Drawing.Point(590, 71);
             this.cLabel26.Name = "cLabel26";
             this.cLabel26.Size = new System.Drawing.Size(36, 13);
             this.cLabel26.TabIndex = 10;
@@ -5469,7 +5470,7 @@
             this.txtBroker.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtBroker.Format = "";
             this.txtBroker.IsComplusory = false;
-            this.txtBroker.Location = new System.Drawing.Point(624, 44);
+            this.txtBroker.Location = new System.Drawing.Point(645, 44);
             this.txtBroker.MaxLength = 100;
             this.txtBroker.Name = "txtBroker";
             this.txtBroker.SelectAllTextOnFocus = true;
@@ -5488,7 +5489,7 @@
             this.txtAdat.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtAdat.Format = "";
             this.txtAdat.IsComplusory = false;
-            this.txtAdat.Location = new System.Drawing.Point(624, 67);
+            this.txtAdat.Location = new System.Drawing.Point(645, 67);
             this.txtAdat.MaxLength = 100;
             this.txtAdat.Name = "txtAdat";
             this.txtAdat.SelectAllTextOnFocus = true;
@@ -5507,7 +5508,7 @@
             this.txtExcRate.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtExcRate.Format = "";
             this.txtExcRate.IsComplusory = false;
-            this.txtExcRate.Location = new System.Drawing.Point(717, 21);
+            this.txtExcRate.Location = new System.Drawing.Point(738, 21);
             this.txtExcRate.MaxLength = 100;
             this.txtExcRate.Name = "txtExcRate";
             this.txtExcRate.SelectAllTextOnFocus = true;
@@ -5520,6 +5521,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnAddNewLedger);
             this.groupBox1.Controls.Add(this.txtBAddress1);
             this.groupBox1.Controls.Add(this.cLabel1);
             this.groupBox1.Controls.Add(this.txtBillingParty);
@@ -5529,7 +5531,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Gray;
             this.groupBox1.Location = new System.Drawing.Point(9, 30);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(271, 89);
+            this.groupBox1.Size = new System.Drawing.Size(292, 89);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BILLING INFORMTION";
@@ -5618,7 +5620,7 @@
             this.txtTerms.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtTerms.Format = "";
             this.txtTerms.IsComplusory = false;
-            this.txtTerms.Location = new System.Drawing.Point(624, 90);
+            this.txtTerms.Location = new System.Drawing.Point(645, 90);
             this.txtTerms.MaxLength = 100;
             this.txtTerms.Name = "txtTerms";
             this.txtTerms.SelectAllTextOnFocus = true;
@@ -5637,7 +5639,7 @@
             this.txtTermsDays.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtTermsDays.Format = "";
             this.txtTermsDays.IsComplusory = false;
-            this.txtTermsDays.Location = new System.Drawing.Point(765, 90);
+            this.txtTermsDays.Location = new System.Drawing.Point(786, 90);
             this.txtTermsDays.MaxLength = 100;
             this.txtTermsDays.Name = "txtTermsDays";
             this.txtTermsDays.SelectAllTextOnFocus = true;
@@ -5716,7 +5718,7 @@
             this.xtraTabPage1.Controls.Add(this.txtPartyBank);
             this.xtraTabPage1.Controls.Add(this.txtCompanyBank);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1382, 123);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1510, 123);
             this.xtraTabPage1.Text = "Secondary Detail";
             // 
             // txtNarration
@@ -6147,7 +6149,7 @@
             this.xtraTabPage13.Controls.Add(this.BtnBrowseOutSideStone);
             this.xtraTabPage13.Controls.Add(this.txtOutSideStoneFileName);
             this.xtraTabPage13.Name = "xtraTabPage13";
-            this.xtraTabPage13.Size = new System.Drawing.Size(1382, 123);
+            this.xtraTabPage13.Size = new System.Drawing.Size(1510, 123);
             this.xtraTabPage13.Text = "File Upload";
             this.xtraTabPage13.UseWaitCursor = true;
             // 
@@ -6240,7 +6242,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1512, 32);
+            this.panel7.Size = new System.Drawing.Size(1384, 32);
             this.panel7.TabIndex = 0;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -6250,7 +6252,7 @@
             this.lblStockType.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblStockType.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.lblStockType.ForeColor = System.Drawing.Color.Black;
-            this.lblStockType.Location = new System.Drawing.Point(763, 0);
+            this.lblStockType.Location = new System.Drawing.Point(635, 0);
             this.lblStockType.Name = "lblStockType";
             this.lblStockType.Size = new System.Drawing.Size(210, 30);
             this.lblStockType.TabIndex = 205;
@@ -6264,7 +6266,7 @@
             this.lblMemoNo.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblMemoNo.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.lblMemoNo.ForeColor = System.Drawing.Color.White;
-            this.lblMemoNo.Location = new System.Drawing.Point(973, 0);
+            this.lblMemoNo.Location = new System.Drawing.Point(845, 0);
             this.lblMemoNo.Name = "lblMemoNo";
             this.lblMemoNo.Size = new System.Drawing.Size(86, 30);
             this.lblMemoNo.TabIndex = 204;
@@ -6279,7 +6281,7 @@
             this.lblSource.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblSource.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.lblSource.ForeColor = System.Drawing.Color.Black;
-            this.lblSource.Location = new System.Drawing.Point(1059, 0);
+            this.lblSource.Location = new System.Drawing.Point(931, 0);
             this.lblSource.Name = "lblSource";
             this.lblSource.Size = new System.Drawing.Size(175, 30);
             this.lblSource.TabIndex = 203;
@@ -6294,7 +6296,7 @@
             this.lblStatus.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblStatus.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.lblStatus.ForeColor = System.Drawing.Color.White;
-            this.lblStatus.Location = new System.Drawing.Point(1234, 0);
+            this.lblStatus.Location = new System.Drawing.Point(1106, 0);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(110, 30);
             this.lblStatus.TabIndex = 202;
@@ -6309,7 +6311,7 @@
             this.lblMode.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblMode.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.lblMode.ForeColor = System.Drawing.Color.Black;
-            this.lblMode.Location = new System.Drawing.Point(1344, 0);
+            this.lblMode.Location = new System.Drawing.Point(1216, 0);
             this.lblMode.Name = "lblMode";
             this.lblMode.Size = new System.Drawing.Size(166, 30);
             this.lblMode.TabIndex = 159;
@@ -6414,7 +6416,7 @@
             this.btnViewOrderByStockiest.Appearance.Options.UseFont = true;
             this.btnViewOrderByStockiest.Appearance.Options.UseForeColor = true;
             this.btnViewOrderByStockiest.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnViewOrderByStockiest.ImageOptions.Image")));
-            this.btnViewOrderByStockiest.Location = new System.Drawing.Point(828, 287);
+            this.btnViewOrderByStockiest.Location = new System.Drawing.Point(700, 287);
             this.btnViewOrderByStockiest.Name = "btnViewOrderByStockiest";
             this.btnViewOrderByStockiest.Size = new System.Drawing.Size(98, 29);
             this.btnViewOrderByStockiest.TabIndex = 255;
@@ -6993,7 +6995,7 @@
             // 
             this.ExportPostingTab.Controls.Add(this.MainGridExport);
             this.ExportPostingTab.Name = "ExportPostingTab";
-            this.ExportPostingTab.Size = new System.Drawing.Size(1382, 382);
+            this.ExportPostingTab.Size = new System.Drawing.Size(1510, 382);
             this.ExportPostingTab.Text = "Export Posting View";
             // 
             // MainGridExport
@@ -7021,7 +7023,7 @@
             this.repositoryItemTextEdit45,
             this.repositoryItemButtonEdit3,
             this.repositoryItemCheckEdit3});
-            this.MainGridExport.Size = new System.Drawing.Size(1382, 382);
+            this.MainGridExport.Size = new System.Drawing.Size(1510, 382);
             this.MainGridExport.TabIndex = 3;
             this.MainGridExport.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdDetExport,
@@ -7382,7 +7384,7 @@
             // 
             this.BookOfPostingTab.Controls.Add(this.MainGridAccount);
             this.BookOfPostingTab.Name = "BookOfPostingTab";
-            this.BookOfPostingTab.Size = new System.Drawing.Size(1382, 382);
+            this.BookOfPostingTab.Size = new System.Drawing.Size(1510, 382);
             this.BookOfPostingTab.Text = "   Book Of Posting View   ";
             // 
             // MainGridAccount
@@ -7410,7 +7412,7 @@
             this.repositoryItemTextEdit11,
             this.repositoryItemButtonEdit1,
             this.repositoryItemCheckEdit1});
-            this.MainGridAccount.Size = new System.Drawing.Size(1382, 382);
+            this.MainGridAccount.Size = new System.Drawing.Size(1510, 382);
             this.MainGridAccount.TabIndex = 1;
             this.MainGridAccount.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GridDetailAccount,
@@ -7771,7 +7773,7 @@
             // 
             this.PostingViewTab.Controls.Add(this.MaingridBrokerage);
             this.PostingViewTab.Name = "PostingViewTab";
-            this.PostingViewTab.Size = new System.Drawing.Size(1382, 382);
+            this.PostingViewTab.Size = new System.Drawing.Size(1510, 382);
             this.PostingViewTab.Text = "   Brokerage / Commission Posting View   ";
             // 
             // MaingridBrokerage
@@ -7799,7 +7801,7 @@
             this.repositoryItemTextEdit30,
             this.repositoryItemButtonEdit2,
             this.repositoryItemCheckEdit2});
-            this.MaingridBrokerage.Size = new System.Drawing.Size(1382, 382);
+            this.MaingridBrokerage.Size = new System.Drawing.Size(1510, 382);
             this.MaingridBrokerage.TabIndex = 2;
             this.MaingridBrokerage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GridDeatilBrokerage,
@@ -8178,16 +8180,16 @@
             this.StoneDetailTab.Controls.Add(this.cLabel22);
             this.StoneDetailTab.Controls.Add(this.BtnPrint);
             this.StoneDetailTab.Name = "StoneDetailTab";
-            this.StoneDetailTab.Size = new System.Drawing.Size(1382, 382);
+            this.StoneDetailTab.Size = new System.Drawing.Size(1510, 382);
             this.StoneDetailTab.Text = "Stone Detail";
             // 
             // MainGrdDetail
             // 
             this.MainGrdDetail.ContextMenuStrip = this.contextMenuStrip1;
             this.MainGrdDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode5.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.MainGrdDetail.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode5});
+            gridLevelNode2});
             this.MainGrdDetail.Location = new System.Drawing.Point(0, 0);
             this.MainGrdDetail.MainView = this.GrdDetail;
             this.MainGrdDetail.Name = "MainGrdDetail";
@@ -8212,7 +8214,7 @@
             this.RpsChkBoxIsPurchase,
             this.RepTxtLabServiceCode,
             this.ReptxtNarration});
-            this.MainGrdDetail.Size = new System.Drawing.Size(1382, 351);
+            this.MainGrdDetail.Size = new System.Drawing.Size(1510, 351);
             this.MainGrdDetail.TabIndex = 0;
             this.MainGrdDetail.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdDetail,
@@ -9907,7 +9909,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 351);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1382, 31);
+            this.panel3.Size = new System.Drawing.Size(1510, 31);
             this.panel3.TabIndex = 32;
             // 
             // lblDefaultLayout
@@ -10378,19 +10380,19 @@
             this.StoneSummaryTab.Controls.Add(this.txtBZipCode);
             this.StoneSummaryTab.Controls.Add(this.lblZipCode);
             this.StoneSummaryTab.Name = "StoneSummaryTab";
-            this.StoneSummaryTab.Size = new System.Drawing.Size(1510, 382);
+            this.StoneSummaryTab.Size = new System.Drawing.Size(1382, 382);
             this.StoneSummaryTab.Text = "Stone Summary";
             // 
             // MainGridSummury
             // 
             this.MainGridSummury.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.MainGridSummury.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.MainGridSummury.Location = new System.Drawing.Point(0, 0);
             this.MainGridSummury.MainView = this.GrdSummury;
             this.MainGridSummury.Name = "MainGridSummury";
-            this.MainGridSummury.Size = new System.Drawing.Size(1510, 382);
+            this.MainGridSummury.Size = new System.Drawing.Size(1382, 382);
             this.MainGridSummury.TabIndex = 0;
             this.MainGridSummury.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdSummury,
@@ -10903,7 +10905,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 181);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.StoneSummaryTab;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1512, 407);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1384, 407);
             this.xtraTabControl1.TabIndex = 28;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.StoneSummaryTab,
@@ -10917,15 +10919,15 @@
             // 
             this.StoneDetailParcelTab.Controls.Add(this.MainGrdDetailParcel);
             this.StoneDetailParcelTab.Name = "StoneDetailParcelTab";
-            this.StoneDetailParcelTab.Size = new System.Drawing.Size(1382, 382);
+            this.StoneDetailParcelTab.Size = new System.Drawing.Size(1510, 382);
             this.StoneDetailParcelTab.Text = "Stone Detail Parcel";
             // 
             // MainGrdDetailParcel
             // 
             this.MainGrdDetailParcel.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.MainGrdDetailParcel.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode3});
             this.MainGrdDetailParcel.Location = new System.Drawing.Point(0, 0);
             this.MainGrdDetailParcel.MainView = this.GrdDetailParcel;
             this.MainGrdDetailParcel.Name = "MainGrdDetailParcel";
@@ -10950,7 +10952,7 @@
             this.repositoryItemCheckEdit9,
             this.repositoryItemTextEdit133,
             this.repositoryItemTextEdit132});
-            this.MainGrdDetailParcel.Size = new System.Drawing.Size(1382, 382);
+            this.MainGrdDetailParcel.Size = new System.Drawing.Size(1510, 382);
             this.MainGrdDetailParcel.TabIndex = 1;
             this.MainGrdDetailParcel.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdDetailParcel,
@@ -12492,7 +12494,7 @@
             this.xtraTabCtrlManual.Location = new System.Drawing.Point(0, 181);
             this.xtraTabCtrlManual.Name = "xtraTabCtrlManual";
             this.xtraTabCtrlManual.SelectedTabPage = this.xtraTabPage8;
-            this.xtraTabCtrlManual.Size = new System.Drawing.Size(1512, 407);
+            this.xtraTabCtrlManual.Size = new System.Drawing.Size(1384, 407);
             this.xtraTabCtrlManual.TabIndex = 29;
             this.xtraTabCtrlManual.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage8,
@@ -12507,7 +12509,7 @@
             this.xtraTabPage8.Controls.Add(this.PnlAccPrint);
             this.xtraTabPage8.Controls.Add(this.MainGridSummuryMNL);
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(1510, 382);
+            this.xtraTabPage8.Size = new System.Drawing.Size(1382, 382);
             this.xtraTabPage8.Text = "Stone Summary";
             // 
             // MainGridSummuryMNL
@@ -12539,7 +12541,7 @@
             this.RepsTxtItemName,
             this.RepsTxtHSNCODE,
             this.repTxtFMemoPricePerCarat});
-            this.MainGridSummuryMNL.Size = new System.Drawing.Size(1510, 382);
+            this.MainGridSummuryMNL.Size = new System.Drawing.Size(1382, 382);
             this.MainGridSummuryMNL.TabIndex = 1;
             this.MainGridSummuryMNL.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdSummuryMNL});
@@ -13790,7 +13792,7 @@
             // 
             this.xtraTabPage15.Controls.Add(this.MainGridSummuryMNLParcel);
             this.xtraTabPage15.Name = "xtraTabPage15";
-            this.xtraTabPage15.Size = new System.Drawing.Size(1382, 382);
+            this.xtraTabPage15.Size = new System.Drawing.Size(1510, 382);
             this.xtraTabPage15.Text = "Packing List";
             // 
             // MainGridSummuryMNLParcel
@@ -13822,7 +13824,7 @@
             this.repositoryItemTextEdit149,
             this.repositoryItemTextEdit150,
             this.repositoryItemTextEdit155});
-            this.MainGridSummuryMNLParcel.Size = new System.Drawing.Size(1382, 382);
+            this.MainGridSummuryMNLParcel.Size = new System.Drawing.Size(1510, 382);
             this.MainGridSummuryMNLParcel.TabIndex = 2;
             this.MainGridSummuryMNLParcel.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdSummuryMNLParcel});
@@ -15075,15 +15077,15 @@
             this.xtraTabPage9.Controls.Add(this.simpleButton6);
             this.xtraTabPage9.Name = "xtraTabPage9";
             this.xtraTabPage9.PageVisible = false;
-            this.xtraTabPage9.Size = new System.Drawing.Size(1382, 382);
+            this.xtraTabPage9.Size = new System.Drawing.Size(1510, 382);
             this.xtraTabPage9.Text = "Stone Detail";
             // 
             // MainGrdDetailMNL
             // 
             this.MainGrdDetailMNL.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level1";
             this.MainGrdDetailMNL.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3});
+            gridLevelNode4});
             this.MainGrdDetailMNL.Location = new System.Drawing.Point(0, 0);
             this.MainGrdDetailMNL.MainView = this.GrdDetailMNL;
             this.MainGrdDetailMNL.Name = "MainGrdDetailMNL";
@@ -15108,7 +15110,7 @@
             this.repositoryItemCheckEdit4,
             this.repositoryItemTextEdit58,
             this.repositoryItemTextEdit57});
-            this.MainGrdDetailMNL.Size = new System.Drawing.Size(1382, 351);
+            this.MainGrdDetailMNL.Size = new System.Drawing.Size(1510, 351);
             this.MainGrdDetailMNL.TabIndex = 0;
             this.MainGrdDetailMNL.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdDetailMNL,
@@ -16626,7 +16628,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 351);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1382, 31);
+            this.panel2.Size = new System.Drawing.Size(1510, 31);
             this.panel2.TabIndex = 32;
             // 
             // cTextBox1
@@ -16991,7 +16993,7 @@
             this.xtraTabPage10.Controls.Add(this.MaingridBrokerageMNL);
             this.xtraTabPage10.Name = "xtraTabPage10";
             this.xtraTabPage10.PageVisible = false;
-            this.xtraTabPage10.Size = new System.Drawing.Size(1382, 382);
+            this.xtraTabPage10.Size = new System.Drawing.Size(1510, 382);
             this.xtraTabPage10.Text = "   Brokerage / Commission Posting View   ";
             // 
             // MaingridBrokerageMNL
@@ -17019,7 +17021,7 @@
             this.repositoryItemTextEdit77,
             this.repositoryItemButtonEdit5,
             this.repositoryItemCheckEdit5});
-            this.MaingridBrokerageMNL.Size = new System.Drawing.Size(1382, 382);
+            this.MaingridBrokerageMNL.Size = new System.Drawing.Size(1510, 382);
             this.MaingridBrokerageMNL.TabIndex = 2;
             this.MaingridBrokerageMNL.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GridDeatilBrokerageMNL,
@@ -17392,7 +17394,7 @@
             this.xtraTabPage11.Controls.Add(this.MainGridAccountMNL);
             this.xtraTabPage11.Name = "xtraTabPage11";
             this.xtraTabPage11.PageVisible = false;
-            this.xtraTabPage11.Size = new System.Drawing.Size(1382, 382);
+            this.xtraTabPage11.Size = new System.Drawing.Size(1510, 382);
             this.xtraTabPage11.Text = "   Book Of Posting View   ";
             // 
             // MainGridAccountMNL
@@ -17420,7 +17422,7 @@
             this.repositoryItemTextEdit92,
             this.repositoryItemButtonEdit6,
             this.repositoryItemCheckEdit6});
-            this.MainGridAccountMNL.Size = new System.Drawing.Size(1382, 382);
+            this.MainGridAccountMNL.Size = new System.Drawing.Size(1510, 382);
             this.MainGridAccountMNL.TabIndex = 1;
             this.MainGridAccountMNL.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GridDetailAccountMNL,
@@ -17782,7 +17784,7 @@
             this.xtraTabPage12.Controls.Add(this.MainGridExportMNL);
             this.xtraTabPage12.Name = "xtraTabPage12";
             this.xtraTabPage12.PageVisible = false;
-            this.xtraTabPage12.Size = new System.Drawing.Size(1382, 382);
+            this.xtraTabPage12.Size = new System.Drawing.Size(1510, 382);
             this.xtraTabPage12.Text = "Export Posting View";
             // 
             // MainGridExportMNL
@@ -17810,7 +17812,7 @@
             this.repositoryItemTextEdit107,
             this.repositoryItemButtonEdit7,
             this.repositoryItemCheckEdit7});
-            this.MainGridExportMNL.Size = new System.Drawing.Size(1382, 382);
+            this.MainGridExportMNL.Size = new System.Drawing.Size(1510, 382);
             this.MainGridExportMNL.TabIndex = 3;
             this.MainGridExportMNL.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GrdDetExportMNL,
@@ -18167,11 +18169,26 @@
             this.gridView14.GridControl = this.MainGridExportMNL;
             this.gridView14.Name = "gridView14";
             // 
+            // BtnAddNewLedger
+            // 
+            this.BtnAddNewLedger.Appearance.Font = new System.Drawing.Font("Verdana", 9F);
+            this.BtnAddNewLedger.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.BtnAddNewLedger.Appearance.Options.UseFont = true;
+            this.BtnAddNewLedger.Appearance.Options.UseForeColor = true;
+            this.BtnAddNewLedger.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.BtnAddNewLedger.ImageOptions.SvgImage = global::MahantExport.Properties.Resources.actions_addcircled;
+            this.BtnAddNewLedger.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAddNewLedger.Location = new System.Drawing.Point(262, 17);
+            this.BtnAddNewLedger.Name = "BtnAddNewLedger";
+            this.BtnAddNewLedger.Size = new System.Drawing.Size(23, 21);
+            this.BtnAddNewLedger.TabIndex = 191;
+            this.BtnAddNewLedger.Click += new System.EventHandler(this.BtnAddNewLedger_Click);
+            // 
             // FrmMemoEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1512, 756);
+            this.ClientSize = new System.Drawing.Size(1384, 756);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.xtraTabCtrlManual);
             this.Controls.Add(this.PnlLoading);
@@ -19677,5 +19694,6 @@
         private DevControlLib.cDevSimpleButton BtnClientPreview;
         private System.Windows.Forms.ToolStripMenuItem deleteStoneFromDetailToolStripMenuItem;
         private DevControlLib.cDevSimpleButton BtnLedgerList;
+        private DevControlLib.cDevSimpleButton BtnAddNewLedger;
     }
 }

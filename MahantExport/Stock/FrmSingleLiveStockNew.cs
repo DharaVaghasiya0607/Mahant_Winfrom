@@ -1189,7 +1189,7 @@ namespace MahantExport.Stock
                     worksheetShortStock.Cells[1, 20, 1, 23].Style.Font.Color.SetColor(Color.Red);
 
                     int ShortPcsColumn = DTabDetail.Columns["Pcs"].Ordinal + 1;//Gunjan:19/01/2024
-                    int RxWColumn = DTabDetail.Columns["RxW"].Ordinal + 1;//Gunjan:19/01/2024
+                    //int RxWColumn = DTabDetail.Columns["RxW"].Ordinal + 1;//Gunjan:19/01/2024
 
                     int ShortCaratColumn = DTabDetail.Columns["Carat"].Ordinal + 1;
                     int ShortMemoRapColumn = DTabDetail.Columns["Memo Rap($)"].Ordinal + 1;
@@ -1216,7 +1216,7 @@ namespace MahantExport.Stock
                         string Carat = Global.ColumnIndexToColumnLetter(ShortCaratColumn) + IntI.ToString();//Gunjan:19/01/2024
                         string PricePerCarat = Global.ColumnIndexToColumnLetter(ShortMemoPricePerCaratColumn) + IntI.ToString();
 
-                        worksheetShortStock.Cells[IntI, RxWColumn].Formula = "=ROUND(" + RapColumns + " * " + Carat + ",2)";
+                        //worksheetShortStock.Cells[IntI, RxWColumn].Formula = "=ROUND(" + RapColumns + " * " + Carat + ",2)";
                         worksheetShortStock.Cells[IntI, ShortMemoPricePerCaratColumn].Formula = "=ROUND(" + RapColumns + " + (" + " ( " + RapColumns + " * " + MemoDiscColumns + " )/100),2)";
                         worksheetShortStock.Cells[IntI, ShortMemoAmtColumn].Formula = "=ROUND(" + PricePerCarat + " * " + Carat + ",2)";
 
@@ -1252,7 +1252,7 @@ namespace MahantExport.Stock
                     worksheetShortStock.Cells[EndRow, ShortPcsColumn, EndRow, ShortPcsColumn].Formula = "ROUND(SUBTOTAL(9," + ShortPcsCol + StartRow + ":" + ShortPcsCol + IntShortTotRow + "),2)";//Gunjan:19/01/2024
                     worksheetShortStock.Cells[EndRow, ShortCaratColumn, EndRow, ShortCaratColumn].Formula = "ROUND(SUBTOTAL(9," + ShortCaratCol + StartRow + ":" + ShortCaratCol + IntShortTotRow + "),2)";
 
-                    worksheetShortStock.Cells[EndRow, RxWColumn, EndRow, RxWColumn].Formula = "SUBTOTAL(9," + RxW + StartRow + ":" + RxW + IntShortTotRow + ")";
+                    //worksheetShortStock.Cells[EndRow, RxWColumn, EndRow, RxWColumn].Formula = "SUBTOTAL(9," + RxW + StartRow + ":" + RxW + IntShortTotRow + ")";
                     worksheetShortStock.Cells[EndRow, ShortMemoPricePerCaratColumn, EndRow, ShortMemoPricePerCaratColumn].Formula = "ROUND(" + ShortMemoAmt + EndRow + "/" + ShortCaratCol + EndRow + ",0)";
 
                     worksheetShortStock.Cells[EndRow, ShortMemoDiscColumn, EndRow, ShortMemoDiscColumn].Formula = "ROUND((" + ShortMemoAmt + EndRow + "/" + RxW + EndRow + "-1 ) * 100,2)";
@@ -1279,7 +1279,7 @@ namespace MahantExport.Stock
                     worksheetShortStock.Cells[EndRow, StartColumn, EndRow, EndColumn].Style.Font.Bold = true;
 
                     worksheetShortStock.Cells[StartRow, ShortPcsColumn, EndRow, ShortPcsColumn].Style.Numberformat.Format = "0";//Gunjan:19/01/2024
-                    worksheetShortStock.Cells[StartRow, RxWColumn, EndRow, RxWColumn].Style.Numberformat.Format = "0.00";//Gunjan:19/01/2024
+                    //worksheetShortStock.Cells[StartRow, RxWColumn, EndRow, RxWColumn].Style.Numberformat.Format = "0.00";//Gunjan:19/01/2024
                     worksheetShortStock.Cells[StartRow, ShortCaratColumn, EndRow, ShortCaratColumn].Style.Numberformat.Format = "0.00";
                     worksheetShortStock.Cells[StartRow, ShortMemoRapColumn, EndRow, ShortMemoRapColumn].Style.Numberformat.Format = "0.00";
                     worksheetShortStock.Cells[StartRow, ShortMemoDiscColumn, EndRow, ShortMemoDiscColumn].Style.Numberformat.Format = "0.00";
@@ -1293,7 +1293,7 @@ namespace MahantExport.Stock
                     worksheetShortStock.Cells[StartRow, ShortSaleDiscountColumn, EndRow, ShortSaleDiscountColumn].Style.Numberformat.Format = "0.00";
 
                     //Gunjan:19/01/2024
-                    worksheetShortStock.Cells[StartRow, RxWColumn, EndRow, RxWColumn].Style.Font.Color.SetColor(Color.Blue);
+                   // worksheetShortStock.Cells[StartRow, RxWColumn, EndRow, RxWColumn].Style.Font.Color.SetColor(Color.Blue);
                     worksheetShortStock.Cells[StartRow, ShortMemoRapColumn, EndRow, ShortMemoRapColumn].Style.Font.Color.SetColor(Color.Blue);
                     worksheetShortStock.Cells[StartRow, ShortMemoDiscColumn, EndRow, ShortMemoDiscColumn].Style.Font.Color.SetColor(Color.Blue);
                     worksheetShortStock.Cells[StartRow, ShortMemoPricePerCaratColumn, EndRow, ShortMemoPricePerCaratColumn].Style.Font.Color.SetColor(Color.Blue);
@@ -1304,7 +1304,7 @@ namespace MahantExport.Stock
                     worksheetShortStock.Cells[StartRow, ShortSaleAmtColumn, EndRow, ShortSaleAmtColumn].Style.Font.Color.SetColor(Color.Red);
                     worksheetShortStock.Cells[StartRow, ShortSaleDiscountColumn, EndRow, ShortSaleDiscountColumn].Style.Font.Color.SetColor(Color.Red);
 
-                    worksheetShortStock.Cells[StartRow, RxWColumn, EndRow, RxWColumn].Style.Font.Bold = true;
+                    //worksheetShortStock.Cells[StartRow, RxWColumn, EndRow, RxWColumn].Style.Font.Bold = true;
                     worksheetShortStock.Cells[StartRow, ShortMemoRapColumn, EndRow, ShortMemoRapColumn].Style.Font.Bold = true;
                     worksheetShortStock.Cells[StartRow, ShortMemoDiscColumn, EndRow, ShortMemoDiscColumn].Style.Font.Bold = true;
                     worksheetShortStock.Cells[StartRow, ShortMemoPricePerCaratColumn, EndRow, ShortMemoPricePerCaratColumn].Style.Font.Bold = true;
@@ -1458,7 +1458,7 @@ namespace MahantExport.Stock
 
                 using (ExcelPackage xlPackage = new ExcelPackage(workBook))
                 {
-                    ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("RJ_Stock_" + DateTime.Now.ToString("ddMMyyyy"));
+                    ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("Mahant_Stock_" + DateTime.Now.ToString("ddMMyyyy"));
 
                     StartRow = 1;
                     StartColumn = 1;
@@ -2602,6 +2602,11 @@ namespace MahantExport.Stock
                     EndRow = StartRow + DTabDetail.Rows.Count;
 
                     worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].LoadFromDataTable(DTabDetail, true);
+                    // Add this line for date formatting
+                    worksheet.Column(2).Style.Numberformat.Format = "dd-MMM-yyyy";  // Format ADD. DATE column
+
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
+
                     worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
                     worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
 
@@ -3885,7 +3890,7 @@ namespace MahantExport.Stock
                 }
 
                 LiveStockProperty LStockProperty = new LiveStockProperty();
-               
+
                 this.Cursor = Cursors.WaitCursor;
 
                 DataSet DS = ObjStock.GetDataForExcelExportNew(MemoEntryDetailForXML, WebStatus, "SINGLE", FormatName, LStockProperty);
@@ -3973,6 +3978,7 @@ namespace MahantExport.Stock
                     string Result = ExportExcelWithNP(DS, StrFilePath);
                     return Result;
                 }
+
                 DataTable DTabDetail = DS.Tables[0];
                 DataTable DTabSize = DS.Tables[1];
                 DataTable DTabShape = DS.Tables[2];
@@ -3983,6 +3989,7 @@ namespace MahantExport.Stock
                 DataTable DTabSym = DS.Tables[7];
                 DataTable DTabFL = DS.Tables[8];
                 DataTable DTabInclusion = DS.Tables[9];
+
 
                 if (DTabDetail.Rows.Count == 0)
                 {
@@ -4042,7 +4049,7 @@ namespace MahantExport.Stock
 
                 using (ExcelPackage xlPackage = new ExcelPackage(workBook))
                 {
-                    ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("RJ_Stock_" + DateTime.Now.ToString("ddMMyyyy"));
+                    ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("Mahant_Stock_" + DateTime.Now.ToString("ddMMyyyy"));
                     ExcelWorksheet worksheetProportion = xlPackage.Workbook.Worksheets.Add("Proportion");
                     ExcelWorksheet worksheetInclusion = xlPackage.Workbook.Worksheets.Add("Inclusion Detail");
 
@@ -4182,7 +4189,7 @@ namespace MahantExport.Stock
                         }
                         //End : #P :  03-09-2020
 
-                        
+
 
                         //#P : 06-08-2020
                         if (FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale")

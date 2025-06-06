@@ -176,7 +176,7 @@ namespace BusLib.Master
                 Ope.AddParams("ISMEMBERDISCOUNT", pClsProperty.ISMEMBERDISCOUNT, DbType.Boolean, ParameterDirection.Input);
 
                 Ope.AddParams("ISMEMBERPRICEPERCARAT", pClsProperty.ISMEMBERPRICEPERCARAT, DbType.Boolean, ParameterDirection.Input);
-                Ope.AddParams("MEMBEPRICEPERCARAT", pClsProperty.MEMBEPRICEPERCARAT, DbType.Decimal, ParameterDirection.Input);
+                Ope.AddParams("MEMBERPRICEPERCARAT", pClsProperty.MEMBEPRICEPERCARAT, DbType.Decimal, ParameterDirection.Input);
 
                 Ope.AddParams("STATUS", pClsProperty.STATUS, DbType.String, ParameterDirection.Input);
                 Ope.AddParams("REMARK", pClsProperty.REMARK, DbType.String, ParameterDirection.Input);

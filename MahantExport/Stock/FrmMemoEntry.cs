@@ -682,7 +682,7 @@ namespace MahantExport.Stock
                     RbRupee_CheckedChanged(null, null);
                 }
             }
-            
+
             if (mFormType == FORMTYPE.LABISSUE)
             {
                 txtLabServiceCode.Visible = true;
@@ -901,7 +901,7 @@ namespace MahantExport.Stock
                 txtBillingParty.Tag = DTabMemoDetail.Rows[0]["BILLINGPARTY_ID"].ToString();
                 txtBillingParty.Text = DTabMemoDetail.Rows[0]["BILLINGPARTYNAME"].ToString();
 
-               
+
                 MainGrdDetail.DataSource = DTabMemoDetail;
 
                 GrdDetail.Bands["BANDEXPORT"].Visible = false;
@@ -1884,7 +1884,7 @@ namespace MahantExport.Stock
                 }
 
             }
-            
+
             if (mFormType == FORMTYPE.LABISSUE)
             {
                 txtLabServiceCode.Visible = true;
@@ -2644,7 +2644,7 @@ namespace MahantExport.Stock
                         //}
                     }
 
-                   
+
                     //#K: 05122020
                     ChkApprovedOrder.Visible = false;
                     //if (mFormType == FORMTYPE.ORDERCONFIRM || mFormType == FORMTYPE.CONSIGNMENTISSUE)
@@ -6699,7 +6699,7 @@ namespace MahantExport.Stock
 
                 txtNetAmountFE.Text = Val.Format(Math.Round(DouNetAmtFE, 3), "########0.00");
 
-                
+
                 txtBrokerAmtFE.Text = Val.ToString(Math.Round((Val.Val(txtNetAmountFE.Text) * Val.Val(txtBaseBrokeragePer.Text)) / 100, 2));
                 txtAdatAmtFE.Text = Val.ToString(Math.Round((Val.Val(txtNetAmountFE.Text) * Val.Val(txtAdatPer.Text)) / 100, 2));
                 txtAdatAmt.Text = Val.ToString(Math.Round((Val.Val(txtNetAmount.Text) * Val.Val(txtAdatPer.Text)) / 100, 2));
@@ -16307,7 +16307,13 @@ namespace MahantExport.Stock
         private void BtnLedgerList_Click(object sender, EventArgs e)
         {
             FrmLedgerList frm = new FrmLedgerList();
-            frm.Show(); 
+            frm.Show();
+        }
+
+        private void BtnAddNewLedger_Click(object sender, EventArgs e)
+        {
+            FrmLedgerList Frm = new FrmLedgerList();
+            Frm.Show();
         }
 
         private void btnPanlClose_Click(object sender, EventArgs e)
@@ -17590,6 +17596,7 @@ namespace MahantExport.Stock
         }
         private void BtnClientPreview_Click(object sender, EventArgs e)
         {
+
             try
             {
 
@@ -17612,27 +17619,35 @@ namespace MahantExport.Stock
                     {
 
                         DataRow DR = ObjMast.GetPartyDetails(Val.ToGuid(txtBillingParty.Tag));
-
-                        sw.WriteLine(Val.ToString(txtTerms.Text));
-                        sw.WriteLine("Name : " + Val.ToString(txtBillingParty.Text) + "");
-                        sw.WriteLine("Broker : " + Val.ToString(txtBroker.Text) + "");
-                        sw.WriteLine("Client ID : " + Val.ToString(DR["LedgerCode"]) + "");
-                        sw.WriteLine("Phone No : " + Val.ToString(DR["MobileNo1"]) + "");
-                        sw.WriteLine("Order No : " + Val.ToString(txtJangedNo.Text) + "");
-                        sw.WriteLine("Bank Rate : " + Val.ToString(txtExcRate.Text) + "");
-                        //sw.WriteLine("Ship Add : " + Val.ToString(txtSAddress1.Text) + "");
-                        //sw.WriteLine("Email ID : " + Val.ToString(DR["EmailID"]) + "");
+                        sw.WriteLine("MAHANT EXPORTS" + "  " + "Date : " + DTPMemoDate.Value.ToShortDateString());
+                        sw.WriteLine();
+                        sw.WriteLine(txtTerms.Text);
+                        sw.WriteLine("Name : " + Val.ToString(txtBillingParty.Text).ToUpper());
+                        sw.WriteLine("Broker : " + Val.ToString(txtBroker.Text));
+                        sw.WriteLine("Phone No : " + Val.ToString(DR["MobileNo1"]));
+                        sw.WriteLine("Client ID : " + Val.ToString(DR["LedgerCode"]) + "   Order No : " + Val.ToString(txtJangedNo.Text));
+                        sw.WriteLine("Bank Rate : " + Val.ToString(txtExcRate.Text) +
+                                     "   TOTAL PCS : " + Val.ToDecimal(txtTotalPcs.Text).ToString("0") +
+                                     "   T.WT : " + Val.ToDecimal(txtTotalCarat.Text).ToString("0.000"));
 
                         for (int i = 0; i < DTabMessage.Rows.Count; i++)
                         {
-                            sw.WriteLine("-------------------------------------------");
-                            sw.WriteLine("Stone ID: " + DTabMessage.Rows[i]["PARTYSTOCKNO"] + " Certi No: " + DTabMessage.Rows[i]["LABREPORTNO"]);
-                            sw.WriteLine("Carat: " + DTabMessage.Rows[i]["CARAT"] + DTabMessage.Rows[i]["SHAPENAME"] + " " + DTabMessage.Rows[i]["COLORNAME"] + " " + DTabMessage.Rows[i]["CLARITYNAME"] + DTabMessage.Rows[i]["CUTNAME"] + " " + DTabMessage.Rows[i]["POLNAME"] + " " + DTabMessage.Rows[i]["SYMNAME"]);
-                            sw.WriteLine("Rap: " + DTabMessage.Rows[i]["SALERAPAPORT"] + " $/Cts: " + DTabMessage.Rows[i]["MEMOPRICEPERCARAT"] + " Disc%:" + DTabMessage.Rows[i]["MEMODISCOUNT"] + " Tot $:" + DTabMessage.Rows[i]["MEMOAMOUNT"]);
+                            sw.WriteLine("-----------------------------------------------------");
+                            sw.WriteLine("Stone ID: " + DTabMessage.Rows[i]["PARTYSTOCKNO"].ToString() +
+                      "  Certi No: " + DTabMessage.Rows[i]["LABREPORTNO"]);
+                            sw.WriteLine("Carat: " + Val.ToDecimal(DTabMessage.Rows[i]["CARAT"]).ToString("0.000") + "  " +
+                                         DTabMessage.Rows[i]["SHAPENAME"] + "  " +
+                                         DTabMessage.Rows[i]["COLORNAME"] + "  " +
+                                         DTabMessage.Rows[i]["CLARITYNAME"]);
+                            sw.WriteLine("Disc%: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMODISCOUNT"]).ToString("N3") +
+                                         "      $/Cts: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOPRICEPERCARAT"]).ToString("N3") +
+                                         "      P/CTS: " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOPRICEPERCARAT"]).ToString("N3"));
+                            sw.WriteLine("      Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOAMOUNT"]).ToString("N3") +
+                                         "      T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOAMOUNT"]).ToString("N3"));
                         }
-                        sw.WriteLine("-------------------------------------------");
-                        sw.WriteLine("Total $ : " + Val.ToString(txtNetAmount.Text) + "T.WT.-V" + Val.ToString(txtTotalCarat.Text) + "T.AMOUNT-" + Val.ToString(txtNetAmount.Text));
-                        sw.WriteLine("-------------------------------------------");
+                        sw.WriteLine("-----------------------------------------------------");
+                        sw.WriteLine("Total $ : " + Val.Val(txtNetAmount.Text).ToString("N3") + "    " + "T.AMOUNT-" + Val.Val(txtNetAmountFE.Text).ToString("N3"));
+                        sw.WriteLine("-----------------------------------------------------");
                         //sw.WriteLine("THANK YOU");
                         //sw.WriteLine("WWW.AxoneDiasales.COM");
                         //sw.WriteLine("As per our new rules and regulation");
@@ -17654,6 +17669,7 @@ namespace MahantExport.Stock
             {
                 Global.Message(ex.Message.ToString());
             }
+
         }
     }
 }

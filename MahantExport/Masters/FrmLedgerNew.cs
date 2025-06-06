@@ -657,6 +657,9 @@ namespace MahantExport.Masters
             txtSkypeIDBYR.Text = string.Empty;
 
             ChkIsTdsLimit.Checked = false;
+
+            ChkMemberPricePerCarat.Checked = false;
+            txtMemberPricePerCarat.Text = string.Empty;
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -734,7 +737,7 @@ namespace MahantExport.Masters
                     Property.ISMEMBERDISCOUNT = Val.ToBoolean(ChkAllowMemberDisc.Checked);
                     Property.MEMBERDISCOUNT = Val.Val(txtMemberDisc.Text);
 
-                    Property.ISMEMBERPRICEPERCARAT = Val.ToBoolean(ChkAllowMemberDisc.Checked);
+                    Property.ISMEMBERPRICEPERCARAT = Val.ToBoolean(ChkMemberPricePerCarat.Checked);
                     Property.MEMBEPRICEPERCARAT = Val.Val(txtMemberPricePerCarat.Text);
 
                     Property.ISOTHERSTOCKDISCDIFF = Val.ToBoolean(ChkISOtherStockDiscDiff.Checked); //#P : 23-11-2019
@@ -1268,6 +1271,9 @@ namespace MahantExport.Masters
 
             ChkAllowMemberDisc.Checked = Val.ToBoolean(DR["ISMEMBERDISCOUNT"]);
             txtMemberDisc.Text = Val.ToString(DR["MEMBERDISCOUNT"]);
+
+            ChkMemberPricePerCarat.Checked = Val.ToBoolean(DR["ISMEMBERPRICEPERCARAT"]);
+            txtMemberDisc.Text = Val.ToString(DR["MEMBERPRICEPERCARAT"]);
 
             txtDefaultSeller.Text = Val.ToString(DR["DEFAULTSELLERNAME"]);
             txtDefaultSeller.Tag = Val.ToString(DR["DEFAULTSELLER_ID"]);
