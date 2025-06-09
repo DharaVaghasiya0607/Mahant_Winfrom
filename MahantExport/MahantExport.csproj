@@ -1462,11 +1462,11 @@
     <Compile Include="Stock\FrmSinglePacketLiveStock.Designer.cs">
       <DependentUpon>FrmSinglePacketLiveStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Stock\FrmSinglePacketLiveStockNew.cs">
+    <Compile Include="Stock\FrmSinglePacketLiveStockOLD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stock\FrmSinglePacketLiveStockNew.Designer.cs">
-      <DependentUpon>FrmSinglePacketLiveStockNew.cs</DependentUpon>
+    <Compile Include="Stock\FrmSinglePacketLiveStockOLD.Designer.cs">
+      <DependentUpon>FrmSinglePacketLiveStockOLD.cs</DependentUpon>
     </Compile>
     <Compile Include="Stock\FrmSaleDeliveryLiveStock.cs">
       <SubType>Form</SubType>
@@ -2348,8 +2348,8 @@
     <EmbeddedResource Include="Stock\FrmSinglePacketLiveStock.resx">
       <DependentUpon>FrmSinglePacketLiveStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stock\FrmSinglePacketLiveStockNew.resx">
-      <DependentUpon>FrmSinglePacketLiveStockNew.cs</DependentUpon>
+    <EmbeddedResource Include="Stock\FrmSinglePacketLiveStockOLD.resx">
+      <DependentUpon>FrmSinglePacketLiveStockOLD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock\FrmSaleDeliveryLiveStock.resx">
       <DependentUpon>FrmSaleDeliveryLiveStock.cs</DependentUpon>

@@ -17628,25 +17628,25 @@ namespace MahantExport.Stock
                         sw.WriteLine("Client ID : " + Val.ToString(DR["LedgerCode"]) + "   Order No : " + Val.ToString(txtJangedNo.Text));
                         sw.WriteLine("Bank Rate : " + Val.ToString(txtExcRate.Text) +
                                      "   TOTAL PCS : " + Val.ToDecimal(txtTotalPcs.Text).ToString("0") +
-                                     "   T.WT : " + Val.ToDecimal(txtTotalCarat.Text).ToString("0.000"));
+                                     "   T.WT : " + Val.ToDecimal(txtTotalCarat.Text).ToString("0.00"));
 
                         for (int i = 0; i < DTabMessage.Rows.Count; i++)
                         {
                             sw.WriteLine("-----------------------------------------------------");
                             sw.WriteLine("Stone ID: " + DTabMessage.Rows[i]["PARTYSTOCKNO"].ToString() +
                       "  Certi No: " + DTabMessage.Rows[i]["LABREPORTNO"]);
-                            sw.WriteLine("Carat: " + Val.ToDecimal(DTabMessage.Rows[i]["CARAT"]).ToString("0.000") + "  " +
+                            sw.WriteLine("Carat: " + Val.ToDecimal(DTabMessage.Rows[i]["CARAT"]).ToString("0.00") + "  " +
                                          DTabMessage.Rows[i]["SHAPENAME"] + "  " +
                                          DTabMessage.Rows[i]["COLORNAME"] + "  " +
                                          DTabMessage.Rows[i]["CLARITYNAME"]);
                             sw.WriteLine("Disc%: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMODISCOUNT"]).ToString("N3") +
                                          "      $/Cts: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOPRICEPERCARAT"]).ToString("N3") +
                                          "      P/CTS: " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOPRICEPERCARAT"]).ToString("N3"));
-                            sw.WriteLine("      Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOAMOUNT"]).ToString("N3") +
-                                         "      T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOAMOUNT"]).ToString("N3"));
+                            sw.WriteLine("Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOAMOUNT"]).ToString("N2") +
+                                         "T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOAMOUNT"]).ToString("N2"));
                         }
                         sw.WriteLine("-----------------------------------------------------");
-                        sw.WriteLine("Total $ : " + Val.Val(txtNetAmount.Text).ToString("N3") + "    " + "T.AMOUNT-" + Val.Val(txtNetAmountFE.Text).ToString("N3"));
+                        sw.WriteLine("Total $ : " + Val.Val(txtNetAmount.Text).ToString("N0") + "    " + "T.AMOUNT-" + Val.Val(txtNetAmountFE.Text).ToString("N0"));
                         sw.WriteLine("-----------------------------------------------------");
                         //sw.WriteLine("THANK YOU");
                         //sw.WriteLine("WWW.AxoneDiasales.COM");

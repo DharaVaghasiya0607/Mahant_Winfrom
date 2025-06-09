@@ -1446,7 +1446,7 @@ namespace MahantExport.MDI
             //FrmSinglePacketLiveStock.ShowForm();
             //DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm();
             DevExpress.XtraSplashScreen.SplashScreenManager.ShowForm(typeof(WaitFormNew));
-            FrmSinglePacketLiveStockNew FrmSinglePacketLiveStock = new FrmSinglePacketLiveStockNew();
+            FrmSinglePacketLiveStockOLD FrmSinglePacketLiveStock = new FrmSinglePacketLiveStockOLD();
             FrmSinglePacketLiveStock.MdiParent = this;
             FrmSinglePacketLiveStock.ShowForm();
             DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm();//End as Gunjan

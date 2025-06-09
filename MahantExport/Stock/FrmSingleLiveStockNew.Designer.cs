@@ -36,25 +36,12 @@ namespace MahantExport.Stock
             DevExpress.XtraGrid.Columns.GridColumn gridColumn159;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSingleLiveStockNew));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PanelGrdCts = new AxonContLib.cFlowLayoutPanel(this.components);
-            this.GrpSelectCarat = new DevExpress.XtraEditors.GroupControl();
-            this.BtnSelectedCts = new DevExpress.XtraEditors.SimpleButton();
-            this.PanelSize = new System.Windows.Forms.Panel();
-            this.txtFromCts5 = new AxonContLib.cTextBox(this.components);
-            this.txtToCts5 = new AxonContLib.cTextBox(this.components);
-            this.txtFromCts4 = new AxonContLib.cTextBox(this.components);
-            this.txtToCts4 = new AxonContLib.cTextBox(this.components);
-            this.txtFromCts3 = new AxonContLib.cTextBox(this.components);
-            this.txtToCts3 = new AxonContLib.cTextBox(this.components);
-            this.txtFromCts2 = new AxonContLib.cTextBox(this.components);
-            this.txtToCts2 = new AxonContLib.cTextBox(this.components);
             this.progressPanel1 = new DevExpress.XtraWaitForm.ProgressPanel();
             this.MainGrdDetail = new DevExpress.XtraGrid.GridControl();
             this.GrdDetail = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.bandedGridColumn60 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn146 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn189 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn62 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -264,24 +251,17 @@ namespace MahantExport.Stock
             this.gridColumn199 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn202 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn203 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn204 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn205 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn206 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn207 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn208 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repChkNoBlack = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repChkNoBGM = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.RepIsFancy = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.RepChkIsExclusive = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.BtnGridExport = new DevExpress.XtraEditors.SimpleButton();
             this.BtnStoneNoRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.BtnClearFilter = new DevExpress.XtraEditors.SimpleButton();
             this.lblDefaultLayout = new AxonContLib.cLabel(this.components);
             this.lblSaveLayout = new AxonContLib.cLabel(this.components);
             this.BtnSelectedPrint = new DevExpress.XtraEditors.SimpleButton();
-            this.cPanel2 = new AxonContLib.cPanel(this.components);
-            this.cFlowLayoutPanel2 = new AxonContLib.cFlowLayoutPanel(this.components);
-            this.cLabel2 = new AxonContLib.cLabel(this.components);
             this.BtnMaximize = new DevExpress.XtraEditors.SimpleButton();
             this.BtnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.BtnExport = new DevExpress.XtraEditors.SimpleButton();
@@ -406,6 +386,18 @@ namespace MahantExport.Stock
             this.cLabel33 = new AxonContLib.cLabel(this.components);
             this.lblOffline = new AxonContLib.cLabel(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.GrpSelectCarat = new DevExpress.XtraEditors.GroupControl();
+            this.BtnSelectedCts = new DevExpress.XtraEditors.SimpleButton();
+            this.PanelSize = new System.Windows.Forms.Panel();
+            this.txtFromCts5 = new AxonContLib.cTextBox(this.components);
+            this.txtToCts5 = new AxonContLib.cTextBox(this.components);
+            this.txtFromCts4 = new AxonContLib.cTextBox(this.components);
+            this.txtToCts4 = new AxonContLib.cTextBox(this.components);
+            this.txtFromCts3 = new AxonContLib.cTextBox(this.components);
+            this.txtToCts3 = new AxonContLib.cTextBox(this.components);
+            this.txtFromCts2 = new AxonContLib.cTextBox(this.components);
+            this.txtToCts2 = new AxonContLib.cTextBox(this.components);
+            this.PanelGrdCts = new AxonContLib.cFlowLayoutPanel(this.components);
             this.cPanel3 = new AxonContLib.cPanel(this.components);
             this.PanelDiamondType = new AxonContLib.cFlowLayoutPanel(this.components);
             this.cLabel28 = new AxonContLib.cLabel(this.components);
@@ -415,12 +407,12 @@ namespace MahantExport.Stock
             this.panel19 = new System.Windows.Forms.Panel();
             this.cPanel4 = new AxonContLib.cPanel(this.components);
             this.txtStoneNo = new AxonContLib.cTextBox(this.components);
-            this.cLabel17 = new AxonContLib.cLabel(this.components);
             this.cFlowLayoutPanel3 = new AxonContLib.cFlowLayoutPanel(this.components);
             this.cLabel18 = new AxonContLib.cLabel(this.components);
             this.txtFromCts1 = new AxonContLib.cTextBox(this.components);
             this.txtToCts1 = new AxonContLib.cTextBox(this.components);
             this.BtnCtsSelection = new DevExpress.XtraEditors.SimpleButton();
+            this.cLabel17 = new AxonContLib.cLabel(this.components);
             this.panel5 = new AxonContLib.cPanel(this.components);
             this.PanelShape = new AxonContLib.cFlowLayoutPanel(this.components);
             this.cLabel20 = new AxonContLib.cLabel(this.components);
@@ -445,6 +437,9 @@ namespace MahantExport.Stock
             this.panel10 = new AxonContLib.cPanel(this.components);
             this.PanelSym = new AxonContLib.cFlowLayoutPanel(this.components);
             this.cLabel25 = new AxonContLib.cLabel(this.components);
+            this.cPanel2 = new AxonContLib.cPanel(this.components);
+            this.cFlowLayoutPanel2 = new AxonContLib.cFlowLayoutPanel(this.components);
+            this.cLabel2 = new AxonContLib.cLabel(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel20 = new System.Windows.Forms.Panel();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
@@ -463,9 +458,6 @@ namespace MahantExport.Stock
             gridColumn158 = new DevExpress.XtraGrid.Columns.GridColumn();
             gridColumn159 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GrpSelectCarat)).BeginInit();
-            this.GrpSelectCarat.SuspendLayout();
-            this.PanelSize.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainGrdDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repISLockSalePrice)).BeginInit();
@@ -478,7 +470,6 @@ namespace MahantExport.Stock
             ((System.ComponentModel.ISupportInitialize)(this.RepIsFancy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepChkIsExclusive)).BeginInit();
             this.panel14.SuspendLayout();
-            this.cPanel2.SuspendLayout();
             this.PanelParameter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
@@ -515,6 +506,9 @@ namespace MahantExport.Stock
             this.xtraTabPage8.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GrpSelectCarat)).BeginInit();
+            this.GrpSelectCarat.SuspendLayout();
+            this.PanelSize.SuspendLayout();
             this.cPanel3.SuspendLayout();
             this.cPanel5.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -528,21 +522,16 @@ namespace MahantExport.Stock
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.cPanel2.SuspendLayout();
             this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridColumn158
             // 
             gridColumn158.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            gridColumn158.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             gridColumn158.AppearanceCell.Options.UseFont = true;
-            gridColumn158.AppearanceCell.Options.UseForeColor = true;
             gridColumn158.AppearanceCell.Options.UseTextOptions = true;
             gridColumn158.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            gridColumn158.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            gridColumn158.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            gridColumn158.AppearanceHeader.Options.UseFont = true;
-            gridColumn158.AppearanceHeader.Options.UseForeColor = true;
             gridColumn158.AppearanceHeader.Options.UseTextOptions = true;
             gridColumn158.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             gridColumn158.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -557,15 +546,9 @@ namespace MahantExport.Stock
             // gridColumn159
             // 
             gridColumn159.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            gridColumn159.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             gridColumn159.AppearanceCell.Options.UseFont = true;
-            gridColumn159.AppearanceCell.Options.UseForeColor = true;
             gridColumn159.AppearanceCell.Options.UseTextOptions = true;
             gridColumn159.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            gridColumn159.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            gridColumn159.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            gridColumn159.AppearanceHeader.Options.UseFont = true;
-            gridColumn159.AppearanceHeader.Options.UseForeColor = true;
             gridColumn159.AppearanceHeader.Options.UseTextOptions = true;
             gridColumn159.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             gridColumn159.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -579,222 +562,16 @@ namespace MahantExport.Stock
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.PanelGrdCts);
-            this.panel1.Controls.Add(this.GrpSelectCarat);
             this.panel1.Controls.Add(this.progressPanel1);
             this.panel1.Controls.Add(this.MainGrdDetail);
             this.panel1.Controls.Add(this.panel14);
             this.panel1.Controls.Add(this.PanelParameter);
+            this.panel1.Controls.Add(this.cPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1384, 551);
+            this.panel1.Size = new System.Drawing.Size(1376, 551);
             this.panel1.TabIndex = 0;
-            // 
-            // PanelGrdCts
-            // 
-            this.PanelGrdCts.Location = new System.Drawing.Point(339, 277);
-            this.PanelGrdCts.Margin = new System.Windows.Forms.Padding(0);
-            this.PanelGrdCts.Name = "PanelGrdCts";
-            this.PanelGrdCts.Size = new System.Drawing.Size(180, 135);
-            this.PanelGrdCts.TabIndex = 36;
-            this.PanelGrdCts.Visible = false;
-            // 
-            // GrpSelectCarat
-            // 
-            this.GrpSelectCarat.Controls.Add(this.BtnSelectedCts);
-            this.GrpSelectCarat.Controls.Add(this.PanelSize);
-            this.GrpSelectCarat.Location = new System.Drawing.Point(552, 277);
-            this.GrpSelectCarat.Name = "GrpSelectCarat";
-            this.GrpSelectCarat.Size = new System.Drawing.Size(176, 135);
-            this.GrpSelectCarat.TabIndex = 0;
-            this.GrpSelectCarat.Text = "Select Cts";
-            this.GrpSelectCarat.Visible = false;
-            // 
-            // BtnSelectedCts
-            // 
-            this.BtnSelectedCts.Appearance.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
-            this.BtnSelectedCts.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.BtnSelectedCts.Appearance.Options.UseFont = true;
-            this.BtnSelectedCts.Appearance.Options.UseForeColor = true;
-            this.BtnSelectedCts.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSelectedCts.ImageOptions.Image")));
-            this.BtnSelectedCts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnSelectedCts.ImageOptions.SvgImage")));
-            this.BtnSelectedCts.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnSelectedCts.Location = new System.Drawing.Point(148, 0);
-            this.BtnSelectedCts.Name = "BtnSelectedCts";
-            this.BtnSelectedCts.Size = new System.Drawing.Size(28, 20);
-            this.BtnSelectedCts.TabIndex = 185;
-            this.BtnSelectedCts.Click += new System.EventHandler(this.BtnSelectedCts_Click_1);
-            // 
-            // PanelSize
-            // 
-            this.PanelSize.AutoScroll = true;
-            this.PanelSize.BackColor = System.Drawing.Color.White;
-            this.PanelSize.Controls.Add(this.txtFromCts5);
-            this.PanelSize.Controls.Add(this.txtToCts5);
-            this.PanelSize.Controls.Add(this.txtFromCts4);
-            this.PanelSize.Controls.Add(this.txtToCts4);
-            this.PanelSize.Controls.Add(this.txtFromCts3);
-            this.PanelSize.Controls.Add(this.txtToCts3);
-            this.PanelSize.Controls.Add(this.txtFromCts2);
-            this.PanelSize.Controls.Add(this.txtToCts2);
-            this.PanelSize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelSize.Location = new System.Drawing.Point(2, 23);
-            this.PanelSize.Name = "PanelSize";
-            this.PanelSize.Size = new System.Drawing.Size(172, 110);
-            this.PanelSize.TabIndex = 183;
-            // 
-            // txtFromCts5
-            // 
-            this.txtFromCts5.ActivationColor = true;
-            this.txtFromCts5.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtFromCts5.AllowTabKeyOnEnter = false;
-            this.txtFromCts5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFromCts5.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtFromCts5.Format = "";
-            this.txtFromCts5.IsComplusory = false;
-            this.txtFromCts5.Location = new System.Drawing.Point(4, 83);
-            this.txtFromCts5.MaxLength = 100;
-            this.txtFromCts5.Name = "txtFromCts5";
-            this.txtFromCts5.SelectAllTextOnFocus = true;
-            this.txtFromCts5.Size = new System.Drawing.Size(80, 20);
-            this.txtFromCts5.TabIndex = 233;
-            this.txtFromCts5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFromCts5.ToolTips = "";
-            this.txtFromCts5.WaterMarkText = null;
-            // 
-            // txtToCts5
-            // 
-            this.txtToCts5.ActivationColor = true;
-            this.txtToCts5.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtToCts5.AllowTabKeyOnEnter = false;
-            this.txtToCts5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtToCts5.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtToCts5.Format = "";
-            this.txtToCts5.IsComplusory = false;
-            this.txtToCts5.Location = new System.Drawing.Point(90, 83);
-            this.txtToCts5.MaxLength = 100;
-            this.txtToCts5.Name = "txtToCts5";
-            this.txtToCts5.SelectAllTextOnFocus = true;
-            this.txtToCts5.Size = new System.Drawing.Size(80, 20);
-            this.txtToCts5.TabIndex = 234;
-            this.txtToCts5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtToCts5.ToolTips = "";
-            this.txtToCts5.WaterMarkText = null;
-            // 
-            // txtFromCts4
-            // 
-            this.txtFromCts4.ActivationColor = true;
-            this.txtFromCts4.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtFromCts4.AllowTabKeyOnEnter = false;
-            this.txtFromCts4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFromCts4.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtFromCts4.Format = "";
-            this.txtFromCts4.IsComplusory = false;
-            this.txtFromCts4.Location = new System.Drawing.Point(4, 57);
-            this.txtFromCts4.MaxLength = 100;
-            this.txtFromCts4.Name = "txtFromCts4";
-            this.txtFromCts4.SelectAllTextOnFocus = true;
-            this.txtFromCts4.Size = new System.Drawing.Size(80, 20);
-            this.txtFromCts4.TabIndex = 231;
-            this.txtFromCts4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFromCts4.ToolTips = "";
-            this.txtFromCts4.WaterMarkText = null;
-            // 
-            // txtToCts4
-            // 
-            this.txtToCts4.ActivationColor = true;
-            this.txtToCts4.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtToCts4.AllowTabKeyOnEnter = false;
-            this.txtToCts4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtToCts4.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtToCts4.Format = "";
-            this.txtToCts4.IsComplusory = false;
-            this.txtToCts4.Location = new System.Drawing.Point(90, 57);
-            this.txtToCts4.MaxLength = 100;
-            this.txtToCts4.Name = "txtToCts4";
-            this.txtToCts4.SelectAllTextOnFocus = true;
-            this.txtToCts4.Size = new System.Drawing.Size(80, 20);
-            this.txtToCts4.TabIndex = 232;
-            this.txtToCts4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtToCts4.ToolTips = "";
-            this.txtToCts4.WaterMarkText = null;
-            // 
-            // txtFromCts3
-            // 
-            this.txtFromCts3.ActivationColor = true;
-            this.txtFromCts3.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtFromCts3.AllowTabKeyOnEnter = false;
-            this.txtFromCts3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFromCts3.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtFromCts3.Format = "";
-            this.txtFromCts3.IsComplusory = false;
-            this.txtFromCts3.Location = new System.Drawing.Point(4, 31);
-            this.txtFromCts3.MaxLength = 100;
-            this.txtFromCts3.Name = "txtFromCts3";
-            this.txtFromCts3.SelectAllTextOnFocus = true;
-            this.txtFromCts3.Size = new System.Drawing.Size(80, 20);
-            this.txtFromCts3.TabIndex = 229;
-            this.txtFromCts3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFromCts3.ToolTips = "";
-            this.txtFromCts3.WaterMarkText = null;
-            // 
-            // txtToCts3
-            // 
-            this.txtToCts3.ActivationColor = true;
-            this.txtToCts3.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtToCts3.AllowTabKeyOnEnter = false;
-            this.txtToCts3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtToCts3.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtToCts3.Format = "";
-            this.txtToCts3.IsComplusory = false;
-            this.txtToCts3.Location = new System.Drawing.Point(90, 31);
-            this.txtToCts3.MaxLength = 100;
-            this.txtToCts3.Name = "txtToCts3";
-            this.txtToCts3.SelectAllTextOnFocus = true;
-            this.txtToCts3.Size = new System.Drawing.Size(80, 20);
-            this.txtToCts3.TabIndex = 230;
-            this.txtToCts3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtToCts3.ToolTips = "";
-            this.txtToCts3.WaterMarkText = null;
-            // 
-            // txtFromCts2
-            // 
-            this.txtFromCts2.ActivationColor = true;
-            this.txtFromCts2.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtFromCts2.AllowTabKeyOnEnter = false;
-            this.txtFromCts2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFromCts2.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtFromCts2.Format = "";
-            this.txtFromCts2.IsComplusory = false;
-            this.txtFromCts2.Location = new System.Drawing.Point(4, 6);
-            this.txtFromCts2.MaxLength = 100;
-            this.txtFromCts2.Name = "txtFromCts2";
-            this.txtFromCts2.SelectAllTextOnFocus = true;
-            this.txtFromCts2.Size = new System.Drawing.Size(80, 20);
-            this.txtFromCts2.TabIndex = 227;
-            this.txtFromCts2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFromCts2.ToolTips = "";
-            this.txtFromCts2.WaterMarkText = null;
-            // 
-            // txtToCts2
-            // 
-            this.txtToCts2.ActivationColor = true;
-            this.txtToCts2.ActivationColorCode = System.Drawing.Color.Empty;
-            this.txtToCts2.AllowTabKeyOnEnter = false;
-            this.txtToCts2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtToCts2.Font = new System.Drawing.Font("Verdana", 8F);
-            this.txtToCts2.Format = "";
-            this.txtToCts2.IsComplusory = false;
-            this.txtToCts2.Location = new System.Drawing.Point(90, 6);
-            this.txtToCts2.MaxLength = 100;
-            this.txtToCts2.Name = "txtToCts2";
-            this.txtToCts2.SelectAllTextOnFocus = true;
-            this.txtToCts2.Size = new System.Drawing.Size(80, 20);
-            this.txtToCts2.TabIndex = 228;
-            this.txtToCts2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtToCts2.ToolTips = "";
-            this.txtToCts2.WaterMarkText = null;
             // 
             // progressPanel1
             // 
@@ -831,7 +608,7 @@ namespace MahantExport.Stock
             this.RepChkIsExclusive,
             this.repChkISPurchase,
             this.repISLockSalePrice});
-            this.MainGrdDetail.Size = new System.Drawing.Size(1384, 267);
+            this.MainGrdDetail.Size = new System.Drawing.Size(1376, 267);
             this.MainGrdDetail.TabIndex = 91;
             this.MainGrdDetail.TabStop = false;
             this.MainGrdDetail.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -893,7 +670,6 @@ namespace MahantExport.Stock
             this.bandedGridColumn60,
             this.bandedGridColumn61,
             this.gridColumn146,
-            this.gridColumn189,
             this.bandedGridColumn7,
             this.gridColumn1,
             this.bandedGridColumn62,
@@ -1099,12 +875,7 @@ namespace MahantExport.Stock
             this.gridColumn197,
             this.gridColumn199,
             this.gridColumn202,
-            this.gridColumn203,
-            this.gridColumn204,
-            this.gridColumn205,
-            this.gridColumn206,
-            this.gridColumn207,
-            this.gridColumn208});
+            this.gridColumn203});
             this.GrdDetail.FooterPanelHeight = 20;
             this.GrdDetail.GridControl = this.MainGrdDetail;
             this.GrdDetail.Name = "GrdDetail";
@@ -1132,16 +903,10 @@ namespace MahantExport.Stock
             // 
             this.bandedGridColumn60.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bandedGridColumn60.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn60.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn60.AppearanceCell.Options.UseBackColor = true;
             this.bandedGridColumn60.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn60.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn60.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn60.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn60.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn60.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn60.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn60.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn60.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn60.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn60.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1153,15 +918,9 @@ namespace MahantExport.Stock
             // bandedGridColumn61
             // 
             this.bandedGridColumn61.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn61.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn61.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn61.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn61.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn61.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn61.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn61.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn61.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn61.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn61.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn61.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn61.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1177,15 +936,9 @@ namespace MahantExport.Stock
             // gridColumn146
             // 
             this.gridColumn146.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn146.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn146.AppearanceCell.Options.UseFont = true;
-            this.gridColumn146.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn146.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn146.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn146.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn146.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn146.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn146.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn146.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn146.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn146.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1196,39 +949,14 @@ namespace MahantExport.Stock
             this.gridColumn146.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count)});
             // 
-            // gridColumn189
-            // 
-            this.gridColumn189.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn189.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn189.AppearanceCell.Options.UseFont = true;
-            this.gridColumn189.AppearanceCell.Options.UseForeColor = true;
-            this.gridColumn189.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn189.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn189.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn189.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn189.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn189.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn189.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn189.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn189.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn189.Caption = "MFG_ID";
-            this.gridColumn189.FieldName = "MFG_ID";
-            this.gridColumn189.Name = "gridColumn189";
-            this.gridColumn189.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn189.Width = 73;
-            // 
             // bandedGridColumn7
             // 
-            this.bandedGridColumn7.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn7.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.bandedGridColumn7.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bandedGridColumn7.AppearanceCell.ForeColor = System.Drawing.Color.Green;
             this.bandedGridColumn7.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn7.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn7.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn7.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn7.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn7.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn7.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1247,15 +975,9 @@ namespace MahantExport.Stock
             // gridColumn1
             // 
             this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn1.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
-            this.gridColumn1.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn1.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn1.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn1.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1268,15 +990,9 @@ namespace MahantExport.Stock
             // bandedGridColumn62
             // 
             this.bandedGridColumn62.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn62.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn62.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn62.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn62.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn62.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn62.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn62.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn62.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn62.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn62.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn62.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn62.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1288,15 +1004,9 @@ namespace MahantExport.Stock
             // bandedGridColumn13
             // 
             this.bandedGridColumn13.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn13.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn13.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn13.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn13.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn13.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn13.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn13.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn13.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn13.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn13.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn13.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1305,21 +1015,15 @@ namespace MahantExport.Stock
             this.bandedGridColumn13.Name = "bandedGridColumn13";
             this.bandedGridColumn13.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.bandedGridColumn13.Visible = true;
-            this.bandedGridColumn13.VisibleIndex = 8;
+            this.bandedGridColumn13.VisibleIndex = 3;
             this.bandedGridColumn13.Width = 57;
             // 
             // bandedGridColumn64
             // 
             this.bandedGridColumn64.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn64.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn64.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn64.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn64.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn64.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn64.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn64.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn64.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn64.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn64.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn64.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn64.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1330,18 +1034,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn200
             // 
-            this.gridColumn200.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn200.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn200.AppearanceCell.Options.UseFont = true;
-            this.gridColumn200.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn200.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn200.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn200.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn200.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn200.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn200.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn200.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn200.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn200.Caption = "Col Comment";
             this.gridColumn200.FieldName = "COLORCOMMENT";
             this.gridColumn200.Name = "gridColumn200";
@@ -1350,15 +1044,9 @@ namespace MahantExport.Stock
             // bandedGridColumn15
             // 
             this.bandedGridColumn15.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn15.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn15.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn15.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn15.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn15.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn15.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn15.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn15.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn15.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn15.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn15.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn15.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1367,21 +1055,15 @@ namespace MahantExport.Stock
             this.bandedGridColumn15.Name = "bandedGridColumn15";
             this.bandedGridColumn15.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.bandedGridColumn15.Visible = true;
-            this.bandedGridColumn15.VisibleIndex = 10;
+            this.bandedGridColumn15.VisibleIndex = 5;
             this.bandedGridColumn15.Width = 51;
             // 
             // bandedGridColumn63
             // 
             this.bandedGridColumn63.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn63.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn63.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn63.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn63.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn63.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn63.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn63.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn63.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn63.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn63.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn63.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn63.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1392,18 +1074,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn201
             // 
-            this.gridColumn201.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn201.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn201.AppearanceCell.Options.UseFont = true;
-            this.gridColumn201.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn201.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn201.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn201.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn201.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn201.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn201.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn201.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn201.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn201.Caption = "Clarity Comment";
             this.gridColumn201.FieldName = "CLARITYCOMMENT";
             this.gridColumn201.Name = "gridColumn201";
@@ -1412,15 +1084,9 @@ namespace MahantExport.Stock
             // bandedGridColumn14
             // 
             this.bandedGridColumn14.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.bandedGridColumn14.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.bandedGridColumn14.AppearanceCell.Options.UseFont = true;
-            this.bandedGridColumn14.AppearanceCell.Options.UseForeColor = true;
             this.bandedGridColumn14.AppearanceCell.Options.UseTextOptions = true;
             this.bandedGridColumn14.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.bandedGridColumn14.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bandedGridColumn14.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.bandedGridColumn14.AppearanceHeader.Options.UseFont = true;
-            this.bandedGridColumn14.AppearanceHeader.Options.UseForeColor = true;
             this.bandedGridColumn14.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn14.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn14.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1429,21 +1095,15 @@ namespace MahantExport.Stock
             this.bandedGridColumn14.Name = "bandedGridColumn14";
             this.bandedGridColumn14.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.bandedGridColumn14.Visible = true;
-            this.bandedGridColumn14.VisibleIndex = 11;
+            this.bandedGridColumn14.VisibleIndex = 6;
             this.bandedGridColumn14.Width = 55;
             // 
             // gridColumn7
             // 
             this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn7.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn7.AppearanceCell.Options.UseFont = true;
-            this.gridColumn7.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn7.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn7.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn7.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1456,15 +1116,9 @@ namespace MahantExport.Stock
             // gridColumn8
             // 
             this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn8.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn8.AppearanceCell.Options.UseFont = true;
-            this.gridColumn8.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn8.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn8.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn8.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn8.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1473,21 +1127,15 @@ namespace MahantExport.Stock
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 12;
+            this.gridColumn8.VisibleIndex = 13;
             this.gridColumn8.Width = 45;
             // 
             // gridColumn9
             // 
             this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn9.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn9.AppearanceCell.Options.UseFont = true;
-            this.gridColumn9.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn9.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn9.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn9.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn9.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1499,15 +1147,9 @@ namespace MahantExport.Stock
             // gridColumn10
             // 
             this.gridColumn10.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn10.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn10.AppearanceCell.Options.UseFont = true;
-            this.gridColumn10.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn10.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn10.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn10.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn10.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn10.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn10.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1516,21 +1158,15 @@ namespace MahantExport.Stock
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 13;
+            this.gridColumn10.VisibleIndex = 14;
             this.gridColumn10.Width = 55;
             // 
             // gridColumn11
             // 
             this.gridColumn11.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn11.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn11.AppearanceCell.Options.UseFont = true;
-            this.gridColumn11.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn11.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn11.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn11.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn11.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn11.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn11.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn11.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn11.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1542,15 +1178,9 @@ namespace MahantExport.Stock
             // gridColumn12
             // 
             this.gridColumn12.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn12.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn12.AppearanceCell.Options.UseFont = true;
-            this.gridColumn12.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn12.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn12.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn12.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn12.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn12.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn12.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn12.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn12.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1559,21 +1189,15 @@ namespace MahantExport.Stock
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 14;
+            this.gridColumn12.VisibleIndex = 15;
             this.gridColumn12.Width = 45;
             // 
             // gridColumn13
             // 
             this.gridColumn13.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn13.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn13.AppearanceCell.Options.UseFont = true;
-            this.gridColumn13.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn13.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn13.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn13.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn13.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn13.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn13.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn13.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn13.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1585,15 +1209,9 @@ namespace MahantExport.Stock
             // gridColumn14
             // 
             this.gridColumn14.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn14.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn14.AppearanceCell.Options.UseFont = true;
-            this.gridColumn14.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn14.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn14.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn14.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn14.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn14.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn14.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn14.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn14.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn14.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1608,15 +1226,9 @@ namespace MahantExport.Stock
             // gridColumn16
             // 
             this.gridColumn16.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn16.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn16.AppearanceCell.Options.UseFont = true;
-            this.gridColumn16.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn16.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn16.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn16.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn16.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn16.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn16.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn16.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn16.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn16.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1631,15 +1243,9 @@ namespace MahantExport.Stock
             // gridColumn17
             // 
             this.gridColumn17.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn17.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn17.AppearanceCell.Options.UseFont = true;
-            this.gridColumn17.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn17.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn17.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn17.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn17.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn17.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn17.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn17.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn17.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn17.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1652,21 +1258,15 @@ namespace MahantExport.Stock
             this.gridColumn17.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CARAT", "{0:N2}")});
             this.gridColumn17.Visible = true;
-            this.gridColumn17.VisibleIndex = 9;
+            this.gridColumn17.VisibleIndex = 4;
             this.gridColumn17.Width = 42;
             // 
             // gridColumn182
             // 
             this.gridColumn182.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn182.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn182.AppearanceCell.Options.UseFont = true;
-            this.gridColumn182.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn182.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn182.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn182.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn182.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn182.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn182.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn182.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn182.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn182.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1679,21 +1279,17 @@ namespace MahantExport.Stock
             this.gridColumn182.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "ORGCARAT", "{0:N2}")});
             this.gridColumn182.Visible = true;
-            this.gridColumn182.VisibleIndex = 18;
+            this.gridColumn182.VisibleIndex = 20;
             this.gridColumn182.Width = 60;
             // 
             // gridColumn18
             // 
-            this.gridColumn18.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn18.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn18.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridColumn18.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gridColumn18.AppearanceCell.Options.UseFont = true;
             this.gridColumn18.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn18.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn18.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn18.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn18.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn18.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn18.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn18.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn18.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn18.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1707,16 +1303,12 @@ namespace MahantExport.Stock
             // 
             // gridColumn19
             // 
-            this.gridColumn19.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn19.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn19.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridColumn19.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gridColumn19.AppearanceCell.Options.UseFont = true;
             this.gridColumn19.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn19.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn19.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn19.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn19.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn19.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn19.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn19.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn19.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn19.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1733,15 +1325,9 @@ namespace MahantExport.Stock
             // gridColumn100
             // 
             this.gridColumn100.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn100.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn100.AppearanceCell.Options.UseFont = true;
-            this.gridColumn100.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn100.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn100.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn100.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn100.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn100.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn100.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn100.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn100.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn100.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1753,15 +1339,9 @@ namespace MahantExport.Stock
             // gridColumn20
             // 
             this.gridColumn20.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn20.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn20.AppearanceCell.Options.UseFont = true;
-            this.gridColumn20.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn20.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn20.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn20.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn20.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn20.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn20.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn20.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn20.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn20.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1774,15 +1354,9 @@ namespace MahantExport.Stock
             // gridColumn101
             // 
             this.gridColumn101.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn101.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn101.AppearanceCell.Options.UseFont = true;
-            this.gridColumn101.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn101.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn101.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn101.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn101.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn101.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn101.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn101.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn101.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn101.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1794,15 +1368,9 @@ namespace MahantExport.Stock
             // gridColumn21
             // 
             this.gridColumn21.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn21.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn21.AppearanceCell.Options.UseFont = true;
-            this.gridColumn21.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn21.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn21.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn21.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn21.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn21.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn21.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn21.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn21.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn21.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1810,20 +1378,16 @@ namespace MahantExport.Stock
             this.gridColumn21.FieldName = "LABNAME";
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn21.Visible = true;
+            this.gridColumn21.VisibleIndex = 18;
             this.gridColumn21.Width = 44;
             // 
             // gridColumn22
             // 
             this.gridColumn22.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn22.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn22.AppearanceCell.Options.UseFont = true;
-            this.gridColumn22.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn22.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn22.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn22.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn22.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn22.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn22.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn22.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn22.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn22.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1832,21 +1396,15 @@ namespace MahantExport.Stock
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn22.Visible = true;
-            this.gridColumn22.VisibleIndex = 7;
+            this.gridColumn22.VisibleIndex = 12;
             this.gridColumn22.Width = 93;
             // 
             // gridColumn24
             // 
             this.gridColumn24.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn24.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn24.AppearanceCell.Options.UseFont = true;
-            this.gridColumn24.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn24.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn24.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn24.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn24.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn24.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn24.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn24.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn24.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn24.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1861,15 +1419,9 @@ namespace MahantExport.Stock
             // gridColumn25
             // 
             this.gridColumn25.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn25.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn25.AppearanceCell.Options.UseFont = true;
-            this.gridColumn25.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn25.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn25.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn25.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn25.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn25.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn25.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn25.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn25.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn25.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1884,15 +1436,9 @@ namespace MahantExport.Stock
             // gridColumn26
             // 
             this.gridColumn26.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn26.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn26.AppearanceCell.Options.UseFont = true;
-            this.gridColumn26.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn26.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn26.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn26.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn26.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn26.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn26.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn26.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn26.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn26.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1907,15 +1453,9 @@ namespace MahantExport.Stock
             // gridColumn27
             // 
             this.gridColumn27.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn27.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn27.AppearanceCell.Options.UseFont = true;
-            this.gridColumn27.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn27.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn27.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn27.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn27.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn27.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn27.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn27.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn27.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn27.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1928,16 +1468,10 @@ namespace MahantExport.Stock
             // 
             // gridColumn174
             // 
-            this.gridColumn174.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn174.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn174.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridColumn174.AppearanceCell.Options.UseFont = true;
-            this.gridColumn174.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn174.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn174.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn174.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn174.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn174.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn174.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn174.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn174.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn174.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1959,15 +1493,11 @@ namespace MahantExport.Stock
             // gridColumn28
             // 
             this.gridColumn28.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn28.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn28.AppearanceCell.ForeColor = System.Drawing.Color.Navy;
             this.gridColumn28.AppearanceCell.Options.UseFont = true;
             this.gridColumn28.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn28.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn28.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn28.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn28.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn28.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn28.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn28.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn28.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn28.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1978,21 +1508,17 @@ namespace MahantExport.Stock
             this.gridColumn28.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
             this.gridColumn28.Visible = true;
-            this.gridColumn28.VisibleIndex = 21;
+            this.gridColumn28.VisibleIndex = 10;
             this.gridColumn28.Width = 79;
             // 
             // gridColumn29
             // 
             this.gridColumn29.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn29.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn29.AppearanceCell.ForeColor = System.Drawing.Color.Navy;
             this.gridColumn29.AppearanceCell.Options.UseFont = true;
             this.gridColumn29.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn29.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn29.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn29.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn29.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn29.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn29.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn29.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn29.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn29.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2003,21 +1529,17 @@ namespace MahantExport.Stock
             this.gridColumn29.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
             this.gridColumn29.Visible = true;
-            this.gridColumn29.VisibleIndex = 20;
+            this.gridColumn29.VisibleIndex = 9;
             this.gridColumn29.Width = 69;
             // 
             // gridColumn30
             // 
             this.gridColumn30.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn30.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn30.AppearanceCell.ForeColor = System.Drawing.Color.Navy;
             this.gridColumn30.AppearanceCell.Options.UseFont = true;
             this.gridColumn30.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn30.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn30.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn30.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn30.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn30.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn30.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn30.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn30.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn30.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2028,21 +1550,17 @@ namespace MahantExport.Stock
             this.gridColumn30.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
             this.gridColumn30.Visible = true;
-            this.gridColumn30.VisibleIndex = 19;
+            this.gridColumn30.VisibleIndex = 8;
             this.gridColumn30.Width = 105;
             // 
             // gridColumn31
             // 
             this.gridColumn31.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn31.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn31.AppearanceCell.ForeColor = System.Drawing.Color.Navy;
             this.gridColumn31.AppearanceCell.Options.UseFont = true;
             this.gridColumn31.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn31.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn31.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn31.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn31.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn31.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn31.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn31.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn31.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn31.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2053,21 +1571,17 @@ namespace MahantExport.Stock
             this.gridColumn31.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn31.Visible = true;
-            this.gridColumn31.VisibleIndex = 22;
+            this.gridColumn31.VisibleIndex = 11;
             this.gridColumn31.Width = 95;
             // 
             // gridColumn125
             // 
             this.gridColumn125.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn125.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn125.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gridColumn125.AppearanceCell.Options.UseFont = true;
             this.gridColumn125.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn125.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn125.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn125.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn125.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn125.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn125.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn125.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn125.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn125.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2082,15 +1596,11 @@ namespace MahantExport.Stock
             // gridColumn124
             // 
             this.gridColumn124.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn124.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn124.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gridColumn124.AppearanceCell.Options.UseFont = true;
             this.gridColumn124.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn124.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn124.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn124.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn124.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn124.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn124.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn124.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn124.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn124.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2105,15 +1615,11 @@ namespace MahantExport.Stock
             // gridColumn123
             // 
             this.gridColumn123.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn123.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn123.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gridColumn123.AppearanceCell.Options.UseFont = true;
             this.gridColumn123.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn123.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn123.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn123.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn123.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn123.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn123.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn123.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn123.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn123.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2127,15 +1633,11 @@ namespace MahantExport.Stock
             // gridColumn122
             // 
             this.gridColumn122.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn122.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn122.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gridColumn122.AppearanceCell.Options.UseFont = true;
             this.gridColumn122.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn122.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn122.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn122.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn122.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn122.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn122.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn122.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn122.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn122.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2149,15 +1651,9 @@ namespace MahantExport.Stock
             // gridColumn35
             // 
             this.gridColumn35.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn35.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn35.AppearanceCell.Options.UseFont = true;
-            this.gridColumn35.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn35.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn35.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn35.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn35.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn35.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn35.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn35.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn35.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn35.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2166,20 +1662,14 @@ namespace MahantExport.Stock
             this.gridColumn35.Name = "gridColumn35";
             this.gridColumn35.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn35.Visible = true;
-            this.gridColumn35.VisibleIndex = 24;
+            this.gridColumn35.VisibleIndex = 22;
             // 
             // gridColumn36
             // 
             this.gridColumn36.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn36.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn36.AppearanceCell.Options.UseFont = true;
-            this.gridColumn36.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn36.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn36.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn36.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn36.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn36.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn36.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn36.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn36.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn36.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2188,20 +1678,14 @@ namespace MahantExport.Stock
             this.gridColumn36.Name = "gridColumn36";
             this.gridColumn36.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn36.Visible = true;
-            this.gridColumn36.VisibleIndex = 25;
+            this.gridColumn36.VisibleIndex = 23;
             // 
             // gridColumn37
             // 
             this.gridColumn37.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn37.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn37.AppearanceCell.Options.UseFont = true;
-            this.gridColumn37.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn37.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn37.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn37.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn37.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn37.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn37.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn37.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn37.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn37.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2210,21 +1694,15 @@ namespace MahantExport.Stock
             this.gridColumn37.Name = "gridColumn37";
             this.gridColumn37.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn37.Visible = true;
-            this.gridColumn37.VisibleIndex = 15;
+            this.gridColumn37.VisibleIndex = 17;
             this.gridColumn37.Width = 105;
             // 
             // gridColumn38
             // 
             this.gridColumn38.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn38.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn38.AppearanceCell.Options.UseFont = true;
-            this.gridColumn38.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn38.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn38.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn38.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn38.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn38.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn38.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn38.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn38.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn38.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2233,21 +1711,15 @@ namespace MahantExport.Stock
             this.gridColumn38.Name = "gridColumn38";
             this.gridColumn38.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn38.Visible = true;
-            this.gridColumn38.VisibleIndex = 26;
+            this.gridColumn38.VisibleIndex = 24;
             this.gridColumn38.Width = 55;
             // 
             // gridColumn39
             // 
             this.gridColumn39.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn39.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn39.AppearanceCell.Options.UseFont = true;
-            this.gridColumn39.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn39.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn39.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn39.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn39.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn39.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn39.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn39.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn39.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn39.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2255,20 +1727,16 @@ namespace MahantExport.Stock
             this.gridColumn39.FieldName = "CRHEIGHT";
             this.gridColumn39.Name = "gridColumn39";
             this.gridColumn39.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn39.Visible = true;
+            this.gridColumn39.VisibleIndex = 25;
             this.gridColumn39.Width = 61;
             // 
             // gridColumn40
             // 
             this.gridColumn40.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn40.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn40.AppearanceCell.Options.UseFont = true;
-            this.gridColumn40.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn40.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn40.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn40.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn40.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn40.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn40.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn40.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn40.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn40.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2276,20 +1744,16 @@ namespace MahantExport.Stock
             this.gridColumn40.FieldName = "PAVANGLE";
             this.gridColumn40.Name = "gridColumn40";
             this.gridColumn40.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn40.Visible = true;
+            this.gridColumn40.VisibleIndex = 26;
             this.gridColumn40.Width = 55;
             // 
             // gridColumn41
             // 
             this.gridColumn41.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn41.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn41.AppearanceCell.Options.UseFont = true;
-            this.gridColumn41.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn41.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn41.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn41.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn41.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn41.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn41.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn41.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn41.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn41.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2297,20 +1761,16 @@ namespace MahantExport.Stock
             this.gridColumn41.FieldName = "PAVHEIGHT";
             this.gridColumn41.Name = "gridColumn41";
             this.gridColumn41.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn41.Visible = true;
+            this.gridColumn41.VisibleIndex = 27;
             this.gridColumn41.Width = 55;
             // 
             // gridColumn42
             // 
             this.gridColumn42.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn42.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn42.AppearanceCell.Options.UseFont = true;
-            this.gridColumn42.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn42.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn42.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn42.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn42.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn42.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn42.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn42.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn42.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn42.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2318,20 +1778,16 @@ namespace MahantExport.Stock
             this.gridColumn42.FieldName = "GIRDLEPER";
             this.gridColumn42.Name = "gridColumn42";
             this.gridColumn42.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn42.Visible = true;
+            this.gridColumn42.VisibleIndex = 28;
             this.gridColumn42.Width = 61;
             // 
             // gridColumn43
             // 
             this.gridColumn43.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn43.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn43.AppearanceCell.Options.UseFont = true;
-            this.gridColumn43.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn43.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn43.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn43.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn43.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn43.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn43.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn43.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn43.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn43.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2339,20 +1795,16 @@ namespace MahantExport.Stock
             this.gridColumn43.FieldName = "GIRDLEDESC";
             this.gridColumn43.Name = "gridColumn43";
             this.gridColumn43.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn43.Visible = true;
+            this.gridColumn43.VisibleIndex = 29;
             this.gridColumn43.Width = 93;
             // 
             // gridColumn118
             // 
             this.gridColumn118.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn118.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn118.AppearanceCell.Options.UseFont = true;
-            this.gridColumn118.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn118.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn118.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn118.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn118.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn118.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn118.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn118.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn118.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn118.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2360,20 +1812,16 @@ namespace MahantExport.Stock
             this.gridColumn118.FieldName = "GIRDLECONDITION";
             this.gridColumn118.Name = "gridColumn118";
             this.gridColumn118.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn118.Visible = true;
+            this.gridColumn118.VisibleIndex = 30;
             this.gridColumn118.Width = 144;
             // 
             // gridColumn44
             // 
             this.gridColumn44.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn44.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn44.AppearanceCell.Options.UseFont = true;
-            this.gridColumn44.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn44.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn44.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn44.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn44.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn44.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn44.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn44.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn44.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn44.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2381,20 +1829,16 @@ namespace MahantExport.Stock
             this.gridColumn44.FieldName = "KEYTOSYMBOL";
             this.gridColumn44.Name = "gridColumn44";
             this.gridColumn44.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn44.Visible = true;
+            this.gridColumn44.VisibleIndex = 31;
             this.gridColumn44.Width = 120;
             // 
             // gridColumn45
             // 
             this.gridColumn45.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn45.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn45.AppearanceCell.Options.UseFont = true;
-            this.gridColumn45.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn45.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn45.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn45.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn45.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn45.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn45.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn45.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn45.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn45.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2403,21 +1847,13 @@ namespace MahantExport.Stock
             this.gridColumn45.Name = "gridColumn45";
             this.gridColumn45.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn45.Visible = true;
-            this.gridColumn45.VisibleIndex = 6;
+            this.gridColumn45.VisibleIndex = 1;
             this.gridColumn45.Width = 105;
             // 
             // gridColumn46
             // 
-            this.gridColumn46.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn46.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn46.AppearanceCell.Options.UseFont = true;
-            this.gridColumn46.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn46.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn46.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn46.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn46.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn46.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn46.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn46.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn46.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn46.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2429,16 +1865,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn47
             // 
-            this.gridColumn47.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn47.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn47.AppearanceCell.Options.UseFont = true;
-            this.gridColumn47.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn47.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn47.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn47.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn47.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn47.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn47.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn47.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn47.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn47.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2450,16 +1878,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn48
             // 
-            this.gridColumn48.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn48.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn48.AppearanceCell.Options.UseFont = true;
-            this.gridColumn48.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn48.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn48.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn48.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn48.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn48.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn48.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn48.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn48.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn48.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2471,16 +1891,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn49
             // 
-            this.gridColumn49.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn49.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn49.AppearanceCell.Options.UseFont = true;
-            this.gridColumn49.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn49.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn49.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn49.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn49.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn49.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn49.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn49.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn49.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn49.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2492,16 +1904,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn50
             // 
-            this.gridColumn50.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn50.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn50.AppearanceCell.Options.UseFont = true;
-            this.gridColumn50.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn50.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn50.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn50.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn50.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn50.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn50.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn50.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn50.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn50.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2512,16 +1916,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn51
             // 
-            this.gridColumn51.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn51.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn51.AppearanceCell.Options.UseFont = true;
-            this.gridColumn51.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn51.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn51.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn51.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn51.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn51.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn51.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn51.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn51.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn51.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2532,16 +1928,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn57
             // 
-            this.gridColumn57.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn57.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn57.AppearanceCell.Options.UseFont = true;
-            this.gridColumn57.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn57.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn57.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn57.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn57.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn57.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn57.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn57.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn57.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn57.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2552,16 +1940,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn58
             // 
-            this.gridColumn58.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn58.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn58.AppearanceCell.Options.UseFont = true;
-            this.gridColumn58.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn58.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn58.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn58.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn58.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn58.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn58.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn58.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn58.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn58.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2570,21 +1950,13 @@ namespace MahantExport.Stock
             this.gridColumn58.Name = "gridColumn58";
             this.gridColumn58.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn58.Visible = true;
-            this.gridColumn58.VisibleIndex = 17;
+            this.gridColumn58.VisibleIndex = 19;
             this.gridColumn58.Width = 148;
             // 
             // gridColumn59
             // 
-            this.gridColumn59.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn59.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn59.AppearanceCell.Options.UseFont = true;
-            this.gridColumn59.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn59.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn59.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn59.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn59.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn59.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn59.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn59.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn59.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn59.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2595,16 +1967,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn60
             // 
-            this.gridColumn60.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn60.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn60.AppearanceCell.Options.UseFont = true;
-            this.gridColumn60.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn60.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn60.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn60.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn60.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn60.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn60.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn60.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn60.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn60.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2616,16 +1980,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn61
             // 
-            this.gridColumn61.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn61.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn61.AppearanceCell.Options.UseFont = true;
-            this.gridColumn61.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn61.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn61.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn61.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn61.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn61.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn61.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn61.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn61.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn61.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2636,16 +1992,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn62
             // 
-            this.gridColumn62.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn62.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn62.AppearanceCell.Options.UseFont = true;
-            this.gridColumn62.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn62.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn62.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn62.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn62.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn62.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn62.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn62.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn62.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn62.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2657,16 +2005,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn63
             // 
-            this.gridColumn63.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn63.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn63.AppearanceCell.Options.UseFont = true;
-            this.gridColumn63.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn63.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn63.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn63.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn63.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn63.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn63.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn63.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn63.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn63.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2674,22 +2014,12 @@ namespace MahantExport.Stock
             this.gridColumn63.FieldName = "MEMONO";
             this.gridColumn63.Name = "gridColumn63";
             this.gridColumn63.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn63.Visible = true;
-            this.gridColumn63.VisibleIndex = 27;
             this.gridColumn63.Width = 89;
             // 
             // gridColumn64
             // 
-            this.gridColumn64.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn64.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn64.AppearanceCell.Options.UseFont = true;
-            this.gridColumn64.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn64.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn64.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn64.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn64.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn64.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn64.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn64.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn64.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn64.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2697,22 +2027,12 @@ namespace MahantExport.Stock
             this.gridColumn64.FieldName = "MEMODATE";
             this.gridColumn64.Name = "gridColumn64";
             this.gridColumn64.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn64.Visible = true;
-            this.gridColumn64.VisibleIndex = 28;
             this.gridColumn64.Width = 100;
             // 
             // gridColumn65
             // 
-            this.gridColumn65.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn65.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn65.AppearanceCell.Options.UseFont = true;
-            this.gridColumn65.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn65.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn65.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn65.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn65.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn65.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn65.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn65.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn65.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn65.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2723,16 +2043,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn66
             // 
-            this.gridColumn66.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn66.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn66.AppearanceCell.Options.UseFont = true;
-            this.gridColumn66.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn66.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn66.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn66.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn66.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn66.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn66.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn66.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn66.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn66.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2741,20 +2053,12 @@ namespace MahantExport.Stock
             this.gridColumn66.Name = "gridColumn66";
             this.gridColumn66.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn66.Visible = true;
-            this.gridColumn66.VisibleIndex = 29;
+            this.gridColumn66.VisibleIndex = 36;
             // 
             // gridColumn67
             // 
-            this.gridColumn67.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn67.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn67.AppearanceCell.Options.UseFont = true;
-            this.gridColumn67.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn67.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn67.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn67.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn67.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn67.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn67.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn67.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn67.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn67.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2768,16 +2072,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn68
             // 
-            this.gridColumn68.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn68.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn68.AppearanceCell.Options.UseFont = true;
-            this.gridColumn68.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn68.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn68.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn68.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn68.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn68.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn68.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn68.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn68.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn68.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2793,16 +2089,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn69
             // 
-            this.gridColumn69.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn69.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn69.AppearanceCell.Options.UseFont = true;
-            this.gridColumn69.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn69.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn69.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn69.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn69.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn69.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn69.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn69.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn69.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn69.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2812,22 +2100,12 @@ namespace MahantExport.Stock
             this.gridColumn69.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn69.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
-            this.gridColumn69.Visible = true;
-            this.gridColumn69.VisibleIndex = 51;
             this.gridColumn69.Width = 114;
             // 
             // gridColumn70
             // 
-            this.gridColumn70.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn70.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn70.AppearanceCell.Options.UseFont = true;
-            this.gridColumn70.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn70.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn70.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn70.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn70.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn70.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn70.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn70.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn70.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn70.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2837,22 +2115,12 @@ namespace MahantExport.Stock
             this.gridColumn70.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn70.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
-            this.gridColumn70.Visible = true;
-            this.gridColumn70.VisibleIndex = 52;
             this.gridColumn70.Width = 133;
             // 
             // gridColumn71
             // 
-            this.gridColumn71.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn71.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn71.AppearanceCell.Options.UseFont = true;
-            this.gridColumn71.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn71.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn71.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn71.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn71.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn71.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn71.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn71.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn71.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn71.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2862,22 +2130,12 @@ namespace MahantExport.Stock
             this.gridColumn71.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn71.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
-            this.gridColumn71.Visible = true;
-            this.gridColumn71.VisibleIndex = 53;
             this.gridColumn71.Width = 145;
             // 
             // gridColumn72
             // 
-            this.gridColumn72.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn72.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn72.AppearanceCell.Options.UseFont = true;
-            this.gridColumn72.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn72.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn72.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn72.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn72.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn72.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn72.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn72.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn72.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn72.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2887,22 +2145,12 @@ namespace MahantExport.Stock
             this.gridColumn72.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn72.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
-            this.gridColumn72.Visible = true;
-            this.gridColumn72.VisibleIndex = 54;
             this.gridColumn72.Width = 116;
             // 
             // gridColumn73
             // 
-            this.gridColumn73.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn73.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn73.AppearanceCell.Options.UseFont = true;
-            this.gridColumn73.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn73.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn73.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn73.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn73.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn73.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn73.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn73.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn73.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn73.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2910,22 +2158,12 @@ namespace MahantExport.Stock
             this.gridColumn73.FieldName = "FMEMOPRICEPERCARAT";
             this.gridColumn73.Name = "gridColumn73";
             this.gridColumn73.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn73.Visible = true;
-            this.gridColumn73.VisibleIndex = 55;
             this.gridColumn73.Width = 153;
             // 
             // gridColumn74
             // 
-            this.gridColumn74.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn74.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn74.AppearanceCell.Options.UseFont = true;
-            this.gridColumn74.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn74.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn74.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn74.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn74.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn74.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn74.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn74.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn74.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn74.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -2935,35 +2173,24 @@ namespace MahantExport.Stock
             this.gridColumn74.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn74.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
-            this.gridColumn74.Visible = true;
-            this.gridColumn74.VisibleIndex = 56;
             this.gridColumn74.Width = 120;
             // 
             // gridColumn53
             // 
-            this.gridColumn53.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn53.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn53.AppearanceCell.Options.UseFont = true;
-            this.gridColumn53.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn53.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn53.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn53.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn53.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn53.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn53.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn53.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn53.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn53.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.gridColumn53.Caption = "..";
             this.gridColumn53.ColumnEdit = this.RptCert;
             this.gridColumn53.FieldName = "ISCERTI";
-            this.gridColumn53.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.gridColumn53.Name = "gridColumn53";
             this.gridColumn53.OptionsColumn.AllowEdit = false;
             this.gridColumn53.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn53.ToolTip = "Stone Certificate";
             this.gridColumn53.Visible = true;
-            this.gridColumn53.VisibleIndex = 1;
+            this.gridColumn53.VisibleIndex = 81;
             this.gridColumn53.Width = 25;
             // 
             // RptCert
@@ -2980,28 +2207,19 @@ namespace MahantExport.Stock
             // 
             // gridColumn54
             // 
-            this.gridColumn54.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn54.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn54.AppearanceCell.Options.UseFont = true;
-            this.gridColumn54.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn54.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn54.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn54.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn54.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn54.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn54.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn54.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn54.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn54.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.gridColumn54.Caption = "..";
             this.gridColumn54.ColumnEdit = this.RptImage;
             this.gridColumn54.FieldName = "ISIMAGE";
-            this.gridColumn54.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.gridColumn54.Name = "gridColumn54";
             this.gridColumn54.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn54.ToolTip = "Stone Images";
             this.gridColumn54.Visible = true;
-            this.gridColumn54.VisibleIndex = 2;
+            this.gridColumn54.VisibleIndex = 79;
             this.gridColumn54.Width = 25;
             // 
             // RptImage
@@ -3017,28 +2235,19 @@ namespace MahantExport.Stock
             // 
             // gridColumn55
             // 
-            this.gridColumn55.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn55.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn55.AppearanceCell.Options.UseFont = true;
-            this.gridColumn55.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn55.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn55.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn55.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn55.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn55.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn55.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn55.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn55.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn55.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.gridColumn55.Caption = "..";
             this.gridColumn55.ColumnEdit = this.RptVideo;
             this.gridColumn55.FieldName = "ISVIDEO";
-            this.gridColumn55.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.gridColumn55.Name = "gridColumn55";
             this.gridColumn55.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn55.ToolTip = "Stone Video";
             this.gridColumn55.Visible = true;
-            this.gridColumn55.VisibleIndex = 3;
+            this.gridColumn55.VisibleIndex = 80;
             this.gridColumn55.Width = 25;
             // 
             // RptVideo
@@ -3054,37 +2263,21 @@ namespace MahantExport.Stock
             // 
             // gridColumn168
             // 
-            this.gridColumn168.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn168.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn168.AppearanceCell.Options.UseFont = true;
-            this.gridColumn168.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn168.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn168.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn168.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn168.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn168.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn168.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn168.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn168.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn168.Caption = "..";
             this.gridColumn168.FieldName = "COMMENTS";
             this.gridColumn168.Name = "gridColumn168";
             this.gridColumn168.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn168.ToolTip = "Stone Comment";
+            this.gridColumn168.Visible = true;
+            this.gridColumn168.VisibleIndex = 82;
             this.gridColumn168.Width = 25;
             // 
             // gridColumn86
             // 
-            this.gridColumn86.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn86.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn86.AppearanceCell.Options.UseFont = true;
-            this.gridColumn86.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn86.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn86.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn86.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn86.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn86.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn86.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn86.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn86.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn86.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3095,16 +2288,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn127
             // 
-            this.gridColumn127.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn127.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn127.AppearanceCell.Options.UseFont = true;
-            this.gridColumn127.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn127.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn127.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn127.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn127.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn127.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn127.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn127.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn127.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn127.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3116,16 +2301,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn128
             // 
-            this.gridColumn128.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn128.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn128.AppearanceCell.Options.UseFont = true;
-            this.gridColumn128.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn128.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn128.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn128.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn128.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn128.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn128.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn128.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn128.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn128.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3136,16 +2313,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn129
             // 
-            this.gridColumn129.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn129.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn129.AppearanceCell.Options.UseFont = true;
-            this.gridColumn129.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn129.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn129.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn129.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn129.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn129.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn129.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn129.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn129.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn129.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3156,21 +2325,13 @@ namespace MahantExport.Stock
             // 
             // gridColumn130
             // 
-            this.gridColumn130.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn130.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn130.AppearanceCell.Options.UseFont = true;
-            this.gridColumn130.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn130.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn130.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn130.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn130.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn130.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn130.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn130.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn130.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn130.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.gridColumn130.Caption = "CERTURL";
-            this.gridColumn130.FieldName = "CERTIFICATEURL";
+            this.gridColumn130.FieldName = "CERTURL";
             this.gridColumn130.Name = "gridColumn130";
             this.gridColumn130.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             // 
@@ -3179,16 +2340,10 @@ namespace MahantExport.Stock
             this.gridColumn131.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn131.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn131.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn131.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn131.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn131.AppearanceCell.Options.UseFont = true;
-            this.gridColumn131.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn131.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn131.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn131.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn131.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn131.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn131.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn131.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn131.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn131.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3204,16 +2359,10 @@ namespace MahantExport.Stock
             this.gridColumn132.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn132.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn132.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn132.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn132.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn132.AppearanceCell.Options.UseFont = true;
-            this.gridColumn132.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn132.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn132.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn132.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn132.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn132.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn132.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn132.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn132.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn132.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3230,16 +2379,10 @@ namespace MahantExport.Stock
             this.gridColumn133.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn133.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn133.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn133.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn133.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn133.AppearanceCell.Options.UseFont = true;
-            this.gridColumn133.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn133.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn133.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn133.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn133.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn133.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn133.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn133.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn133.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn133.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3256,16 +2399,10 @@ namespace MahantExport.Stock
             this.gridColumn134.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn134.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.gridColumn134.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn134.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn134.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn134.AppearanceCell.Options.UseFont = true;
-            this.gridColumn134.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn134.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn134.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn134.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn134.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn134.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn134.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn134.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn134.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn134.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3279,15 +2416,9 @@ namespace MahantExport.Stock
             // gridColumn135
             // 
             this.gridColumn135.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn135.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn135.AppearanceCell.Options.UseFont = true;
-            this.gridColumn135.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn135.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn135.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn135.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn135.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn135.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn135.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn135.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn135.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn135.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3299,15 +2430,9 @@ namespace MahantExport.Stock
             // gridColumn136
             // 
             this.gridColumn136.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn136.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn136.AppearanceCell.Options.UseFont = true;
-            this.gridColumn136.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn136.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn136.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn136.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn136.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn136.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn136.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn136.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn136.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn136.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3320,15 +2445,9 @@ namespace MahantExport.Stock
             // gridColumn137
             // 
             this.gridColumn137.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn137.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn137.AppearanceCell.Options.UseFont = true;
-            this.gridColumn137.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn137.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn137.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn137.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn137.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn137.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn137.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn137.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn137.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn137.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3340,15 +2459,9 @@ namespace MahantExport.Stock
             // gridColumn138
             // 
             this.gridColumn138.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn138.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn138.AppearanceCell.Options.UseFont = true;
-            this.gridColumn138.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn138.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn138.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn138.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn138.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn138.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn138.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn138.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn138.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn138.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3360,21 +2473,15 @@ namespace MahantExport.Stock
             this.gridColumn138.OptionsColumn.AllowEdit = false;
             this.gridColumn138.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn138.Visible = true;
-            this.gridColumn138.VisibleIndex = 32;
+            this.gridColumn138.VisibleIndex = 38;
             this.gridColumn138.Width = 94;
             // 
             // gridColumn139
             // 
             this.gridColumn139.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn139.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn139.AppearanceCell.Options.UseFont = true;
-            this.gridColumn139.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn139.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn139.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn139.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn139.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn139.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn139.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn139.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn139.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn139.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3385,20 +2492,14 @@ namespace MahantExport.Stock
             this.gridColumn139.Name = "gridColumn139";
             this.gridColumn139.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn139.Visible = true;
-            this.gridColumn139.VisibleIndex = 33;
+            this.gridColumn139.VisibleIndex = 39;
             // 
             // gridColumn140
             // 
             this.gridColumn140.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn140.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn140.AppearanceCell.Options.UseFont = true;
-            this.gridColumn140.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn140.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn140.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn140.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn140.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn140.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn140.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn140.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn140.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn140.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3409,21 +2510,17 @@ namespace MahantExport.Stock
             this.gridColumn140.Name = "gridColumn140";
             this.gridColumn140.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn140.Visible = true;
-            this.gridColumn140.VisibleIndex = 34;
+            this.gridColumn140.VisibleIndex = 40;
             this.gridColumn140.Width = 87;
             // 
             // gridColumn141
             // 
             this.gridColumn141.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn141.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn141.AppearanceCell.ForeColor = System.Drawing.Color.Green;
             this.gridColumn141.AppearanceCell.Options.UseFont = true;
             this.gridColumn141.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn141.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn141.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn141.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn141.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn141.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn141.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn141.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn141.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn141.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3434,21 +2531,15 @@ namespace MahantExport.Stock
             this.gridColumn141.Name = "gridColumn141";
             this.gridColumn141.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn141.Visible = true;
-            this.gridColumn141.VisibleIndex = 35;
+            this.gridColumn141.VisibleIndex = 41;
             this.gridColumn141.Width = 97;
             // 
             // gridColumn142
             // 
             this.gridColumn142.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn142.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn142.AppearanceCell.Options.UseFont = true;
-            this.gridColumn142.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn142.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn142.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn142.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn142.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn142.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn142.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn142.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn142.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn142.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3459,21 +2550,15 @@ namespace MahantExport.Stock
             this.gridColumn142.Name = "gridColumn142";
             this.gridColumn142.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn142.Visible = true;
-            this.gridColumn142.VisibleIndex = 36;
+            this.gridColumn142.VisibleIndex = 42;
             this.gridColumn142.Width = 99;
             // 
             // gridColumn143
             // 
             this.gridColumn143.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn143.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn143.AppearanceCell.Options.UseFont = true;
-            this.gridColumn143.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn143.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn143.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn143.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn143.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn143.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn143.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn143.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn143.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn143.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3484,21 +2569,15 @@ namespace MahantExport.Stock
             this.gridColumn143.Name = "gridColumn143";
             this.gridColumn143.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn143.Visible = true;
-            this.gridColumn143.VisibleIndex = 37;
+            this.gridColumn143.VisibleIndex = 43;
             this.gridColumn143.Width = 96;
             // 
             // gridColumn144
             // 
             this.gridColumn144.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn144.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn144.AppearanceCell.Options.UseFont = true;
-            this.gridColumn144.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn144.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn144.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn144.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn144.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn144.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn144.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn144.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn144.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn144.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3509,21 +2588,15 @@ namespace MahantExport.Stock
             this.gridColumn144.Name = "gridColumn144";
             this.gridColumn144.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn144.Visible = true;
-            this.gridColumn144.VisibleIndex = 38;
-            this.gridColumn144.Width = 88;
+            this.gridColumn144.VisibleIndex = 44;
+            this.gridColumn144.Width = 90;
             // 
             // gridColumn147
             // 
             this.gridColumn147.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn147.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn147.AppearanceCell.Options.UseFont = true;
-            this.gridColumn147.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn147.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn147.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn147.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn147.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn147.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn147.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn147.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn147.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn147.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3535,15 +2608,9 @@ namespace MahantExport.Stock
             // gridColumn148
             // 
             this.gridColumn148.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn148.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn148.AppearanceCell.Options.UseFont = true;
-            this.gridColumn148.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn148.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn148.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn148.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn148.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn148.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn148.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn148.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn148.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn148.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3556,15 +2623,9 @@ namespace MahantExport.Stock
             // gridColumn149
             // 
             this.gridColumn149.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn149.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn149.AppearanceCell.Options.UseFont = true;
-            this.gridColumn149.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn149.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn149.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn149.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn149.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn149.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn149.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn149.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn149.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn149.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3576,15 +2637,9 @@ namespace MahantExport.Stock
             // gridColumn150
             // 
             this.gridColumn150.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn150.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn150.AppearanceCell.Options.UseFont = true;
-            this.gridColumn150.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn150.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn150.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn150.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn150.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn150.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn150.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn150.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn150.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn150.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3597,15 +2652,9 @@ namespace MahantExport.Stock
             // gridColumn151
             // 
             this.gridColumn151.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn151.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn151.AppearanceCell.Options.UseFont = true;
-            this.gridColumn151.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn151.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn151.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn151.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn151.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn151.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn151.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn151.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn151.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn151.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3617,15 +2666,9 @@ namespace MahantExport.Stock
             // gridColumn152
             // 
             this.gridColumn152.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn152.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn152.AppearanceCell.Options.UseFont = true;
-            this.gridColumn152.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn152.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn152.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn152.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn152.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn152.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn152.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn152.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn152.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn152.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3634,27 +2677,17 @@ namespace MahantExport.Stock
             this.gridColumn152.Name = "gridColumn152";
             this.gridColumn152.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn152.Visible = true;
-            this.gridColumn152.VisibleIndex = 31;
+            this.gridColumn152.VisibleIndex = 37;
             this.gridColumn152.Width = 250;
             // 
             // gridColumn153
             // 
             this.gridColumn153.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gridColumn153.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn153.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn153.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn153.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn153.AppearanceCell.Options.UseFont = true;
-            this.gridColumn153.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn153.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn153.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn153.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.gridColumn153.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn153.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn153.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn153.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn153.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn153.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn153.Caption = "Rapnet Rapaport";
             this.gridColumn153.FieldName = "RAPNETRAPAPORT";
             this.gridColumn153.Name = "gridColumn153";
@@ -3667,20 +2700,10 @@ namespace MahantExport.Stock
             // 
             this.gridColumn154.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gridColumn154.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn154.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn154.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn154.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn154.AppearanceCell.Options.UseFont = true;
-            this.gridColumn154.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn154.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn154.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn154.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.gridColumn154.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn154.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn154.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn154.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn154.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn154.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn154.Caption = "Rapnet ($)/Cts";
             this.gridColumn154.FieldName = "RAPNETPRICEPERCARAT";
             this.gridColumn154.Name = "gridColumn154";
@@ -3693,20 +2716,10 @@ namespace MahantExport.Stock
             // 
             this.gridColumn155.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gridColumn155.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn155.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn155.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn155.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn155.AppearanceCell.Options.UseFont = true;
-            this.gridColumn155.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn155.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn155.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn155.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.gridColumn155.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn155.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn155.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn155.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn155.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn155.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn155.Caption = "Rapnet Disc";
             this.gridColumn155.FieldName = "RAPNETDISCOUNT";
             this.gridColumn155.Name = "gridColumn155";
@@ -3719,20 +2732,10 @@ namespace MahantExport.Stock
             // 
             this.gridColumn156.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gridColumn156.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn156.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn156.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn156.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn156.AppearanceCell.Options.UseFont = true;
-            this.gridColumn156.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn156.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn156.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn156.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.gridColumn156.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn156.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn156.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn156.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn156.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn156.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn156.Caption = "Rapnet Amount";
             this.gridColumn156.FieldName = "RAPNETAMOUNT";
             this.gridColumn156.Name = "gridColumn156";
@@ -3743,37 +2746,21 @@ namespace MahantExport.Stock
             // 
             // gridColumn157
             // 
-            this.gridColumn157.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn157.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn157.AppearanceCell.Options.UseFont = true;
-            this.gridColumn157.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn157.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn157.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn157.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn157.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn157.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn157.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn157.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn157.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn157.Caption = "Exclusive";
             this.gridColumn157.FieldName = "ISEXCLUSIVE";
             this.gridColumn157.Name = "gridColumn157";
             this.gridColumn157.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn157.Visible = true;
-            this.gridColumn157.VisibleIndex = 45;
+            this.gridColumn157.VisibleIndex = 86;
             // 
             // gridColumn160
             // 
             this.gridColumn160.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn160.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn160.AppearanceCell.Options.UseFont = true;
-            this.gridColumn160.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn160.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn160.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn160.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn160.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn160.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn160.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn160.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn160.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn160.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3783,8 +2770,6 @@ namespace MahantExport.Stock
             this.gridColumn160.Name = "gridColumn160";
             this.gridColumn160.OptionsColumn.AllowEdit = false;
             this.gridColumn160.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn160.Visible = true;
-            this.gridColumn160.VisibleIndex = 30;
             this.gridColumn160.Width = 82;
             // 
             // repChkISPurchase
@@ -3798,15 +2783,9 @@ namespace MahantExport.Stock
             // gridColumn161
             // 
             this.gridColumn161.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn161.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn161.AppearanceCell.Options.UseFont = true;
-            this.gridColumn161.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn161.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn161.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn161.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn161.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn161.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn161.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn161.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn161.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn161.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3822,15 +2801,9 @@ namespace MahantExport.Stock
             // gridColumn162
             // 
             this.gridColumn162.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn162.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn162.AppearanceCell.Options.UseFont = true;
-            this.gridColumn162.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn162.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn162.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn162.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn162.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn162.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn162.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn162.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn162.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn162.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3846,15 +2819,9 @@ namespace MahantExport.Stock
             // gridColumn163
             // 
             this.gridColumn163.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn163.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn163.AppearanceCell.Options.UseFont = true;
-            this.gridColumn163.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn163.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn163.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn163.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn163.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn163.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn163.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn163.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn163.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn163.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3871,19 +2838,9 @@ namespace MahantExport.Stock
             // 
             this.gridColumn164.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
             this.gridColumn164.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
-            this.gridColumn164.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn164.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn164.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn164.AppearanceCell.Options.UseFont = true;
-            this.gridColumn164.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn164.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn164.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn164.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn164.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn164.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn164.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn164.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn164.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn164.Caption = "JA Rap";
             this.gridColumn164.FieldName = "JAMESALLENRAPAPORT";
             this.gridColumn164.Name = "gridColumn164";
@@ -3896,19 +2853,9 @@ namespace MahantExport.Stock
             // 
             this.gridColumn165.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
             this.gridColumn165.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
-            this.gridColumn165.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn165.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn165.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn165.AppearanceCell.Options.UseFont = true;
-            this.gridColumn165.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn165.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn165.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn165.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn165.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn165.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn165.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn165.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn165.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn165.Caption = "JA Dis";
             this.gridColumn165.FieldName = "JAMESALLENDISCOUNT";
             this.gridColumn165.Name = "gridColumn165";
@@ -3921,19 +2868,9 @@ namespace MahantExport.Stock
             // 
             this.gridColumn166.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
             this.gridColumn166.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
-            this.gridColumn166.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn166.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn166.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn166.AppearanceCell.Options.UseFont = true;
-            this.gridColumn166.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn166.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn166.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn166.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn166.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn166.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn166.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn166.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn166.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn166.Caption = "JA $/Cts";
             this.gridColumn166.FieldName = "JAMESALLENPRICEPERCARAT";
             this.gridColumn166.Name = "gridColumn166";
@@ -3946,19 +2883,9 @@ namespace MahantExport.Stock
             // 
             this.gridColumn167.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
             this.gridColumn167.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(241)))));
-            this.gridColumn167.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn167.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn167.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn167.AppearanceCell.Options.UseFont = true;
-            this.gridColumn167.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn167.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn167.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn167.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn167.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn167.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn167.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn167.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn167.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn167.Caption = "JA Amt";
             this.gridColumn167.FieldName = "JAMESALLENAMOUNT";
             this.gridColumn167.Name = "gridColumn167";
@@ -3969,39 +2896,19 @@ namespace MahantExport.Stock
             // 
             // gridColumn5
             // 
-            this.gridColumn5.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn5.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn5.AppearanceCell.Options.UseFont = true;
-            this.gridColumn5.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn5.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn5.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn5.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn5.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn5.Caption = "Location";
             this.gridColumn5.FieldName = "LOCATIONNAME";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 23;
+            this.gridColumn5.VisibleIndex = 21;
             // 
             // gridColumn6
             // 
-            this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn6.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn6.AppearanceCell.Options.UseFont = true;
-            this.gridColumn6.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn6.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn6.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn6.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn6.Caption = "LOCATION_ID";
             this.gridColumn6.FieldName = "LOCATION_ID";
             this.gridColumn6.Name = "gridColumn6";
@@ -4009,18 +2916,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn15
             // 
-            this.gridColumn15.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn15.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn15.AppearanceCell.Options.UseFont = true;
-            this.gridColumn15.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn15.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn15.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn15.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn15.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn15.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn15.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn15.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn15.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn15.Caption = "Fancy Color";
             this.gridColumn15.FieldName = "FANCYCOLOR";
             this.gridColumn15.Name = "gridColumn15";
@@ -4029,19 +2926,9 @@ namespace MahantExport.Stock
             // 
             // gridColumn193
             // 
-            this.gridColumn193.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn193.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn193.AppearanceCell.Options.UseFont = true;
-            this.gridColumn193.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn193.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn193.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn193.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn193.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn193.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn193.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn193.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn193.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn193.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn193.Caption = "Fancy Intensity";
             this.gridColumn193.FieldName = "FANCYCOLORINTENSITY";
             this.gridColumn193.Name = "gridColumn193";
@@ -4050,19 +2937,9 @@ namespace MahantExport.Stock
             // 
             // gridColumn192
             // 
-            this.gridColumn192.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn192.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn192.AppearanceCell.Options.UseFont = true;
-            this.gridColumn192.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn192.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn192.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn192.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn192.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn192.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn192.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn192.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn192.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn192.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn192.Caption = "Fancy Overtone";
             this.gridColumn192.FieldName = "FANCYCOLOROVERTONE";
             this.gridColumn192.Name = "gridColumn192";
@@ -4071,101 +2948,51 @@ namespace MahantExport.Stock
             // 
             // gridColumn32
             // 
-            this.gridColumn32.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn32.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn32.AppearanceCell.Options.UseFont = true;
-            this.gridColumn32.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn32.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn32.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn32.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn32.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn32.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn32.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn32.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn32.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn32.Caption = "Shade";
             this.gridColumn32.FieldName = "COLORSHADENAME";
             this.gridColumn32.Name = "gridColumn32";
             this.gridColumn32.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn32.Visible = true;
+            this.gridColumn32.VisibleIndex = 7;
             this.gridColumn32.Width = 87;
             // 
             // gridColumn33
             // 
-            this.gridColumn33.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn33.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn33.AppearanceCell.Options.UseFont = true;
-            this.gridColumn33.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn33.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn33.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn33.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn33.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn33.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn33.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn33.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn33.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn33.Caption = "MK";
             this.gridColumn33.FieldName = "MILKYNAME";
             this.gridColumn33.Name = "gridColumn33";
             this.gridColumn33.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn33.Visible = true;
-            this.gridColumn33.VisibleIndex = 39;
             // 
             // gridColumn34
             // 
-            this.gridColumn34.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn34.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn34.AppearanceCell.Options.UseFont = true;
-            this.gridColumn34.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn34.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn34.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn34.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn34.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn34.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn34.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn34.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn34.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn34.Caption = "Eye Clean";
             this.gridColumn34.FieldName = "EYECLEANNAME";
             this.gridColumn34.Name = "gridColumn34";
             this.gridColumn34.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn34.Visible = true;
-            this.gridColumn34.VisibleIndex = 40;
+            this.gridColumn34.VisibleIndex = 45;
             // 
             // gridColumn75
             // 
-            this.gridColumn75.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn75.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn75.AppearanceCell.Options.UseFont = true;
-            this.gridColumn75.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn75.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn75.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn75.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn75.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn75.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn75.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn75.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn75.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn75.Caption = "Lus";
             this.gridColumn75.FieldName = "LUSTERNAME";
             this.gridColumn75.Name = "gridColumn75";
             this.gridColumn75.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn75.Visible = true;
-            this.gridColumn75.VisibleIndex = 41;
+            this.gridColumn75.VisibleIndex = 46;
             // 
             // gridColumn76
             // 
-            this.gridColumn76.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn76.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn76.AppearanceCell.Options.UseFont = true;
-            this.gridColumn76.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn76.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn76.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn76.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn76.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn76.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn76.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn76.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn76.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn76.Caption = "H&A";
             this.gridColumn76.FieldName = "HANAME";
             this.gridColumn76.Name = "gridColumn76";
@@ -4173,248 +3000,142 @@ namespace MahantExport.Stock
             // 
             // gridColumn77
             // 
-            this.gridColumn77.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn77.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn77.AppearanceCell.Options.UseFont = true;
-            this.gridColumn77.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn77.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn77.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn77.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn77.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn77.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn77.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn77.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn77.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn77.Caption = "Culet";
             this.gridColumn77.FieldName = "CULETNAME";
             this.gridColumn77.Name = "gridColumn77";
             this.gridColumn77.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn77.Visible = true;
+            this.gridColumn77.VisibleIndex = 47;
             // 
             // gridColumn78
             // 
-            this.gridColumn78.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn78.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn78.AppearanceCell.Options.UseFont = true;
-            this.gridColumn78.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn78.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn78.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn78.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn78.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn78.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn78.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn78.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn78.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn78.Caption = "Girdle";
             this.gridColumn78.FieldName = "GIRDLENAME";
             this.gridColumn78.Name = "gridColumn78";
             this.gridColumn78.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn78.Visible = true;
+            this.gridColumn78.VisibleIndex = 48;
             // 
             // gridColumn79
             // 
-            this.gridColumn79.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn79.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn79.AppearanceCell.Options.UseFont = true;
-            this.gridColumn79.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn79.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn79.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn79.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn79.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn79.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn79.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn79.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn79.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn79.Caption = "TI";
             this.gridColumn79.FieldName = "TABLEINCNAME";
             this.gridColumn79.Name = "gridColumn79";
             this.gridColumn79.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn79.Visible = true;
+            this.gridColumn79.VisibleIndex = 49;
             this.gridColumn79.Width = 84;
             // 
             // gridColumn80
             // 
-            this.gridColumn80.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn80.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn80.AppearanceCell.Options.UseFont = true;
-            this.gridColumn80.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn80.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn80.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn80.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn80.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn80.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn80.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn80.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn80.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn80.Caption = "TO";
             this.gridColumn80.FieldName = "TABLEOPENNAME";
             this.gridColumn80.Name = "gridColumn80";
             this.gridColumn80.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn80.Visible = true;
+            this.gridColumn80.VisibleIndex = 50;
             this.gridColumn80.Width = 86;
             // 
             // gridColumn81
             // 
-            this.gridColumn81.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn81.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn81.AppearanceCell.Options.UseFont = true;
-            this.gridColumn81.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn81.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn81.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn81.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn81.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn81.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn81.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn81.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn81.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn81.Caption = "Side Table";
             this.gridColumn81.FieldName = "SIDETABLENAME";
             this.gridColumn81.Name = "gridColumn81";
             this.gridColumn81.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn81.Visible = true;
+            this.gridColumn81.VisibleIndex = 51;
             // 
             // gridColumn82
             // 
-            this.gridColumn82.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn82.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn82.AppearanceCell.Options.UseFont = true;
-            this.gridColumn82.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn82.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn82.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn82.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn82.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn82.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn82.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn82.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn82.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn82.Caption = "Side Open";
             this.gridColumn82.FieldName = "SIDEOPENNAME";
             this.gridColumn82.Name = "gridColumn82";
             this.gridColumn82.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn82.Visible = true;
+            this.gridColumn82.VisibleIndex = 52;
             // 
             // gridColumn83
             // 
-            this.gridColumn83.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn83.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn83.AppearanceCell.Options.UseFont = true;
-            this.gridColumn83.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn83.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn83.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn83.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn83.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn83.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn83.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn83.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn83.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn83.Caption = "BL";
             this.gridColumn83.FieldName = "TABLEBLACKNAME";
             this.gridColumn83.Name = "gridColumn83";
             this.gridColumn83.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn83.Visible = true;
+            this.gridColumn83.VisibleIndex = 53;
             // 
             // gridColumn84
             // 
-            this.gridColumn84.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn84.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn84.AppearanceCell.Options.UseFont = true;
-            this.gridColumn84.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn84.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn84.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn84.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn84.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn84.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn84.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn84.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn84.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn84.Caption = "Side Black";
             this.gridColumn84.FieldName = "SIDEBLACKNAME";
             this.gridColumn84.Name = "gridColumn84";
             this.gridColumn84.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn84.Visible = true;
+            this.gridColumn84.VisibleIndex = 54;
             // 
             // gridColumn85
             // 
-            this.gridColumn85.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn85.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn85.AppearanceCell.Options.UseFont = true;
-            this.gridColumn85.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn85.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn85.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn85.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn85.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn85.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn85.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn85.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn85.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn85.Caption = "Red Sport";
             this.gridColumn85.FieldName = "REDSPORTNAME";
             this.gridColumn85.Name = "gridColumn85";
             this.gridColumn85.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn85.Visible = true;
+            this.gridColumn85.VisibleIndex = 55;
             // 
             // gridColumn196
             // 
-            this.gridColumn196.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn196.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn196.AppearanceCell.Options.UseFont = true;
-            this.gridColumn196.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn196.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn196.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn196.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn196.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn196.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn196.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn196.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn196.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn196.Caption = "Girdle Inc";
             this.gridColumn196.FieldName = "GIRDLEINCNAME";
             this.gridColumn196.Name = "gridColumn196";
+            this.gridColumn196.Visible = true;
+            this.gridColumn196.VisibleIndex = 56;
             // 
             // gridColumn87
             // 
-            this.gridColumn87.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn87.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn87.AppearanceCell.Options.UseFont = true;
-            this.gridColumn87.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn87.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn87.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn87.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn87.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn87.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn87.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn87.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn87.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn87.Caption = "Flu Color";
             this.gridColumn87.FieldName = "FLUORESCENCECOLOR";
             this.gridColumn87.Name = "gridColumn87";
             this.gridColumn87.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn87.Visible = true;
+            this.gridColumn87.VisibleIndex = 57;
             // 
             // gridColumn88
             // 
-            this.gridColumn88.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn88.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn88.AppearanceCell.Options.UseFont = true;
-            this.gridColumn88.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn88.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn88.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn88.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn88.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn88.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn88.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn88.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn88.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn88.Caption = "Color Desc";
             this.gridColumn88.FieldName = "COLORDESC";
             this.gridColumn88.Name = "gridColumn88";
             this.gridColumn88.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn88.Visible = true;
+            this.gridColumn88.VisibleIndex = 58;
             this.gridColumn88.Width = 99;
             // 
             // gridColumn191
             // 
-            this.gridColumn191.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn191.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn191.AppearanceCell.Options.UseFont = true;
-            this.gridColumn191.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn191.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn191.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn191.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn191.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn191.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn191.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn191.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn191.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn191.Caption = "GIA Shape";
             this.gridColumn191.FieldName = "GIASHAPENAME";
             this.gridColumn191.Name = "gridColumn191";
@@ -4423,18 +3144,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn190
             // 
-            this.gridColumn190.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn190.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn190.AppearanceCell.Options.UseFont = true;
-            this.gridColumn190.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn190.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn190.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn190.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn190.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn190.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn190.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn190.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn190.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn190.Caption = "Shape Desc";
             this.gridColumn190.FieldName = "SHAPEDESC";
             this.gridColumn190.Name = "gridColumn190";
@@ -4443,389 +3154,223 @@ namespace MahantExport.Stock
             // 
             // gridColumn89
             // 
-            this.gridColumn89.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn89.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn89.AppearanceCell.Options.UseFont = true;
-            this.gridColumn89.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn89.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn89.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn89.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn89.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn89.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn89.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn89.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn89.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn89.Caption = "SL";
             this.gridColumn89.FieldName = "STARLENGTH";
             this.gridColumn89.Name = "gridColumn89";
             this.gridColumn89.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn89.Visible = true;
+            this.gridColumn89.VisibleIndex = 59;
             this.gridColumn89.Width = 87;
             // 
             // gridColumn90
             // 
-            this.gridColumn90.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn90.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn90.AppearanceCell.Options.UseFont = true;
-            this.gridColumn90.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn90.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn90.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn90.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn90.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn90.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn90.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn90.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn90.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn90.Caption = "LH";
             this.gridColumn90.FieldName = "LOWERHALF";
             this.gridColumn90.Name = "gridColumn90";
             this.gridColumn90.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn90.Visible = true;
+            this.gridColumn90.VisibleIndex = 60;
             // 
             // gridColumn91
             // 
-            this.gridColumn91.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn91.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn91.AppearanceCell.Options.UseFont = true;
-            this.gridColumn91.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn91.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn91.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn91.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn91.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn91.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn91.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn91.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn91.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn91.Caption = "Painting";
             this.gridColumn91.FieldName = "PAINTING";
             this.gridColumn91.Name = "gridColumn91";
             this.gridColumn91.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn91.Visible = true;
+            this.gridColumn91.VisibleIndex = 61;
             // 
             // gridColumn92
             // 
-            this.gridColumn92.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn92.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn92.AppearanceCell.Options.UseFont = true;
-            this.gridColumn92.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn92.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn92.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn92.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn92.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn92.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn92.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn92.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn92.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn92.Caption = "Proportions";
             this.gridColumn92.FieldName = "PROPORTIONS";
             this.gridColumn92.Name = "gridColumn92";
             this.gridColumn92.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn92.Visible = true;
+            this.gridColumn92.VisibleIndex = 62;
             this.gridColumn92.Width = 97;
             // 
             // gridColumn93
             // 
-            this.gridColumn93.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn93.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn93.AppearanceCell.Options.UseFont = true;
-            this.gridColumn93.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn93.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn93.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn93.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn93.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn93.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn93.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn93.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn93.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn93.Caption = "PaintComm";
             this.gridColumn93.FieldName = "PAINTCOMM";
             this.gridColumn93.Name = "gridColumn93";
             this.gridColumn93.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn93.Visible = true;
+            this.gridColumn93.VisibleIndex = 63;
             this.gridColumn93.Width = 89;
             // 
             // gridColumn94
             // 
-            this.gridColumn94.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn94.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn94.AppearanceCell.Options.UseFont = true;
-            this.gridColumn94.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn94.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn94.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn94.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn94.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn94.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn94.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn94.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn94.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn94.Caption = "Report Comm";
             this.gridColumn94.FieldName = "REPORTCOMMENT";
             this.gridColumn94.Name = "gridColumn94";
             this.gridColumn94.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn94.Visible = true;
+            this.gridColumn94.VisibleIndex = 64;
             this.gridColumn94.Width = 90;
             // 
             // gridColumn95
             // 
-            this.gridColumn95.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn95.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn95.AppearanceCell.Options.UseFont = true;
-            this.gridColumn95.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn95.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn95.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn95.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn95.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn95.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn95.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn95.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn95.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn95.Caption = "Inscrp.";
             this.gridColumn95.FieldName = "INSCRIPTION";
             this.gridColumn95.Name = "gridColumn95";
             this.gridColumn95.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn95.Visible = true;
-            this.gridColumn95.VisibleIndex = 42;
+            this.gridColumn95.VisibleIndex = 65;
             // 
             // gridColumn96
             // 
-            this.gridColumn96.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn96.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn96.AppearanceCell.Options.UseFont = true;
-            this.gridColumn96.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn96.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn96.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn96.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn96.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn96.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn96.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn96.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn96.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn96.Caption = "Sync. Ind";
             this.gridColumn96.FieldName = "SYNTHETICINDICATOR";
             this.gridColumn96.Name = "gridColumn96";
             this.gridColumn96.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn96.Visible = true;
+            this.gridColumn96.VisibleIndex = 66;
             // 
             // gridColumn97
             // 
-            this.gridColumn97.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn97.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn97.AppearanceCell.Options.UseFont = true;
-            this.gridColumn97.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn97.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn97.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn97.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn97.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn97.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn97.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn97.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn97.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn97.Caption = "Pol Fea";
             this.gridColumn97.FieldName = "POLISHFEATURES";
             this.gridColumn97.Name = "gridColumn97";
             this.gridColumn97.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn97.Visible = true;
+            this.gridColumn97.VisibleIndex = 67;
             // 
             // gridColumn98
             // 
-            this.gridColumn98.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn98.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn98.AppearanceCell.Options.UseFont = true;
-            this.gridColumn98.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn98.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn98.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn98.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn98.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn98.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn98.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn98.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn98.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn98.Caption = "Sym Fea";
             this.gridColumn98.FieldName = "SYMMETRYFEATURES";
             this.gridColumn98.Name = "gridColumn98";
             this.gridColumn98.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn98.Visible = true;
+            this.gridColumn98.VisibleIndex = 68;
             // 
             // gridColumn99
             // 
-            this.gridColumn99.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn99.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn99.AppearanceCell.Options.UseFont = true;
-            this.gridColumn99.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn99.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn99.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn99.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn99.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn99.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn99.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn99.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn99.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn99.Caption = "Job No";
             this.gridColumn99.FieldName = "JOBNO";
             this.gridColumn99.Name = "gridColumn99";
             this.gridColumn99.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn99.Visible = true;
+            this.gridColumn99.VisibleIndex = 69;
             // 
             // gridColumn102
             // 
-            this.gridColumn102.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn102.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn102.AppearanceCell.Options.UseFont = true;
-            this.gridColumn102.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn102.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn102.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn102.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn102.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn102.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn102.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn102.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn102.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn102.Caption = "Girdle %";
             this.gridColumn102.FieldName = "GIRDLEPER";
             this.gridColumn102.Name = "gridColumn102";
             this.gridColumn102.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn102.Visible = true;
+            this.gridColumn102.VisibleIndex = 70;
             // 
             // gridColumn103
             // 
-            this.gridColumn103.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn103.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn103.AppearanceCell.Options.UseFont = true;
-            this.gridColumn103.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn103.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn103.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn103.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn103.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn103.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn103.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn103.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn103.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn103.Caption = "Girdle Desc";
             this.gridColumn103.FieldName = "GIRDLEDESC";
             this.gridColumn103.Name = "gridColumn103";
             this.gridColumn103.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn103.Visible = true;
+            this.gridColumn103.VisibleIndex = 71;
             this.gridColumn103.Width = 95;
             // 
             // gridColumn104
             // 
-            this.gridColumn104.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn104.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn104.AppearanceCell.Options.UseFont = true;
-            this.gridColumn104.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn104.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn104.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn104.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn104.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn104.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn104.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn104.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn104.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn104.Caption = "GIrdle Condtn";
             this.gridColumn104.FieldName = "GIRDLECONDITION";
             this.gridColumn104.Name = "gridColumn104";
             this.gridColumn104.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn104.Visible = true;
+            this.gridColumn104.VisibleIndex = 72;
             this.gridColumn104.Width = 108;
             // 
             // gridColumn105
             // 
-            this.gridColumn105.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn105.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn105.AppearanceCell.Options.UseFont = true;
-            this.gridColumn105.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn105.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn105.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn105.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn105.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn105.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn105.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn105.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn105.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn105.Caption = "Ratio";
             this.gridColumn105.FieldName = "RATIO";
             this.gridColumn105.Name = "gridColumn105";
             this.gridColumn105.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn105.Visible = true;
-            this.gridColumn105.VisibleIndex = 43;
+            this.gridColumn105.VisibleIndex = 73;
             // 
             // gridColumn106
             // 
-            this.gridColumn106.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn106.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn106.AppearanceCell.Options.UseFont = true;
-            this.gridColumn106.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn106.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn106.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn106.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn106.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn106.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn106.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn106.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn106.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn106.Caption = "F Grd";
             this.gridColumn106.FieldName = "FROMGIRDLE";
             this.gridColumn106.Name = "gridColumn106";
             this.gridColumn106.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn106.Visible = true;
+            this.gridColumn106.VisibleIndex = 74;
             // 
             // gridColumn107
             // 
-            this.gridColumn107.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn107.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn107.AppearanceCell.Options.UseFont = true;
-            this.gridColumn107.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn107.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn107.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn107.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn107.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn107.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn107.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn107.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn107.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn107.Caption = "T Grd";
             this.gridColumn107.FieldName = "TOGIRDLE";
             this.gridColumn107.Name = "gridColumn107";
             this.gridColumn107.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn107.Visible = true;
+            this.gridColumn107.VisibleIndex = 75;
             // 
             // gridColumn108
             // 
-            this.gridColumn108.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn108.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn108.AppearanceCell.Options.UseFont = true;
-            this.gridColumn108.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn108.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn108.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn108.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn108.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn108.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn108.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn108.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn108.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn108.Caption = "Min Dia";
             this.gridColumn108.FieldName = "DIAMIN";
             this.gridColumn108.Name = "gridColumn108";
             this.gridColumn108.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn108.Visible = true;
+            this.gridColumn108.VisibleIndex = 76;
             // 
             // gridColumn109
             // 
-            this.gridColumn109.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn109.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn109.AppearanceCell.Options.UseFont = true;
-            this.gridColumn109.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn109.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn109.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn109.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn109.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn109.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn109.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn109.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn109.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn109.Caption = "Max Dia";
             this.gridColumn109.FieldName = "DIAMAX";
             this.gridColumn109.Name = "gridColumn109";
             this.gridColumn109.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn109.Visible = true;
+            this.gridColumn109.VisibleIndex = 77;
             // 
             // gridColumn110
             // 
-            this.gridColumn110.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn110.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn110.AppearanceCell.Options.UseFont = true;
-            this.gridColumn110.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn110.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn110.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn110.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn110.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn110.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn110.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn110.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn110.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn110.Caption = "GIA Status";
             this.gridColumn110.FieldName = "GIARESULTSTATUS";
             this.gridColumn110.Name = "gridColumn110";
@@ -4833,18 +3378,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn111
             // 
-            this.gridColumn111.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn111.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn111.AppearanceCell.Options.UseFont = true;
-            this.gridColumn111.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn111.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn111.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn111.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn111.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn111.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn111.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn111.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn111.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn111.Caption = "GIA Action";
             this.gridColumn111.FieldName = "GIAACTION";
             this.gridColumn111.Name = "gridColumn111";
@@ -4853,18 +3388,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn112
             // 
-            this.gridColumn112.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn112.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn112.AppearanceCell.Options.UseFont = true;
-            this.gridColumn112.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn112.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn112.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn112.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn112.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn112.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn112.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn112.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn112.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn112.Caption = "ReChk Code";
             this.gridColumn112.FieldName = "GIARECHECKCODE";
             this.gridColumn112.Name = "gridColumn112";
@@ -4873,18 +3398,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn113
             // 
-            this.gridColumn113.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn113.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn113.AppearanceCell.Options.UseFont = true;
-            this.gridColumn113.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn113.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn113.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn113.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn113.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn113.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn113.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn113.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn113.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn113.Caption = "ReChk Date";
             this.gridColumn113.FieldName = "RECHECKDATE";
             this.gridColumn113.Name = "gridColumn113";
@@ -4893,18 +3408,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn114
             // 
-            this.gridColumn114.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn114.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn114.AppearanceCell.Options.UseFont = true;
-            this.gridColumn114.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn114.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn114.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn114.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn114.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn114.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn114.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn114.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn114.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn114.Caption = "Dept";
             this.gridColumn114.FieldName = "DEPARTMENT";
             this.gridColumn114.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
@@ -4914,18 +3419,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn115
             // 
-            this.gridColumn115.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn115.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn115.AppearanceCell.Options.UseFont = true;
-            this.gridColumn115.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn115.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn115.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn115.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn115.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn115.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn115.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn115.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn115.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn115.Caption = "MClarity";
             this.gridColumn115.FieldName = "MFGCLARITY";
             this.gridColumn115.Name = "gridColumn115";
@@ -4933,18 +3428,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn116
             // 
-            this.gridColumn116.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn116.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn116.AppearanceCell.Options.UseFont = true;
-            this.gridColumn116.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn116.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn116.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn116.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn116.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn116.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn116.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn116.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn116.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn116.Caption = "MCol";
             this.gridColumn116.FieldName = "MFGCOLOR";
             this.gridColumn116.Name = "gridColumn116";
@@ -4952,18 +3437,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn117
             // 
-            this.gridColumn117.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn117.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn117.AppearanceCell.Options.UseFont = true;
-            this.gridColumn117.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn117.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn117.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn117.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn117.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn117.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn117.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn117.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn117.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn117.Caption = "MCut";
             this.gridColumn117.FieldName = "MFGCUT";
             this.gridColumn117.Name = "gridColumn117";
@@ -4971,18 +3446,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn119
             // 
-            this.gridColumn119.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn119.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn119.AppearanceCell.Options.UseFont = true;
-            this.gridColumn119.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn119.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn119.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn119.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn119.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn119.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn119.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn119.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn119.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn119.Caption = "MPol";
             this.gridColumn119.FieldName = "MFGPOL";
             this.gridColumn119.Name = "gridColumn119";
@@ -4990,18 +3455,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn120
             // 
-            this.gridColumn120.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn120.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn120.AppearanceCell.Options.UseFont = true;
-            this.gridColumn120.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn120.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn120.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn120.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn120.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn120.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn120.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn120.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn120.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn120.Caption = "MSym";
             this.gridColumn120.FieldName = "MFGSYM";
             this.gridColumn120.Name = "gridColumn120";
@@ -5009,18 +3464,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn121
             // 
-            this.gridColumn121.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn121.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn121.AppearanceCell.Options.UseFont = true;
-            this.gridColumn121.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn121.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn121.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn121.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn121.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn121.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn121.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn121.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn121.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn121.Caption = "MFl";
             this.gridColumn121.FieldName = "MFGFL";
             this.gridColumn121.Name = "gridColumn121";
@@ -5029,107 +3474,67 @@ namespace MahantExport.Stock
             // gridColumn126
             // 
             this.gridColumn126.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.gridColumn126.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn126.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn126.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn126.AppearanceCell.Options.UseFont = true;
-            this.gridColumn126.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn126.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn126.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn126.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn126.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn126.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn126.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn126.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn126.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn126.Caption = "MFGRap";
+            this.gridColumn126.Caption = "VDBRap";
             this.gridColumn126.FieldName = "MFGRAPAPORT";
             this.gridColumn126.Name = "gridColumn126";
             this.gridColumn126.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn126.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
+            this.gridColumn126.Visible = true;
+            this.gridColumn126.VisibleIndex = 32;
             // 
             // gridColumn145
             // 
             this.gridColumn145.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.gridColumn145.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn145.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn145.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn145.AppearanceCell.Options.UseFont = true;
-            this.gridColumn145.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn145.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn145.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn145.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn145.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn145.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn145.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn145.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn145.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn145.Caption = "MFGDisc";
-            this.gridColumn145.FieldName = "MFGDISCOUNT";
+            this.gridColumn145.Caption = "VDBDisc";
+            this.gridColumn145.FieldName = "VDBDISCOUNT";
             this.gridColumn145.Name = "gridColumn145";
             this.gridColumn145.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn145.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
+            this.gridColumn145.Visible = true;
+            this.gridColumn145.VisibleIndex = 33;
             // 
             // gridColumn169
             // 
             this.gridColumn169.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.gridColumn169.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn169.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn169.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn169.AppearanceCell.Options.UseFont = true;
-            this.gridColumn169.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn169.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn169.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn169.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn169.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn169.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn169.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn169.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn169.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn169.Caption = "MFG $/Cts";
-            this.gridColumn169.FieldName = "MFGPRICEPERCARAT";
+            this.gridColumn169.Caption = "VDB $/Cts";
+            this.gridColumn169.FieldName = "VDBPRICEPERCARAT";
             this.gridColumn169.Name = "gridColumn169";
             this.gridColumn169.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn169.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
+            this.gridColumn169.Visible = true;
+            this.gridColumn169.VisibleIndex = 34;
             // 
             // gridColumn170
             // 
             this.gridColumn170.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.gridColumn170.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn170.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn170.AppearanceCell.Options.UseBackColor = true;
-            this.gridColumn170.AppearanceCell.Options.UseFont = true;
-            this.gridColumn170.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn170.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn170.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn170.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn170.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn170.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn170.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn170.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn170.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn170.Caption = "MFGAmt";
-            this.gridColumn170.FieldName = "MFGAMOUNT";
+            this.gridColumn170.Caption = "VDBAmt";
+            this.gridColumn170.FieldName = "VDBAMOUNT";
             this.gridColumn170.Name = "gridColumn170";
             this.gridColumn170.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn170.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
+            this.gridColumn170.Visible = true;
+            this.gridColumn170.VisibleIndex = 35;
             // 
             // gridColumn171
             // 
-            this.gridColumn171.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn171.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn171.AppearanceCell.Options.UseFont = true;
-            this.gridColumn171.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn171.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn171.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn171.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn171.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn171.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn171.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn171.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn171.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn171.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -5138,41 +3543,23 @@ namespace MahantExport.Stock
             this.gridColumn171.Name = "gridColumn171";
             this.gridColumn171.OptionsColumn.AllowEdit = false;
             this.gridColumn171.Visible = true;
-            this.gridColumn171.VisibleIndex = 44;
+            this.gridColumn171.VisibleIndex = 78;
             this.gridColumn171.Width = 85;
             // 
             // gridColumn172
             // 
-            this.gridColumn172.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn172.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn172.AppearanceCell.Options.UseFont = true;
-            this.gridColumn172.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn172.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn172.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn172.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn172.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn172.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn172.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn172.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn172.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn172.Caption = "LABSERVICECODE_ID";
             this.gridColumn172.FieldName = "LABSERVICECODE_ID";
             this.gridColumn172.Name = "gridColumn172";
             // 
             // gridColumn173
             // 
-            this.gridColumn173.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn173.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.gridColumn173.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridColumn173.AppearanceCell.Options.UseFont = true;
-            this.gridColumn173.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn173.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn173.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn173.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn173.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn173.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn173.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn173.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn173.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn173.Caption = "LotName";
             this.gridColumn173.FieldName = "LOTNAME";
             this.gridColumn173.Name = "gridColumn173";
@@ -5183,16 +3570,10 @@ namespace MahantExport.Stock
             this.gridColumn175.AppearanceCell.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridColumn175.AppearanceCell.BackColor2 = System.Drawing.Color.LavenderBlush;
             this.gridColumn175.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn175.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn175.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn175.AppearanceCell.Options.UseFont = true;
-            this.gridColumn175.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn175.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn175.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn175.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn175.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn175.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn175.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn175.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn175.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn175.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -5206,16 +3587,10 @@ namespace MahantExport.Stock
             this.gridColumn176.AppearanceCell.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridColumn176.AppearanceCell.BackColor2 = System.Drawing.Color.LavenderBlush;
             this.gridColumn176.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn176.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn176.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn176.AppearanceCell.Options.UseFont = true;
-            this.gridColumn176.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn176.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn176.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn176.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn176.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn176.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn176.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn176.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn176.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn176.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -5229,16 +3604,10 @@ namespace MahantExport.Stock
             this.gridColumn177.AppearanceCell.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridColumn177.AppearanceCell.BackColor2 = System.Drawing.Color.LavenderBlush;
             this.gridColumn177.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn177.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn177.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn177.AppearanceCell.Options.UseFont = true;
-            this.gridColumn177.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn177.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn177.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn177.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn177.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn177.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn177.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn177.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn177.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn177.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -5252,16 +3621,10 @@ namespace MahantExport.Stock
             this.gridColumn178.AppearanceCell.BackColor = System.Drawing.Color.LavenderBlush;
             this.gridColumn178.AppearanceCell.BackColor2 = System.Drawing.Color.LavenderBlush;
             this.gridColumn178.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn178.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn178.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn178.AppearanceCell.Options.UseFont = true;
-            this.gridColumn178.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn178.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn178.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn178.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn178.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn178.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn178.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn178.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn178.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn178.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -5274,18 +3637,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn179
             // 
-            this.gridColumn179.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn179.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn179.AppearanceCell.Options.UseFont = true;
-            this.gridColumn179.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn179.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn179.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn179.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn179.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn179.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn179.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn179.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn179.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn179.Caption = " ";
             this.gridColumn179.FieldName = "CARTCOUNT";
             this.gridColumn179.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
@@ -5295,22 +3648,14 @@ namespace MahantExport.Stock
             this.gridColumn179.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn179.ToolTip = "Cart Stone Count";
+            this.gridColumn179.Visible = true;
+            this.gridColumn179.VisibleIndex = 85;
             this.gridColumn179.Width = 30;
             // 
             // gridColumn180
             // 
-            this.gridColumn180.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn180.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn180.AppearanceCell.Options.UseFont = true;
-            this.gridColumn180.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn180.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn180.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn180.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn180.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn180.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn180.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn180.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn180.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn180.Caption = " ";
             this.gridColumn180.FieldName = "WISHLISTCOUNT";
             this.gridColumn180.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
@@ -5320,22 +3665,14 @@ namespace MahantExport.Stock
             this.gridColumn180.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn180.ToolTip = "Wishlist Stone Count";
+            this.gridColumn180.Visible = true;
+            this.gridColumn180.VisibleIndex = 84;
             this.gridColumn180.Width = 30;
             // 
             // gridColumn181
             // 
-            this.gridColumn181.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn181.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn181.AppearanceCell.Options.UseFont = true;
-            this.gridColumn181.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn181.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn181.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn181.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn181.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn181.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn181.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn181.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn181.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn181.Caption = " ";
             this.gridColumn181.FieldName = "MOSTVISITEDCOUNT";
             this.gridColumn181.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
@@ -5345,22 +3682,14 @@ namespace MahantExport.Stock
             this.gridColumn181.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn181.ToolTip = "Most Clickable Stone Count";
+            this.gridColumn181.Visible = true;
+            this.gridColumn181.VisibleIndex = 83;
             this.gridColumn181.Width = 30;
             // 
             // gridColumn183
             // 
-            this.gridColumn183.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn183.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn183.AppearanceCell.Options.UseFont = true;
-            this.gridColumn183.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn183.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn183.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn183.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn183.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn183.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn183.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn183.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn183.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn183.Caption = "Sale Min%";
             this.gridColumn183.FieldName = "SALE_MINDISCOUNT";
             this.gridColumn183.Name = "gridColumn183";
@@ -5370,17 +3699,9 @@ namespace MahantExport.Stock
             // gridColumn184
             // 
             this.gridColumn184.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn184.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn184.AppearanceCell.Options.UseFont = true;
-            this.gridColumn184.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn184.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn184.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn184.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn184.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn184.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn184.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn184.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn184.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn184.Caption = "Sale Max%";
             this.gridColumn184.FieldName = "SALE_MAXDISCOUNT";
             this.gridColumn184.Name = "gridColumn184";
@@ -5390,17 +3711,9 @@ namespace MahantExport.Stock
             // gridColumn185
             // 
             this.gridColumn185.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn185.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn185.AppearanceCell.Options.UseFont = true;
-            this.gridColumn185.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn185.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn185.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn185.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn185.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn185.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn185.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn185.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn185.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn185.Caption = "Sale Avg%";
             this.gridColumn185.FieldName = "SALE_AVGDISCOUNT";
             this.gridColumn185.Name = "gridColumn185";
@@ -5410,17 +3723,9 @@ namespace MahantExport.Stock
             // gridColumn186
             // 
             this.gridColumn186.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn186.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn186.AppearanceCell.Options.UseFont = true;
-            this.gridColumn186.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn186.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn186.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn186.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn186.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn186.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn186.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn186.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn186.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn186.Caption = "Sale Min$/Cts";
             this.gridColumn186.FieldName = "SALE_MINPRICEPERCARAT";
             this.gridColumn186.Name = "gridColumn186";
@@ -5430,17 +3735,9 @@ namespace MahantExport.Stock
             // gridColumn187
             // 
             this.gridColumn187.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn187.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn187.AppearanceCell.Options.UseFont = true;
-            this.gridColumn187.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn187.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn187.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn187.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn187.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn187.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn187.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn187.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn187.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn187.Caption = "Sale Max$/Cts";
             this.gridColumn187.FieldName = "SALE_MAXPRICEPERCARAT";
             this.gridColumn187.Name = "gridColumn187";
@@ -5450,17 +3747,9 @@ namespace MahantExport.Stock
             // gridColumn188
             // 
             this.gridColumn188.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn188.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn188.AppearanceCell.Options.UseFont = true;
-            this.gridColumn188.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn188.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn188.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn188.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn188.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn188.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn188.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn188.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn188.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn188.Caption = "Sale Avg$/Cts";
             this.gridColumn188.FieldName = "SALE_AVGPRICEPERCARAT";
             this.gridColumn188.Name = "gridColumn188";
@@ -5469,18 +3758,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn194
             // 
-            this.gridColumn194.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn194.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn194.AppearanceCell.Options.UseFont = true;
-            this.gridColumn194.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn194.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn194.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn194.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn194.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn194.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn194.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn194.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn194.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn194.Caption = "Member Comment";
             this.gridColumn194.FieldName = "MEMBERCOMMENT";
             this.gridColumn194.Name = "gridColumn194";
@@ -5491,15 +3770,9 @@ namespace MahantExport.Stock
             // gridColumn198
             // 
             this.gridColumn198.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn198.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.gridColumn198.AppearanceCell.Options.UseFont = true;
-            this.gridColumn198.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn198.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn198.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn198.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn198.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn198.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn198.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn198.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn198.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn198.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -5511,18 +3784,8 @@ namespace MahantExport.Stock
             // 
             // gridColumn2
             // 
-            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn2.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn2.AppearanceCell.Options.UseFont = true;
-            this.gridColumn2.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn2.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn2.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn2.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn2.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn2.Caption = "SELECTED";
             this.gridColumn2.FieldName = "SELECTED";
             this.gridColumn2.Name = "gridColumn2";
@@ -5530,256 +3793,98 @@ namespace MahantExport.Stock
             // 
             // gridColumn23
             // 
-            this.gridColumn23.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn23.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn23.AppearanceCell.Options.UseFont = true;
-            this.gridColumn23.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn23.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn23.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn23.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn23.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn23.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn23.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn23.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn23.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn23.Caption = "Main Category";
             this.gridColumn23.FieldName = "MAINCATEGORY";
-            this.gridColumn23.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.gridColumn23.Name = "gridColumn23";
             this.gridColumn23.OptionsColumn.AllowEdit = false;
             this.gridColumn23.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn23.Visible = true;
-            this.gridColumn23.VisibleIndex = 4;
+            this.gridColumn23.VisibleIndex = 87;
             this.gridColumn23.Width = 103;
             // 
             // gridColumn52
             // 
-            this.gridColumn52.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn52.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn52.AppearanceCell.Options.UseFont = true;
-            this.gridColumn52.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn52.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn52.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn52.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn52.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn52.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn52.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn52.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn52.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn52.Caption = "Report Date";
             this.gridColumn52.FieldName = "REPORTDATE";
             this.gridColumn52.Name = "gridColumn52";
             this.gridColumn52.OptionsColumn.AllowEdit = false;
             this.gridColumn52.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn52.Visible = true;
-            this.gridColumn52.VisibleIndex = 46;
+            this.gridColumn52.VisibleIndex = 88;
             this.gridColumn52.Width = 87;
             // 
             // gridColumn56
             // 
-            this.gridColumn56.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn56.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn56.AppearanceCell.Options.UseFont = true;
-            this.gridColumn56.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn56.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn56.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn56.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn56.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn56.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn56.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn56.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn56.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn56.Caption = "CO";
             this.gridColumn56.FieldName = "CROWNOPEN";
             this.gridColumn56.Name = "gridColumn56";
             this.gridColumn56.OptionsColumn.AllowEdit = false;
             this.gridColumn56.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn56.Visible = true;
+            this.gridColumn56.VisibleIndex = 89;
             // 
             // gridColumn195
             // 
-            this.gridColumn195.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn195.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn195.AppearanceCell.Options.UseFont = true;
-            this.gridColumn195.AppearanceCell.Options.UseForeColor = true;
             this.gridColumn195.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn195.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn195.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn195.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn195.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn195.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn195.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn195.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn195.Caption = "PO";
             this.gridColumn195.FieldName = "PAVOPEN";
             this.gridColumn195.Name = "gridColumn195";
             this.gridColumn195.OptionsColumn.AllowEdit = false;
             this.gridColumn195.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn195.Visible = true;
+            this.gridColumn195.VisibleIndex = 90;
             // 
             // gridColumn197
             // 
-            this.gridColumn197.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn197.AppearanceCell.Options.UseFont = true;
             this.gridColumn197.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn197.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn197.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn197.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn197.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn197.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn197.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn197.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn197.Caption = "NivodaRapaport";
-            this.gridColumn197.FieldName = "NivodaRapaport";
+            this.gridColumn197.Caption = "Grade";
+            this.gridColumn197.FieldName = "GRADE";
             this.gridColumn197.Name = "gridColumn197";
-            this.gridColumn197.Width = 114;
+            this.gridColumn197.OptionsColumn.AllowEdit = false;
+            this.gridColumn197.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn197.Visible = true;
+            this.gridColumn197.VisibleIndex = 91;
             // 
             // gridColumn199
             // 
-            this.gridColumn199.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn199.AppearanceCell.Options.UseFont = true;
             this.gridColumn199.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn199.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn199.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn199.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn199.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn199.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn199.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn199.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn199.Caption = "NivodaDiscount";
-            this.gridColumn199.FieldName = "NivodaDiscount";
+            this.gridColumn199.Caption = "Comment";
+            this.gridColumn199.FieldName = "CLIENTCOMMENT";
             this.gridColumn199.Name = "gridColumn199";
-            this.gridColumn199.Width = 111;
+            this.gridColumn199.OptionsColumn.AllowEdit = false;
+            this.gridColumn199.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             // 
             // gridColumn202
             // 
-            this.gridColumn202.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn202.AppearanceCell.Options.UseFont = true;
             this.gridColumn202.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn202.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn202.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn202.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn202.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn202.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn202.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn202.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn202.Caption = "NivodaPricePerCarat";
-            this.gridColumn202.FieldName = "NivodaPricePerCarat";
+            this.gridColumn202.Caption = "Price Grade";
+            this.gridColumn202.FieldName = "PRICEGRADE";
             this.gridColumn202.Name = "gridColumn202";
-            this.gridColumn202.Width = 145;
+            this.gridColumn202.OptionsColumn.AllowEdit = false;
+            this.gridColumn202.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             // 
             // gridColumn203
             // 
-            this.gridColumn203.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn203.AppearanceCell.Options.UseFont = true;
             this.gridColumn203.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn203.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn203.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn203.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn203.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn203.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn203.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn203.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn203.Caption = "NivodaAmount";
-            this.gridColumn203.FieldName = "NivodaAmount";
+            this.gridColumn203.Caption = "Diamond Type";
+            this.gridColumn203.FieldName = "DIAMONDTYPE";
             this.gridColumn203.Name = "gridColumn203";
-            this.gridColumn203.Width = 105;
-            // 
-            // gridColumn204
-            // 
-            this.gridColumn204.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn204.AppearanceCell.Options.UseFont = true;
-            this.gridColumn204.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn204.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn204.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn204.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn204.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn204.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn204.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn204.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn204.Caption = "VDBRapaport";
-            this.gridColumn204.FieldName = "VDBRapaport";
-            this.gridColumn204.Name = "gridColumn204";
-            this.gridColumn204.Visible = true;
-            this.gridColumn204.VisibleIndex = 47;
-            this.gridColumn204.Width = 94;
-            // 
-            // gridColumn205
-            // 
-            this.gridColumn205.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn205.AppearanceCell.Options.UseFont = true;
-            this.gridColumn205.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn205.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn205.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn205.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn205.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn205.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn205.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn205.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn205.Caption = "VDBDiscount";
-            this.gridColumn205.FieldName = "VDBDiscount";
-            this.gridColumn205.Name = "gridColumn205";
-            this.gridColumn205.Visible = true;
-            this.gridColumn205.VisibleIndex = 48;
-            this.gridColumn205.Width = 91;
-            // 
-            // gridColumn206
-            // 
-            this.gridColumn206.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn206.AppearanceCell.Options.UseFont = true;
-            this.gridColumn206.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn206.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn206.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn206.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn206.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn206.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn206.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn206.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn206.Caption = "VDBPricePerCarat";
-            this.gridColumn206.FieldName = "VDBPricePerCarat";
-            this.gridColumn206.Name = "gridColumn206";
-            this.gridColumn206.Visible = true;
-            this.gridColumn206.VisibleIndex = 49;
-            this.gridColumn206.Width = 125;
-            // 
-            // gridColumn207
-            // 
-            this.gridColumn207.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn207.AppearanceCell.Options.UseFont = true;
-            this.gridColumn207.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn207.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn207.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn207.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn207.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn207.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn207.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn207.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn207.Caption = "VDBAmount";
-            this.gridColumn207.FieldName = "VDBAmount";
-            this.gridColumn207.Name = "gridColumn207";
-            this.gridColumn207.Visible = true;
-            this.gridColumn207.VisibleIndex = 50;
-            this.gridColumn207.Width = 85;
-            // 
-            // gridColumn208
-            // 
-            this.gridColumn208.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn208.AppearanceCell.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn208.AppearanceCell.Options.UseFont = true;
-            this.gridColumn208.AppearanceCell.Options.UseForeColor = true;
-            this.gridColumn208.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn208.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn208.AppearanceHeader.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.gridColumn208.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
-            this.gridColumn208.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn208.AppearanceHeader.Options.UseForeColor = true;
-            this.gridColumn208.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn208.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn208.Caption = "Sub Category";
-            this.gridColumn208.FieldName = "SUBCATEGORY";
-            this.gridColumn208.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.gridColumn208.Name = "gridColumn208";
-            this.gridColumn208.Visible = true;
-            this.gridColumn208.VisibleIndex = 5;
-            this.gridColumn208.Width = 97;
+            this.gridColumn203.OptionsColumn.AllowEdit = false;
+            this.gridColumn203.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.gridColumn203.Visible = true;
+            this.gridColumn203.VisibleIndex = 2;
+            this.gridColumn203.Width = 103;
             // 
             // repChkNoBlack
             // 
@@ -5807,12 +3912,12 @@ namespace MahantExport.Stock
             // 
             // panel14
             // 
+            this.panel14.Controls.Add(this.BtnGridExport);
             this.panel14.Controls.Add(this.BtnStoneNoRefresh);
             this.panel14.Controls.Add(this.BtnClearFilter);
             this.panel14.Controls.Add(this.lblDefaultLayout);
             this.panel14.Controls.Add(this.lblSaveLayout);
             this.panel14.Controls.Add(this.BtnSelectedPrint);
-            this.panel14.Controls.Add(this.cPanel2);
             this.panel14.Controls.Add(this.BtnMaximize);
             this.panel14.Controls.Add(this.BtnRefresh);
             this.panel14.Controls.Add(this.BtnExport);
@@ -5820,8 +3925,24 @@ namespace MahantExport.Stock
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel14.Location = new System.Drawing.Point(0, 513);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1384, 38);
+            this.panel14.Size = new System.Drawing.Size(1376, 38);
             this.panel14.TabIndex = 182;
+            // 
+            // BtnGridExport
+            // 
+            this.BtnGridExport.Appearance.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.BtnGridExport.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.BtnGridExport.Appearance.Options.UseFont = true;
+            this.BtnGridExport.Appearance.Options.UseForeColor = true;
+            this.BtnGridExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGridExport.ImageOptions.Image")));
+            this.BtnGridExport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnGridExport.ImageOptions.SvgImage")));
+            this.BtnGridExport.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.BtnGridExport.Location = new System.Drawing.Point(621, 6);
+            this.BtnGridExport.Name = "BtnGridExport";
+            this.BtnGridExport.Size = new System.Drawing.Size(130, 30);
+            this.BtnGridExport.TabIndex = 214;
+            this.BtnGridExport.Text = "Grid Export";
+            this.BtnGridExport.Click += new System.EventHandler(this.BtnGridExport_Click);
             // 
             // BtnStoneNoRefresh
             // 
@@ -5832,7 +3953,7 @@ namespace MahantExport.Stock
             this.BtnStoneNoRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnStoneNoRefresh.ImageOptions.Image")));
             this.BtnStoneNoRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnStoneNoRefresh.ImageOptions.SvgImage")));
             this.BtnStoneNoRefresh.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnStoneNoRefresh.Location = new System.Drawing.Point(621, 5);
+            this.BtnStoneNoRefresh.Location = new System.Drawing.Point(755, 6);
             this.BtnStoneNoRefresh.Name = "BtnStoneNoRefresh";
             this.BtnStoneNoRefresh.Size = new System.Drawing.Size(130, 30);
             this.BtnStoneNoRefresh.TabIndex = 213;
@@ -5849,7 +3970,7 @@ namespace MahantExport.Stock
             this.BtnClearFilter.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnClearFilter.ImageOptions.Image")));
             this.BtnClearFilter.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnClearFilter.ImageOptions.SvgImage")));
             this.BtnClearFilter.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnClearFilter.Location = new System.Drawing.Point(501, 5);
+            this.BtnClearFilter.Location = new System.Drawing.Point(502, 6);
             this.BtnClearFilter.Name = "BtnClearFilter";
             this.BtnClearFilter.Size = new System.Drawing.Size(115, 29);
             this.BtnClearFilter.TabIndex = 212;
@@ -5893,46 +4014,12 @@ namespace MahantExport.Stock
             this.BtnSelectedPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSelectedPrint.ImageOptions.Image")));
             this.BtnSelectedPrint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnSelectedPrint.ImageOptions.SvgImage")));
             this.BtnSelectedPrint.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnSelectedPrint.Location = new System.Drawing.Point(214, 4);
+            this.BtnSelectedPrint.Location = new System.Drawing.Point(212, 6);
             this.BtnSelectedPrint.Name = "BtnSelectedPrint";
             this.BtnSelectedPrint.Size = new System.Drawing.Size(88, 31);
             this.BtnSelectedPrint.TabIndex = 187;
             this.BtnSelectedPrint.Text = "Print";
             this.BtnSelectedPrint.Click += new System.EventHandler(this.BtnSelectedPrint_Click);
-            // 
-            // cPanel2
-            // 
-            this.cPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.cPanel2.Controls.Add(this.cFlowLayoutPanel2);
-            this.cPanel2.Controls.Add(this.cLabel2);
-            this.cPanel2.Location = new System.Drawing.Point(814, 2);
-            this.cPanel2.Name = "cPanel2";
-            this.cPanel2.Size = new System.Drawing.Size(397, 36);
-            this.cPanel2.TabIndex = 40;
-            this.cPanel2.Visible = false;
-            // 
-            // cFlowLayoutPanel2
-            // 
-            this.cFlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cFlowLayoutPanel2.Location = new System.Drawing.Point(67, 0);
-            this.cFlowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.cFlowLayoutPanel2.Name = "cFlowLayoutPanel2";
-            this.cFlowLayoutPanel2.Size = new System.Drawing.Size(326, 32);
-            this.cFlowLayoutPanel2.TabIndex = 36;
-            // 
-            // cLabel2
-            // 
-            this.cLabel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cLabel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cLabel2.ForeColor = System.Drawing.Color.Navy;
-            this.cLabel2.Location = new System.Drawing.Point(0, 0);
-            this.cLabel2.Name = "cLabel2";
-            this.cLabel2.Size = new System.Drawing.Size(67, 32);
-            this.cLabel2.TabIndex = 37;
-            this.cLabel2.Text = "No BGM";
-            this.cLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cLabel2.ToolTips = "";
             // 
             // BtnMaximize
             // 
@@ -5943,7 +4030,7 @@ namespace MahantExport.Stock
             this.BtnMaximize.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnMaximize.ImageOptions.Image")));
             this.BtnMaximize.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnMaximize.ImageOptions.SvgImage")));
             this.BtnMaximize.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnMaximize.Location = new System.Drawing.Point(396, 5);
+            this.BtnMaximize.Location = new System.Drawing.Point(396, 6);
             this.BtnMaximize.Name = "BtnMaximize";
             this.BtnMaximize.Size = new System.Drawing.Size(102, 29);
             this.BtnMaximize.TabIndex = 183;
@@ -5959,7 +4046,7 @@ namespace MahantExport.Stock
             this.BtnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnRefresh.ImageOptions.Image")));
             this.BtnRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnRefresh.ImageOptions.SvgImage")));
             this.BtnRefresh.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnRefresh.Location = new System.Drawing.Point(3, 4);
+            this.BtnRefresh.Location = new System.Drawing.Point(3, 6);
             this.BtnRefresh.Name = "BtnRefresh";
             this.BtnRefresh.Size = new System.Drawing.Size(102, 31);
             this.BtnRefresh.TabIndex = 183;
@@ -5975,7 +4062,7 @@ namespace MahantExport.Stock
             this.BtnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnExport.ImageOptions.Image")));
             this.BtnExport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnExport.ImageOptions.SvgImage")));
             this.BtnExport.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnExport.Location = new System.Drawing.Point(110, 4);
+            this.BtnExport.Location = new System.Drawing.Point(109, 6);
             this.BtnExport.Name = "BtnExport";
             this.BtnExport.Size = new System.Drawing.Size(99, 31);
             this.BtnExport.TabIndex = 186;
@@ -5991,7 +4078,7 @@ namespace MahantExport.Stock
             this.BtnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.ImageOptions.Image")));
             this.BtnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnExit.ImageOptions.SvgImage")));
             this.BtnExit.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnExit.Location = new System.Drawing.Point(305, 4);
+            this.BtnExit.Location = new System.Drawing.Point(304, 6);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(88, 31);
             this.BtnExit.TabIndex = 184;
@@ -6006,7 +4093,7 @@ namespace MahantExport.Stock
             this.PanelParameter.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelParameter.Location = new System.Drawing.Point(0, 0);
             this.PanelParameter.Name = "PanelParameter";
-            this.PanelParameter.Size = new System.Drawing.Size(1384, 246);
+            this.PanelParameter.Size = new System.Drawing.Size(1376, 246);
             this.PanelParameter.TabIndex = 90;
             // 
             // xtraTabControl1
@@ -6015,11 +4102,11 @@ namespace MahantExport.Stock
             this.xtraTabControl1.AppearancePage.HeaderActive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.xtraTabControl1.AppearancePage.HeaderActive.Options.UseFont = true;
             this.xtraTabControl1.AppearancePage.HeaderActive.Options.UseForeColor = true;
-            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.xtraTabControl1.Location = new System.Drawing.Point(961, 0);
+            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl1.Location = new System.Drawing.Point(762, 0);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage3;
-            this.xtraTabControl1.Size = new System.Drawing.Size(423, 246);
+            this.xtraTabControl1.Size = new System.Drawing.Size(614, 246);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -6039,7 +4126,7 @@ namespace MahantExport.Stock
             this.xtraTabPage3.Controls.Add(this.BtnLabIssue);
             this.xtraTabPage3.Controls.Add(this.BtnLabReturn);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(421, 221);
+            this.xtraTabPage3.Size = new System.Drawing.Size(610, 222);
             this.xtraTabPage3.Text = "STATUS";
             // 
             // panel13
@@ -6048,9 +4135,9 @@ namespace MahantExport.Stock
             this.panel13.Controls.Add(this.PanelLocation);
             this.panel13.Controls.Add(this.cLabel6);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(522, 0);
+            this.panel13.Location = new System.Drawing.Point(521, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(80, 221);
+            this.panel13.Size = new System.Drawing.Size(80, 222);
             this.panel13.TabIndex = 41;
             this.panel13.Visible = false;
             // 
@@ -6062,7 +4149,7 @@ namespace MahantExport.Stock
             this.PanelLocation.Location = new System.Drawing.Point(0, 13);
             this.PanelLocation.Margin = new System.Windows.Forms.Padding(0);
             this.PanelLocation.Name = "PanelLocation";
-            this.PanelLocation.Size = new System.Drawing.Size(78, 206);
+            this.PanelLocation.Size = new System.Drawing.Size(78, 207);
             this.PanelLocation.TabIndex = 35;
             // 
             // cFlowLayoutPanel1
@@ -6094,9 +4181,9 @@ namespace MahantExport.Stock
             this.panel12.Controls.Add(this.ListGetLocation);
             this.panel12.Controls.Add(this.cLabel5);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel12.Location = new System.Drawing.Point(421, 0);
+            this.panel12.Location = new System.Drawing.Point(420, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(101, 221);
+            this.panel12.Size = new System.Drawing.Size(101, 222);
             this.panel12.TabIndex = 40;
             // 
             // ListGetLocation
@@ -6109,8 +4196,9 @@ namespace MahantExport.Stock
             this.ListGetLocation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListGetLocation.HeaderText = "Location";
             this.ListGetLocation.Location = new System.Drawing.Point(0, 13);
+            this.ListGetLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ListGetLocation.Name = "ListGetLocation";
-            this.ListGetLocation.Size = new System.Drawing.Size(99, 206);
+            this.ListGetLocation.Size = new System.Drawing.Size(99, 207);
             this.ListGetLocation.TabIndex = 208;
             this.ListGetLocation.ToolTips = "";
             this.ListGetLocation.ValueMember = null;
@@ -6129,7 +4217,7 @@ namespace MahantExport.Stock
             this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.Location = new System.Drawing.Point(0, 0);
             this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.Name = "object_664e9df3_1a7c_4a57_a772_40528b1b3f10";
-            this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.Size = new System.Drawing.Size(97, 204);
+            this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.Size = new System.Drawing.Size(97, 205);
             this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.TabIndex = 182;
             this.object_664e9df3_1a7c_4a57_a772_40528b1b3f10.Text = "C-Shade";
             // 
@@ -6185,7 +4273,7 @@ namespace MahantExport.Stock
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(124, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(297, 221);
+            this.panel4.Size = new System.Drawing.Size(296, 222);
             this.panel4.TabIndex = 39;
             // 
             // btnRemoveExcusive
@@ -6257,9 +4345,9 @@ namespace MahantExport.Stock
             this.BtnPurchaseReturn.Appearance.Options.UseForeColor = true;
             this.BtnPurchaseReturn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnPurchaseReturn.ImageOptions.SvgImage")));
             this.BtnPurchaseReturn.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPurchaseReturn.Location = new System.Drawing.Point(130, 248);
+            this.BtnPurchaseReturn.Location = new System.Drawing.Point(146, 297);
             this.BtnPurchaseReturn.Name = "BtnPurchaseReturn";
-            this.BtnPurchaseReturn.Size = new System.Drawing.Size(146, 34);
+            this.BtnPurchaseReturn.Size = new System.Drawing.Size(122, 34);
             this.BtnPurchaseReturn.TabIndex = 200;
             this.BtnPurchaseReturn.Text = "Purchase Return";
             this.BtnPurchaseReturn.Visible = false;
@@ -6427,7 +4515,7 @@ namespace MahantExport.Stock
             this.cLabel4.ForeColor = System.Drawing.Color.Black;
             this.cLabel4.Location = new System.Drawing.Point(0, 0);
             this.cLabel4.Name = "cLabel4";
-            this.cLabel4.Size = new System.Drawing.Size(278, 13);
+            this.cLabel4.Size = new System.Drawing.Size(277, 13);
             this.cLabel4.TabIndex = 38;
             this.cLabel4.Text = "SET";
             this.cLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -6441,7 +4529,7 @@ namespace MahantExport.Stock
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(124, 221);
+            this.panel3.Size = new System.Drawing.Size(124, 222);
             this.panel3.TabIndex = 0;
             // 
             // ListStatus
@@ -6454,8 +4542,9 @@ namespace MahantExport.Stock
             this.ListStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListStatus.HeaderText = "Status";
             this.ListStatus.Location = new System.Drawing.Point(0, 13);
+            this.ListStatus.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ListStatus.Name = "ListStatus";
-            this.ListStatus.Size = new System.Drawing.Size(122, 206);
+            this.ListStatus.Size = new System.Drawing.Size(122, 207);
             this.ListStatus.TabIndex = 194;
             this.ListStatus.ToolTips = "";
             this.ListStatus.ValueMember = null;
@@ -6476,7 +4565,7 @@ namespace MahantExport.Stock
             this.GrpList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GrpList.Location = new System.Drawing.Point(0, 0);
             this.GrpList.Name = "GrpList";
-            this.GrpList.Size = new System.Drawing.Size(120, 204);
+            this.GrpList.Size = new System.Drawing.Size(120, 205);
             this.GrpList.TabIndex = 182;
             this.GrpList.Text = "Status";
             // 
@@ -6546,7 +4635,7 @@ namespace MahantExport.Stock
             this.xtraTabPage1.Controls.Add(this.panel21);
             this.xtraTabPage1.Controls.Add(this.panel18);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(421, 221);
+            this.xtraTabPage1.Size = new System.Drawing.Size(612, 221);
             this.xtraTabPage1.Text = "MESSAGE";
             // 
             // panel21
@@ -6620,8 +4709,7 @@ namespace MahantExport.Stock
             // 
             this.xtraTabPage2.Controls.Add(this.panel15);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.PageVisible = false;
-            this.xtraTabPage2.Size = new System.Drawing.Size(421, 221);
+            this.xtraTabPage2.Size = new System.Drawing.Size(612, 221);
             this.xtraTabPage2.Text = "SELECTION";
             // 
             // panel15
@@ -6644,7 +4732,7 @@ namespace MahantExport.Stock
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(421, 221);
+            this.panel15.Size = new System.Drawing.Size(612, 221);
             this.panel15.TabIndex = 1;
             // 
             // txtAddStone7
@@ -6841,7 +4929,7 @@ namespace MahantExport.Stock
             this.toggleSwitch2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.toggleSwitch2.Properties.OffText = "All Stone";
             this.toggleSwitch2.Properties.OnText = "Selected";
-            this.toggleSwitch2.Size = new System.Drawing.Size(130, 21);
+            this.toggleSwitch2.Size = new System.Drawing.Size(130, 27);
             this.toggleSwitch2.TabIndex = 39;
             this.toggleSwitch2.Toggled += new System.EventHandler(this.toggleSwitch2_Toggled);
             this.toggleSwitch2.Click += new System.EventHandler(this.toggleSwitch2_Click);
@@ -6925,8 +5013,7 @@ namespace MahantExport.Stock
             this.xtraTabPage4.Controls.Add(this.groupControl1);
             this.xtraTabPage4.Controls.Add(this.groupControl2);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.PageVisible = false;
-            this.xtraTabPage4.Size = new System.Drawing.Size(421, 221);
+            this.xtraTabPage4.Size = new System.Drawing.Size(612, 221);
             this.xtraTabPage4.Text = "AD SEARCH";
             // 
             // txtToTableDepthPer
@@ -7380,7 +5467,7 @@ namespace MahantExport.Stock
             // 
             this.xtraTabPage6.Controls.Add(this.BtnSendEmail);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(421, 221);
+            this.xtraTabPage6.Size = new System.Drawing.Size(612, 221);
             this.xtraTabPage6.Text = "EMAIL";
             // 
             // BtnSendEmail
@@ -7401,7 +5488,7 @@ namespace MahantExport.Stock
             // 
             this.xtraTabPage8.Controls.Add(this.panel16);
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(421, 221);
+            this.xtraTabPage8.Size = new System.Drawing.Size(612, 221);
             this.xtraTabPage8.Text = "STATUS COLOR";
             this.xtraTabPage8.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage8_Paint);
             // 
@@ -7440,7 +5527,7 @@ namespace MahantExport.Stock
             this.panel16.ForeColor = System.Drawing.Color.White;
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(421, 221);
+            this.panel16.Size = new System.Drawing.Size(612, 221);
             this.panel16.TabIndex = 182;
             // 
             // lblSingleToParcel
@@ -7801,6 +5888,8 @@ namespace MahantExport.Stock
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.GrpSelectCarat);
+            this.panel2.Controls.Add(this.PanelGrdCts);
             this.panel2.Controls.Add(this.cPanel3);
             this.panel2.Controls.Add(this.cPanel5);
             this.panel2.Controls.Add(this.panel19);
@@ -7812,12 +5901,216 @@ namespace MahantExport.Stock
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel10);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1384, 246);
+            this.panel2.Size = new System.Drawing.Size(762, 246);
             this.panel2.TabIndex = 41;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // GrpSelectCarat
+            // 
+            this.GrpSelectCarat.Controls.Add(this.BtnSelectedCts);
+            this.GrpSelectCarat.Controls.Add(this.PanelSize);
+            this.GrpSelectCarat.Location = new System.Drawing.Point(585, 32);
+            this.GrpSelectCarat.Name = "GrpSelectCarat";
+            this.GrpSelectCarat.Size = new System.Drawing.Size(176, 135);
+            this.GrpSelectCarat.TabIndex = 0;
+            this.GrpSelectCarat.Text = "Select Cts";
+            this.GrpSelectCarat.Visible = false;
+            // 
+            // BtnSelectedCts
+            // 
+            this.BtnSelectedCts.Appearance.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.BtnSelectedCts.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.BtnSelectedCts.Appearance.Options.UseFont = true;
+            this.BtnSelectedCts.Appearance.Options.UseForeColor = true;
+            this.BtnSelectedCts.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSelectedCts.ImageOptions.Image")));
+            this.BtnSelectedCts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnSelectedCts.ImageOptions.SvgImage")));
+            this.BtnSelectedCts.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.BtnSelectedCts.Location = new System.Drawing.Point(144, 0);
+            this.BtnSelectedCts.Name = "BtnSelectedCts";
+            this.BtnSelectedCts.Size = new System.Drawing.Size(28, 20);
+            this.BtnSelectedCts.TabIndex = 185;
+            this.BtnSelectedCts.Click += new System.EventHandler(this.BtnSelectedCts_Click_1);
+            // 
+            // PanelSize
+            // 
+            this.PanelSize.AutoScroll = true;
+            this.PanelSize.BackColor = System.Drawing.Color.White;
+            this.PanelSize.Controls.Add(this.txtFromCts5);
+            this.PanelSize.Controls.Add(this.txtToCts5);
+            this.PanelSize.Controls.Add(this.txtFromCts4);
+            this.PanelSize.Controls.Add(this.txtToCts4);
+            this.PanelSize.Controls.Add(this.txtFromCts3);
+            this.PanelSize.Controls.Add(this.txtToCts3);
+            this.PanelSize.Controls.Add(this.txtFromCts2);
+            this.PanelSize.Controls.Add(this.txtToCts2);
+            this.PanelSize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelSize.Location = new System.Drawing.Point(2, 23);
+            this.PanelSize.Name = "PanelSize";
+            this.PanelSize.Size = new System.Drawing.Size(172, 110);
+            this.PanelSize.TabIndex = 183;
+            // 
+            // txtFromCts5
+            // 
+            this.txtFromCts5.ActivationColor = true;
+            this.txtFromCts5.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtFromCts5.AllowTabKeyOnEnter = false;
+            this.txtFromCts5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFromCts5.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtFromCts5.Format = "";
+            this.txtFromCts5.IsComplusory = false;
+            this.txtFromCts5.Location = new System.Drawing.Point(4, 83);
+            this.txtFromCts5.MaxLength = 100;
+            this.txtFromCts5.Name = "txtFromCts5";
+            this.txtFromCts5.SelectAllTextOnFocus = true;
+            this.txtFromCts5.Size = new System.Drawing.Size(80, 20);
+            this.txtFromCts5.TabIndex = 233;
+            this.txtFromCts5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFromCts5.ToolTips = "";
+            this.txtFromCts5.WaterMarkText = null;
+            // 
+            // txtToCts5
+            // 
+            this.txtToCts5.ActivationColor = true;
+            this.txtToCts5.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtToCts5.AllowTabKeyOnEnter = false;
+            this.txtToCts5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtToCts5.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtToCts5.Format = "";
+            this.txtToCts5.IsComplusory = false;
+            this.txtToCts5.Location = new System.Drawing.Point(90, 83);
+            this.txtToCts5.MaxLength = 100;
+            this.txtToCts5.Name = "txtToCts5";
+            this.txtToCts5.SelectAllTextOnFocus = true;
+            this.txtToCts5.Size = new System.Drawing.Size(80, 20);
+            this.txtToCts5.TabIndex = 234;
+            this.txtToCts5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtToCts5.ToolTips = "";
+            this.txtToCts5.WaterMarkText = null;
+            // 
+            // txtFromCts4
+            // 
+            this.txtFromCts4.ActivationColor = true;
+            this.txtFromCts4.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtFromCts4.AllowTabKeyOnEnter = false;
+            this.txtFromCts4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFromCts4.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtFromCts4.Format = "";
+            this.txtFromCts4.IsComplusory = false;
+            this.txtFromCts4.Location = new System.Drawing.Point(4, 57);
+            this.txtFromCts4.MaxLength = 100;
+            this.txtFromCts4.Name = "txtFromCts4";
+            this.txtFromCts4.SelectAllTextOnFocus = true;
+            this.txtFromCts4.Size = new System.Drawing.Size(80, 20);
+            this.txtFromCts4.TabIndex = 231;
+            this.txtFromCts4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFromCts4.ToolTips = "";
+            this.txtFromCts4.WaterMarkText = null;
+            // 
+            // txtToCts4
+            // 
+            this.txtToCts4.ActivationColor = true;
+            this.txtToCts4.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtToCts4.AllowTabKeyOnEnter = false;
+            this.txtToCts4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtToCts4.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtToCts4.Format = "";
+            this.txtToCts4.IsComplusory = false;
+            this.txtToCts4.Location = new System.Drawing.Point(90, 57);
+            this.txtToCts4.MaxLength = 100;
+            this.txtToCts4.Name = "txtToCts4";
+            this.txtToCts4.SelectAllTextOnFocus = true;
+            this.txtToCts4.Size = new System.Drawing.Size(80, 20);
+            this.txtToCts4.TabIndex = 232;
+            this.txtToCts4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtToCts4.ToolTips = "";
+            this.txtToCts4.WaterMarkText = null;
+            // 
+            // txtFromCts3
+            // 
+            this.txtFromCts3.ActivationColor = true;
+            this.txtFromCts3.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtFromCts3.AllowTabKeyOnEnter = false;
+            this.txtFromCts3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFromCts3.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtFromCts3.Format = "";
+            this.txtFromCts3.IsComplusory = false;
+            this.txtFromCts3.Location = new System.Drawing.Point(4, 31);
+            this.txtFromCts3.MaxLength = 100;
+            this.txtFromCts3.Name = "txtFromCts3";
+            this.txtFromCts3.SelectAllTextOnFocus = true;
+            this.txtFromCts3.Size = new System.Drawing.Size(80, 20);
+            this.txtFromCts3.TabIndex = 229;
+            this.txtFromCts3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFromCts3.ToolTips = "";
+            this.txtFromCts3.WaterMarkText = null;
+            // 
+            // txtToCts3
+            // 
+            this.txtToCts3.ActivationColor = true;
+            this.txtToCts3.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtToCts3.AllowTabKeyOnEnter = false;
+            this.txtToCts3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtToCts3.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtToCts3.Format = "";
+            this.txtToCts3.IsComplusory = false;
+            this.txtToCts3.Location = new System.Drawing.Point(90, 31);
+            this.txtToCts3.MaxLength = 100;
+            this.txtToCts3.Name = "txtToCts3";
+            this.txtToCts3.SelectAllTextOnFocus = true;
+            this.txtToCts3.Size = new System.Drawing.Size(80, 20);
+            this.txtToCts3.TabIndex = 230;
+            this.txtToCts3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtToCts3.ToolTips = "";
+            this.txtToCts3.WaterMarkText = null;
+            // 
+            // txtFromCts2
+            // 
+            this.txtFromCts2.ActivationColor = true;
+            this.txtFromCts2.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtFromCts2.AllowTabKeyOnEnter = false;
+            this.txtFromCts2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFromCts2.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtFromCts2.Format = "";
+            this.txtFromCts2.IsComplusory = false;
+            this.txtFromCts2.Location = new System.Drawing.Point(4, 6);
+            this.txtFromCts2.MaxLength = 100;
+            this.txtFromCts2.Name = "txtFromCts2";
+            this.txtFromCts2.SelectAllTextOnFocus = true;
+            this.txtFromCts2.Size = new System.Drawing.Size(80, 20);
+            this.txtFromCts2.TabIndex = 227;
+            this.txtFromCts2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFromCts2.ToolTips = "";
+            this.txtFromCts2.WaterMarkText = null;
+            // 
+            // txtToCts2
+            // 
+            this.txtToCts2.ActivationColor = true;
+            this.txtToCts2.ActivationColorCode = System.Drawing.Color.Empty;
+            this.txtToCts2.AllowTabKeyOnEnter = false;
+            this.txtToCts2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtToCts2.Font = new System.Drawing.Font("Verdana", 8F);
+            this.txtToCts2.Format = "";
+            this.txtToCts2.IsComplusory = false;
+            this.txtToCts2.Location = new System.Drawing.Point(90, 6);
+            this.txtToCts2.MaxLength = 100;
+            this.txtToCts2.Name = "txtToCts2";
+            this.txtToCts2.SelectAllTextOnFocus = true;
+            this.txtToCts2.Size = new System.Drawing.Size(80, 20);
+            this.txtToCts2.TabIndex = 228;
+            this.txtToCts2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtToCts2.ToolTips = "";
+            this.txtToCts2.WaterMarkText = null;
+            // 
+            // PanelGrdCts
+            // 
+            this.PanelGrdCts.Location = new System.Drawing.Point(583, 33);
+            this.PanelGrdCts.Margin = new System.Windows.Forms.Padding(0);
+            this.PanelGrdCts.Name = "PanelGrdCts";
+            this.PanelGrdCts.Size = new System.Drawing.Size(180, 135);
+            this.PanelGrdCts.TabIndex = 36;
             // 
             // cPanel3
             // 
@@ -7833,7 +6126,6 @@ namespace MahantExport.Stock
             // PanelDiamondType
             // 
             this.PanelDiamondType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelDiamondType.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelDiamondType.Location = new System.Drawing.Point(51, 0);
             this.PanelDiamondType.Margin = new System.Windows.Forms.Padding(0);
             this.PanelDiamondType.Name = "PanelDiamondType";
@@ -7861,16 +6153,15 @@ namespace MahantExport.Stock
             this.cPanel5.Controls.Add(this.cLabel16);
             this.cPanel5.Location = new System.Drawing.Point(1, 31);
             this.cPanel5.Name = "cPanel5";
-            this.cPanel5.Size = new System.Drawing.Size(1007, 34);
+            this.cPanel5.Size = new System.Drawing.Size(584, 34);
             this.cPanel5.TabIndex = 39;
             // 
             // PanelSizeNew
             // 
-            this.PanelSizeNew.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelSizeNew.Location = new System.Drawing.Point(50, 0);
             this.PanelSizeNew.Margin = new System.Windows.Forms.Padding(0);
             this.PanelSizeNew.Name = "PanelSizeNew";
-            this.PanelSizeNew.Size = new System.Drawing.Size(949, 30);
+            this.PanelSizeNew.Size = new System.Drawing.Size(706, 30);
             this.PanelSizeNew.TabIndex = 35;
             // 
             // cLabel16
@@ -7892,7 +6183,7 @@ namespace MahantExport.Stock
             this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel19.Location = new System.Drawing.Point(0, 0);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(1384, 32);
+            this.panel19.Size = new System.Drawing.Size(762, 32);
             this.panel19.TabIndex = 40;
             // 
             // cPanel4
@@ -7900,12 +6191,12 @@ namespace MahantExport.Stock
             this.cPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cPanel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.cPanel4.Controls.Add(this.txtStoneNo);
-            this.cPanel4.Controls.Add(this.cLabel17);
             this.cPanel4.Controls.Add(this.cFlowLayoutPanel3);
+            this.cPanel4.Controls.Add(this.cLabel17);
             this.cPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cPanel4.Location = new System.Drawing.Point(0, 0);
             this.cPanel4.Name = "cPanel4";
-            this.cPanel4.Size = new System.Drawing.Size(1384, 32);
+            this.cPanel4.Size = new System.Drawing.Size(762, 32);
             this.cPanel4.TabIndex = 40;
             // 
             // txtStoneNo
@@ -7914,6 +6205,7 @@ namespace MahantExport.Stock
             this.txtStoneNo.ActivationColorCode = System.Drawing.Color.Empty;
             this.txtStoneNo.AllowTabKeyOnEnter = false;
             this.txtStoneNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStoneNo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtStoneNo.Font = new System.Drawing.Font("Verdana", 8F);
             this.txtStoneNo.Format = "";
             this.txtStoneNo.IsComplusory = false;
@@ -7922,7 +6214,7 @@ namespace MahantExport.Stock
             this.txtStoneNo.Name = "txtStoneNo";
             this.txtStoneNo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtStoneNo.SelectAllTextOnFocus = true;
-            this.txtStoneNo.Size = new System.Drawing.Size(606, 28);
+            this.txtStoneNo.Size = new System.Drawing.Size(401, 28);
             this.txtStoneNo.TabIndex = 205;
             this.txtStoneNo.ToolTips = "";
             this.txtStoneNo.WaterMarkText = null;
@@ -7931,32 +6223,18 @@ namespace MahantExport.Stock
             this.txtStoneNo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtStoneNo_MouseDown);
             this.txtStoneNo.Validated += new System.EventHandler(this.txtStoneNo_Validated);
             // 
-            // cLabel17
-            // 
-            this.cLabel17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cLabel17.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cLabel17.ForeColor = System.Drawing.Color.Navy;
-            this.cLabel17.Location = new System.Drawing.Point(0, 0);
-            this.cLabel17.Name = "cLabel17";
-            this.cLabel17.Size = new System.Drawing.Size(143, 28);
-            this.cLabel17.TabIndex = 37;
-            this.cLabel17.Text = "Stone ID/Report No";
-            this.cLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cLabel17.ToolTips = "";
-            // 
             // cFlowLayoutPanel3
             // 
             this.cFlowLayoutPanel3.Controls.Add(this.cLabel18);
             this.cFlowLayoutPanel3.Controls.Add(this.txtFromCts1);
             this.cFlowLayoutPanel3.Controls.Add(this.txtToCts1);
             this.cFlowLayoutPanel3.Controls.Add(this.BtnCtsSelection);
-            this.cFlowLayoutPanel3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cFlowLayoutPanel3.Location = new System.Drawing.Point(745, 1);
+            this.cFlowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.cFlowLayoutPanel3.Location = new System.Drawing.Point(544, 0);
             this.cFlowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.cFlowLayoutPanel3.Name = "cFlowLayoutPanel3";
             this.cFlowLayoutPanel3.Size = new System.Drawing.Size(214, 28);
             this.cFlowLayoutPanel3.TabIndex = 37;
-            this.cFlowLayoutPanel3.Visible = false;
             // 
             // cLabel18
             // 
@@ -8023,6 +6301,19 @@ namespace MahantExport.Stock
             this.BtnCtsSelection.Text = "...";
             this.BtnCtsSelection.Click += new System.EventHandler(this.BtnCtsSelection_Click);
             // 
+            // cLabel17
+            // 
+            this.cLabel17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cLabel17.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cLabel17.ForeColor = System.Drawing.Color.Navy;
+            this.cLabel17.Location = new System.Drawing.Point(0, 0);
+            this.cLabel17.Name = "cLabel17";
+            this.cLabel17.Size = new System.Drawing.Size(143, 28);
+            this.cLabel17.TabIndex = 37;
+            this.cLabel17.Text = "Stone ID/Report No";
+            this.cLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cLabel17.ToolTips = "";
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -8031,16 +6322,15 @@ namespace MahantExport.Stock
             this.panel5.Controls.Add(this.cLabel20);
             this.panel5.Location = new System.Drawing.Point(1, 65);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1007, 34);
+            this.panel5.Size = new System.Drawing.Size(584, 35);
             this.panel5.TabIndex = 38;
             // 
             // PanelShape
             // 
-            this.PanelShape.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PanelShape.Location = new System.Drawing.Point(50, 0);
+            this.PanelShape.Location = new System.Drawing.Point(51, 0);
             this.PanelShape.Margin = new System.Windows.Forms.Padding(0);
             this.PanelShape.Name = "PanelShape";
-            this.PanelShape.Size = new System.Drawing.Size(949, 30);
+            this.PanelShape.Size = new System.Drawing.Size(706, 31);
             this.PanelShape.TabIndex = 35;
             // 
             // cLabel20
@@ -8050,7 +6340,7 @@ namespace MahantExport.Stock
             this.cLabel20.ForeColor = System.Drawing.Color.Navy;
             this.cLabel20.Location = new System.Drawing.Point(0, 0);
             this.cLabel20.Name = "cLabel20";
-            this.cLabel20.Size = new System.Drawing.Size(51, 30);
+            this.cLabel20.Size = new System.Drawing.Size(51, 31);
             this.cLabel20.TabIndex = 37;
             this.cLabel20.Text = "Shape";
             this.cLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -8064,16 +6354,15 @@ namespace MahantExport.Stock
             this.panel6.Controls.Add(this.cLabel21);
             this.panel6.Location = new System.Drawing.Point(2, 100);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1007, 34);
+            this.panel6.Size = new System.Drawing.Size(583, 35);
             this.panel6.TabIndex = 38;
             // 
             // PanelColor
             // 
-            this.PanelColor.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelColor.Location = new System.Drawing.Point(50, 0);
             this.PanelColor.Margin = new System.Windows.Forms.Padding(0);
             this.PanelColor.Name = "PanelColor";
-            this.PanelColor.Size = new System.Drawing.Size(949, 30);
+            this.PanelColor.Size = new System.Drawing.Size(705, 31);
             this.PanelColor.TabIndex = 35;
             // 
             // cLabel21
@@ -8083,7 +6372,7 @@ namespace MahantExport.Stock
             this.cLabel21.ForeColor = System.Drawing.Color.Navy;
             this.cLabel21.Location = new System.Drawing.Point(0, 0);
             this.cLabel21.Name = "cLabel21";
-            this.cLabel21.Size = new System.Drawing.Size(50, 30);
+            this.cLabel21.Size = new System.Drawing.Size(50, 31);
             this.cLabel21.TabIndex = 37;
             this.cLabel21.Text = "Color";
             this.cLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -8097,17 +6386,16 @@ namespace MahantExport.Stock
             this.cPanel1.Controls.Add(this.cLabel1);
             this.cPanel1.Location = new System.Drawing.Point(2, 169);
             this.cPanel1.Name = "cPanel1";
-            this.cPanel1.Size = new System.Drawing.Size(261, 37);
+            this.cPanel1.Size = new System.Drawing.Size(305, 37);
             this.cPanel1.TabIndex = 39;
             // 
             // PanelLab
             // 
             this.PanelLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelLab.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelLab.Location = new System.Drawing.Point(51, 0);
             this.PanelLab.Margin = new System.Windows.Forms.Padding(0);
             this.PanelLab.Name = "PanelLab";
-            this.PanelLab.Size = new System.Drawing.Size(206, 33);
+            this.PanelLab.Size = new System.Drawing.Size(250, 33);
             this.PanelLab.TabIndex = 35;
             // 
             // cLabel1
@@ -8131,16 +6419,15 @@ namespace MahantExport.Stock
             this.panel7.Controls.Add(this.cLabel22);
             this.panel7.Location = new System.Drawing.Point(2, 134);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1007, 34);
+            this.panel7.Size = new System.Drawing.Size(583, 36);
             this.panel7.TabIndex = 38;
             // 
             // PanelClarity
             // 
-            this.PanelClarity.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelClarity.Location = new System.Drawing.Point(51, 0);
             this.PanelClarity.Margin = new System.Windows.Forms.Padding(0);
             this.PanelClarity.Name = "PanelClarity";
-            this.PanelClarity.Size = new System.Drawing.Size(949, 30);
+            this.PanelClarity.Size = new System.Drawing.Size(704, 32);
             this.PanelClarity.TabIndex = 35;
             // 
             // cLabel22
@@ -8150,7 +6437,7 @@ namespace MahantExport.Stock
             this.cLabel22.ForeColor = System.Drawing.Color.Navy;
             this.cLabel22.Location = new System.Drawing.Point(0, 0);
             this.cLabel22.Name = "cLabel22";
-            this.cLabel22.Size = new System.Drawing.Size(51, 30);
+            this.cLabel22.Size = new System.Drawing.Size(51, 32);
             this.cLabel22.TabIndex = 37;
             this.cLabel22.Text = "Clarity";
             this.cLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -8162,10 +6449,9 @@ namespace MahantExport.Stock
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel11.Controls.Add(this.PanelFL);
             this.panel11.Controls.Add(this.cLabel26);
-            this.panel11.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel11.Location = new System.Drawing.Point(477, 205);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(301, 39);
+            this.panel11.Size = new System.Drawing.Size(284, 39);
             this.panel11.TabIndex = 38;
             // 
             // PanelFL
@@ -8174,7 +6460,7 @@ namespace MahantExport.Stock
             this.PanelFL.Location = new System.Drawing.Point(23, 0);
             this.PanelFL.Margin = new System.Windows.Forms.Padding(0);
             this.PanelFL.Name = "PanelFL";
-            this.PanelFL.Size = new System.Drawing.Size(274, 35);
+            this.PanelFL.Size = new System.Drawing.Size(257, 35);
             this.PanelFL.TabIndex = 35;
             // 
             // cLabel26
@@ -8196,19 +6482,18 @@ namespace MahantExport.Stock
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel8.Controls.Add(this.PanelCut);
             this.panel8.Controls.Add(this.cLabel23);
-            this.panel8.Location = new System.Drawing.Point(261, 169);
+            this.panel8.Location = new System.Drawing.Point(305, 169);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(293, 37);
+            this.panel8.Size = new System.Drawing.Size(249, 37);
             this.panel8.TabIndex = 38;
             // 
             // PanelCut
             // 
             this.PanelCut.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelCut.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelCut.Location = new System.Drawing.Point(32, 0);
             this.PanelCut.Margin = new System.Windows.Forms.Padding(0);
             this.PanelCut.Name = "PanelCut";
-            this.PanelCut.Size = new System.Drawing.Size(257, 33);
+            this.PanelCut.Size = new System.Drawing.Size(213, 33);
             this.PanelCut.TabIndex = 35;
             // 
             // cLabel23
@@ -8232,17 +6517,16 @@ namespace MahantExport.Stock
             this.panel9.Controls.Add(this.cLabel24);
             this.panel9.Location = new System.Drawing.Point(551, 169);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(227, 37);
+            this.panel9.Size = new System.Drawing.Size(210, 37);
             this.panel9.TabIndex = 38;
             // 
             // PanelPol
             // 
             this.PanelPol.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelPol.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelPol.Location = new System.Drawing.Point(30, 0);
             this.PanelPol.Margin = new System.Windows.Forms.Padding(0);
             this.PanelPol.Name = "PanelPol";
-            this.PanelPol.Size = new System.Drawing.Size(193, 33);
+            this.PanelPol.Size = new System.Drawing.Size(176, 33);
             this.PanelPol.TabIndex = 35;
             // 
             // cLabel24
@@ -8272,7 +6556,6 @@ namespace MahantExport.Stock
             // PanelSym
             // 
             this.PanelSym.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelSym.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelSym.Location = new System.Drawing.Point(36, 0);
             this.PanelSym.Margin = new System.Windows.Forms.Padding(0);
             this.PanelSym.Name = "PanelSym";
@@ -8292,6 +6575,40 @@ namespace MahantExport.Stock
             this.cLabel25.Text = "Sym";
             this.cLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cLabel25.ToolTips = "";
+            // 
+            // cPanel2
+            // 
+            this.cPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cPanel2.Controls.Add(this.cFlowLayoutPanel2);
+            this.cPanel2.Controls.Add(this.cLabel2);
+            this.cPanel2.Location = new System.Drawing.Point(1035, 511);
+            this.cPanel2.Name = "cPanel2";
+            this.cPanel2.Size = new System.Drawing.Size(397, 36);
+            this.cPanel2.TabIndex = 40;
+            this.cPanel2.Visible = false;
+            // 
+            // cFlowLayoutPanel2
+            // 
+            this.cFlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cFlowLayoutPanel2.Location = new System.Drawing.Point(67, 0);
+            this.cFlowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.cFlowLayoutPanel2.Name = "cFlowLayoutPanel2";
+            this.cFlowLayoutPanel2.Size = new System.Drawing.Size(326, 32);
+            this.cFlowLayoutPanel2.TabIndex = 36;
+            // 
+            // cLabel2
+            // 
+            this.cLabel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cLabel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cLabel2.ForeColor = System.Drawing.Color.Navy;
+            this.cLabel2.Location = new System.Drawing.Point(0, 0);
+            this.cLabel2.Name = "cLabel2";
+            this.cLabel2.Size = new System.Drawing.Size(67, 32);
+            this.cLabel2.TabIndex = 37;
+            this.cLabel2.Text = "No BGM";
+            this.cLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cLabel2.ToolTips = "";
             // 
             // backgroundWorker1
             // 
@@ -8498,18 +6815,16 @@ namespace MahantExport.Stock
             // FrmSingleLiveStockNew
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1384, 551);
+            this.ClientSize = new System.Drawing.Size(1376, 551);
             this.Controls.Add(this.panel1);
+            this.LookAndFeel.SkinName = "London Liquid Sky";
+            this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Name = "FrmSingleLiveStockNew";
             this.Tag = "FrmIssueReturnLiveStock";
             this.Text = "MUMBAI LIVE STOCK";
             this.Load += new System.EventHandler(this.FrmSingleLiveStockNew_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSingleLiveStockNew_KeyDown);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GrpSelectCarat)).EndInit();
-            this.GrpSelectCarat.ResumeLayout(false);
-            this.PanelSize.ResumeLayout(false);
-            this.PanelSize.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainGrdDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repISLockSalePrice)).EndInit();
@@ -8523,7 +6838,6 @@ namespace MahantExport.Stock
             ((System.ComponentModel.ISupportInitialize)(this.RepChkIsExclusive)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            this.cPanel2.ResumeLayout(false);
             this.PanelParameter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
@@ -8567,6 +6881,10 @@ namespace MahantExport.Stock
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GrpSelectCarat)).EndInit();
+            this.GrpSelectCarat.ResumeLayout(false);
+            this.PanelSize.ResumeLayout(false);
+            this.PanelSize.PerformLayout();
             this.cPanel3.ResumeLayout(false);
             this.cPanel5.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
@@ -8582,6 +6900,7 @@ namespace MahantExport.Stock
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            this.cPanel2.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -8638,7 +6957,6 @@ namespace MahantExport.Stock
         private DevExpress.XtraGrid.Columns.GridColumn bandedGridColumn60;
         private DevExpress.XtraGrid.Columns.GridColumn bandedGridColumn61;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn146;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn189;
         private DevExpress.XtraGrid.Columns.GridColumn bandedGridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn bandedGridColumn62;
@@ -9010,10 +7328,6 @@ namespace MahantExport.Stock
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn199;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn202;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn203;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn204;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn205;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn206;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn207;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn208;
+        private DevExpress.XtraEditors.SimpleButton BtnGridExport;
     }
 }

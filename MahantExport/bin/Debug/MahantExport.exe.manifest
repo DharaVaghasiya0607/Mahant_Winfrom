@@ -3055,14 +3055,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahantExport.exe" size="16408032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahantExport.exe" size="16367072">
       <assemblyIdentity name="MahantExport" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>abK+cJW+yaBKGHXnc/4qF8RjOSOQpXHjKZpgWnCb2PI=</dsig:DigestValue>
+        <dsig:DigestValue>hZiV/fTGplNf7kywMV8sXXm/vT9QMJ4ZKGIcc7meOos=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

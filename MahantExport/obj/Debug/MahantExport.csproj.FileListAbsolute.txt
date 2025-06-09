@@ -1067,7 +1067,6 @@ D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSingleFileUpl
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSingleFileUpload.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSingleLiveStockNew.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSinglePacketLiveStock.resources
-D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSinglePacketLiveStockNew.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSaleDeliveryLiveStock.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmStockBarcodePrint.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmBulkPropertyUpdate.resources
@@ -1139,3 +1138,4 @@ D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.application
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.csproj.CopyComplete
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.exe
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.pdb
+D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSinglePacketLiveStockOLD.resources
