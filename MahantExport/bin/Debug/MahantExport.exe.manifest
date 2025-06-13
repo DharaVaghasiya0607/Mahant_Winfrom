@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ktfV/lvACPwyadX6SwaV/3ukSaSEDNf6Sgw4ehj7bdA=</dsig:DigestValue>
+        <dsig:DigestValue>W4Y46lxF4FomOvB6S9YlTvTZD8dD7EAwQ+xl28YlIhI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -3055,14 +3055,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahantExport.exe" size="16367072">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahantExport.exe" size="16369120">
       <assemblyIdentity name="MahantExport" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hZiV/fTGplNf7kywMV8sXXm/vT9QMJ4ZKGIcc7meOos=</dsig:DigestValue>
+        <dsig:DigestValue>Ej4Z27GDVv/6KBCiF5nYkMP0PlbbltWtohwRs4UUebY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

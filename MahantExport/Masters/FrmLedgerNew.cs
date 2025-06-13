@@ -1273,7 +1273,7 @@ namespace MahantExport.Masters
             txtMemberDisc.Text = Val.ToString(DR["MEMBERDISCOUNT"]);
 
             ChkMemberPricePerCarat.Checked = Val.ToBoolean(DR["ISMEMBERPRICEPERCARAT"]);
-            txtMemberDisc.Text = Val.ToString(DR["MEMBERPRICEPERCARAT"]);
+            txtMemberPricePerCarat.Text = Val.ToString(DR["MEMBERPRICEPERCARAT"]);
 
             txtDefaultSeller.Text = Val.ToString(DR["DEFAULTSELLERNAME"]);
             txtDefaultSeller.Tag = Val.ToString(DR["DEFAULTSELLER_ID"]);

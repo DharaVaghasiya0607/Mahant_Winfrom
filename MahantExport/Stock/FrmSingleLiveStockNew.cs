@@ -1821,23 +1821,24 @@ namespace MahantExport.Stock
                     worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.BackgroundColor.SetColor(BackColor);
                     worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Font.Color.SetColor(FontColor);
 
-                    
                     int RapaportColumn = DTabDetail.Columns["Rapaport"].Ordinal + 1;
                     int PricePerCaratColumn = DTabDetail.Columns["$/Cts"].Ordinal + 1;
                     int DiscountColumn = DTabDetail.Columns["Disc%"].Ordinal + 1;
-                    int CaratColumn = DTabDetail.Columns["Carats"].Ordinal + 1;
                     int AmountColumn = DTabDetail.Columns["Total"].Ordinal + 1;
+                    int CaratColumn = DTabDetail.Columns["Carats"].Ordinal + 1;
+                    int ShapeColumn = DTabDetail.Columns["Shape"].Ordinal + 1;
+
+
                     int VideoLinkColumn = DTabDetail.Columns["Video"].Ordinal + 1;
                     int DepthPerColumn = DTabDetail.Columns["Depth%"].Ordinal + 1;
                     int TablePerColumn = DTabDetail.Columns["Table%"].Ordinal + 1;
-                    int ShapeColumn = DTabDetail.Columns["Shape"].Ordinal + 1;
 
                     int ImageLinkColumn = DTabDetail.Columns["Image"].Ordinal + 1;
 
                     int CertiLinkColumn = DTabDetail.Columns["Certi"].Ordinal + 1;
 
-                    int GirdlePerColumn = DTabDetail.Columns["Girldle Per"].Ordinal + 1;
-                    int CAColumn = DTabDetail.Columns["Crown Angle"].Ordinal + 1;
+                    //int GirdlePerColumn = DTabDetail.Columns["Girldle Per"].Ordinal + 1;
+                    //int CAColumn = DTabDetail.Columns["Crown Angle"].Ordinal + 1;
 
 
 
@@ -1867,21 +1868,23 @@ namespace MahantExport.Stock
 
                         if (IntI != 1)
                         {
-                            if (string.IsNullOrEmpty(worksheet.Cells[IntI, VideoLinkColumn].Value?.ToString()))
+                            string videoLink = worksheet.Cells[IntI, VideoLinkColumn].Value?.ToString()?.Trim();
+
+                            if (Uri.TryCreate(videoLink, UriKind.Absolute, out Uri validUri) &&
+                                (validUri.Scheme == Uri.UriSchemeHttp || validUri.Scheme == Uri.UriSchemeHttps))
                             {
-                                worksheet.Cells[IntI, VideoLinkColumn].Value = "N/A";
-                                worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Name = FontName;
-                                worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Bold = true;
-                                worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Color.SetColor(Color.Red);
-                            }
-                            else
-                            {
-                                string videoLink = worksheet.Cells[IntI, VideoLinkColumn].Value?.ToString(); // Assuming VideoLinkColumn contains the actual URL
                                 worksheet.Cells[IntI, VideoLinkColumn].Value = "Video";
-                                worksheet.Cells[IntI, VideoLinkColumn].Hyperlink = new Uri(videoLink, UriKind.Absolute);
+                                worksheet.Cells[IntI, VideoLinkColumn].Hyperlink = validUri;
                                 worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Name = FontName;
                                 worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Bold = true;
                                 worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Color.SetColor(Color.Blue);
+                            }
+                            else
+                            {
+                                worksheet.Cells[IntI, VideoLinkColumn].Value = "Invalid Link";
+                                worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Name = FontName;
+                                worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Bold = true;
+                                worksheet.Cells[IntI, VideoLinkColumn].Style.Font.Color.SetColor(Color.Red);
                             }
 
                             // Image Column Hyperlink
@@ -1894,15 +1897,28 @@ namespace MahantExport.Stock
                             }
                             else
                             {
-                                string imageLink = worksheet.Cells[IntI, ImageLinkColumn].Value?.ToString(); // Assuming ImageLinkColumn contains the actual URL
-                                worksheet.Cells[IntI, ImageLinkColumn].Value = "Image";
-                                worksheet.Cells[IntI, ImageLinkColumn].Hyperlink = new Uri(imageLink, UriKind.Absolute);
-                                worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Name = FontName;
-                                worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Bold = true;
-                                worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Color.SetColor(Color.Blue);
+                                string imageLink = worksheet.Cells[IntI, ImageLinkColumn].Value?.ToString()?.Trim();
+
+                                if (Uri.TryCreate(imageLink, UriKind.Absolute, out Uri imageUri) &&
+                                    (imageUri.Scheme == Uri.UriSchemeHttp || imageUri.Scheme == Uri.UriSchemeHttps))
+                                {
+                                    worksheet.Cells[IntI, ImageLinkColumn].Value = "Image";
+                                    worksheet.Cells[IntI, ImageLinkColumn].Hyperlink = imageUri;
+                                    worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Name = FontName;
+                                    worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Bold = true;
+                                    worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Color.SetColor(Color.Blue);
+                                }
+                                else
+                                {
+                                    worksheet.Cells[IntI, ImageLinkColumn].Value = "Invalid Link";
+                                    worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Name = FontName;
+                                    worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Bold = true;
+                                    worksheet.Cells[IntI, ImageLinkColumn].Style.Font.Color.SetColor(Color.Red);
+                                }
                             }
 
-                            // Certificate Column Hyperlink
+
+                            //// Certificate Column Hyperlink
                             if (string.IsNullOrEmpty(worksheet.Cells[IntI, CertiLinkColumn].Value?.ToString()))
                             {
                                 worksheet.Cells[IntI, CertiLinkColumn].Value = "N/A";
@@ -1931,7 +1947,6 @@ namespace MahantExport.Stock
                     string NetValue = Global.ColumnIndexToColumnLetter(DTabDetail.Columns["Total"].Ordinal + 1);
                     string RAPCol = Global.ColumnIndexToColumnLetter(DTabDetail.Columns["Rapaport"].Ordinal + 1);
 
-
                     int IntTotRow = DTabDetail.Rows.Count + 1;
 
                     StartRow = StartRow + 1;
@@ -1949,8 +1964,8 @@ namespace MahantExport.Stock
                     worksheet.Cells[StartRow, AmountColumn, EndRow, AmountColumn].Style.Numberformat.Format = "0.00";
                     worksheet.Cells[StartRow, DepthPerColumn, EndRow, DepthPerColumn].Style.Numberformat.Format = "0.00";
                     worksheet.Cells[StartRow, TablePerColumn, EndRow, TablePerColumn].Style.Numberformat.Format = "0.00";
-                    worksheet.Cells[StartRow, GirdlePerColumn, EndRow, GirdlePerColumn].Style.Numberformat.Format = "0.00";
-                    worksheet.Cells[StartRow, CAColumn, EndRow, CAColumn + 3].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, GirdlePerColumn, EndRow, GirdlePerColumn].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, CAColumn, EndRow, CAColumn + 3].Style.Numberformat.Format = "0.00";
                     worksheet.Cells[StartRow, PricePerCaratColumn, EndRow, PricePerCaratColumn ].Style.Numberformat.Format = "0.00";
 
 

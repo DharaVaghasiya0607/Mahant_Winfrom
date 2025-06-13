@@ -986,8 +986,6 @@ namespace MahantExport.Stock
                 txtBillingParty.Tag = Val.ToString(DRow["BILLINGPARTY_ID"]);
                 txtBillingParty.Text = Val.ToString(DRow["BILLINGPARTYNAME"]);
 
-                //txtShippingParty.Tag = Val.ToString(DRow["BILLINGPARTY_ID"]);
-                //txtShippingParty.Text = Val.ToString(DRow["BILLINGPARTYNAME"]);
                 txtShippingParty.Tag = Val.ToString(DRow["SHIPPINGPARTY_ID"]);
                 txtShippingParty.Text = Val.ToString(DRow["SHIPPINGPARTYNAME"]);
 
@@ -1040,15 +1038,6 @@ namespace MahantExport.Stock
                 txtBCity.Text = Val.ToString(DRow["BILLINGCITY"]);
                 txtBZipCode.Text = Val.ToString(DRow["BILLINGZIPCODE"]);
 
-                // Add By Urvisha : 29012024
-                //txtSAddress1.Text = Val.ToString(DRow["BILLINGADDRESS1"]);
-                //txtSAddress2.Text = Val.ToString(DRow["BILLINGADDRESS2"]);
-                //txtSAddress3.Text = Val.ToString(DRow["BILLINGADDRESS3"]);
-                //txtSCountry.Tag = Val.ToString(DRow["BILLINGCOUNTRY_ID"]);
-                //txtSCountry.Text = Val.ToString(DRow["BILLINGCOUNTRYNAME"]);
-                //txtSState.Text = Val.ToString(DRow["BILLINGSTATE"]);
-                //txtSCity.Text = Val.ToString(DRow["BILLINGCITY"]);
-                //txtSZipCode.Text = Val.ToString(DRow["BILLINGZIPCODE"]);
                 txtSAddress1.Text = Val.ToString(DRow["SHIPPINGADDRESS1"]);
                 txtSAddress2.Text = Val.ToString(DRow["SHIPPINGADDRESS2"]);
                 txtSAddress3.Text = Val.ToString(DRow["SHIPPINGADDRESS3"]);
@@ -3021,7 +3010,6 @@ namespace MahantExport.Stock
 
             CmbMemoType.Items.Clear();
 
-            GrdDetail.Bands["BANDMEMOPRICE"].Fixed = FixedStyle.Right;
             DtabRapaport = new BOTRN_PriceRevised().GetOriginalRapData("GETCURRENTRAPAPORT", "", "", 0, 0);
             DtabPara = new BOMST_Parameter().GetParameterData();
             GrdDetail.Columns["PARTYSTOCKNO"].Visible = false;
@@ -4977,12 +4965,12 @@ namespace MahantExport.Stock
                 //    return;
                 //}
 
-                //if (txtTerms.Text.Length == 0)
-                //{
-                //    Global.Message("Terms Is Required");
-                //    txtTerms.Focus();
-                //    return;
-                //}
+                if (txtTerms.Text.Length == 0)
+                {
+                    Global.Message("Terms Is Required");
+                    txtTerms.Focus();
+                    return;
+                }
 
                 //if (Val.ToString(txtCurrency.Text).Trim().Equals(string.Empty))
                 //{
@@ -11455,6 +11443,36 @@ namespace MahantExport.Stock
                         DouSalePricePerCarat = OLDMEMOPRICEPERCARAT;
                     }
 
+                    if (Val.Val(txtPricePerCaratDisc.Text) != 0)
+                    {
+                        DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
+                        if (ChkcheckDiscModify.Checked == true)
+                        {
+                            DouSalePricePerCarat = Val.Val(txtPricePerCaratDisc.Text);
+                            DouSaleDiscount = Math.Round(((DouSaleRapaport - DouSalePricePerCarat) / DouSaleRapaport) * -100, 2);
+                            DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
+
+                            OLDMEMODISCOUNT = DouSaleDiscount;
+                            OLDMEMOPRICEPERCARAT = DouSalePricePerCarat;
+                        }
+                        else
+                        {
+
+                            DouSalePricePerCarat = Val.Val(DRow["SALEPRICEPERCARAT"]) + Val.Val(txtPricePerCaratDisc.Text);
+                            DouSaleDiscount = Math.Round(((DouSaleRapaport - DouSalePricePerCarat) / DouSaleRapaport) * -100, 2);
+                            DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
+                            DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
+
+                            OLDMEMODISCOUNT = DouSaleDiscount;
+                            OLDMEMOPRICEPERCARAT = DouSalePricePerCarat;
+                        }
+                    }
+                    else
+                    {
+                        DouSaleDiscount = OLDMEMODISCOUNT;
+                        DouSalePricePerCarat = OLDMEMOPRICEPERCARAT;
+                    }
+
                     if (Val.Val(txtTermsAddLessPer.Text) != 0)
                     {
                         //DouSalePricePerCarat = Val.Val(DouSalePricePerCarat) + Math.Round(((Val.Val(DouSalePricePerCarat) * Val.Val(txtTermsAddLessPer.Text)) / 100), 2);
@@ -11590,6 +11608,7 @@ namespace MahantExport.Stock
                 txtBackAddLess.Text = "";
                 txtTermsAddLessPer.Text = "";
                 txtBlindAddLessPer.Text = "";
+                txtPricePerCaratDisc.Text = string.Empty;
 
                 foreach (DataRow DR in DTabMemoDetail.Rows)
                 {
@@ -16307,13 +16326,25 @@ namespace MahantExport.Stock
         private void BtnLedgerList_Click(object sender, EventArgs e)
         {
             FrmLedgerList frm = new FrmLedgerList();
-            frm.Show();
+            frm.ShowForm("BROKER");
         }
 
         private void BtnAddNewLedger_Click(object sender, EventArgs e)
         {
             FrmLedgerList Frm = new FrmLedgerList();
-            Frm.Show();
+            Frm.ShowForm("SALE");
+        }
+
+        private void txtPricePerCaratDisc_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                BtnModifyPrice_Click(null, null);
+            }
+            catch(Exception Ex)
+            {
+                Global.Message(Ex.Message.ToString());
+            }
         }
 
         private void btnPanlClose_Click(object sender, EventArgs e)
@@ -17620,6 +17651,7 @@ namespace MahantExport.Stock
 
                         DataRow DR = ObjMast.GetPartyDetails(Val.ToGuid(txtBillingParty.Tag));
                         sw.WriteLine("MAHANT EXPORTS" + "  " + "Date : " + DTPMemoDate.Value.ToShortDateString());
+                        sw.WriteLine("Bill Type : "+ Val.ToString(cmbBillType.SelectedItem));
                         sw.WriteLine();
                         sw.WriteLine(txtTerms.Text);
                         sw.WriteLine("Name : " + Val.ToString(txtBillingParty.Text).ToUpper());
@@ -17639,11 +17671,11 @@ namespace MahantExport.Stock
                                          DTabMessage.Rows[i]["SHAPENAME"] + "  " +
                                          DTabMessage.Rows[i]["COLORNAME"] + "  " +
                                          DTabMessage.Rows[i]["CLARITYNAME"]);
-                            sw.WriteLine("Disc%: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMODISCOUNT"]).ToString("N3") +
-                                         "      $/Cts: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOPRICEPERCARAT"]).ToString("N3") +
-                                         "      P/CTS: " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOPRICEPERCARAT"]).ToString("N3"));
-                            sw.WriteLine("Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOAMOUNT"]).ToString("N2") +
-                                         "T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOAMOUNT"]).ToString("N2"));
+                            sw.WriteLine("Disc%: " + Val.ToDecimal(DTabMessage.Rows[i]["SALEDISCOUNT"]).ToString("N3") +
+                                         "      $/Cts: " + Val.ToDecimal(DTabMessage.Rows[i]["SALEPRICEPERCARAT"]).ToString("N3") +
+                                         "      P/CTS: " + Val.ToDecimal(DTabMessage.Rows[i]["FSALEPRICEPERCARAT"]).ToString("N3"));
+                            sw.WriteLine("Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["SALEAMOUNT"]).ToString("N2") +
+                                         "      T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FSALEAMOUNT"]).ToString("N2"));
                         }
                         sw.WriteLine("-----------------------------------------------------");
                         sw.WriteLine("Total $ : " + Val.Val(txtNetAmount.Text).ToString("N0") + "    " + "T.AMOUNT-" + Val.Val(txtNetAmountFE.Text).ToString("N0"));

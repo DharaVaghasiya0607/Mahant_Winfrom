@@ -861,7 +861,7 @@ namespace MahantExport.Stock
 
                 Property.MEMONO = Val.ToInt64(lblMemoNo.Text);
                 Property.MEMOTYPE = "INTERNAL";
-                Property.MEMODATE = Val.SqlDate(DTPMemoDate.Text);
+                Property.MEMODATE = Val.SqlDate(DTPMemoDate.Value.ToShortDateString());
 
                 Property.BILLINGPARTY_ID = Val.ToString(txtBillingParty.Tag);
                 if (Val.ToString(txtBillingParty.Tag) == "")

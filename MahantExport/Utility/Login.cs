@@ -119,11 +119,6 @@ namespace MahantExport.Utility
 
             {
                 BOMST_Ledger ObjMast = new BOMST_Ledger();
-
-
-                var Cred = LoadFtpCredentials("ftp.dll");
-                var ftp = new FtpHelper(Cred.Url, Cred.Username, Cred.Password);
-
                 try
                 {
                     // Example: Download a file
@@ -136,11 +131,12 @@ namespace MahantExport.Utility
                         {
                             string updaterPath = Path.Combine(Application.StartupPath, "Updater.exe");
                             string appName = Path.GetFileName(Application.ExecutablePath);
+                            string downloadUrl = "http://mahantexports.axoneit.com/Share/Mahant.zip";
 
                             if (File.Exists(updaterPath))
                             {
 
-                                string arguments = $"\"{appName}\" \"Updater.exc\" \"{Cred.Url}\" \"{Cred.Username}\" \"{Cred.Password}\"";
+                                string arguments = $"\"{appName}\" \"{downloadUrl}\"";
                                 Process.Start(updaterPath, arguments);
                             }
                             else
@@ -148,6 +144,7 @@ namespace MahantExport.Utility
                                 MessageBox.Show("Updater.exe not found. Please contact support.");
                             }
                         }
+                        
                     }
                     else
                     {
@@ -320,6 +317,7 @@ namespace MahantExport.Utility
                         }
 
                     }
+
                 }
                 catch (Exception ex)
                 {

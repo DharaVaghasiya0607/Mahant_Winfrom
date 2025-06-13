@@ -45,6 +45,19 @@ namespace MahantExport.Master
             this.Show();
         }
 
+        public void ShowForm(string pStrTag)
+        {
+            Val.FormGeneralSetting(this);
+            AttachFormDefaultEvent();
+            
+            FrmLedgerNew FrmLedgerNew = new FrmLedgerNew();
+            FrmLedgerNew.MdiParent = Global.gMainRef;
+            FrmLedgerNew.FormClosing += new FormClosingEventHandler(FrmLedger_FormClosing);
+            FrmLedgerNew.ShowForm(pStrTag);
+        }
+
+
+
         public void AttachFormDefaultEvent()
         {
             ObjFormEvent.mForm = this;

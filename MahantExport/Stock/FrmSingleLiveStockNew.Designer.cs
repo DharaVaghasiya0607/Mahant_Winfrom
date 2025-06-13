@@ -3478,7 +3478,7 @@ namespace MahantExport.Stock
             this.gridColumn126.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn126.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn126.Caption = "VDBRap";
-            this.gridColumn126.FieldName = "MFGRAPAPORT";
+            this.gridColumn126.FieldName = "VDBRAPAPORT";
             this.gridColumn126.Name = "gridColumn126";
             this.gridColumn126.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn126.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
