@@ -575,6 +575,10 @@ D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\MahantExport\obj\Debug\Mahan
 D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\MahantExport\obj\Debug\MahantExport.csproj.CopyComplete
 D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\MahantExport\obj\Debug\MahantExport.exe
 D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\MahantExport\obj\Debug\MahantExport.pdb
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ja\DevExpress.Xpo.v20.2.resources.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ja\DevExpress.XtraGauges.v20.2.Presets.resources.dll
+D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.CRM.FrmWebActivityList.resources
+D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmEmailSend.resources
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\MahantExport.exe.config
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\MahantExport.exe.manifest
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\MahantExport.application
@@ -671,17 +675,30 @@ D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\System.Xml.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\System.Xml.Linq.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\UIAutomationClient.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\WindowsBase.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\DevExpress.XtraGauges.v20.2.Presets.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\DevExpress.XtraDiagram.v20.2.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\DevExpress.Diagram.v20.2.Core.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\DevExpress.Pdf.v20.2.Drawing.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\DevExpress.DemoData.v20.2.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\DevExpress.XtraScheduler.v20.2.Reporting.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ShockwaveFlashObjects.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\Microsoft.mshtml.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ADODB.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\stdole.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\BusLib.pdb
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\AWSSDK.Core.pdb
@@ -811,7 +828,6 @@ D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ja\DevExpress.Xpf.Core.v20.2.resour
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ru\DevExpress.Xpf.Core.v20.2.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\de\DevExpress.Xpo.v20.2.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\es\DevExpress.Xpo.v20.2.resources.dll
-D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ja\DevExpress.Xpo.v20.2.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ru\DevExpress.Xpo.v20.2.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\de\DevExpress.XtraBars.v20.2.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\es\DevExpress.XtraBars.v20.2.resources.dll
@@ -909,7 +925,6 @@ D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinFo
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\de\DevExpress.XtraGauges.v20.2.Presets.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\es\DevExpress.XtraGauges.v20.2.Presets.resources.dll
-D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ja\DevExpress.XtraGauges.v20.2.Presets.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\ru\DevExpress.XtraGauges.v20.2.Presets.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\de\DevExpress.Diagram.v20.2.Core.resources.dll
 D:\Git\Mahant_Winfrom\MahantExport\bin\Debug\es\DevExpress.Diagram.v20.2.Core.resources.dll
@@ -1067,6 +1082,7 @@ D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSingleFileUpl
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSingleFileUpload.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSingleLiveStockNew.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSinglePacketLiveStock.resources
+D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSinglePacketLiveStockOLD.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSaleDeliveryLiveStock.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmStockBarcodePrint.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmBulkPropertyUpdate.resources
@@ -1093,7 +1109,6 @@ D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmUpdateStockNo
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.UserActivities.FrmCartDetail.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.UserActivities.FrmLoginHistory.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.UserActivities.FrmSearchHistory.resources
-D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.CRM.FrmWebActivityList.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.UserControl.CustomNotifiation.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.UserControl.ListviewCustom.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.UserControl.ReportMultiSelectNew.resources
@@ -1116,7 +1131,6 @@ D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Utility.FrmImageCertiF
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmImageVideoCertiUrlUpdate.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmScreenCapture.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmInputBoxOther.resources
-D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmEmailSend.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmInputBox.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmPopupGrid.resources
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.FrmSearchPopupBox.resources
@@ -1138,4 +1152,3 @@ D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.application
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.csproj.CopyComplete
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.exe
 D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.pdb
-D:\Git\Mahant_Winfrom\MahantExport\obj\Debug\MahantExport.Stock.FrmSinglePacketLiveStockOLD.resources

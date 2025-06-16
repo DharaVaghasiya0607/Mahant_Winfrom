@@ -14,14 +14,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="MahantExport.exe.manifest" size="221197">
+    <dependentAssembly dependencyType="install" codebase="MahantExport.exe.manifest" size="230828">
       <assemblyIdentity name="MahantExport.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3jG2UyzoP2m2c7Ag3Exc3hI51cXUabq55y2gcz8HihY=</dsig:DigestValue>
+        <dsig:DigestValue>0opm34SNr0HYYP2L1FyNb8PTnCzpWaYETDjztF6BpGw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
