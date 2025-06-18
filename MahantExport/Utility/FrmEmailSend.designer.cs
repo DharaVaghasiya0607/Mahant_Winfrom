@@ -520,8 +520,6 @@ namespace MahantExport
             this.Controls.Add(this.panel3);
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("FrmEmailSend.IconOptions.Icon")));
             this.KeyPreview = true;
-            this.LookAndFeel.SkinName = "London Liquid Sky";
-            this.LookAndFeel.UseDefaultLookAndFeel =true;
             this.Name = "FrmEmailSend";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "FrmEmailSend";

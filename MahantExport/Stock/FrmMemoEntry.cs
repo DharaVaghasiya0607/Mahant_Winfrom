@@ -11386,15 +11386,13 @@ namespace MahantExport.Stock
                         OLDMEMODISCOUNT = Val.Val(DRow["JANGEDDISCOUNT"]);
                         OLDMEMOPRICEPERCARAT = Val.Val(DRow["JANGEDPRICEPERCARAT"]);
                     }
-                    else if (Val.Val(txtBackAddLess.Text) == 0 && Val.Val(txtBackAddLess.Text) == 0 && Val.Val(txtBackAddLess.Text) == 0)
-                    {
-                        //DRow["OLDMEMODISCOUNT"] = DRow["JANGEDDISCOUNT"];
-                        //DRow["OLDMEMOPRICEPERCARAT"] = DRow["JANGEDPRICEPERCARAT"];
-                        OLDMEMODISCOUNT = Val.Val(DRow["OLDMEMODISCOUNT"]);
-                        OLDMEMOPRICEPERCARAT = Val.Val(DRow["OLDMEMOPRICEPERCARAT"]);
-                        DouSaleDiscount = OLDMEMODISCOUNT;
-                        DouSalePricePerCarat = OLDMEMOPRICEPERCARAT;
-                    }
+                    //else if (Val.Val(txtBackAddLess.Text) == 0 && Val.Val(txtBackAddLess.Text) == 0 && Val.Val(txtBackAddLess.Text) == 0)
+                    //{
+                    //    OLDMEMODISCOUNT = Val.Val(DRow["OLDMEMODISCOUNT"]);
+                    //    OLDMEMOPRICEPERCARAT = Val.Val(DRow["OLDMEMOPRICEPERCARAT"]);
+                    //    DouSaleDiscount = OLDMEMODISCOUNT;
+                    //    DouSalePricePerCarat = OLDMEMOPRICEPERCARAT;
+                    //}
                     else
                     {
                         OLDMEMODISCOUNT = Val.Val(DRow["OLDMEMODISCOUNT"]);
@@ -11407,7 +11405,7 @@ namespace MahantExport.Stock
                         if (ChkcheckDiscModify.Checked == true)
                         {
                             DouSaleDiscount = Val.Val(txtBackAddLess.Text);
-                            DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
+                            DouSaleRapaport = Val.Val(DRow["SALERAPAPORT"]);
                             DouSalePricePerCarat = Math.Round(DouSaleRapaport + ((DouSaleRapaport * DouSaleDiscount) / 100), 2);
                             //DouSalePricePerCarat = Math.Round(DouSaleRapaport - ((DouSaleRapaport * DouSaleDiscount) / 100), 2); //#P:23-04-2021
                             DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
@@ -11426,15 +11424,18 @@ namespace MahantExport.Stock
                             OLDMEMODISCOUNT = DouSaleDiscount;
                             OLDMEMOPRICEPERCARAT = DouSalePricePerCarat;
                         }
-                        //End As Gunjan
-                        //DouSaleDiscount = Val.Val(DRow["SALEDISCOUNT"]) - Val.Val(txtBackAddLess.Text);
-                        //DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
-                        ////DouSalePricePerCarat = Math.Round(DouSaleRapaport + ((DouSaleRapaport * DouSaleDiscount) / 100), 2);
-                        //DouSalePricePerCarat = Math.Round(DouSaleRapaport - ((DouSaleRapaport * DouSaleDiscount) / 100), 2); //#P:23-04-2021
-                        //DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
 
-                        //OLDMEMODISCOUNT = DouSaleDiscount;
-                        //OLDMEMOPRICEPERCARAT = DouSalePricePerCarat;
+                        DouSaleRapaport = Val.Val(DRow["SALERAPAPORT"]);
+                        DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
+
+                        DRow["MEMODISCOUNT"] = DouSaleDiscount;
+                        DRow["MEMOPRICEPERCARAT"] = DouSalePricePerCarat;
+                        DRow["MEMOAMOUNT"] = DouSaleAmount;
+
+                        DRow["FMEMOPRICEPERCARAT"] = Math.Round(DouSalePricePerCarat * Val.Val(txtExcRate.Text), 3); //#P : 27-01-2022
+
+                        DRow["FMEMOAMOUNT"] = Math.Round(DouSaleAmount * Val.Val(DRow["EXCRATE"]), 3); //#P : 27-01-2022
+
 
                     }
                     else
@@ -11445,7 +11446,7 @@ namespace MahantExport.Stock
 
                     if (Val.Val(txtPricePerCaratDisc.Text) != 0)
                     {
-                        DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
+                        DouSaleRapaport = Val.Val(DRow["SALERAPAPORT"]);
                         if (ChkcheckDiscModify.Checked == true)
                         {
                             DouSalePricePerCarat = Val.Val(txtPricePerCaratDisc.Text);
@@ -11460,12 +11461,21 @@ namespace MahantExport.Stock
 
                             DouSalePricePerCarat = Val.Val(DRow["SALEPRICEPERCARAT"]) + Val.Val(txtPricePerCaratDisc.Text);
                             DouSaleDiscount = Math.Round(((DouSaleRapaport - DouSalePricePerCarat) / DouSaleRapaport) * -100, 2);
-                            DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
                             DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
 
                             OLDMEMODISCOUNT = DouSaleDiscount;
                             OLDMEMOPRICEPERCARAT = DouSalePricePerCarat;
                         }
+
+                        DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
+
+                        DRow["MEMODISCOUNT"] = DouSaleDiscount;
+                        DRow["MEMOPRICEPERCARAT"] = DouSalePricePerCarat;
+                        DRow["MEMOAMOUNT"] = DouSaleAmount;
+
+                        DRow["FMEMOPRICEPERCARAT"] = Math.Round(DouSalePricePerCarat * Val.Val(txtExcRate.Text), 3); //#P : 27-01-2022
+
+                        DRow["FMEMOAMOUNT"] = Math.Round(DouSaleAmount * Val.Val(DRow["EXCRATE"]), 3); //#P : 27-01-2022
                     }
                     else
                     {
@@ -11519,23 +11529,7 @@ namespace MahantExport.Stock
                         //DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
                     }
 
-                    DouSaleRapaport = Val.Val(DRow["MEMORAPAPORT"]);
-                    DouSaleAmount = Math.Round(DouSalePricePerCarat * Val.Val(DRow["CARAT"]), 2);
-
-                    DRow["MEMODISCOUNT"] = DouSaleDiscount;
-                    DRow["MEMOPRICEPERCARAT"] = DouSalePricePerCarat;
-                    DRow["MEMOAMOUNT"] = DouSaleAmount;
-
-                    DRow["FMEMOPRICEPERCARAT"] = Math.Round(DouSalePricePerCarat * Val.Val(txtExcRate.Text), 3); //#P : 27-01-2022
-                    //DRow["FMEMOAMOUNT"] = Math.Round(DouSaleAmount * Val.Val(txtExcRate.Text), 2);
-                    if (BOConfiguration.gStrLoginSection == "B")
-                    {
-                        DRow["FMEMOAMOUNT"] = Math.Round((DouSaleAmount * Val.Val(DRow["EXCRATE"])) / 1000, 3); //#P : 27-01-2022
-                    }
-                    else
-                    {
-                        DRow["FMEMOAMOUNT"] = Math.Round(DouSaleAmount * Val.Val(DRow["EXCRATE"]), 3); //#P : 27-01-2022
-                    }
+                   
 
                     if (Val.Val(txtBackAddLess.Text) != 0)
                     {
@@ -16341,7 +16335,7 @@ namespace MahantExport.Stock
             {
                 BtnModifyPrice_Click(null, null);
             }
-            catch(Exception Ex)
+            catch (Exception Ex)
             {
                 Global.Message(Ex.Message.ToString());
             }
@@ -17630,6 +17624,19 @@ namespace MahantExport.Stock
 
             try
             {
+                if (txtTerms.Text.Length == 0)
+                {
+                    Global.Message("Terms Is Required");
+                    txtTerms.Focus();
+                    return;
+                }
+
+                if (Val.ToString(cmbBillType.SelectedItem) == "None")
+                {
+                    Global.Message("Please Select BillType");
+                    cmbBillType.Focus();
+                    return;
+                }
 
                 //string StrFilePath = Application.StartupPath + "\\ClientPreview" + "\\ClientPreview_" + Val.ToString(txtJangedNo.Text) + ".txt ";
                 DataTable DTabMessage = (DataTable)MainGrdDetail.DataSource;
@@ -17651,7 +17658,7 @@ namespace MahantExport.Stock
 
                         DataRow DR = ObjMast.GetPartyDetails(Val.ToGuid(txtBillingParty.Tag));
                         sw.WriteLine("MAHANT EXPORTS" + "  " + "Date : " + DTPMemoDate.Value.ToShortDateString());
-                        sw.WriteLine("Bill Type : "+ Val.ToString(cmbBillType.SelectedItem));
+                        sw.WriteLine("Bill Type : " + Val.ToString(cmbBillType.SelectedItem));
                         sw.WriteLine();
                         sw.WriteLine(txtTerms.Text);
                         sw.WriteLine("Name : " + Val.ToString(txtBillingParty.Text).ToUpper());
@@ -17671,11 +17678,11 @@ namespace MahantExport.Stock
                                          DTabMessage.Rows[i]["SHAPENAME"] + "  " +
                                          DTabMessage.Rows[i]["COLORNAME"] + "  " +
                                          DTabMessage.Rows[i]["CLARITYNAME"]);
-                            sw.WriteLine("Disc%: " + Val.ToDecimal(DTabMessage.Rows[i]["SALEDISCOUNT"]).ToString("N3") +
-                                         "      $/Cts: " + Val.ToDecimal(DTabMessage.Rows[i]["SALEPRICEPERCARAT"]).ToString("N3") +
-                                         "      P/CTS: " + Val.ToDecimal(DTabMessage.Rows[i]["FSALEPRICEPERCARAT"]).ToString("N3"));
-                            sw.WriteLine("Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["SALEAMOUNT"]).ToString("N2") +
-                                         "      T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FSALEAMOUNT"]).ToString("N2"));
+                            sw.WriteLine("Disc%: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMODISCOUNT"]).ToString("N3") +
+                                         "      $/Cts: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOPRICEPERCARAT"]).ToString("N3") +
+                                         "      P/CTS: " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOPRICEPERCARAT"]).ToString("N3"));
+                            sw.WriteLine("Tot $: " + Val.ToDecimal(DTabMessage.Rows[i]["MEMOAMOUNT"]).ToString("N2") +
+                                         "      T/AT : " + Val.ToDecimal(DTabMessage.Rows[i]["FMEMOAMOUNT"]).ToString("N2"));
                         }
                         sw.WriteLine("-----------------------------------------------------");
                         sw.WriteLine("Total $ : " + Val.Val(txtNetAmount.Text).ToString("N0") + "    " + "T.AMOUNT-" + Val.Val(txtNetAmountFE.Text).ToString("N0"));

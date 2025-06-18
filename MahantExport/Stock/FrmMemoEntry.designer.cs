@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMemoEntry));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode5 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             this.BtnSave = new DevControlLib.cDevSimpleButton(this.components);
             this.PnlButtons = new AxonContLib.cPanel(this.components);
             this.txtRemark = new AxonContLib.cTextBox(this.components);
@@ -487,7 +487,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteStoneFromDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GrdDetail = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
-            this.BANDSTOCK = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn8 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.BtnStoneDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridColumn16 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -499,7 +498,6 @@
             this.repCmbType = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.gridColumn14 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn49 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BANDGENERAL = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridColumn1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn30 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -534,12 +532,10 @@
             this.bandedGridColumn333 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.txtLocation = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.BndCost = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn335 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn336 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn337 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn338 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BANDEXTRAPARAM = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn10 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn11 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn12 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -552,36 +548,31 @@
             this.bandedGridColumn19 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn20 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn21 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BANDEXPORT = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn44 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn45 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn46 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn47 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BandLabService = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn33 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.RepTxtLabServiceCode = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.c = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.gridColumn27 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn51 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn50 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn332 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repTxtCostRapaport = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.bandedGridColumn332 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repTxtCostDisount = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn10 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repTxtCostPricePerCarat = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.gridColumn12 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repTxtCostAmount = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.gridColumn12 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.SALEPRICE = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.gridColumn7 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn51 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.bandedGridColumn50 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.BANDJANGEDDETAIL = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn43 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn40 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn41 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -1190,6 +1181,15 @@
             this.repositoryItemButtonEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemCheckEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.gridView14 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.BANDSTOCK = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.BANDGENERAL = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.BndCost = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.BANDEXTRAPARAM = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.BANDEXPORT = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.BandLabService = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.c = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.MEMOPRICE = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.BANDJANGEDDETAIL = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.PnlButtons.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChkSummuryPrint.Properties)).BeginInit();
@@ -1661,6 +1661,7 @@
             this.txtMemoAmount.ActivationColorCode = System.Drawing.Color.Empty;
             this.txtMemoAmount.AllowTabKeyOnEnter = false;
             this.txtMemoAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMemoAmount.Enabled = false;
             this.txtMemoAmount.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.txtMemoAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtMemoAmount.Format = "##########0.00";
@@ -1695,6 +1696,7 @@
             this.txtMemoAvgDisc.ActivationColorCode = System.Drawing.Color.Empty;
             this.txtMemoAvgDisc.AllowTabKeyOnEnter = false;
             this.txtMemoAvgDisc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMemoAvgDisc.Enabled = false;
             this.txtMemoAvgDisc.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.txtMemoAvgDisc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtMemoAvgDisc.Format = "##########0.00";
@@ -1730,6 +1732,7 @@
             this.txtMemoAvgRate.ActivationColorCode = System.Drawing.Color.Empty;
             this.txtMemoAvgRate.AllowTabKeyOnEnter = false;
             this.txtMemoAvgRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMemoAvgRate.Enabled = false;
             this.txtMemoAvgRate.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
             this.txtMemoAvgRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtMemoAvgRate.Format = "##########0.00";
@@ -8205,9 +8208,9 @@
             // 
             this.MainGrdDetail.ContextMenuStrip = this.contextMenuStrip1;
             this.MainGrdDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode5.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.MainGrdDetail.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode5});
+            gridLevelNode2});
             this.MainGrdDetail.Location = new System.Drawing.Point(0, 0);
             this.MainGrdDetail.MainView = this.GrdDetail;
             this.MainGrdDetail.Name = "MainGrdDetail";
@@ -8312,7 +8315,7 @@
             this.BANDEXPORT,
             this.BandLabService,
             this.c,
-            this.SALEPRICE,
+            this.MEMOPRICE,
             this.BANDJANGEDDETAIL});
             this.GrdDetail.ColumnPanelRowHeight = 23;
             this.GrdDetail.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
@@ -8419,22 +8422,6 @@
             this.GrdDetail.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.GrdDetail_CellValueChanged);
             this.GrdDetail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLedger_KeyDown);
             // 
-            // BANDSTOCK
-            // 
-            this.BANDSTOCK.Caption = "#Stock";
-            this.BANDSTOCK.Columns.Add(this.bandedGridColumn8);
-            this.BANDSTOCK.Columns.Add(this.gridColumn16);
-            this.BANDSTOCK.Columns.Add(this.bandedGridColumn29);
-            this.BANDSTOCK.Columns.Add(this.bandedGridColumn191);
-            this.BANDSTOCK.Columns.Add(this.colBoxName);
-            this.BANDSTOCK.Columns.Add(this.gridColumn24);
-            this.BANDSTOCK.Columns.Add(this.gridColumn14);
-            this.BANDSTOCK.Columns.Add(this.bandedGridColumn49);
-            this.BANDSTOCK.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.BANDSTOCK.Name = "BANDSTOCK";
-            this.BANDSTOCK.VisibleIndex = 0;
-            this.BANDSTOCK.Width = 165;
-            // 
             // bandedGridColumn8
             // 
             this.bandedGridColumn8.AppearanceCell.Options.UseTextOptions = true;
@@ -8520,6 +8507,8 @@
             // 
             // colBoxName
             // 
+            this.colBoxName.AppearanceCell.Options.UseTextOptions = true;
+            this.colBoxName.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.colBoxName.Caption = "Box Name";
             this.colBoxName.FieldName = "BoxName";
             this.colBoxName.Name = "colBoxName";
@@ -8568,45 +8557,14 @@
             // 
             // bandedGridColumn49
             // 
+            this.bandedGridColumn49.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn49.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn49.Caption = "Buyer";
             this.bandedGridColumn49.FieldName = "FINALBUYERNAME";
             this.bandedGridColumn49.Name = "bandedGridColumn49";
             this.bandedGridColumn49.OptionsColumn.AllowEdit = false;
             this.bandedGridColumn49.OptionsColumn.AllowFocus = false;
             this.bandedGridColumn49.OptionsColumn.ReadOnly = true;
-            // 
-            // BANDGENERAL
-            // 
-            this.BANDGENERAL.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.BANDGENERAL.AppearanceHeader.Options.UseFont = true;
-            this.BANDGENERAL.AppearanceHeader.Options.UseTextOptions = true;
-            this.BANDGENERAL.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.BANDGENERAL.Caption = "General";
-            this.BANDGENERAL.Columns.Add(this.gridColumn1);
-            this.BANDGENERAL.Columns.Add(this.gridColumn2);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn30);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn31);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn334);
-            this.BANDGENERAL.Columns.Add(this.gridColumn17);
-            this.BANDGENERAL.Columns.Add(this.gridColumn25);
-            this.BANDGENERAL.Columns.Add(this.gridColumn26);
-            this.BANDGENERAL.Columns.Add(this.gridColumn18);
-            this.BANDGENERAL.Columns.Add(this.gridColumn19);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn7);
-            this.BANDGENERAL.Columns.Add(this.gridColumn20);
-            this.BANDGENERAL.Columns.Add(this.gridColumn21);
-            this.BANDGENERAL.Columns.Add(this.gridColumn22);
-            this.BANDGENERAL.Columns.Add(this.gridColumn23);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn4);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn6);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn32);
-            this.BANDGENERAL.Columns.Add(this.gridColumn15);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn36);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn333);
-            this.BANDGENERAL.Columns.Add(this.bandedGridColumn2);
-            this.BANDGENERAL.Name = "BANDGENERAL";
-            this.BANDGENERAL.VisibleIndex = 1;
-            this.BANDGENERAL.Width = 1356;
             // 
             // gridColumn1
             // 
@@ -8639,7 +8597,7 @@
             this.bandedGridColumn30.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.bandedGridColumn30.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn30.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn30.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn30.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn30.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn30.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn30.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -8654,7 +8612,7 @@
             this.bandedGridColumn31.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.bandedGridColumn31.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn31.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn31.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn31.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn31.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn31.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn31.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -8704,7 +8662,7 @@
             this.gridColumn25.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.gridColumn25.AppearanceCell.Options.UseFont = true;
             this.gridColumn25.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn25.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn25.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn25.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn25.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn25.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -8719,7 +8677,7 @@
             this.gridColumn26.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.gridColumn26.AppearanceCell.Options.UseFont = true;
             this.gridColumn26.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn26.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn26.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn26.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn26.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn26.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -8930,6 +8888,8 @@
             // 
             // bandedGridColumn32
             // 
+            this.bandedGridColumn32.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn32.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn32.Caption = "Is Purchase";
             this.bandedGridColumn32.ColumnEdit = this.RpsChkBoxIsPurchase;
             this.bandedGridColumn32.FieldName = "ISPURCHASE";
@@ -8980,6 +8940,8 @@
             // 
             // bandedGridColumn333
             // 
+            this.bandedGridColumn333.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn333.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn333.Caption = "AvgRate";
             this.bandedGridColumn333.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn333.FieldName = "TOTALAVGRATE";
@@ -9008,23 +8970,12 @@
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocation_KeyPress);
             // 
-            // BndCost
-            // 
-            this.BndCost.Caption = "Cost Price";
-            this.BndCost.Columns.Add(this.bandedGridColumn335);
-            this.BndCost.Columns.Add(this.bandedGridColumn336);
-            this.BndCost.Columns.Add(this.bandedGridColumn337);
-            this.BndCost.Columns.Add(this.bandedGridColumn338);
-            this.BndCost.Name = "BndCost";
-            this.BndCost.VisibleIndex = 2;
-            this.BndCost.Width = 300;
-            // 
             // bandedGridColumn335
             // 
             this.bandedGridColumn335.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bandedGridColumn335.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn335.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn335.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn335.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn335.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn335.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn335.Caption = "Rap";
@@ -9039,7 +8990,7 @@
             this.bandedGridColumn336.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bandedGridColumn336.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn336.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn336.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn336.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn336.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn336.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn336.Caption = "Disc%";
@@ -9054,7 +9005,7 @@
             this.bandedGridColumn337.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bandedGridColumn337.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn337.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn337.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn337.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn337.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn337.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn337.Caption = "$/Cts";
@@ -9069,7 +9020,7 @@
             this.bandedGridColumn338.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bandedGridColumn338.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn338.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn338.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn338.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn338.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn338.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn338.Caption = "Amt";
@@ -9078,29 +9029,6 @@
             this.bandedGridColumn338.Name = "bandedGridColumn338";
             this.bandedGridColumn338.OptionsColumn.AllowEdit = false;
             this.bandedGridColumn338.Visible = true;
-            // 
-            // BANDEXTRAPARAM
-            // 
-            this.BANDEXTRAPARAM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.BANDEXTRAPARAM.AppearanceHeader.Options.UseFont = true;
-            this.BANDEXTRAPARAM.AppearanceHeader.Options.UseTextOptions = true;
-            this.BANDEXTRAPARAM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.BANDEXTRAPARAM.Caption = "Purch. Inv Ext Param";
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn10);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn11);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn12);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn13);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn14);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn15);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn16);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn17);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn18);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn19);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn20);
-            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn21);
-            this.BANDEXTRAPARAM.Name = "BANDEXTRAPARAM";
-            this.BANDEXTRAPARAM.VisibleIndex = 3;
-            this.BANDEXTRAPARAM.Width = 902;
             // 
             // bandedGridColumn10
             // 
@@ -9280,19 +9208,10 @@
             this.bandedGridColumn21.Visible = true;
             this.bandedGridColumn21.Width = 133;
             // 
-            // BANDEXPORT
-            // 
-            this.BANDEXPORT.Caption = "Export";
-            this.BANDEXPORT.Columns.Add(this.bandedGridColumn44);
-            this.BANDEXPORT.Columns.Add(this.bandedGridColumn45);
-            this.BANDEXPORT.Columns.Add(this.bandedGridColumn46);
-            this.BANDEXPORT.Columns.Add(this.bandedGridColumn47);
-            this.BANDEXPORT.Name = "BANDEXPORT";
-            this.BANDEXPORT.VisibleIndex = 4;
-            this.BANDEXPORT.Width = 150;
-            // 
             // bandedGridColumn44
             // 
+            this.bandedGridColumn44.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn44.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn44.Caption = "Rate($)";
             this.bandedGridColumn44.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn44.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
@@ -9303,6 +9222,8 @@
             // 
             // bandedGridColumn45
             // 
+            this.bandedGridColumn45.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn45.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn45.Caption = "Amt($)";
             this.bandedGridColumn45.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn45.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
@@ -9313,6 +9234,8 @@
             // 
             // bandedGridColumn46
             // 
+            this.bandedGridColumn46.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn46.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn46.Caption = "Rate(₹)";
             this.bandedGridColumn46.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn46.FieldName = "EXPINVOICERATEFE";
@@ -9320,18 +9243,12 @@
             // 
             // bandedGridColumn47
             // 
+            this.bandedGridColumn47.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn47.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn47.Caption = "Amt(₹)";
             this.bandedGridColumn47.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn47.FieldName = "EXPINVOICEAMTFE";
             this.bandedGridColumn47.Name = "bandedGridColumn47";
-            // 
-            // BandLabService
-            // 
-            this.BandLabService.Caption = "Lab Service";
-            this.BandLabService.Columns.Add(this.bandedGridColumn33);
-            this.BandLabService.Name = "BandLabService";
-            this.BandLabService.VisibleIndex = 5;
-            this.BandLabService.Width = 94;
             // 
             // bandedGridColumn33
             // 
@@ -9350,22 +9267,6 @@
             this.RepTxtLabServiceCode.Name = "RepTxtLabServiceCode";
             this.RepTxtLabServiceCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RepTxtLabServiceCode_KeyPress);
             // 
-            // c
-            // 
-            this.c.Caption = "Memo Price";
-            this.c.Columns.Add(this.gridColumn27);
-            this.c.Columns.Add(this.gridColumn3);
-            this.c.Columns.Add(this.gridColumn4);
-            this.c.Columns.Add(this.bandedGridColumn332);
-            this.c.Columns.Add(this.gridColumn5);
-            this.c.Columns.Add(this.gridColumn10);
-            this.c.Columns.Add(this.gridColumn6);
-            this.c.Columns.Add(this.gridColumn12);
-            this.c.Columns.Add(this.gridColumn13);
-            this.c.Name = "c";
-            this.c.VisibleIndex = 6;
-            this.c.Width = 679;
-            // 
             // gridColumn27
             // 
             this.gridColumn27.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -9373,7 +9274,7 @@
             this.gridColumn27.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn27.AppearanceCell.Options.UseFont = true;
             this.gridColumn27.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn27.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn27.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn27.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn27.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn27.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9382,6 +9283,123 @@
             this.gridColumn27.Name = "gridColumn27";
             this.gridColumn27.Width = 41;
             // 
+            // gridColumn7
+            // 
+            this.gridColumn7.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.gridColumn7.AppearanceCell.Options.UseBackColor = true;
+            this.gridColumn7.AppearanceCell.Options.UseFont = true;
+            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.gridColumn7.Caption = "Rap($)";
+            this.gridColumn7.DisplayFormat.FormatString = "###0.00";
+            this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn7.FieldName = "SALERAPAPORT";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.Width = 96;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.gridColumn8.AppearanceCell.Options.UseBackColor = true;
+            this.gridColumn8.AppearanceCell.Options.UseFont = true;
+            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.gridColumn8.Caption = "Disc($)";
+            this.gridColumn8.DisplayFormat.FormatString = "###0.00";
+            this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn8.FieldName = "SALEDISCOUNT";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
+            this.gridColumn8.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.Width = 99;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.gridColumn9.AppearanceCell.Options.UseBackColor = true;
+            this.gridColumn9.AppearanceCell.Options.UseFont = true;
+            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.gridColumn9.Caption = "$/Cts($)";
+            this.gridColumn9.DisplayFormat.FormatString = "###0.00";
+            this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn9.FieldName = "SALEPRICEPERCARAT";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowEdit = false;
+            this.gridColumn9.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.Width = 108;
+            // 
+            // bandedGridColumn51
+            // 
+            this.bandedGridColumn51.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bandedGridColumn51.AppearanceCell.Options.UseBackColor = true;
+            this.bandedGridColumn51.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn51.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.bandedGridColumn51.Caption = "F₹/Cts(₹)";
+            this.bandedGridColumn51.DisplayFormat.FormatString = "###0.00";
+            this.bandedGridColumn51.FieldName = "FSALEPRICEPERCARAT";
+            this.bandedGridColumn51.Name = "bandedGridColumn51";
+            this.bandedGridColumn51.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn51.Visible = true;
+            this.bandedGridColumn51.Width = 106;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridColumn11.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.gridColumn11.AppearanceCell.Options.UseBackColor = true;
+            this.gridColumn11.AppearanceCell.Options.UseFont = true;
+            this.gridColumn11.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn11.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn11.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn11.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.gridColumn11.Caption = "Amt($)";
+            this.gridColumn11.DisplayFormat.FormatString = "###0.00";
+            this.gridColumn11.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn11.FieldName = "SALEAMOUNT";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.AllowEdit = false;
+            this.gridColumn11.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.Width = 96;
+            // 
+            // bandedGridColumn50
+            // 
+            this.bandedGridColumn50.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bandedGridColumn50.AppearanceCell.Options.UseBackColor = true;
+            this.bandedGridColumn50.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn50.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.bandedGridColumn50.Caption = "FAmt (₹)";
+            this.bandedGridColumn50.DisplayFormat.FormatString = "###0.00";
+            this.bandedGridColumn50.FieldName = "FSALEAMOUNT";
+            this.bandedGridColumn50.Name = "bandedGridColumn50";
+            this.bandedGridColumn50.OptionsColumn.AllowEdit = false;
+            this.bandedGridColumn50.OptionsColumn.ReadOnly = true;
+            this.bandedGridColumn50.Visible = true;
+            this.bandedGridColumn50.Width = 100;
+            // 
             // gridColumn3
             // 
             this.gridColumn3.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -9389,7 +9407,7 @@
             this.gridColumn3.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn3.AppearanceCell.Options.UseFont = true;
             this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn3.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9402,15 +9420,27 @@
             this.gridColumn3.Visible = true;
             this.gridColumn3.Width = 55;
             // 
+            // bandedGridColumn332
+            // 
+            this.bandedGridColumn332.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bandedGridColumn332.AppearanceCell.Options.UseBackColor = true;
+            this.bandedGridColumn332.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn332.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.bandedGridColumn332.Caption = "ExcRate";
+            this.bandedGridColumn332.DisplayFormat.FormatString = "###0.00";
+            this.bandedGridColumn332.FieldName = "EXCRATE";
+            this.bandedGridColumn332.Name = "bandedGridColumn332";
+            this.bandedGridColumn332.Visible = true;
+            // 
             // gridColumn4
             // 
-            this.gridColumn4.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn4.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridColumn4.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn4.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gridColumn4.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.gridColumn4.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn4.AppearanceCell.Options.UseFont = true;
             this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn4.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9431,23 +9461,15 @@
             this.repTxtCostRapaport.AutoHeight = false;
             this.repTxtCostRapaport.Name = "repTxtCostRapaport";
             // 
-            // bandedGridColumn332
-            // 
-            this.bandedGridColumn332.Caption = "ExcRate";
-            this.bandedGridColumn332.DisplayFormat.FormatString = "###0.00";
-            this.bandedGridColumn332.FieldName = "EXCRATE";
-            this.bandedGridColumn332.Name = "bandedGridColumn332";
-            this.bandedGridColumn332.Visible = true;
-            // 
             // gridColumn5
             // 
-            this.gridColumn5.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn5.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridColumn5.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn5.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gridColumn5.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.gridColumn5.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn5.AppearanceCell.Options.UseFont = true;
             this.gridColumn5.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn5.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9470,13 +9492,13 @@
             // 
             // gridColumn10
             // 
-            this.gridColumn10.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn10.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridColumn10.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn10.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gridColumn10.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.gridColumn10.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn10.AppearanceCell.Options.UseFont = true;
             this.gridColumn10.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn10.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn10.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn10.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9497,15 +9519,34 @@
             this.repTxtCostPricePerCarat.Name = "repTxtCostPricePerCarat";
             this.repTxtCostPricePerCarat.Validating += new System.ComponentModel.CancelEventHandler(this.repTxtCostPricePerCarat_Validating);
             // 
+            // gridColumn12
+            // 
+            this.gridColumn12.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn12.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.gridColumn12.AppearanceCell.Options.UseBackColor = true;
+            this.gridColumn12.AppearanceCell.Options.UseFont = true;
+            this.gridColumn12.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn12.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn12.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn12.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.gridColumn12.Caption = "F₹/Cts(₹)";
+            this.gridColumn12.DisplayFormat.FormatString = "###0.00";
+            this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.gridColumn12.FieldName = "FMEMOPRICEPERCARAT";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.OptionsColumn.AllowEdit = false;
+            this.gridColumn12.Visible = true;
+            // 
             // gridColumn6
             // 
-            this.gridColumn6.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridColumn6.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridColumn6.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn6.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.gridColumn6.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn6.AppearanceCell.Options.UseFont = true;
             this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn6.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9526,29 +9567,14 @@
             this.repTxtCostAmount.AutoHeight = false;
             this.repTxtCostAmount.Name = "repTxtCostAmount";
             // 
-            // gridColumn12
-            // 
-            this.gridColumn12.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn12.AppearanceCell.Options.UseFont = true;
-            this.gridColumn12.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn12.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn12.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn12.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn12.Caption = "F₹/Cts(₹)";
-            this.gridColumn12.DisplayFormat.FormatString = "###0.00";
-            this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn12.FieldName = "FMEMOPRICEPERCARAT";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.OptionsColumn.AllowEdit = false;
-            this.gridColumn12.Visible = true;
-            // 
             // gridColumn13
             // 
+            this.gridColumn13.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gridColumn13.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.gridColumn13.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn13.AppearanceCell.Options.UseFont = true;
             this.gridColumn13.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn13.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn13.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn13.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn13.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9560,140 +9586,12 @@
             this.gridColumn13.OptionsColumn.AllowEdit = false;
             this.gridColumn13.Visible = true;
             // 
-            // SALEPRICE
-            // 
-            this.SALEPRICE.AppearanceHeader.Options.UseTextOptions = true;
-            this.SALEPRICE.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.SALEPRICE.Caption = "Sale Price";
-            this.SALEPRICE.Columns.Add(this.gridColumn7);
-            this.SALEPRICE.Columns.Add(this.gridColumn8);
-            this.SALEPRICE.Columns.Add(this.gridColumn9);
-            this.SALEPRICE.Columns.Add(this.gridColumn11);
-            this.SALEPRICE.Columns.Add(this.bandedGridColumn51);
-            this.SALEPRICE.Columns.Add(this.bandedGridColumn50);
-            this.SALEPRICE.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
-            this.SALEPRICE.Name = "SALEPRICE";
-            this.SALEPRICE.VisibleIndex = 7;
-            this.SALEPRICE.Width = 605;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn7.AppearanceCell.Options.UseFont = true;
-            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn7.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn7.Caption = "Rap($)";
-            this.gridColumn7.DisplayFormat.FormatString = "###0.00";
-            this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn7.FieldName = "SALERAPAPORT";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.OptionsColumn.AllowEdit = false;
-            this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.Width = 96;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn8.AppearanceCell.Options.UseFont = true;
-            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn8.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn8.Caption = "Disc($)";
-            this.gridColumn8.DisplayFormat.FormatString = "###0.00";
-            this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn8.FieldName = "SALEDISCOUNT";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.OptionsColumn.AllowEdit = false;
-            this.gridColumn8.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.Width = 99;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn9.AppearanceCell.Options.UseFont = true;
-            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn9.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn9.Caption = "$/Cts($)";
-            this.gridColumn9.DisplayFormat.FormatString = "###0.00";
-            this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn9.FieldName = "SALEPRICEPERCARAT";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.OptionsColumn.AllowEdit = false;
-            this.gridColumn9.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.Width = 108;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.gridColumn11.AppearanceCell.Options.UseFont = true;
-            this.gridColumn11.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn11.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn11.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn11.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn11.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.gridColumn11.Caption = "Amt($)";
-            this.gridColumn11.DisplayFormat.FormatString = "###0.00";
-            this.gridColumn11.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.gridColumn11.FieldName = "SALEAMOUNT";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.OptionsColumn.AllowEdit = false;
-            this.gridColumn11.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.Width = 96;
-            // 
-            // bandedGridColumn51
-            // 
-            this.bandedGridColumn51.Caption = "Sale F₹/Cts(₹)";
-            this.bandedGridColumn51.DisplayFormat.FormatString = "###0.00";
-            this.bandedGridColumn51.FieldName = "FSALEPRICEPERCARAT";
-            this.bandedGridColumn51.Name = "bandedGridColumn51";
-            this.bandedGridColumn51.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn51.Visible = true;
-            this.bandedGridColumn51.Width = 106;
-            // 
-            // bandedGridColumn50
-            // 
-            this.bandedGridColumn50.Caption = "Sale FAmt (₹)";
-            this.bandedGridColumn50.DisplayFormat.FormatString = "###0.00";
-            this.bandedGridColumn50.FieldName = "FSALEAMOUNT";
-            this.bandedGridColumn50.Name = "bandedGridColumn50";
-            this.bandedGridColumn50.OptionsColumn.AllowEdit = false;
-            this.bandedGridColumn50.OptionsColumn.ReadOnly = true;
-            this.bandedGridColumn50.Visible = true;
-            this.bandedGridColumn50.Width = 100;
-            // 
-            // BANDJANGEDDETAIL
-            // 
-            this.BANDJANGEDDETAIL.Caption = "JDetail";
-            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn43);
-            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn40);
-            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn41);
-            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn42);
-            this.BANDJANGEDDETAIL.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
-            this.BANDJANGEDDETAIL.Name = "BANDJANGEDDETAIL";
-            this.BANDJANGEDDETAIL.Visible = false;
-            this.BANDJANGEDDETAIL.VisibleIndex = -1;
-            this.BANDJANGEDDETAIL.Width = 405;
-            // 
             // bandedGridColumn43
             // 
             this.bandedGridColumn43.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.bandedGridColumn43.AppearanceCell.Options.UseFont = true;
+            this.bandedGridColumn43.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn43.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn43.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn43.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn43.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9708,7 +9606,7 @@
             this.bandedGridColumn40.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.bandedGridColumn40.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn40.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn40.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn40.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn40.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn40.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn40.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9728,7 +9626,7 @@
             this.bandedGridColumn41.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.bandedGridColumn41.AppearanceCell.Options.UseFont = true;
             this.bandedGridColumn41.AppearanceCell.Options.UseTextOptions = true;
-            this.bandedGridColumn41.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.bandedGridColumn41.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn41.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn41.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn41.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9744,6 +9642,8 @@
             // 
             this.bandedGridColumn42.AppearanceCell.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.bandedGridColumn42.AppearanceCell.Options.UseFont = true;
+            this.bandedGridColumn42.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn42.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn42.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn42.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn42.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9756,6 +9656,8 @@
             // 
             // bandedGridColumn38
             // 
+            this.bandedGridColumn38.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn38.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn38.Caption = "OldMCarat";
             this.bandedGridColumn38.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn38.FieldName = "OLDMEMOPRICEPERCARAT";
@@ -9764,6 +9666,8 @@
             // 
             // bandedGridColumn37
             // 
+            this.bandedGridColumn37.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn37.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn37.Caption = "OldDiscount";
             this.bandedGridColumn37.DisplayFormat.FormatString = "###0.00";
             this.bandedGridColumn37.FieldName = "OLDMEMODISCOUNT";
@@ -9772,6 +9676,8 @@
             // 
             // bandedGridColumn22
             // 
+            this.bandedGridColumn22.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn22.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn22.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn22.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn22.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9781,6 +9687,8 @@
             // 
             // bandedGridColumn23
             // 
+            this.bandedGridColumn23.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn23.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn23.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn23.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn23.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9790,6 +9698,8 @@
             // 
             // bandedGridColumn24
             // 
+            this.bandedGridColumn24.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn24.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn24.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn24.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn24.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9799,6 +9709,8 @@
             // 
             // bandedGridColumn25
             // 
+            this.bandedGridColumn25.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn25.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn25.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn25.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn25.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9808,6 +9720,8 @@
             // 
             // bandedGridColumn26
             // 
+            this.bandedGridColumn26.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn26.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn26.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn26.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn26.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9817,6 +9731,8 @@
             // 
             // bandedGridColumn27
             // 
+            this.bandedGridColumn27.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn27.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn27.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn27.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn27.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9826,6 +9742,8 @@
             // 
             // bandedGridColumn28
             // 
+            this.bandedGridColumn28.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn28.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn28.AppearanceHeader.Options.UseTextOptions = true;
             this.bandedGridColumn28.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn28.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -9835,6 +9753,8 @@
             // 
             // bandedGridColumn35
             // 
+            this.bandedGridColumn35.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn35.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn35.Caption = "NARRATION_ID";
             this.bandedGridColumn35.FieldName = "NARRATION_ID";
             this.bandedGridColumn35.Name = "bandedGridColumn35";
@@ -9885,12 +9805,16 @@
             // 
             // bandedGridColumn34
             // 
+            this.bandedGridColumn34.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn34.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn34.Caption = "LABSERVICECODE_ID";
             this.bandedGridColumn34.FieldName = "LABSERVICECODE_ID";
             this.bandedGridColumn34.Name = "bandedGridColumn34";
             // 
             // bandedGridColumn48
             // 
+            this.bandedGridColumn48.AppearanceCell.Options.UseTextOptions = true;
+            this.bandedGridColumn48.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.bandedGridColumn48.Caption = "BUYER_ID";
             this.bandedGridColumn48.FieldName = "FINALBUYER_ID";
             this.bandedGridColumn48.Name = "bandedGridColumn48";
@@ -10454,9 +10378,9 @@
             // MainGridSummury
             // 
             this.MainGridSummury.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.MainGridSummury.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.MainGridSummury.Location = new System.Drawing.Point(0, 0);
             this.MainGridSummury.MainView = this.GrdSummury;
             this.MainGridSummury.Name = "MainGridSummury";
@@ -10993,9 +10917,9 @@
             // MainGrdDetailParcel
             // 
             this.MainGrdDetailParcel.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.MainGrdDetailParcel.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode3});
             this.MainGrdDetailParcel.Location = new System.Drawing.Point(0, 0);
             this.MainGrdDetailParcel.MainView = this.GrdDetailParcel;
             this.MainGrdDetailParcel.Name = "MainGrdDetailParcel";
@@ -15151,9 +15075,9 @@
             // MainGrdDetailMNL
             // 
             this.MainGrdDetailMNL.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level1";
             this.MainGrdDetailMNL.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3});
+            gridLevelNode4});
             this.MainGrdDetailMNL.Location = new System.Drawing.Point(0, 0);
             this.MainGrdDetailMNL.MainView = this.GrdDetailMNL;
             this.MainGrdDetailMNL.Name = "MainGrdDetailMNL";
@@ -18237,6 +18161,154 @@
             this.gridView14.GridControl = this.MainGridExportMNL;
             this.gridView14.Name = "gridView14";
             // 
+            // BANDSTOCK
+            // 
+            this.BANDSTOCK.Caption = "#Stock";
+            this.BANDSTOCK.Columns.Add(this.bandedGridColumn8);
+            this.BANDSTOCK.Columns.Add(this.gridColumn16);
+            this.BANDSTOCK.Columns.Add(this.bandedGridColumn29);
+            this.BANDSTOCK.Columns.Add(this.bandedGridColumn191);
+            this.BANDSTOCK.Columns.Add(this.colBoxName);
+            this.BANDSTOCK.Columns.Add(this.gridColumn24);
+            this.BANDSTOCK.Columns.Add(this.gridColumn14);
+            this.BANDSTOCK.Columns.Add(this.bandedGridColumn49);
+            this.BANDSTOCK.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.BANDSTOCK.Name = "BANDSTOCK";
+            this.BANDSTOCK.VisibleIndex = 0;
+            this.BANDSTOCK.Width = 165;
+            // 
+            // BANDGENERAL
+            // 
+            this.BANDGENERAL.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.BANDGENERAL.AppearanceHeader.Options.UseFont = true;
+            this.BANDGENERAL.AppearanceHeader.Options.UseTextOptions = true;
+            this.BANDGENERAL.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.BANDGENERAL.Caption = "General";
+            this.BANDGENERAL.Columns.Add(this.gridColumn1);
+            this.BANDGENERAL.Columns.Add(this.gridColumn2);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn30);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn31);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn334);
+            this.BANDGENERAL.Columns.Add(this.gridColumn17);
+            this.BANDGENERAL.Columns.Add(this.gridColumn25);
+            this.BANDGENERAL.Columns.Add(this.gridColumn26);
+            this.BANDGENERAL.Columns.Add(this.gridColumn18);
+            this.BANDGENERAL.Columns.Add(this.gridColumn19);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn7);
+            this.BANDGENERAL.Columns.Add(this.gridColumn20);
+            this.BANDGENERAL.Columns.Add(this.gridColumn21);
+            this.BANDGENERAL.Columns.Add(this.gridColumn22);
+            this.BANDGENERAL.Columns.Add(this.gridColumn23);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn4);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn6);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn32);
+            this.BANDGENERAL.Columns.Add(this.gridColumn15);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn36);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn333);
+            this.BANDGENERAL.Columns.Add(this.bandedGridColumn2);
+            this.BANDGENERAL.Name = "BANDGENERAL";
+            this.BANDGENERAL.VisibleIndex = 1;
+            this.BANDGENERAL.Width = 1356;
+            // 
+            // BndCost
+            // 
+            this.BndCost.Caption = "Cost Price";
+            this.BndCost.Columns.Add(this.bandedGridColumn335);
+            this.BndCost.Columns.Add(this.bandedGridColumn336);
+            this.BndCost.Columns.Add(this.bandedGridColumn337);
+            this.BndCost.Columns.Add(this.bandedGridColumn338);
+            this.BndCost.Name = "BndCost";
+            this.BndCost.VisibleIndex = 2;
+            this.BndCost.Width = 300;
+            // 
+            // BANDEXTRAPARAM
+            // 
+            this.BANDEXTRAPARAM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.BANDEXTRAPARAM.AppearanceHeader.Options.UseFont = true;
+            this.BANDEXTRAPARAM.AppearanceHeader.Options.UseTextOptions = true;
+            this.BANDEXTRAPARAM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.BANDEXTRAPARAM.Caption = "Purch. Inv Ext Param";
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn10);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn11);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn12);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn13);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn14);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn15);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn16);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn17);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn18);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn19);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn20);
+            this.BANDEXTRAPARAM.Columns.Add(this.bandedGridColumn21);
+            this.BANDEXTRAPARAM.Name = "BANDEXTRAPARAM";
+            this.BANDEXTRAPARAM.VisibleIndex = 3;
+            this.BANDEXTRAPARAM.Width = 902;
+            // 
+            // BANDEXPORT
+            // 
+            this.BANDEXPORT.Caption = "Export";
+            this.BANDEXPORT.Columns.Add(this.bandedGridColumn44);
+            this.BANDEXPORT.Columns.Add(this.bandedGridColumn45);
+            this.BANDEXPORT.Columns.Add(this.bandedGridColumn46);
+            this.BANDEXPORT.Columns.Add(this.bandedGridColumn47);
+            this.BANDEXPORT.Name = "BANDEXPORT";
+            this.BANDEXPORT.VisibleIndex = 4;
+            this.BANDEXPORT.Width = 150;
+            // 
+            // BandLabService
+            // 
+            this.BandLabService.Caption = "Lab Service";
+            this.BandLabService.Columns.Add(this.bandedGridColumn33);
+            this.BandLabService.Name = "BandLabService";
+            this.BandLabService.VisibleIndex = 5;
+            this.BandLabService.Width = 94;
+            // 
+            // c
+            // 
+            this.c.AppearanceHeader.BackColor = System.Drawing.Color.Transparent;
+            this.c.AppearanceHeader.Options.UseBackColor = true;
+            this.c.Caption = "Memo Price";
+            this.c.Columns.Add(this.gridColumn27);
+            this.c.Columns.Add(this.gridColumn7);
+            this.c.Columns.Add(this.gridColumn8);
+            this.c.Columns.Add(this.gridColumn9);
+            this.c.Columns.Add(this.bandedGridColumn51);
+            this.c.Columns.Add(this.gridColumn11);
+            this.c.Columns.Add(this.bandedGridColumn50);
+            this.c.Name = "c";
+            this.c.VisibleIndex = 6;
+            this.c.Width = 605;
+            // 
+            // MEMOPRICE
+            // 
+            this.MEMOPRICE.AppearanceHeader.Options.UseTextOptions = true;
+            this.MEMOPRICE.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.MEMOPRICE.Caption = "Sale Price";
+            this.MEMOPRICE.Columns.Add(this.gridColumn3);
+            this.MEMOPRICE.Columns.Add(this.bandedGridColumn332);
+            this.MEMOPRICE.Columns.Add(this.gridColumn4);
+            this.MEMOPRICE.Columns.Add(this.gridColumn5);
+            this.MEMOPRICE.Columns.Add(this.gridColumn10);
+            this.MEMOPRICE.Columns.Add(this.gridColumn12);
+            this.MEMOPRICE.Columns.Add(this.gridColumn6);
+            this.MEMOPRICE.Columns.Add(this.gridColumn13);
+            this.MEMOPRICE.Name = "MEMOPRICE";
+            this.MEMOPRICE.VisibleIndex = 7;
+            this.MEMOPRICE.Width = 679;
+            // 
+            // BANDJANGEDDETAIL
+            // 
+            this.BANDJANGEDDETAIL.Caption = "JDetail";
+            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn43);
+            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn40);
+            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn41);
+            this.BANDJANGEDDETAIL.Columns.Add(this.bandedGridColumn42);
+            this.BANDJANGEDDETAIL.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.BANDJANGEDDETAIL.Name = "BANDJANGEDDETAIL";
+            this.BANDJANGEDDETAIL.Visible = false;
+            this.BANDJANGEDDETAIL.VisibleIndex = -1;
+            this.BANDJANGEDDETAIL.Width = 405;
+            // 
             // FrmMemoEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -19740,6 +19812,8 @@
         private System.Windows.Forms.ToolStripMenuItem deleteStoneFromDetailToolStripMenuItem;
         private DevControlLib.cDevSimpleButton BtnLedgerList;
         private DevControlLib.cDevSimpleButton BtnAddNewLedger;
+        private AxonContLib.cLabel cLabel8;
+        private AxonContLib.cTextBox txtPricePerCaratDisc;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand BANDSTOCK;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand BANDGENERAL;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand BndCost;
@@ -19747,9 +19821,7 @@
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand BANDEXPORT;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand BandLabService;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand c;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand SALEPRICE;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand MEMOPRICE;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand BANDJANGEDDETAIL;
-        private AxonContLib.cLabel cLabel8;
-        private AxonContLib.cTextBox txtPricePerCaratDisc;
     }
 }
