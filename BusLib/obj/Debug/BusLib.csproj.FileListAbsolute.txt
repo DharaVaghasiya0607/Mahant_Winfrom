@@ -249,7 +249,6 @@ D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.dll
 D:\Office\Axone\MahantExport\Mahant_03062025\Mahant\BusLib\obj\Debug\BusLib.pdb
 D:\Git\Mahant_Winfrom\BusLib\bin\Debug\BusLib.dll
 D:\Git\Mahant_Winfrom\BusLib\bin\Debug\BusLib.pdb
-D:\Git\Mahant_Winfrom\BusLib\obj\Debug\BusLib.csproj.AssemblyReference.cache
 D:\Git\Mahant_Winfrom\BusLib\obj\Debug\BusLib.csproj.CoreCompileInputs.cache
 D:\Git\Mahant_Winfrom\BusLib\obj\Debug\BusLib.csproj.CopyComplete
 D:\Git\Mahant_Winfrom\BusLib\obj\Debug\BusLib.dll
