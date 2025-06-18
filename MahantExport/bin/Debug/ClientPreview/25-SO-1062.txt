@@ -1,0 +1,17 @@
+MAHANT EXPORTS  Date : 11/06/2025
+Bill Type : RupeesBill
+
+7 DAYS
+Name : NEEL MADHAV
+Broker : 
+Phone No : 
+Client ID :    Order No : 25/SO/1062
+Bank Rate : 85.51   TOTAL PCS : 1   T.WT : 1.88
+-----------------------------------------------------
+Stone ID: 427-432  Certi No: 702504520
+Carat: 1.88  EM  D  VS1
+Disc%: -99.360      $/Cts: 74.000      P/CTS: 6,327.740
+Tot $: 139.12      T/AT : 11,896.15
+-----------------------------------------------------
+Total $ : 139    T.AMOUNT-11,896
+-----------------------------------------------------

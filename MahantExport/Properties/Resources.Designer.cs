@@ -1033,6 +1033,16 @@ namespace MahantExport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Whatsapp {
+            get {
+                object obj = ResourceManager.GetObject("Whatsapp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wishlistNew {
             get {
                 object obj = ResourceManager.GetObject("wishlistNew", resourceCulture);

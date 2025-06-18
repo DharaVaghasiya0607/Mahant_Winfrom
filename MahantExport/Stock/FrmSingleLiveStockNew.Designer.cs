@@ -303,6 +303,7 @@ namespace MahantExport.Stock
             this.BtnLabIssue = new DevExpress.XtraEditors.SimpleButton();
             this.BtnLabReturn = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnSendMessage = new DevExpress.XtraEditors.SimpleButton();
             this.panel21 = new System.Windows.Forms.Panel();
             this.RbtShortMsg = new System.Windows.Forms.CheckBox();
             this.RbtLongMsg = new System.Windows.Forms.CheckBox();
@@ -4632,11 +4633,23 @@ namespace MahantExport.Stock
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.btnSendMessage);
             this.xtraTabPage1.Controls.Add(this.panel21);
             this.xtraTabPage1.Controls.Add(this.panel18);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(612, 221);
             this.xtraTabPage1.Text = "MESSAGE";
+            // 
+            // btnSendMessage
+            // 
+            this.btnSendMessage.Appearance.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSendMessage.Appearance.Options.UseFont = true;
+            this.btnSendMessage.Location = new System.Drawing.Point(387, 161);
+            this.btnSendMessage.Name = "btnSendMessage";
+            this.btnSendMessage.Size = new System.Drawing.Size(141, 53);
+            this.btnSendMessage.TabIndex = 210;
+            this.btnSendMessage.Text = "WhatsApp";
+            this.btnSendMessage.Click += new System.EventHandler(this.btnSendMessage_Click);
             // 
             // panel21
             // 
@@ -7329,5 +7342,6 @@ namespace MahantExport.Stock
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn202;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn203;
         private DevExpress.XtraEditors.SimpleButton BtnGridExport;
+        private DevExpress.XtraEditors.SimpleButton btnSendMessage;
     }
 }

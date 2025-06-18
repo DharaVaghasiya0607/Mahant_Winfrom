@@ -59,6 +59,7 @@ namespace MahantExport.Stock
         string StrEmail = "";
         string mStrStockType = "";
         bool chkOnAndOff;
+        string pStrWhatsappMessage = "";
 
         string pStrDiamondType = "";
         string pStrStockNo = "";
@@ -8162,6 +8163,22 @@ namespace MahantExport.Stock
             {
                 Global.MessageError(EX.Message);
             }
+        }
+
+        private void btnSendMessage_Click(object sender, EventArgs e)
+        {
+            pStrWhatsappMessage = Val.ToString(txtMessage.Text);
+            if (pStrWhatsappMessage == "")
+            {
+                if (Global.Confirm("No any Message found\n\nStil you want to send Message ?") == System.Windows.Forms.DialogResult.No)
+                {
+                    return;
+                }
+            }
+            FrmSendWhatsAppMessage FrmSendWhatsAppMessage = new FrmSendWhatsAppMessage();
+            FrmSendWhatsAppMessage.MdiParent = Global.gMainRef;
+            FrmSendWhatsAppMessage.ShowForm(pStrWhatsappMessage);
+            ObjFormEvent.ObjToDisposeList.Add(FrmSendWhatsAppMessage);
         }
     }
 }

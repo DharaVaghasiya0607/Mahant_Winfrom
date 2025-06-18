@@ -1,0 +1,17 @@
+MAHANT EXPORTS  Date : 13/05/2025
+Bill Type : Cash
+
+COD
+Name : SAMKIT GEMS
+Broker : 
+Phone No : +91 98256 58712
+Client ID : 4517   Order No : 25/SO/348
+Bank Rate : 85.26   TOTAL PCS : 1   T.WT : 4.02
+-----------------------------------------------------
+Stone ID: 402-04  Certi No: 678596147
+Carat: 4.02  AS  D  VS2
+Disc%: -99.750      $/Cts: 94.030      P/CTS: 8,312.850
+Tot $: 378.00      T/AT : 33,417.66
+-----------------------------------------------------
+Total $ : 378    T.AMOUNT-32,228
+-----------------------------------------------------
