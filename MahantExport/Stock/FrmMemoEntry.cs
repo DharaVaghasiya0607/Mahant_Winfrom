@@ -585,6 +585,12 @@ namespace MahantExport.Stock
                     DRNew["MAINMEMO_ID"] = StrMainMemo_ID;
                     DRNew["EXCRATE"] = Val.Val(txtExcRate.Text);//DRow["EXCRATE"];
                     DRNew["DIAMONDTYPE"] = DRow["DIAMONDTYPE"];
+
+                    DRNew["VDBRAPAPORT"] = DRow["VDBRAPAPORT"];
+                    DRNew["VDBPRICEPERCARAT"] = DRow["VDBPRICEPERCARAT"];
+                    DRNew["VDBDISCOUNT"] = DRow["VDBDISCOUNT"];
+                    DRNew["VDBAMOUNT"] = DRow["VDBAMOUNT"];
+
                     DTabMemoDetail.Rows.Add(DRNew);
                 }
 
