@@ -251,6 +251,7 @@ namespace MahantExport.Stock
             this.gridColumn199 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn202 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn203 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn189 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repChkNoBlack = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repChkNoBGM = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.RepIsFancy = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
@@ -876,7 +877,8 @@ namespace MahantExport.Stock
             this.gridColumn197,
             this.gridColumn199,
             this.gridColumn202,
-            this.gridColumn203});
+            this.gridColumn203,
+            this.gridColumn189});
             this.GrdDetail.FooterPanelHeight = 20;
             this.GrdDetail.GridControl = this.MainGrdDetail;
             this.GrdDetail.Name = "GrdDetail";
@@ -1781,7 +1783,7 @@ namespace MahantExport.Stock
             this.gridColumn42.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn42.Visible = true;
             this.gridColumn42.VisibleIndex = 28;
-            this.gridColumn42.Width = 61;
+            this.gridColumn42.Width = 101;
             // 
             // gridColumn43
             // 
@@ -1796,8 +1798,6 @@ namespace MahantExport.Stock
             this.gridColumn43.FieldName = "GIRDLEDESC";
             this.gridColumn43.Name = "gridColumn43";
             this.gridColumn43.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn43.Visible = true;
-            this.gridColumn43.VisibleIndex = 29;
             this.gridColumn43.Width = 93;
             // 
             // gridColumn118
@@ -1813,8 +1813,6 @@ namespace MahantExport.Stock
             this.gridColumn118.FieldName = "GIRDLECONDITION";
             this.gridColumn118.Name = "gridColumn118";
             this.gridColumn118.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn118.Visible = true;
-            this.gridColumn118.VisibleIndex = 30;
             this.gridColumn118.Width = 144;
             // 
             // gridColumn44
@@ -1830,8 +1828,6 @@ namespace MahantExport.Stock
             this.gridColumn44.FieldName = "KEYTOSYMBOL";
             this.gridColumn44.Name = "gridColumn44";
             this.gridColumn44.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
-            this.gridColumn44.Visible = true;
-            this.gridColumn44.VisibleIndex = 31;
             this.gridColumn44.Width = 120;
             // 
             // gridColumn45
@@ -2054,7 +2050,7 @@ namespace MahantExport.Stock
             this.gridColumn66.Name = "gridColumn66";
             this.gridColumn66.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn66.Visible = true;
-            this.gridColumn66.VisibleIndex = 36;
+            this.gridColumn66.VisibleIndex = 33;
             // 
             // gridColumn67
             // 
@@ -2191,7 +2187,7 @@ namespace MahantExport.Stock
             this.gridColumn53.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn53.ToolTip = "Stone Certificate";
             this.gridColumn53.Visible = true;
-            this.gridColumn53.VisibleIndex = 81;
+            this.gridColumn53.VisibleIndex = 79;
             this.gridColumn53.Width = 25;
             // 
             // RptCert
@@ -2220,7 +2216,7 @@ namespace MahantExport.Stock
             this.gridColumn54.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn54.ToolTip = "Stone Images";
             this.gridColumn54.Visible = true;
-            this.gridColumn54.VisibleIndex = 79;
+            this.gridColumn54.VisibleIndex = 77;
             this.gridColumn54.Width = 25;
             // 
             // RptImage
@@ -2248,7 +2244,7 @@ namespace MahantExport.Stock
             this.gridColumn55.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn55.ToolTip = "Stone Video";
             this.gridColumn55.Visible = true;
-            this.gridColumn55.VisibleIndex = 80;
+            this.gridColumn55.VisibleIndex = 78;
             this.gridColumn55.Width = 25;
             // 
             // RptVideo
@@ -2272,7 +2268,7 @@ namespace MahantExport.Stock
             this.gridColumn168.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn168.ToolTip = "Stone Comment";
             this.gridColumn168.Visible = true;
-            this.gridColumn168.VisibleIndex = 82;
+            this.gridColumn168.VisibleIndex = 80;
             this.gridColumn168.Width = 25;
             // 
             // gridColumn86
@@ -2474,7 +2470,7 @@ namespace MahantExport.Stock
             this.gridColumn138.OptionsColumn.AllowEdit = false;
             this.gridColumn138.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn138.Visible = true;
-            this.gridColumn138.VisibleIndex = 38;
+            this.gridColumn138.VisibleIndex = 35;
             this.gridColumn138.Width = 94;
             // 
             // gridColumn139
@@ -2493,7 +2489,7 @@ namespace MahantExport.Stock
             this.gridColumn139.Name = "gridColumn139";
             this.gridColumn139.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn139.Visible = true;
-            this.gridColumn139.VisibleIndex = 39;
+            this.gridColumn139.VisibleIndex = 36;
             // 
             // gridColumn140
             // 
@@ -2511,7 +2507,7 @@ namespace MahantExport.Stock
             this.gridColumn140.Name = "gridColumn140";
             this.gridColumn140.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn140.Visible = true;
-            this.gridColumn140.VisibleIndex = 40;
+            this.gridColumn140.VisibleIndex = 37;
             this.gridColumn140.Width = 87;
             // 
             // gridColumn141
@@ -2532,7 +2528,7 @@ namespace MahantExport.Stock
             this.gridColumn141.Name = "gridColumn141";
             this.gridColumn141.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn141.Visible = true;
-            this.gridColumn141.VisibleIndex = 41;
+            this.gridColumn141.VisibleIndex = 39;
             this.gridColumn141.Width = 97;
             // 
             // gridColumn142
@@ -2551,7 +2547,7 @@ namespace MahantExport.Stock
             this.gridColumn142.Name = "gridColumn142";
             this.gridColumn142.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn142.Visible = true;
-            this.gridColumn142.VisibleIndex = 42;
+            this.gridColumn142.VisibleIndex = 38;
             this.gridColumn142.Width = 99;
             // 
             // gridColumn143
@@ -2564,13 +2560,13 @@ namespace MahantExport.Stock
             this.gridColumn143.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn143.AppearanceHeader.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.gridColumn143.Caption = "Order Date";
-            this.gridColumn143.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn143.DisplayFormat.FormatString = "dd - MM -yyyy HH:mm:tt";
             this.gridColumn143.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn143.FieldName = "SALESDATE";
             this.gridColumn143.Name = "gridColumn143";
             this.gridColumn143.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn143.Visible = true;
-            this.gridColumn143.VisibleIndex = 43;
+            this.gridColumn143.VisibleIndex = 41;
             this.gridColumn143.Width = 96;
             // 
             // gridColumn144
@@ -2589,7 +2585,7 @@ namespace MahantExport.Stock
             this.gridColumn144.Name = "gridColumn144";
             this.gridColumn144.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn144.Visible = true;
-            this.gridColumn144.VisibleIndex = 44;
+            this.gridColumn144.VisibleIndex = 42;
             this.gridColumn144.Width = 90;
             // 
             // gridColumn147
@@ -2678,7 +2674,7 @@ namespace MahantExport.Stock
             this.gridColumn152.Name = "gridColumn152";
             this.gridColumn152.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn152.Visible = true;
-            this.gridColumn152.VisibleIndex = 37;
+            this.gridColumn152.VisibleIndex = 34;
             this.gridColumn152.Width = 250;
             // 
             // gridColumn153
@@ -2754,7 +2750,7 @@ namespace MahantExport.Stock
             this.gridColumn157.Name = "gridColumn157";
             this.gridColumn157.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn157.Visible = true;
-            this.gridColumn157.VisibleIndex = 86;
+            this.gridColumn157.VisibleIndex = 84;
             // 
             // gridColumn160
             // 
@@ -2977,7 +2973,7 @@ namespace MahantExport.Stock
             this.gridColumn34.Name = "gridColumn34";
             this.gridColumn34.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn34.Visible = true;
-            this.gridColumn34.VisibleIndex = 45;
+            this.gridColumn34.VisibleIndex = 43;
             // 
             // gridColumn75
             // 
@@ -2988,7 +2984,7 @@ namespace MahantExport.Stock
             this.gridColumn75.Name = "gridColumn75";
             this.gridColumn75.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn75.Visible = true;
-            this.gridColumn75.VisibleIndex = 46;
+            this.gridColumn75.VisibleIndex = 44;
             // 
             // gridColumn76
             // 
@@ -3008,7 +3004,7 @@ namespace MahantExport.Stock
             this.gridColumn77.Name = "gridColumn77";
             this.gridColumn77.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn77.Visible = true;
-            this.gridColumn77.VisibleIndex = 47;
+            this.gridColumn77.VisibleIndex = 45;
             // 
             // gridColumn78
             // 
@@ -3019,7 +3015,7 @@ namespace MahantExport.Stock
             this.gridColumn78.Name = "gridColumn78";
             this.gridColumn78.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn78.Visible = true;
-            this.gridColumn78.VisibleIndex = 48;
+            this.gridColumn78.VisibleIndex = 46;
             // 
             // gridColumn79
             // 
@@ -3030,7 +3026,7 @@ namespace MahantExport.Stock
             this.gridColumn79.Name = "gridColumn79";
             this.gridColumn79.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn79.Visible = true;
-            this.gridColumn79.VisibleIndex = 49;
+            this.gridColumn79.VisibleIndex = 47;
             this.gridColumn79.Width = 84;
             // 
             // gridColumn80
@@ -3042,7 +3038,7 @@ namespace MahantExport.Stock
             this.gridColumn80.Name = "gridColumn80";
             this.gridColumn80.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn80.Visible = true;
-            this.gridColumn80.VisibleIndex = 50;
+            this.gridColumn80.VisibleIndex = 48;
             this.gridColumn80.Width = 86;
             // 
             // gridColumn81
@@ -3054,7 +3050,7 @@ namespace MahantExport.Stock
             this.gridColumn81.Name = "gridColumn81";
             this.gridColumn81.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn81.Visible = true;
-            this.gridColumn81.VisibleIndex = 51;
+            this.gridColumn81.VisibleIndex = 49;
             // 
             // gridColumn82
             // 
@@ -3065,7 +3061,7 @@ namespace MahantExport.Stock
             this.gridColumn82.Name = "gridColumn82";
             this.gridColumn82.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn82.Visible = true;
-            this.gridColumn82.VisibleIndex = 52;
+            this.gridColumn82.VisibleIndex = 50;
             // 
             // gridColumn83
             // 
@@ -3076,7 +3072,7 @@ namespace MahantExport.Stock
             this.gridColumn83.Name = "gridColumn83";
             this.gridColumn83.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn83.Visible = true;
-            this.gridColumn83.VisibleIndex = 53;
+            this.gridColumn83.VisibleIndex = 51;
             // 
             // gridColumn84
             // 
@@ -3087,7 +3083,7 @@ namespace MahantExport.Stock
             this.gridColumn84.Name = "gridColumn84";
             this.gridColumn84.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn84.Visible = true;
-            this.gridColumn84.VisibleIndex = 54;
+            this.gridColumn84.VisibleIndex = 52;
             // 
             // gridColumn85
             // 
@@ -3098,7 +3094,7 @@ namespace MahantExport.Stock
             this.gridColumn85.Name = "gridColumn85";
             this.gridColumn85.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn85.Visible = true;
-            this.gridColumn85.VisibleIndex = 55;
+            this.gridColumn85.VisibleIndex = 53;
             // 
             // gridColumn196
             // 
@@ -3108,7 +3104,7 @@ namespace MahantExport.Stock
             this.gridColumn196.FieldName = "GIRDLEINCNAME";
             this.gridColumn196.Name = "gridColumn196";
             this.gridColumn196.Visible = true;
-            this.gridColumn196.VisibleIndex = 56;
+            this.gridColumn196.VisibleIndex = 54;
             // 
             // gridColumn87
             // 
@@ -3119,7 +3115,7 @@ namespace MahantExport.Stock
             this.gridColumn87.Name = "gridColumn87";
             this.gridColumn87.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn87.Visible = true;
-            this.gridColumn87.VisibleIndex = 57;
+            this.gridColumn87.VisibleIndex = 55;
             // 
             // gridColumn88
             // 
@@ -3130,7 +3126,7 @@ namespace MahantExport.Stock
             this.gridColumn88.Name = "gridColumn88";
             this.gridColumn88.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn88.Visible = true;
-            this.gridColumn88.VisibleIndex = 58;
+            this.gridColumn88.VisibleIndex = 56;
             this.gridColumn88.Width = 99;
             // 
             // gridColumn191
@@ -3162,7 +3158,7 @@ namespace MahantExport.Stock
             this.gridColumn89.Name = "gridColumn89";
             this.gridColumn89.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn89.Visible = true;
-            this.gridColumn89.VisibleIndex = 59;
+            this.gridColumn89.VisibleIndex = 57;
             this.gridColumn89.Width = 87;
             // 
             // gridColumn90
@@ -3174,7 +3170,7 @@ namespace MahantExport.Stock
             this.gridColumn90.Name = "gridColumn90";
             this.gridColumn90.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn90.Visible = true;
-            this.gridColumn90.VisibleIndex = 60;
+            this.gridColumn90.VisibleIndex = 58;
             // 
             // gridColumn91
             // 
@@ -3185,7 +3181,7 @@ namespace MahantExport.Stock
             this.gridColumn91.Name = "gridColumn91";
             this.gridColumn91.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn91.Visible = true;
-            this.gridColumn91.VisibleIndex = 61;
+            this.gridColumn91.VisibleIndex = 59;
             // 
             // gridColumn92
             // 
@@ -3196,7 +3192,7 @@ namespace MahantExport.Stock
             this.gridColumn92.Name = "gridColumn92";
             this.gridColumn92.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn92.Visible = true;
-            this.gridColumn92.VisibleIndex = 62;
+            this.gridColumn92.VisibleIndex = 60;
             this.gridColumn92.Width = 97;
             // 
             // gridColumn93
@@ -3208,7 +3204,7 @@ namespace MahantExport.Stock
             this.gridColumn93.Name = "gridColumn93";
             this.gridColumn93.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn93.Visible = true;
-            this.gridColumn93.VisibleIndex = 63;
+            this.gridColumn93.VisibleIndex = 61;
             this.gridColumn93.Width = 89;
             // 
             // gridColumn94
@@ -3220,7 +3216,7 @@ namespace MahantExport.Stock
             this.gridColumn94.Name = "gridColumn94";
             this.gridColumn94.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn94.Visible = true;
-            this.gridColumn94.VisibleIndex = 64;
+            this.gridColumn94.VisibleIndex = 62;
             this.gridColumn94.Width = 90;
             // 
             // gridColumn95
@@ -3232,7 +3228,7 @@ namespace MahantExport.Stock
             this.gridColumn95.Name = "gridColumn95";
             this.gridColumn95.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn95.Visible = true;
-            this.gridColumn95.VisibleIndex = 65;
+            this.gridColumn95.VisibleIndex = 63;
             // 
             // gridColumn96
             // 
@@ -3243,7 +3239,7 @@ namespace MahantExport.Stock
             this.gridColumn96.Name = "gridColumn96";
             this.gridColumn96.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn96.Visible = true;
-            this.gridColumn96.VisibleIndex = 66;
+            this.gridColumn96.VisibleIndex = 64;
             // 
             // gridColumn97
             // 
@@ -3254,7 +3250,7 @@ namespace MahantExport.Stock
             this.gridColumn97.Name = "gridColumn97";
             this.gridColumn97.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn97.Visible = true;
-            this.gridColumn97.VisibleIndex = 67;
+            this.gridColumn97.VisibleIndex = 65;
             // 
             // gridColumn98
             // 
@@ -3265,7 +3261,7 @@ namespace MahantExport.Stock
             this.gridColumn98.Name = "gridColumn98";
             this.gridColumn98.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn98.Visible = true;
-            this.gridColumn98.VisibleIndex = 68;
+            this.gridColumn98.VisibleIndex = 66;
             // 
             // gridColumn99
             // 
@@ -3276,7 +3272,7 @@ namespace MahantExport.Stock
             this.gridColumn99.Name = "gridColumn99";
             this.gridColumn99.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn99.Visible = true;
-            this.gridColumn99.VisibleIndex = 69;
+            this.gridColumn99.VisibleIndex = 67;
             // 
             // gridColumn102
             // 
@@ -3287,7 +3283,7 @@ namespace MahantExport.Stock
             this.gridColumn102.Name = "gridColumn102";
             this.gridColumn102.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn102.Visible = true;
-            this.gridColumn102.VisibleIndex = 70;
+            this.gridColumn102.VisibleIndex = 68;
             // 
             // gridColumn103
             // 
@@ -3298,7 +3294,7 @@ namespace MahantExport.Stock
             this.gridColumn103.Name = "gridColumn103";
             this.gridColumn103.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn103.Visible = true;
-            this.gridColumn103.VisibleIndex = 71;
+            this.gridColumn103.VisibleIndex = 69;
             this.gridColumn103.Width = 95;
             // 
             // gridColumn104
@@ -3310,7 +3306,7 @@ namespace MahantExport.Stock
             this.gridColumn104.Name = "gridColumn104";
             this.gridColumn104.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn104.Visible = true;
-            this.gridColumn104.VisibleIndex = 72;
+            this.gridColumn104.VisibleIndex = 70;
             this.gridColumn104.Width = 108;
             // 
             // gridColumn105
@@ -3322,7 +3318,7 @@ namespace MahantExport.Stock
             this.gridColumn105.Name = "gridColumn105";
             this.gridColumn105.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn105.Visible = true;
-            this.gridColumn105.VisibleIndex = 73;
+            this.gridColumn105.VisibleIndex = 71;
             // 
             // gridColumn106
             // 
@@ -3333,7 +3329,7 @@ namespace MahantExport.Stock
             this.gridColumn106.Name = "gridColumn106";
             this.gridColumn106.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn106.Visible = true;
-            this.gridColumn106.VisibleIndex = 74;
+            this.gridColumn106.VisibleIndex = 72;
             // 
             // gridColumn107
             // 
@@ -3344,7 +3340,7 @@ namespace MahantExport.Stock
             this.gridColumn107.Name = "gridColumn107";
             this.gridColumn107.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn107.Visible = true;
-            this.gridColumn107.VisibleIndex = 75;
+            this.gridColumn107.VisibleIndex = 73;
             // 
             // gridColumn108
             // 
@@ -3355,7 +3351,7 @@ namespace MahantExport.Stock
             this.gridColumn108.Name = "gridColumn108";
             this.gridColumn108.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn108.Visible = true;
-            this.gridColumn108.VisibleIndex = 76;
+            this.gridColumn108.VisibleIndex = 74;
             // 
             // gridColumn109
             // 
@@ -3366,7 +3362,7 @@ namespace MahantExport.Stock
             this.gridColumn109.Name = "gridColumn109";
             this.gridColumn109.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn109.Visible = true;
-            this.gridColumn109.VisibleIndex = 77;
+            this.gridColumn109.VisibleIndex = 75;
             // 
             // gridColumn110
             // 
@@ -3485,7 +3481,7 @@ namespace MahantExport.Stock
             this.gridColumn126.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
             this.gridColumn126.Visible = true;
-            this.gridColumn126.VisibleIndex = 32;
+            this.gridColumn126.VisibleIndex = 29;
             // 
             // gridColumn145
             // 
@@ -3500,7 +3496,7 @@ namespace MahantExport.Stock
             this.gridColumn145.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
             this.gridColumn145.Visible = true;
-            this.gridColumn145.VisibleIndex = 33;
+            this.gridColumn145.VisibleIndex = 30;
             // 
             // gridColumn169
             // 
@@ -3515,7 +3511,7 @@ namespace MahantExport.Stock
             this.gridColumn169.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Custom)});
             this.gridColumn169.Visible = true;
-            this.gridColumn169.VisibleIndex = 34;
+            this.gridColumn169.VisibleIndex = 31;
             // 
             // gridColumn170
             // 
@@ -3530,7 +3526,7 @@ namespace MahantExport.Stock
             this.gridColumn170.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn170.Visible = true;
-            this.gridColumn170.VisibleIndex = 35;
+            this.gridColumn170.VisibleIndex = 32;
             // 
             // gridColumn171
             // 
@@ -3544,7 +3540,7 @@ namespace MahantExport.Stock
             this.gridColumn171.Name = "gridColumn171";
             this.gridColumn171.OptionsColumn.AllowEdit = false;
             this.gridColumn171.Visible = true;
-            this.gridColumn171.VisibleIndex = 78;
+            this.gridColumn171.VisibleIndex = 76;
             this.gridColumn171.Width = 85;
             // 
             // gridColumn172
@@ -3650,7 +3646,7 @@ namespace MahantExport.Stock
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn179.ToolTip = "Cart Stone Count";
             this.gridColumn179.Visible = true;
-            this.gridColumn179.VisibleIndex = 85;
+            this.gridColumn179.VisibleIndex = 83;
             this.gridColumn179.Width = 30;
             // 
             // gridColumn180
@@ -3667,7 +3663,7 @@ namespace MahantExport.Stock
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn180.ToolTip = "Wishlist Stone Count";
             this.gridColumn180.Visible = true;
-            this.gridColumn180.VisibleIndex = 84;
+            this.gridColumn180.VisibleIndex = 82;
             this.gridColumn180.Width = 30;
             // 
             // gridColumn181
@@ -3684,7 +3680,7 @@ namespace MahantExport.Stock
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
             this.gridColumn181.ToolTip = "Most Clickable Stone Count";
             this.gridColumn181.Visible = true;
-            this.gridColumn181.VisibleIndex = 83;
+            this.gridColumn181.VisibleIndex = 81;
             this.gridColumn181.Width = 30;
             // 
             // gridColumn183
@@ -3802,7 +3798,7 @@ namespace MahantExport.Stock
             this.gridColumn23.OptionsColumn.AllowEdit = false;
             this.gridColumn23.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn23.Visible = true;
-            this.gridColumn23.VisibleIndex = 87;
+            this.gridColumn23.VisibleIndex = 85;
             this.gridColumn23.Width = 103;
             // 
             // gridColumn52
@@ -3815,7 +3811,7 @@ namespace MahantExport.Stock
             this.gridColumn52.OptionsColumn.AllowEdit = false;
             this.gridColumn52.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn52.Visible = true;
-            this.gridColumn52.VisibleIndex = 88;
+            this.gridColumn52.VisibleIndex = 86;
             this.gridColumn52.Width = 87;
             // 
             // gridColumn56
@@ -3828,7 +3824,7 @@ namespace MahantExport.Stock
             this.gridColumn56.OptionsColumn.AllowEdit = false;
             this.gridColumn56.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn56.Visible = true;
-            this.gridColumn56.VisibleIndex = 89;
+            this.gridColumn56.VisibleIndex = 87;
             // 
             // gridColumn195
             // 
@@ -3840,7 +3836,7 @@ namespace MahantExport.Stock
             this.gridColumn195.OptionsColumn.AllowEdit = false;
             this.gridColumn195.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn195.Visible = true;
-            this.gridColumn195.VisibleIndex = 90;
+            this.gridColumn195.VisibleIndex = 88;
             // 
             // gridColumn197
             // 
@@ -3852,7 +3848,7 @@ namespace MahantExport.Stock
             this.gridColumn197.OptionsColumn.AllowEdit = false;
             this.gridColumn197.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.gridColumn197.Visible = true;
-            this.gridColumn197.VisibleIndex = 91;
+            this.gridColumn197.VisibleIndex = 89;
             // 
             // gridColumn199
             // 
@@ -3886,6 +3882,19 @@ namespace MahantExport.Stock
             this.gridColumn203.Visible = true;
             this.gridColumn203.VisibleIndex = 2;
             this.gridColumn203.Width = 103;
+            // 
+            // gridColumn189
+            // 
+            this.gridColumn189.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn189.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn189.Caption = "Memo Date";
+            this.gridColumn189.DisplayFormat.FormatString = "dd-MM-yyyy HH:mm:tt";
+            this.gridColumn189.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.gridColumn189.FieldName = "MEMODATE";
+            this.gridColumn189.Name = "gridColumn189";
+            this.gridColumn189.Visible = true;
+            this.gridColumn189.VisibleIndex = 40;
+            this.gridColumn189.Width = 78;
             // 
             // repChkNoBlack
             // 
@@ -4637,7 +4646,7 @@ namespace MahantExport.Stock
             this.xtraTabPage1.Controls.Add(this.panel21);
             this.xtraTabPage1.Controls.Add(this.panel18);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(612, 221);
+            this.xtraTabPage1.Size = new System.Drawing.Size(610, 222);
             this.xtraTabPage1.Text = "MESSAGE";
             // 
             // btnSendMessage
@@ -4649,6 +4658,7 @@ namespace MahantExport.Stock
             this.btnSendMessage.Size = new System.Drawing.Size(141, 53);
             this.btnSendMessage.TabIndex = 210;
             this.btnSendMessage.Text = "WhatsApp";
+            this.btnSendMessage.Visible = false;
             this.btnSendMessage.Click += new System.EventHandler(this.btnSendMessage_Click);
             // 
             // panel21
@@ -7343,5 +7353,6 @@ namespace MahantExport.Stock
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn203;
         private DevExpress.XtraEditors.SimpleButton BtnGridExport;
         private DevExpress.XtraEditors.SimpleButton btnSendMessage;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn189;
     }
 }
