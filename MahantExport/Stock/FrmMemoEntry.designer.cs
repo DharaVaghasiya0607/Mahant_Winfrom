@@ -6267,7 +6267,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1384, 32);
             this.panel7.TabIndex = 0;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // lblStockType
             // 

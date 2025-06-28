@@ -81,6 +81,36 @@ namespace MahantExport.Report
             }
 
         }
+        public void ShowFormJangadPrintWithDuplicate(string pStrReport, DataSet DS)
+        {
+            try
+            {
+                string reportPath = Path.Combine(Application.StartupPath, "RPT", pStrReport + ".rpt");
+
+                if (!File.Exists(reportPath))
+                {
+                    Global.Message("Report file not found: " + reportPath);
+                    return;
+                }
+
+                RepDoc.Load(reportPath);
+
+                RepDoc.Subreports["Original.rpt"].SetDataSource(DS.Tables[0]);
+                RepDoc.Subreports["Duplicate.rpt"].SetDataSource(DS.Tables[1]);
+
+                StrPrint = pStrReport;
+                crystalReportViewer1.ReportSource = RepDoc;
+                crystalReportViewer1.Zoom(120);
+                crystalReportViewer1.Text = "100";
+
+                this.Show();
+            }
+            catch (Exception ex)
+            {
+                Global.Message(ex.Message);
+            }
+        }
+
 
         public void ShowMemoInvoiceHKPrint(string pStrReport, DataTable pDTab, string PartyName = "", string InvoiceNo = "")
         {
@@ -1016,5 +1046,9 @@ namespace MahantExport.Report
             return "";
         }
 
+        internal void ShowFormPrintWithDuplicate(string v, DataTable dTab)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

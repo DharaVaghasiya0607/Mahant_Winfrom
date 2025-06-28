@@ -106,7 +106,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(390, 17);
             this.lblVersion.TabIndex = 25;
-            this.lblVersion.Text = "1.1.1.18";
+            this.lblVersion.Text = "1.1.1.16";
             this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblVersion.ToolTips = "";
             // 

@@ -600,91 +600,107 @@ namespace MahantExport.Stock
                         this.Cursor = Cursors.Default;
                         return;
                     }
-
-                    //var VarQryChk = (from DrSetting in DtabExcelSetting.AsEnumerable()
-                    //                 where Val.ToBooleanToInt(DrSetting["ISCOMPULSORYINSINGLE"]) == 1
-                    //                 select DrSetting).ToList();
-                    //if (VarQryChk.Any())
-                    //{
-                    //    foreach (DataRow DCol in VarQryChk) //Check compulsory column contain value or not Add Khushbu 08-02-22
-                    //    {
-                    //        string StrCol = DCol["EXCELSETTINGNAME"].ToString();
-
-                    //        //if (StrCol == "COSTDISCOUNT" || StrCol == "COSTPRICEPERCARAT")
-                    //        //{
-                    //        //    continue;
-                    //        //}
-                    //        foreach (DataRow DRow in DtabExcelData.Rows)
-                    //        {
-                    //            if (Val.ToString(DRow[StrCol]) == "")
-                    //            {
-                    //                BtnCalculate.Enabled = true;
-                    //                Global.Message(StrCol + "  -->> ' Value Are Required In Excel Sheet For Store Pricing Data..");
-                    //                this.Cursor = Cursors.Default;
-                    //                return;
-                    //            }
-                    //        }
-                    //    }
-                    //}
-
-                    //foreach (DataRow Drow in DtabExcelData.Rows)
-                    //{
-                    //    if (Val.ToDouble(Drow["COSTDISCOUNT"]) == 0 && Val.ToDouble(Drow["COSTPRICEPERCARAT"]) == 0)
-                    //    {
-                    //        BtnCalculate.Enabled = true;
-                    //        Global.Message(Drow["PARTYSTOCKNO"] + "  -->> ' Discount / PricePerCarat Value Are Required In Excel Sheet For Store Pricing Data..");
-                    //        this.Cursor = Cursors.Default;
-                    //        return;
-                    //    }
-                    //}
-
-                    //Added by Gunjan: 27 - 12 - 2023
-                    //string StrMainCategory = "", StrSubCategory = "";
-                    //for (int j = 0; j < DtabExcelData.Rows.Count; j++)
-                    //{
-                    //    //if (Val.ToString(DtabExcelData.Rows[i]["MAINCATAGORY"]) == "")
-                    //    //{
-                    //    //    StrMainCategory = StrMainCategory + ',' + Val.ToString(DtabExcelData.Rows[i]["PARTYSTOCKNO"]);
-                    //    //}
-                    //    if (Val.ToString(DtabExcelData.Rows[i]["SUBCATAGORY"]) == "")
-                    //    {
-                    //        StrSubCategory = StrSubCategory + ',' + Val.ToString(DtabExcelData.Rows[i]["PARTYSTOCKNO"]);
-                    //    }
-                    //}
-                    //if (StrMainCategory != "")
-                    //{
-                    //    Global.Message("Stock ID -->>" + StrMainCategory + "-- " + "Main Category Values Are Required In Excel Sheet");
-                    //    return;
-                    //}
-                    //if (StrSubCategory != "")
-                    //{
-                    //    Global.Message("Stock ID -->>" + StrSubCategory + "-- " + "Sub Category Values Are Required In Excel Sheet");
-                    //    return;
-                    //}
-                    //End as Gunjan
-
                 }
 
-                int ICol = 0;
-                foreach (DataRow dr in DtabExcelSetting.Rows)
+                //ADD BY RAJVI FOR BARCODENO MAX GENERATE: 27/06/2025
+                if (DtabExcelData != null && DtabExcelData.Rows.Count > 0)
                 {
-                    DataColumnCollection Dcol = DtabExcelData.Columns;
+                    long maxBarcodeNo = 25001;
+                    if (!DtabExcelData.Columns.Contains("BARCODENO"))
+                        DtabExcelData.Columns.Add("BARCODENO", typeof(long));
 
-                    if (!Dcol.Contains(Val.ToString(dr["EXCELSETTINGNAME"])))
+                    foreach (DataRow row in DtabExcelData.Rows)
                     {
-                        DtabExcelData.Columns.Add(Val.ToString(dr["EXCELSETTINGNAME"]), typeof(object));
+                        long temp = Val.ToInt64(row["BARCODENO"]);
+                        if (temp > maxBarcodeNo)
+                            maxBarcodeNo = temp;
                     }
-                    ICol++;
-                }
-                this.Cursor = Cursors.Default;
 
-                if (backgroundWorker1.IsBusy)
-                {
-                    backgroundWorker1.CancelAsync();
+                    string splitColumnName = "PARTYSTOCKNO";
+
+                    List<DataRow> newRows = new List<DataRow>();
+
+                    foreach (DataRow row in DtabExcelData.Rows)
+                    {
+                        if (row[splitColumnName] != DBNull.Value && row[splitColumnName].ToString().Contains(","))
+                        {
+                            string[] items = row[splitColumnName].ToString().Split(',');
+
+                            foreach (string item in items)
+                            {
+                                DataRow newRow = DtabExcelData.NewRow();
+
+                                foreach (DataColumn col in DtabExcelData.Columns)
+                                {
+                                    if (col.ColumnName == "BARCODENO")
+                                        continue;
+
+                                    newRow[col.ColumnName] = row[col.ColumnName];
+                                }
+
+                                newRow[splitColumnName] = item.Trim();
+
+                                maxBarcodeNo++;
+                                newRow["BARCODENO"] = maxBarcodeNo;
+
+                                newRows.Add(newRow);
+                            }
+                            row["__DeleteMe__"] = true;
+                        }
+                        else
+                        {
+                            if (Val.ToInt64(row["BARCODENO"]) == 0)
+                            {
+                                maxBarcodeNo++;
+                                row["BARCODENO"] = maxBarcodeNo;
+                            }
+                        }
+                    }
+                    foreach (var newRow in newRows)
+                        DtabExcelData.Rows.Add(newRow);
+
+                    MainGrdStock.DataSource = DtabExcelData;
+                    MainGrdStock.Refresh();
+
+                    DevExpress.XtraGrid.Views.Grid.GridView view = MainGrdStock.MainView as DevExpress.XtraGrid.Views.Grid.GridView;
+                    if (view != null)
+                    {
+                        if (view.Columns["BARCODENO"] != null)
+                        {
+                            view.Columns["BARCODENO"].Visible = true;
+                            view.Columns["BARCODENO"].Caption = "Barcode No";
+                            view.Columns["BARCODENO"].BestFit();
+                        }
+                        int barcodeCount = DtabExcelData.AsEnumerable()
+                                              .Select(r => Val.ToString(r["BARCODENO"]))
+                                              .Distinct()
+                                              .Count();
+                        //Global.Message("Total Barcode(s): " + barcodeCount);
+                    }
                 }
-                watch = System.Diagnostics.Stopwatch.StartNew();
-                progressPanel1.Visible = true;
-                backgroundWorker1.RunWorkerAsync();
+                //END RAJVI
+
+                    int ICol = 0;
+                    foreach (DataRow dr in DtabExcelSetting.Rows)
+                    {
+                        DataColumnCollection Dcol = DtabExcelData.Columns;
+
+                        if (!Dcol.Contains(Val.ToString(dr["EXCELSETTINGNAME"])))
+                        {
+                            DtabExcelData.Columns.Add(Val.ToString(dr["EXCELSETTINGNAME"]), typeof(object));
+                        }
+                        ICol++;
+                    }
+                    this.Cursor = Cursors.Default;
+
+                    if (backgroundWorker1.IsBusy)
+                    {
+                        backgroundWorker1.CancelAsync();
+                    }
+                    watch = System.Diagnostics.Stopwatch.StartNew();
+                    progressPanel1.Visible = true;
+                    backgroundWorker1.RunWorkerAsync();
+                
             }
             catch (Exception EX)
             {
@@ -1220,6 +1236,7 @@ namespace MahantExport.Stock
             try
             {
                 double DCCarat = 0;
+                double DCPcs = 0;
                 double DCRapaport = 0;
                 double DCRapaportAmt = 0;
                 double DCDiscount = 0;
@@ -1231,8 +1248,10 @@ namespace MahantExport.Stock
                 }
 
                 DCCarat = Val.Val(DtabStockSync.Compute("SUM(CARAT)", string.Empty));
+                //DCPcs = Val.Val(DtabStockSync.Compute("SUM(PCS)", string.Empty));
 
                 txtTotalCarat.Text = string.Format("{0:0.00}", DCCarat, string.Empty);
+                //TxtTotalPcs.Text = string.Format("{0:00}", DCPcs, string.Empty);
 
                 txtTotalAmount.Text = string.Format("{0:0.00}", DtabStockSync.Compute("SUM(COSTAMOUNT)", string.Empty));
                 txtTotalPricePerCarat.Text = string.Format("{0:0.00}", Val.Val(txtTotalAmount.Text) / Val.Val(DCCarat));
@@ -1266,6 +1285,7 @@ namespace MahantExport.Stock
             if (DTab != null && DTab.Rows.Count > 0)
             {
                 txtSelectedCarat.Text = Val.ToString(DTab.Compute("SUM(CARAT)", string.Empty));
+                TxtSelectedPcs.Text = Val.ToString(DTab.Compute("SUM(PCS)", string.Empty));
                 txtSelectedAmount.Text = Val.ToString(DTab.Compute("SUM(COSTAMOUNT)", string.Empty));
                 txtSelectedPricePerCarat.Text = string.Format("{0:0.00}", Val.Val(txtSelectedAmount.Text) / Val.Val(txtSelectedCarat.Text));
 
@@ -1282,24 +1302,24 @@ namespace MahantExport.Stock
             else
             {
                 txtSelectedCarat.Text = string.Empty;
+                TxtSelectedPcs.Text = string.Empty;
                 txtSelectedDisc.Text = string.Empty;
                 txtSelectedAmount.Text = string.Empty;
                 txtSelectedAvgRap.Text = string.Empty;
                 txtSelectedPricePerCarat.Text = string.Empty;
             }
-
         }
 
         private void GrdDetStock_MouseUp(object sender, MouseEventArgs e)
         {
-            try
-            {
-                CalculateSelectedSummary();
-            }
-            catch (Exception ex)
-            {
-                Global.Message(ex.Message.ToString());
-            }
+            //try
+            //{
+            //    CalculateSelectedSummary();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Global.Message(ex.Message.ToString());
+            //}
         }
 
         private void FrmStockUpload_KeyUp(object sender, KeyEventArgs e)
@@ -1480,7 +1500,6 @@ namespace MahantExport.Stock
                         listBoxTag.Add(oDataRowView["GIACONTROLNUMBER"].ToString());
                     }
                 }
-
                 ObjBORFIDCon.LedOnAll(RFIDCurrDevice, listBoxTag.Cast<string>().ToList());
                 Global.Message("After disappear Of Message LED Will Stop"); // while user doesn't close the dialog, the led-lighting thread is still running
                 RFIDCurrDevice.StopLightingLeds(); // stops lighting once user closed MessageBox
@@ -1693,7 +1712,6 @@ namespace MahantExport.Stock
         {
             try
             {
-
                 DataTable DTShape = DtabPara.Select("PARATYPE = 'SHAPE'").CopyToDataTable();
                 DataTable DTColor = DtabPara.Select("PARATYPE = 'COLOR'").CopyToDataTable();
                 DataTable DTClarity = DtabPara.Select("PARATYPE = 'CLARITY'").CopyToDataTable();
@@ -1752,7 +1770,6 @@ namespace MahantExport.Stock
                     Drfinal["PARTYSTOCKNO"] = StrStoneNo;
                     Drfinal["STOCKTYPE"] = mStrStockType;
                     SetControlPropertyValue(lblMessage, "Text", "[" + I + "/" + IntCount.ToString() + " ] Data Validating Of Stone No [" + Drfinal["PARTYSTOCKNO"].ToString() + "]");
-
 
                     IntCheck = 0;
                     StrMessage = "";
@@ -1902,7 +1919,6 @@ namespace MahantExport.Stock
                         Drfinal["COSTPRICEPERCARAT"] = DouCostPricePerCarat;
                         Drfinal["COSTAMOUNT"] = Val.Val(DrPrice["COSTAMOUNT"]) == 0 ? DouCostAmount : Val.Val(DrPrice["COSTAMOUNT"]);
 
-
                         Drfinal["SALERAPAPORT"] = Val.Val(DrPrice["SALERAPAPORT"]) == 0 ? Val.Val(Drfinal["COSTRAPAPORT"]) : Val.Val(DrPrice["SALERAPAPORT"]);
                         Drfinal["SALEDISCOUNT"] = Val.Val(DrPrice["SALEDISCOUNT"]) == 0 ? Val.Val(Drfinal["COSTDISCOUNT"]) : Val.Val(DrPrice["SALEDISCOUNT"]);
 
@@ -1911,7 +1927,8 @@ namespace MahantExport.Stock
                         DouSaleAmount = DouSalePricePerCarat * Val.Val(DrPrice["CARAT"]);
                         Drfinal["SALEPRICEPERCARAT"] = DouSalePricePerCarat;
                         Drfinal["SALEAMOUNT"] = DouSaleAmount; // Val.Val(DrPrice["SALEAMOUNT"]) == 0 ? Val.Val(Drfinal["COSTAMOUNT"]) : Val.Val(DrPrice["SALEAMOUNT"]);
-
+                        Drfinal["SALEPRICEPERCARAT"] = Val.Val(DrPrice["SALEPRICEPERCARAT"]) == 0 ? Val.Val(Drfinal["COSTPRICEPERCARAT"]) : Val.Val(DrPrice["SALEPRICEPERCARAT"]);//ADD BY RAJVI : 18/06/2025
+                        Drfinal["SALEAMOUNT"] = Val.Val(DrPrice["SALEAMOUNT"]) == 0 ? Val.Val(Drfinal["COSTAMOUNT"]) : Val.Val(DrPrice["SALEAMOUNT"]);//ADD BY RAJVI : 18/06/2025
 
                     }
                     else // For Parcel File :  It's Only Contain PerCarat and Amount 
@@ -1924,8 +1941,8 @@ namespace MahantExport.Stock
 
                         Drfinal["SALERAPAPORT"] = Val.Val(DrPrice["SALERAPAPORT"]) == 0 ? Val.Val(Drfinal["COSTRAPAPORT"]) : Val.Val(DrPrice["SALERAPAPORT"]);
                         Drfinal["SALEDISCOUNT"] = Val.Val(DrPrice["SALEDISCOUNT"]) == 0 ? Val.Val(Drfinal["COSTDISCOUNT"]) : Val.Val(DrPrice["SALEDISCOUNT"]);
-                        Drfinal["SALEPRICEPERCARAT"] = Val.Val(DrPrice["SALEPRICEPERCARAT"]) == 0 ? Val.Val(Drfinal["COSTPRICEPERCARAT"]) : Val.Val(DrPrice["SALEPRICEPERCARAT"]);
-                        Drfinal["SALEAMOUNT"] = Val.Val(DrPrice["SALEAMOUNT"]) == 0 ? Val.Val(Drfinal["COSTAMOUNT"]) : Val.Val(DrPrice["SALEAMOUNT"]);
+                        //Drfinal["SALEPRICEPERCARAT"] = Val.Val(DrPrice["SALEPRICEPERCARAT"]) == 0 ? Val.Val(Drfinal["COSTPRICEPERCARAT"]) : Val.Val(DrPrice["SALEPRICEPERCARAT"]);//COMMENT BY RAJVI : 18/06/2025
+                        //Drfinal["SALEAMOUNT"] = Val.Val(DrPrice["SALEAMOUNT"]) == 0 ? Val.Val(Drfinal["COSTAMOUNT"]) : Val.Val(DrPrice["SALEAMOUNT"]);//COMMENT BY RAJVI : 18/06/2025
 
                     }
 
@@ -2008,7 +2025,6 @@ namespace MahantExport.Stock
                     Drfinal["PAVILIONOPEN_ID"] = FindID(DTPavOpen, Val.ToString(DrPrice["PAVOPEN"]), StrStoneNo, "Pav Open", ref IntCheck, ref StrMessage); if (IntCheck == -1) break;
                     Drfinal["CROWNOPEN_ID"] = FindID(DTCROpen, Val.ToString(DrPrice["CROWNOPN"]), StrStoneNo, "Crown Open", ref IntCheck, ref StrMessage); if (IntCheck == -1) break;
 
-
                     //End As Gunjan
 
                     //Drfinal["CERTIFICATEURL"] = DrPrice["REMARK"];
@@ -2018,7 +2034,6 @@ namespace MahantExport.Stock
                         Drfinal["KAPANNAME"] = Val.Trim(StrPacketNo[0]);
                         Drfinal["PACKETNO"] = Val.Trim(new string(StrPacketNo[1].Where(c => c - '0' < 10).ToArray()));
                         Drfinal["TAG"] = Val.Trim(StrPacketNo[1].Replace(Val.ToString(Drfinal["PACKETNO"]), ""));
-
 
                         Drfinal["LOTNAME"] = Val.Trim(Val.ToString(DrPrice["LOTNAME"]));
 
@@ -2061,7 +2076,6 @@ namespace MahantExport.Stock
                     {
                         SetControlPropertyValue(lblMessage, "Text", "Stock Successfully Uploaded");
                     }
-
                 }
                 else
                 {
@@ -2154,7 +2168,6 @@ namespace MahantExport.Stock
             BtnCalculate.Enabled = true;
 
             progressPanel1.Visible = false;
-
 
             //if (BusLib.Configuration.BOConfiguration.gEmployeeProperty.ISDISPLAYCOSTPRICE == false)
             //{

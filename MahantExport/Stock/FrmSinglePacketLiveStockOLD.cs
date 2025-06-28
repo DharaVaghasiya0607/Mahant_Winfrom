@@ -3318,8 +3318,6 @@ namespace MahantExport.Stock
         {
             try
             {
-
-
                 DataTable DTab = Global.GetSelectedRecordOfGrid(GrdDetail, true, ObjGridSelection);
 
                 if (DTab.Rows.Count == 0 || DTab == null)

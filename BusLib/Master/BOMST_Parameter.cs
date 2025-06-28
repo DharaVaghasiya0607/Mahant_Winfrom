@@ -126,8 +126,6 @@ namespace BusLib.Master
             Ope.ClearParams();
             DataTable DTab = new DataTable();
             string StrQuery = "SELECT PARA_ID,PARACODE,PARANAME,SHORTNAME,REMARK,LABCODE,PARATYPE,PARAGROUP,RAPAVALUE,SEQUENCENO FROM MST_PARA WITH(NOLOCK) WHERE 1=1 ";
-            //DataRow DrParam =  Ope.GetDataRow(Config.ConnectionString, Config.ProviderName, StrQuery, CommandType.Text);
-            //return Val.ToInt32(DrParam[0]);
             Ope.FillDTab(Config.ConnectionString, Config.ProviderName, DTab, StrQuery, CommandType.Text);
             return DTab;
         }

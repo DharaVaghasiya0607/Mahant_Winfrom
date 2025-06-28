@@ -12087,144 +12087,69 @@ namespace MahantExport.Stock
                     txtJangedNo.Focus();
                     return;
                 }
-
-                if (Val.ToString(BOConfiguration.COMPANYNAME).ToUpper() == "TRP IMPEX")//TRP IMPEX
+            if (Global.Confirm("Are You Sure to Print Janged?") == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Cursor = Cursors.Default;
+                try
                 {
-                    if (Global.Confirm("Are You Sure to Print Janged?") == System.Windows.Forms.DialogResult.Yes)
+                    this.Cursor = Cursors.WaitCursor;
+
+                    Int64 StrJangedNo = Val.ToInt64(lblMemoNo.Text);
+
+                    if (StrJangedNo == 0)
+                    {
+                        Global.Message("Memo No Not Found , Please Check !!!");
+                    }
+
+                    //DataTable DTab = ObjMemo.GetJangedPrintData(StrJangedNo);
+                    DataTable DTab = ObjMemo.GetJangedPrintDataRJ(StrJangedNo);
+
+                    if (DTab.Rows.Count == 0)
                     {
                         this.Cursor = Cursors.Default;
-                        try
-                        {
-
-                            this.Cursor = Cursors.WaitCursor;
-
-                            Int64 StrJangedNo = Val.ToInt64(lblMemoNo.Text);
-
-                            if (StrJangedNo == 0)
-                            {
-                                Global.Message("Memo No Not Found , Please Check !!!");
-                            }
-
-                            //DataTable DTab = ObjMemo.GetJangedPrintData(StrJangedNo);
-                            DataTable DTab = ObjMemo.GetJangedPrintDataNew(StrJangedNo);
-
-                            if (DTab.Rows.Count == 0)
-                            {
-                                this.Cursor = Cursors.Default;
-                                Global.Message("There Is No Data Found For Print");
-                                return;
-                            }
-
-                            int TotalRow = 12;
-                            int NewRow = TotalRow - DTab.Rows.Count;
-
-                            for (int i = 0; i < NewRow; i++)
-                            {
-                                DataRow DRNew = DTab.NewRow();
-                                DTab.Rows.Add(DRNew);
-                            }
-
-
-                            DataSet DS = new DataSet();
-                            DTab.TableName = "Table";
-                            DS.Tables.Add(DTab);
-                            DataTable DTabDuplicate = DTab.Copy();
-                            DTabDuplicate.TableName = "Table1";
-                            foreach (DataRow DRow in DTabDuplicate.Rows)
-                            {
-                                DRow["PRINTTYPE"] = "DUBLICATE";
-                            }
-                            DTabDuplicate.AcceptChanges();
-                            DS.Tables.Add(DTabDuplicate);
-
-                            Report.FrmReportViewer FrmReportViewer = new Report.FrmReportViewer();
-                            FrmReportViewer.MdiParent = Global.gMainRef;
-                            FrmReportViewer.ShowFormPrintWithDuplicate("RPT_MemoJangedPrintNew", DS);
-                            this.Cursor = Cursors.Default;
-                        }
-
-                        catch (Exception ex)
-                        {
-                            this.Cursor = Cursors.Default;
-                            Global.Message(ex.Message);
-                        }
+                        Global.Message("There Is No Data Found For Print");
+                        return;
                     }
-                    this.Cursor = Cursors.Default;
-                }
-                if (Val.ToString(BOConfiguration.COMPANYNAME).ToUpper() == "RIJIYA GEMS")//TRP IMPEX
-                {
-                    if (Global.Confirm("Are You Sure to Print Janged?") == System.Windows.Forms.DialogResult.Yes)
+
+                    int TotalRow = 20;
+                    int NewRow = TotalRow - DTab.Rows.Count;
+
+                    for (int i = 0; i < NewRow; i++)
                     {
-                        this.Cursor = Cursors.Default;
-                        try
-                        {
-
-                            this.Cursor = Cursors.WaitCursor;
-
-                            Int64 StrJangedNo = Val.ToInt64(lblMemoNo.Text);
-
-                            if (StrJangedNo == 0)
-                            {
-                                Global.Message("Memo No Not Found , Please Check !!!");
-                            }
-
-                            //DataTable DTab = ObjMemo.GetJangedPrintData(StrJangedNo);
-                            DataTable DTab = ObjMemo.GetJangedPrintDataRJ(StrJangedNo);
-
-                            if (DTab.Rows.Count == 0)
-                            {
-                                this.Cursor = Cursors.Default;
-                                Global.Message("There Is No Data Found For Print");
-                                return;
-                            }
-
-                            int TotalRow = 20;
-                            int NewRow = TotalRow - DTab.Rows.Count;
-
-                            for (int i = 0; i < NewRow; i++)
-                            {
-                                DataRow DRNew = DTab.NewRow();
-                                DTab.Rows.Add(DRNew);
-                            }
-
-
-                            DataSet DS = new DataSet();
-                            DTab.TableName = "Table";
-                            DS.Tables.Add(DTab);
-                            DataTable DTabDuplicate = DTab.Copy();
-                            DTabDuplicate.TableName = "Table1";
-                            foreach (DataRow DRow in DTabDuplicate.Rows)
-                            {
-                                DRow["PRINTTYPE"] = "DUBLICATE";
-                            }
-                            DTabDuplicate.AcceptChanges();
-                            DS.Tables.Add(DTabDuplicate);
-
-                            Report.FrmReportViewer FrmReportViewer = new Report.FrmReportViewer();
-                            FrmReportViewer.MdiParent = Global.gMainRef;
-                            FrmReportViewer.ShowFormPrintWithDuplicate("RPT_MemoJangedPrintRJ", DS);
-                            this.Cursor = Cursors.Default;
-                        }
-
-                        catch (Exception ex)
-                        {
-                            this.Cursor = Cursors.Default;
-                            Global.Message(ex.Message);
-                        }
+                        DataRow DRNew = DTab.NewRow();
+                        DTab.Rows.Add(DRNew);
                     }
+
+                    DataSet DS = new DataSet();
+                    DTab.TableName = "Table";
+                    DS.Tables.Add(DTab);
+                    DataTable DTabDuplicate = DTab.Copy();
+                    DTabDuplicate.TableName = "Table1";
+                    foreach (DataRow DRow in DTabDuplicate.Rows)
+                    {
+                        DRow["PRINTTYPE"] = "DUBLICATE";
+                    }
+                    DTabDuplicate.AcceptChanges();
+                    DS.Tables.Add(DTabDuplicate);
+                        
+                        Report.FrmReportViewer FrmReportViewer = new Report.FrmReportViewer();
+                    FrmReportViewer.MdiParent = Global.gMainRef;
+                    FrmReportViewer.ShowFormJangadPrintWithDuplicate("RPT_JangedPrintSubReportnew", DS);
                     this.Cursor = Cursors.Default;
                 }
+                catch (Exception ex)
+                {
+                    this.Cursor = Cursors.Default;
+                    Global.Message(ex.Message);
+                }
+            }
+            this.Cursor = Cursors.Default;
             }
             catch (Exception Ex)
             {
                 Global.Message(Ex.Message.ToString());
-                this.Cursor = Cursors.Default;
-            }
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
+              this.Cursor = Cursors.Default;
+            }  
         }
 
         private void btnTrialEInvoiceUpload_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

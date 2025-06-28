@@ -2031,7 +2031,7 @@ namespace MahantExport
             DTab.Rows.Add("Proportion File ");
             DTab.Rows.Add("IGI");//ADD BY RAJVI : 21/05/2025
             DTab.Rows.Add("VDB");//ADD BY RAJVI : 21/05/2025
-            DTab.Rows.Add("Master");//ADD BY RAJVI : 21/05/2025
+            DTab.Rows.Add("MASTER");//ADD BY RAJVI : 21/05/2025
             DTab.Rows.Add("NP");//ADD BY RAJVI : 21/05/2025
 
             return DTab;

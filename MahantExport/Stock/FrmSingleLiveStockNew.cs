@@ -2765,7 +2765,6 @@ namespace MahantExport.Stock
                     return "";
                 }
 
-                //DTabDetail.DefaultView.Sort = "SrNo";
                 DTabDetail = DTabDetail.DefaultView.ToTable();
                 this.Cursor = Cursors.WaitCursor;
                 string StrFilePath = PStrFilePath;
@@ -2849,6 +2848,103 @@ namespace MahantExport.Stock
         }
         //END RAJVI 
 
+        //ADD BY RAJVI : 27/06/2025
+        private string ExportExcelWithMaster(DataSet DS, string PStrFilePath)
+        {
+            try
+            {
+                DataTable DTabDetail = DS.Tables[0];
+
+                if (DTabDetail.Rows.Count == 0)
+                {
+                    this.Cursor = Cursors.Default;
+
+                    Global.Message("NO DATA FOUND FOR EXPORT");
+                    return "";
+                }
+
+                DTabDetail = DTabDetail.DefaultView.ToTable();
+                this.Cursor = Cursors.WaitCursor;
+                string StrFilePath = PStrFilePath;
+                if (File.Exists(StrFilePath))
+                {
+                    File.Delete(StrFilePath);
+                }
+                FileInfo workBook = new FileInfo(StrFilePath);
+                Color BackColor = Color.Yellow;
+                Color FontColor = Color.Black;
+                string FontName = "Calibri";
+                float FontSize = 11;
+                int StartRow = 0;
+                int StartColumn = 0;
+                int EndRow = 0;
+                int EndColumn = 0;
+
+                using (ExcelPackage xlPackage = new ExcelPackage(workBook))
+                {
+                    ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("MASTER");
+
+                    StartRow = 1;
+                    StartColumn = 1;
+                    EndRow = StartRow;
+                    EndColumn = DTabDetail.Columns.Count;
+
+                    //int invAmtColumn = DTabDetail.Columns["Inv Amount"].Ordinal + 1;
+                    //int AmtColuumn = DTabDetail.Columns["Amount"].Ordinal + 1;
+                    //int PricePerCaratColumn = DTabDetail.Columns["Per Carat"].Ordinal + 1;
+                    //int DiscountColumn = DTabDetail.Columns["Disc %"].Ordinal + 1;
+                    //int InvDiscColumn = DTabDetail.Columns["Inv Disc %"].Ordinal + 1;
+                    //int InvPerCaratcolumn = DTabDetail.Columns["InvPer Carat"].Ordinal + 1;
+
+                    EndRow = StartRow + DTabDetail.Rows.Count;
+
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].LoadFromDataTable(DTabDetail, true);
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
+
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Font.Name = FontName;
+                    worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Font.Size = FontSize;
+
+                    worksheet.View.FreezePanes(2, 1);
+                    worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].AutoFilter = true;
+
+                    worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Font.Bold = true;
+                    worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
+                    worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
+                    worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
+                    worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
+
+                    worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
+                    worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.PatternColor.SetColor(BackColor);
+                    worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.BackgroundColor.SetColor(BackColor);
+                    worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Font.Color.SetColor(FontColor);
+
+                    //worksheet.Cells[StartRow, invAmtColumn, EndRow, invAmtColumn].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, AmtColuumn, EndRow, AmtColuumn].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, PricePerCaratColumn, EndRow, PricePerCaratColumn].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, DiscountColumn, EndRow, DiscountColumn].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, InvDiscColumn, EndRow, InvDiscColumn].Style.Numberformat.Format = "0.00";
+                    //worksheet.Cells[StartRow, InvPerCaratcolumn, EndRow, InvPerCaratcolumn].Style.Numberformat.Format = "0.00";
+
+                    worksheet.Cells[1, 1, 100, 100].AutoFitColumns();
+
+                    xlPackage.Save();
+                }
+                this.Cursor = Cursors.Default;
+                return StrFilePath;
+            }
+            catch (Exception ex)
+            {
+                this.Cursor = Cursors.Default;
+                Global.Message(ex.Message);
+            }
+            return "";
+        }
+        //END RAJVI 
 
         private string ExportExcelWithGeneral(DataSet DS, string PStrFilePath)
         {
@@ -3163,7 +3259,6 @@ namespace MahantExport.Stock
         {
             try
             {
-
                 this.Cursor = Cursors.Default;
 
                 Color lblDown = Color.Purple, lblUp = Color.Red;
@@ -3204,12 +3299,10 @@ namespace MahantExport.Stock
                 int EndRow = 0;
                 int EndColumn = 0;
 
-
                 int StartRowMemo = 0;
                 int StartColumnMemo = 0;
                 int EndRowMemo = 0;
                 int EndColumnMemo = 0;
-
 
                 using (ExcelPackage xlPackage = new ExcelPackage(workBook))
                 {
@@ -3228,7 +3321,6 @@ namespace MahantExport.Stock
                     EndColumnMemo = DtabMemo.Columns.Count;
 
                     #region Stock Detail
-                    //Mfg.Comp Detail
                     EndRow = StartRow + DTabDetail.Rows.Count;
 
                     worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].LoadFromDataTable(DTabDetail, true);
@@ -3496,8 +3588,6 @@ namespace MahantExport.Stock
                     worksheet.Cells[StartRow, LiveValueColumn, EndRow, LiveValueColumn].Style.Numberformat.Format = "0.00";
                     worksheet.Cells[StartRow, LiveDiscountColumn, EndRow, LiveDiscountColumn].Style.Numberformat.Format = "0.00";
 
-
-
                     worksheet.Cells[1, 1, 100, 100].AutoFitColumns();
 
                     worksheet.Column(ColorUpdownColumn).Hidden = true;
@@ -3538,7 +3628,6 @@ namespace MahantExport.Stock
 
                     worksheetMemo.Cells[StartRowMemo, StartColumnMemo, StartRowMemo, EndColumnMemo].Style.Fill.BackgroundColor.SetColor(Color.Yellow);
 
-
                     int IntTotRowMemo = DtabMemo.Rows.Count + 1;
                     int CaratColumn = DtabMemo.Columns["CARAT"].Ordinal + 1;
                     int PcsColumn = DtabMemo.Columns["PCS"].Ordinal + 1;
@@ -3556,7 +3645,6 @@ namespace MahantExport.Stock
 
                     xlPackage.Save();
                 }
-
                 this.Cursor = Cursors.Default;
                 return StrFilePath;
             }
@@ -3568,12 +3656,10 @@ namespace MahantExport.Stock
             return "";
         }
 
-
         private string ExportExcelWithCostPrice(DataSet DS, string PStrFilePath)//Add Gunjan :03/03/2023
         {
             try
             {
-
                 DataTable DTabDetail = DS.Tables[0];
 
                 if (DTabDetail.Rows.Count == 0)
@@ -3764,8 +3850,6 @@ namespace MahantExport.Stock
         }
 
 
-
-
         public string ExportExcelNew()
         {
             try
@@ -3877,14 +3961,19 @@ namespace MahantExport.Stock
                     string Result = ExportExcelWithProportionFile(DS, StrFilePath);
                     return Result;
                 }
-                else if (FormatName == "IGI")//Gunjan : 03/03/2023
+                else if (FormatName == "IGI")
                 {
                     string Result = ExportExcelWithIGI(DS, StrFilePath);
                     return Result;
                 }
-                else if (FormatName == "VDB")//Gunjan : 03/03/2023
+                else if (FormatName == "VDB")
                 {
                     string Result = ExportExcelWithVDB(DS, StrFilePath);
+                    return Result;
+                }
+                else if (FormatName == "MASTER")//RAJVI : 27/06/2025
+                {
+                    string Result = ExportExcelWithMaster(DS, StrFilePath);
                     return Result;
                 }
                 DataTable DTabDetail = DS.Tables[0];
@@ -3897,7 +3986,6 @@ namespace MahantExport.Stock
                 DataTable DTabSym = DS.Tables[7];
                 DataTable DTabFL = DS.Tables[8];
                 DataTable DTabInclusion = DS.Tables[9];
-
 
                 if (DTabDetail.Rows.Count == 0)
                 {
@@ -4578,744 +4666,6 @@ namespace MahantExport.Stock
             return "";
         }
 
-
-        //public string ExportExcelNew()
-        //{
-        //    try
-        //    {
-        //        string MemoEntryDetailForXML = "";
-
-        //        DataTable DtInvDetail = GetSelectedRowToTable();
-
-        //        //DataTable DtInvDetail = Global.GetSelectedRecordOfGrid(GrdDetail, true, ObjGridSelection);
-
-        //        DtInvDetail = DtInvDetail.DefaultView.ToTable(false, "STOCK_ID");
-
-        //        DtInvDetail.TableName = "Table";
-        //        MemoEntryDetailForXML = string.Empty;
-        //        using (StringWriter sw = new StringWriter())
-        //        {
-        //            DtInvDetail.WriteXml(sw);
-        //            MemoEntryDetailForXML = sw.ToString();
-        //        }
-
-        //        string WebStatus = "";
-
-        //        FrmSearchPopupBox FrmSearch = new FrmSearchPopupBox();
-        //        FrmSearch.mStrSearchField = "FORMAT";
-        //        this.Cursor = Cursors.WaitCursor;
-        //        FrmSearch.mDTab = Global.GetExportFileTemplate();
-
-        //        FrmSearch.mStrColumnsToHide = "";
-        //        this.Cursor = Cursors.Default;
-        //        FrmSearch.ShowDialog();
-        //        string FormatName = "";
-        //        if (FrmSearch.DRow != null)
-        //        {
-        //            FormatName = Val.ToString(FrmSearch.DRow["FORMAT"]);
-        //        }
-        //        FrmSearch.Hide();
-        //        FrmSearch.Dispose();
-        //        FrmSearch = null;
-
-        //        if (FormatName == "")
-        //        {
-        //            Global.Message("PLEASE SELECT ANY OF ONE FORMAT");
-        //            return "";
-        //        }
-
-        //        LiveStockProperty LStockProperty = new LiveStockProperty();
-
-        //        this.Cursor = Cursors.WaitCursor;
-        //        DataSet DS = ObjStock.GetDataForExcelExportNew(MemoEntryDetailForXML, WebStatus, "SINGLE", FormatName, LStockProperty);
-        //        this.Cursor = Cursors.Default;
-
-        //        SaveFileDialog svDialog = new SaveFileDialog();
-        //        svDialog.DefaultExt = ".xlsx";
-        //        svDialog.Title = "Export to Excel";
-        //        svDialog.FileName = BOConfiguration.gEmployeeProperty.USERNAME + "_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + ".xlsx";
-        //        svDialog.Filter = "Excel File (*.xlsx)|*.xlsx ";
-        //        string StrFilePath = "";
-        //        if ((svDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK))
-        //        {
-        //            StrFilePath = svDialog.FileName;
-        //        }
-
-        //        if (FormatName == "With Exp")
-        //        {
-        //            string Result = ExportExcelWithExp(DS, StrFilePath);
-        //            return Result;
-        //        }
-
-        //        if (FormatName == "Stock List")
-        //        {
-
-        //            string Result = ExportExcelWithStockList(DS, StrFilePath);
-        //            return Result;
-        //        }
-        //        else if (FormatName == "Offer Price Report")
-        //        {
-        //            string Result = ExportExcelWithOfferPriceFormat(DS, StrFilePath);
-        //            return Result;
-        //        }
-        //        else if (FormatName == "Revise List")
-        //        {
-        //            string Result = ExportExcelWithReviseList(DS, StrFilePath);
-        //            return Result;
-        //        }
-        //        else if (FormatName == "Smart-I")
-        //        {
-        //            string Result = ExportExcelWithSmartIList(DS, StrFilePath);
-        //            return Result;
-        //        }
-
-        //        DataTable DTabDetail = DS.Tables[0];
-        //        DataTable DTabSize = DS.Tables[1];
-        //        DataTable DTabShape = DS.Tables[2];
-        //        DataTable DTabClarity = DS.Tables[3];
-        //        DataTable DTabColor = DS.Tables[4];
-        //        DataTable DTabCut = DS.Tables[5];
-        //        DataTable DTabPolish = DS.Tables[6];
-        //        DataTable DTabSym = DS.Tables[7];
-        //        DataTable DTabFL = DS.Tables[8];
-        //        DataTable DTabInclusion = DS.Tables[9];
-
-
-        //        if (DTabDetail.Rows.Count == 0)
-        //        {
-        //            this.Cursor = Cursors.Default;
-
-        //            Global.Message("NO DATA FOUND FOR EXPORT");
-        //            return "";
-        //        }
-
-        //        DTabDetail.DefaultView.Sort = "SR";
-        //        DTabDetail = DTabDetail.DefaultView.ToTable();
-
-        //        DTabSize.DefaultView.Sort = "FromCarat";
-        //        DTabSize = DTabSize.DefaultView.ToTable();
-
-        //        DTabShape.DefaultView.Sort = "SequenceNo";
-        //        DTabShape = DTabShape.DefaultView.ToTable();
-
-        //        DTabColor.DefaultView.Sort = "SequenceNo";
-        //        DTabColor = DTabColor.DefaultView.ToTable();
-
-        //        DTabClarity.DefaultView.Sort = "SequenceNo";
-        //        DTabClarity = DTabClarity.DefaultView.ToTable();
-
-        //        DTabCut.DefaultView.Sort = "SequenceNo";
-        //        DTabCut = DTabCut.DefaultView.ToTable();
-
-        //        DTabPolish.DefaultView.Sort = "SequenceNo";
-        //        DTabPolish = DTabPolish.DefaultView.ToTable();
-
-        //        DTabSym.DefaultView.Sort = "SequenceNo";
-        //        DTabSym = DTabSym.DefaultView.ToTable();
-
-        //        DTabFL.DefaultView.Sort = "SequenceNo";
-        //        DTabFL = DTabFL.DefaultView.ToTable();
-
-        //        this.Cursor = Cursors.WaitCursor;
-
-        //        // string StrFilePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + BusLib.Configuration.BOConfiguration.gEmployeeProperty.USERNAME + "_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + ".xlsx";
-
-        //        if (File.Exists(StrFilePath))
-        //        {
-        //            File.Delete(StrFilePath);
-        //        }
-
-        //        FileInfo workBook = new FileInfo(StrFilePath);
-        //        Color BackColor = Color.FromArgb(2, 68, 143);
-        //        //Color BackColor = Color.FromArgb(119, 50, 107);
-        //        Color FontColor = Color.White;
-        //        string FontName = "Calibri";
-        //        float FontSize = 9;
-
-        //        int StartRow = 0;
-        //        int StartColumn = 0;
-        //        int EndRow = 0;
-        //        int EndColumn = 0;
-
-        //        using (ExcelPackage xlPackage = new ExcelPackage(workBook))
-        //        {
-        //            ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets.Add("JV_Stock_" + DateTime.Now.ToString("ddMMyyyy"));
-        //            ExcelWorksheet worksheetProportion = xlPackage.Workbook.Worksheets.Add("Proportion");
-        //            ExcelWorksheet worksheetInclusion = xlPackage.Workbook.Worksheets.Add("Inclusion Detail");
-
-
-        //            StartRow = 1;
-        //            StartColumn = 1;
-        //            EndRow = StartRow;
-        //            EndColumn = DTabDetail.Columns.Count;
-
-        //            #region Stock Detail
-
-        //            StartRow = 5;
-        //            EndRow = StartRow + DTabDetail.Rows.Count;
-        //            StartColumn = 1;
-        //            EndColumn = DTabDetail.Columns.Count;
-
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].LoadFromDataTable(DTabDetail, true);
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
-
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Font.Name = FontName;
-        //            worksheet.Cells[StartRow, StartColumn, EndRow, EndColumn].Style.Font.Size = FontSize;
-
-        //            worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Font.Bold = true;
-        //            //   worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].AutoFilter = true;
-        //            worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheet.Cells[StartRow, StartColumn, StartRow, EndColumn].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-
-        //            worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //            worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.PatternColor.SetColor(BackColor);
-        //            worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Fill.BackgroundColor.SetColor(BackColor);
-        //            worksheet.Cells[StartRow, 1, StartRow, EndColumn].Style.Font.Color.SetColor(FontColor);
-
-        //            //#P : 06-08-2020
-        //            if (FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale")
-        //            {
-        //                worksheet.Cells[5, 15, 5, 18].Style.Font.Color.SetColor(Color.Red);
-        //            }
-
-        //            if (FormatName == "With Rapnet")
-        //            {
-        //                worksheet.Cells[5, 19, 5, 22].Style.Font.Color.SetColor(FontColor);
-        //            }
-        //            else if (FormatName == "With Sale")
-        //            {
-        //                worksheet.Cells[5, 19, 5, 22].Style.Font.Color.SetColor(Color.FromArgb(174, 201, 121));
-        //            }
-        //            //End : #P : 06-08-2020
-
-        //            worksheet.View.FreezePanes(6, 1);
-
-        //            // Set Hyperlink
-        //            int IntCertColumn = DTabDetail.Columns["CertNo"].Ordinal;
-        //            int IntVideoUrlColumn = DTabDetail.Columns["VideoUrl"].Ordinal;
-        //            int IntStoneDEtailUrlColumn = DTabDetail.Columns["StoneDetailURL"].Ordinal;
-
-        //            int RapaportColumn = DTabDetail.Columns["RapRate"].Ordinal + 1;
-        //            int PricePerCaratColumn = DTabDetail.Columns["PricePerCarat"].Ordinal + 1;
-        //            int DiscountColumn = DTabDetail.Columns["RapPer"].Ordinal + 1;
-        //            int CaratColumn = DTabDetail.Columns["Carat"].Ordinal + 1;
-        //            int AmountColumn = DTabDetail.Columns["Amount"].Ordinal + 1;
-
-        //            for (int IntI = 6; IntI <= EndRow; IntI++)
-        //            {
-        //                string RapColumns = Global.ColumnIndexToColumnLetter(RapaportColumn) + IntI.ToString();
-        //                string Discount = Global.ColumnIndexToColumnLetter(DiscountColumn) + IntI.ToString();
-        //                string Carat = Global.ColumnIndexToColumnLetter(CaratColumn) + IntI.ToString();
-        //                string PricePerCarat = Global.ColumnIndexToColumnLetter(PricePerCaratColumn) + IntI.ToString();
-
-        //                if (Val.ToString(DTabDetail.Rows[IntI - 6]["FANCYCOLOR"]) == "") //Add if condition khushbu 23-09-21 for skip formula in fancy color
-        //                {
-        //                    worksheet.Cells[IntI, PricePerCaratColumn].Formula = "=ROUND(" + RapColumns + " + ((" + RapColumns + " * " + Discount + ") / 100),2)";
-        //                    worksheet.Cells[IntI, AmountColumn].Formula = "=ROUND(" + PricePerCarat + " * " + Carat + ",2)";
-        //                }
-        //                else
-        //                {
-        //                    worksheet.Cells[IntI, PricePerCaratColumn].Value = Val.ToString(DTabDetail.Rows[IntI - 6]["PRICEPERCARAT"]);
-        //                    //worksheet.Cells[IntI, AmountColumn].Value = Val.ToString(DTabDetail.Rows[IntI - 6]["AMOUNT"]);
-        //                    worksheet.Cells[IntI, AmountColumn].Formula = "=ROUND(" + PricePerCarat + " * " + Carat + ",2)";
-        //                }
-
-        //                if (!Val.ToString(DTabDetail.Rows[IntI - 6]["DNAPAGEURL"]).Trim().Equals(string.Empty))
-        //                {
-        //                    //worksheet.Cells[IntI, 2, IntI, 2].Hyperlink = new Uri(Val.ToString(DTabDetail.Rows[IntI - 6]["DNAPAGEURL"]));
-        //                    worksheet.Cells[IntI, 2, IntI, 2].Style.Font.Name = FontName;
-        //                    worksheet.Cells[IntI, 2, IntI, 2].Style.Font.Bold = true;
-        //                    worksheet.Cells[IntI, 2, IntI, 2].Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192));
-        //                    //worksheet.Cells[IntI, 2, IntI, 2].Style.Font.UnderLine = true;
-        //                }
-
-        //                if (!Val.ToString(DTabDetail.Rows[IntI - 6]["CERTURL"]).Trim().Equals(string.Empty))
-        //                {
-        //                    worksheet.Cells[IntI, IntCertColumn + 1].Hyperlink = new Uri(Val.ToString(DTabDetail.Rows[IntI - 6]["CERTURL"]));
-        //                    worksheet.Cells[IntI, IntCertColumn + 1].Style.Font.Name = FontName;
-        //                    worksheet.Cells[IntI, IntCertColumn + 1].Style.Font.Bold = true;
-        //                    worksheet.Cells[IntI, IntCertColumn + 1].Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192));
-        //                    worksheet.Cells[IntI, IntCertColumn + 1].Style.Font.UnderLine = true;
-        //                }
-
-
-        //                if (!Val.ToString(DTabDetail.Rows[IntI - 6]["VIDEOURL"]).Trim().Equals(string.Empty))
-        //                {
-        //                    worksheet.Cells[IntI, IntVideoUrlColumn + 1].Value = "Video";
-        //                    worksheet.Cells[IntI, IntVideoUrlColumn + 1].Hyperlink = new Uri(Val.ToString(DTabDetail.Rows[IntI - 6]["VIDEOURL"]));
-        //                    worksheet.Cells[IntI, IntVideoUrlColumn + 1].Style.Font.Name = FontName;
-        //                    worksheet.Cells[IntI, IntVideoUrlColumn + 1].Style.Font.Bold = true;
-        //                    worksheet.Cells[IntI, IntVideoUrlColumn + 1].Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192));
-        //                    worksheet.Cells[IntI, IntVideoUrlColumn + 1].Style.Font.UnderLine = true;
-        //                }
-        //                //End : #P :  03-09-2020
-
-        //                if (!Val.ToString(DTabDetail.Rows[IntI - 6]["STONEDETAILURL"]).Trim().Equals(string.Empty))
-        //                {
-        //                    //worksheet.Cells[IntI, IntStoneDEtailUrlColumn + 1].Value = "Detail";
-        //                    worksheet.Cells[IntI, IntStoneDEtailUrlColumn + 1].Hyperlink = new Uri(Val.ToString(DTabDetail.Rows[IntI - 6]["STONEDETAILURL"]));
-        //                    worksheet.Cells[IntI, IntStoneDEtailUrlColumn + 1].Style.Font.Name = FontName;
-        //                    worksheet.Cells[IntI, IntStoneDEtailUrlColumn + 1].Style.Font.Bold = true;
-        //                    worksheet.Cells[IntI, IntStoneDEtailUrlColumn + 1].Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192));
-        //                    worksheet.Cells[IntI, IntStoneDEtailUrlColumn + 1].Style.Font.UnderLine = true;
-        //                }
-
-        //                //#P : 06-08-2020
-        //                if (FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale")
-        //                {
-        //                    worksheet.Cells[IntI, 15, IntI, 18].Style.Font.Color.SetColor(Color.Red);
-        //                }
-        //                if (FormatName == "With Rapnet")
-        //                {
-        //                    worksheet.Cells[IntI, 19, IntI, 22].Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192));
-        //                }
-        //                else if (FormatName == "With Sale")
-        //                {
-        //                    worksheet.Cells[IntI, 19, IntI, 22].Style.Font.Color.SetColor(Color.FromArgb(0, 150, 68));
-        //                }
-        //                //End : #P : 06-08-2020
-
-        //            }
-
-        //            // Header Set
-        //            for (int i = 1; i <= DTabDetail.Columns.Count; i++)
-        //            {
-        //                string StrHeader = Global.ExportExcelHeader(Val.ToString(worksheet.Cells[5, i].Value), worksheet, i);
-        //                worksheet.Cells[5, i].Value = StrHeader;
-
-        //            }
-
-        //            int IntRowStartsFrom = 3;
-        //            int IntRowEndTo = (DTabDetail.Rows.Count - 1 + IntRowStartsFrom);
-
-        //            //CHECK COLUMN EXISTS IN DATATABLE..
-        //            #region :: Check Column Exists In Datatable ::
-        //            int SrNo = 0, CaratNo = 0, AmountNo = 0, RapAmountNo = 0, SizeNo = 0, ShapeNo = 0, ColorNo = 0, ClarityNo = 0, CutNo = 0, PolNo = 0, SymNo = 0, FLNo = 0,
-        //                ExpAmountNo = 0, ExpRapAmountNo = 0, RapnetAmountNo = 0, RapnetRapAmountNo = 0, InvoiceAmountNo = 0, InvoiceRapAmountNo = 0;
-
-
-        //            DataColumnCollection columns = DTabDetail.Columns;
-
-        //            if (columns.Contains("SR"))
-        //                SrNo = DTabDetail.Columns["SR"].Ordinal + 1;
-        //            if (columns.Contains("Size"))
-        //                SizeNo = DTabDetail.Columns["Size"].Ordinal + 1;
-        //            if (columns.Contains("Carat"))
-        //                CaratNo = DTabDetail.Columns["Carat"].Ordinal + 1;
-        //            if (columns.Contains("RapValue"))
-        //                RapAmountNo = DTabDetail.Columns["RapValue"].Ordinal + 1;
-        //            if (columns.Contains("Amount"))
-        //                AmountNo = DTabDetail.Columns["Amount"].Ordinal + 1;
-
-        //            //#P : 06-08-2020
-        //            if ((FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale") && columns.Contains("ExpRapValue"))
-        //                ExpRapAmountNo = DTabDetail.Columns["ExpRapValue"].Ordinal + 1;
-        //            if ((FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale") && columns.Contains("ExpAmount"))
-        //                ExpAmountNo = DTabDetail.Columns["ExpAmount"].Ordinal + 1;
-        //            if (FormatName == "With Rapnet" && columns.Contains("RapnetRapValue"))
-        //                RapnetRapAmountNo = DTabDetail.Columns["RapnetRapValue"].Ordinal + 1;
-        //            if (FormatName == "With Rapnet" && columns.Contains("RapnetAmount"))
-        //                RapnetAmountNo = DTabDetail.Columns["RapnetAmount"].Ordinal + 1;
-
-        //            if (FormatName == "With Sale" && columns.Contains("InvoiceRapValue"))
-        //                InvoiceRapAmountNo = DTabDetail.Columns["InvoiceRapValue"].Ordinal + 1;
-        //            if (FormatName == "With Sale" && columns.Contains("InvoiceAmount"))
-        //                InvoiceAmountNo = DTabDetail.Columns["InvoiceAmount"].Ordinal + 1;
-
-        //            //End : #P : 06-08-2020
-
-        //            if (columns.Contains("Shape"))
-        //                ShapeNo = DTabDetail.Columns["Shape"].Ordinal + 1;
-        //            if (columns.Contains("Color"))
-        //                ColorNo = DTabDetail.Columns["Color"].Ordinal + 1;
-        //            if (columns.Contains("Clarity"))
-        //                ClarityNo = DTabDetail.Columns["Clarity"].Ordinal + 1;
-        //            if (columns.Contains("Cut"))
-        //                CutNo = DTabDetail.Columns["Cut"].Ordinal + 1;
-        //            if (columns.Contains("Pol"))
-        //                PolNo = DTabDetail.Columns["Pol"].Ordinal + 1;
-        //            if (columns.Contains("Sym"))
-        //                SymNo = DTabDetail.Columns["Sym"].Ordinal + 1;
-        //            if (columns.Contains("FL"))
-        //                FLNo = DTabDetail.Columns["FL"].Ordinal + 1;
-
-        //            #endregion
-
-        //            string StrStartRow = "6";
-        //            string StrEndRow = EndRow.ToString();
-
-        //            #region Top Formula
-
-        //            worksheet.Cells[1, 5, 1, 5].Value = "Pcs";
-        //            worksheet.Cells[1, 6, 1, 6].Value = "Carat";
-        //            worksheet.Cells[1, 11, 1, 11].Value = "Rap Value";
-        //            worksheet.Cells[1, 12, 1, 12].Value = "Rap %";
-        //            worksheet.Cells[1, 13, 1, 13].Value = "Pr/Ct";
-        //            worksheet.Cells[1, 14, 1, 14].Value = "Amount";
-
-        //            //#P : 06-08-2020
-        //            if (FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale")
-        //            {
-        //                worksheet.Cells[1, 15, 1, 15].Value = "Exp RapValue";
-        //                worksheet.Cells[1, 16, 1, 16].Value = "Exp Rap%";
-        //                worksheet.Cells[1, 17, 1, 17].Value = "Exp Pr/Ct";
-        //                worksheet.Cells[1, 18, 1, 18].Value = "Exp Amount";
-        //            }
-        //            if (FormatName == "With Rapnet")
-        //            {
-        //                worksheet.Cells[1, 19, 1, 19].Value = "Rapnet RapValue";
-        //                worksheet.Cells[1, 20, 1, 20].Value = "Rapnet Rap%";
-        //                worksheet.Cells[1, 21, 1, 21].Value = "Rapnet Pr/Ct";
-        //                worksheet.Cells[1, 22, 1, 22].Value = "Rapnet Amount";
-        //            }
-        //            if (FormatName == "With Sale")
-        //            {
-        //                worksheet.Cells[1, 19, 1, 19].Value = "Sale RapValue";
-        //                worksheet.Cells[1, 20, 1, 20].Value = "Sale Rap%";
-        //                worksheet.Cells[1, 21, 1, 21].Value = "Sale Pr/Ct";
-        //                worksheet.Cells[1, 22, 1, 22].Value = "Sale Amount";
-        //            }
-        //            //End : #P : 06-08-2020
-
-
-        //            worksheet.Cells[2, 4, 2, 4].Value = "Total";
-        //            worksheet.Cells[3, 4, 3, 4].Value = "Selected";
-
-        //            worksheet.Cells[1, 7, 3, 10].Merge = true;
-        //            worksheet.Cells[1, 7, 3, 10].Value = "Note : Use filter to select stones and Check your ObjGridSelection Avg Disc and Total amt.";
-        //            worksheet.Cells[1, 7, 3, 10].Style.WrapText = true;
-
-        //            // Total Pcs Formula
-        //            string S = Global.ColumnIndexToColumnLetter(SrNo) + StrStartRow;
-        //            string E = Global.ColumnIndexToColumnLetter(SrNo) + StrEndRow;
-        //            worksheet.Cells[2, 5, 2, 5].Formula = "ROUND(COUNTA(" + S + ":" + E + "),2)";
-        //            worksheet.Cells[3, 5, 3, 5].Formula = "ROUND(SUBTOTAL(3," + S + ":" + E + "),2)";
-
-        //            // Total Carat Formula
-        //            S = Global.ColumnIndexToColumnLetter(CaratNo) + StrStartRow;
-        //            E = Global.ColumnIndexToColumnLetter(CaratNo) + StrEndRow;
-        //            worksheet.Cells[2, 6, 2, 6].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //            worksheet.Cells[3, 6, 3, 6].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //            S = Global.ColumnIndexToColumnLetter(RapAmountNo) + StrStartRow;
-        //            E = Global.ColumnIndexToColumnLetter(RapAmountNo) + StrEndRow;
-        //            worksheet.Cells[2, 11, 2, 11].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //            worksheet.Cells[3, 11, 3, 11].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //            // Amount Formula
-        //            S = Global.ColumnIndexToColumnLetter(AmountNo) + StrStartRow;
-        //            E = Global.ColumnIndexToColumnLetter(AmountNo) + StrEndRow;
-        //            worksheet.Cells[2, 14, 2, 14].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //            worksheet.Cells[3, 14, 3, 14].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //            // Price Per Carat Formula
-        //            worksheet.Cells[2, 13, 2, 13].Formula = "ROUND(N2/F2,2)";
-        //            worksheet.Cells[3, 13, 3, 13].Formula = "ROUND(N3/F3,2)";
-
-        //            // Discount Formula
-        //            S = Global.ColumnIndexToColumnLetter(AmountNo) + StrStartRow;
-        //            E = Global.ColumnIndexToColumnLetter(AmountNo) + StrEndRow;
-
-        //            worksheet.Cells[2, 12, 2, 12].Formula = "ROUND(SUM(((N2)/((K2*1)))*100),2)-100";
-        //            worksheet.Cells[3, 12, 3, 12].Formula = "ROUND(SUM(((N3)/((K3*1)))*100),2)-100";
-
-
-        //            #region Exp Summary Detail
-        //            if (FormatName == "With Exp" || FormatName == "With Rapnet" || FormatName == "With Sale")
-        //            {
-        //                //Exp RapValue
-        //                S = Global.ColumnIndexToColumnLetter(ExpRapAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(ExpRapAmountNo) + StrEndRow;
-        //                worksheet.Cells[2, 15, 2, 15].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //                worksheet.Cells[3, 15, 3, 15].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //                // Exp Amount Formula
-        //                S = Global.ColumnIndexToColumnLetter(ExpAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(ExpAmountNo) + StrEndRow;
-        //                worksheet.Cells[2, 18, 2, 18].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //                worksheet.Cells[3, 18, 3, 18].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //                // Exp Price Per Carat Formula
-        //                worksheet.Cells[2, 17, 2, 17].Formula = "ROUND(R2/F2,2)";
-        //                worksheet.Cells[3, 17, 3, 17].Formula = "ROUND(R3/F3,2)";
-
-        //                // Exp Discount Formula (Rap%)
-        //                S = Global.ColumnIndexToColumnLetter(ExpAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(ExpAmountNo) + StrEndRow;
-
-        //                worksheet.Cells[2, 16, 2, 16].Formula = "ROUND(SUM(((R2)/((O2*1)))*100),2)-100";
-        //                worksheet.Cells[3, 16, 3, 16].Formula = "ROUND(SUM(((R3)/((O3*1)))*100),2)-100";
-        //            }
-        //            #endregion
-
-        //            #region Rapnet Summary Detail
-        //            if (FormatName == "With Rapnet")
-        //            {
-        //                //Exp RapValue
-        //                S = Global.ColumnIndexToColumnLetter(RapnetRapAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(RapnetRapAmountNo) + StrEndRow;
-        //                worksheet.Cells[2, 19, 2, 19].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //                worksheet.Cells[3, 19, 3, 19].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //                // Exp Amount Formula
-        //                S = Global.ColumnIndexToColumnLetter(RapnetAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(RapnetAmountNo) + StrEndRow;
-        //                worksheet.Cells[2, 22, 2, 22].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //                worksheet.Cells[3, 22, 3, 22].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //                // Exp Price Per Carat Formula
-        //                worksheet.Cells[2, 21, 2, 21].Formula = "ROUND(V2/F2,2)";
-        //                worksheet.Cells[3, 21, 3, 21].Formula = "ROUND(V3/F3,2)";
-
-        //                // Exp Discount Formula (Rap%)
-        //                S = Global.ColumnIndexToColumnLetter(RapnetAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(RapnetAmountNo) + StrEndRow;
-
-        //                worksheet.Cells[2, 20, 2, 20].Formula = "ROUND(SUM(((V2)/((S2*1)))*100),2)-100";
-        //                worksheet.Cells[3, 20, 3, 20].Formula = "ROUND(SUM(((V3)/((S3*1)))*100),2)-100";
-        //            }
-        //            #endregion
-
-        //            #region Invoice(Sale) Summary Detail
-        //            if (FormatName == "With Sale")
-        //            {
-        //                //Exp RapValue
-        //                S = Global.ColumnIndexToColumnLetter(InvoiceRapAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(InvoiceRapAmountNo) + StrEndRow;
-        //                worksheet.Cells[2, 19, 2, 19].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //                worksheet.Cells[3, 19, 3, 19].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //                // Exp Amount Formula
-        //                S = Global.ColumnIndexToColumnLetter(InvoiceAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(InvoiceAmountNo) + StrEndRow;
-        //                worksheet.Cells[2, 22, 2, 22].Formula = "ROUND(SUM(" + S + ":" + E + "),2)";
-        //                worksheet.Cells[3, 22, 3, 22].Formula = "ROUND(SUBTOTAL(9," + S + ":" + E + "),2)";
-
-        //                // Exp Price Per Carat Formula
-        //                worksheet.Cells[2, 21, 2, 21].Formula = "ROUND(V2/F2,2)";
-        //                worksheet.Cells[3, 21, 3, 21].Formula = "ROUND(V3/F3,2)";
-
-        //                // Exp Discount Formula (Rap%)
-        //                S = Global.ColumnIndexToColumnLetter(InvoiceAmountNo) + StrStartRow;
-        //                E = Global.ColumnIndexToColumnLetter(InvoiceAmountNo) + StrEndRow;
-
-        //                worksheet.Cells[2, 20, 2, 20].Formula = "ROUND(SUM(((V2)/((S2*1)))*100),2)-100";
-        //                worksheet.Cells[3, 20, 3, 20].Formula = "ROUND(SUM(((V3)/((S3*1)))*100),2)-100";
-        //            }
-        //            #endregion
-
-        //            if (FormatName == "With Exp") //#P : 06-08-2020
-        //            {
-        //                worksheet.Cells[1, 4, 4, 18].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
-        //                worksheet.Cells[1, 4, 4, 18].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
-        //                worksheet.Cells[1, 4, 4, 18].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 18].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 18].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 18].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 18].Style.Font.Name = "Calibri";
-        //                worksheet.Cells[1, 4, 4, 18].Style.Font.Size = 9;
-
-        //                worksheet.Cells[1, 4, 1, 18].Style.Font.Bold = true;
-        //                worksheet.Cells[1, 4, 1, 18].Style.Font.Color.SetColor(Color.White);
-        //                worksheet.Cells[1, 4, 1, 18].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //                worksheet.Cells[1, 4, 1, 18].Style.Fill.PatternColor.SetColor(BackColor);
-        //                worksheet.Cells[1, 4, 1, 18].Style.Fill.BackgroundColor.SetColor(BackColor);
-
-        //                worksheet.Cells[1, 15, 3, 18].Style.Font.Color.SetColor(Color.Red);
-
-        //            }
-        //            else if (FormatName == "With Rapnet" || FormatName == "With Sale") //#P : 06-08-2020
-        //            {
-        //                worksheet.Cells[1, 4, 4, 22].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
-        //                worksheet.Cells[1, 4, 4, 22].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
-        //                worksheet.Cells[1, 4, 4, 22].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 22].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 22].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 22].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 22].Style.Font.Name = "Calibri";
-        //                worksheet.Cells[1, 4, 4, 22].Style.Font.Size = 9;
-
-        //                worksheet.Cells[1, 4, 1, 22].Style.Font.Bold = true;
-        //                worksheet.Cells[1, 4, 1, 22].Style.Font.Color.SetColor(Color.White);
-        //                worksheet.Cells[1, 4, 1, 22].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //                worksheet.Cells[1, 4, 1, 22].Style.Fill.PatternColor.SetColor(BackColor);
-        //                worksheet.Cells[1, 4, 1, 22].Style.Fill.BackgroundColor.SetColor(BackColor);
-
-        //                worksheet.Cells[1, 15, 3, 18].Style.Font.Color.SetColor(Color.Red);
-
-        //                if (FormatName == "With Sale")
-        //                {
-        //                    worksheet.Cells[1, 19, 1, 22].Style.Font.Color.SetColor(Color.FromArgb(174, 201, 121)); //Green
-        //                    worksheet.Cells[2, 19, 3, 22].Style.Font.Color.SetColor(Color.FromArgb(0, 150, 68)); //Green
-        //                }
-        //                else
-        //                {
-        //                    worksheet.Cells[1, 19, 1, 22].Style.Font.Color.SetColor(FontColor); //Blue
-        //                    worksheet.Cells[2, 19, 3, 22].Style.Font.Color.SetColor(Color.FromArgb(0, 112, 192)); //Blue
-        //                }
-        //            }
-        //            else
-        //            {
-        //                worksheet.Cells[1, 4, 4, 14].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
-        //                worksheet.Cells[1, 4, 4, 14].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
-        //                worksheet.Cells[1, 4, 4, 14].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 14].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 14].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 14].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-        //                worksheet.Cells[1, 4, 4, 14].Style.Font.Name = "Calibri";
-        //                worksheet.Cells[1, 4, 4, 14].Style.Font.Size = 9;
-
-        //                worksheet.Cells[1, 4, 1, 14].Style.Font.Bold = true;
-        //                worksheet.Cells[1, 4, 1, 14].Style.Font.Color.SetColor(Color.White);
-        //                worksheet.Cells[1, 4, 1, 14].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //                worksheet.Cells[1, 4, 1, 14].Style.Fill.PatternColor.SetColor(BackColor);
-        //                worksheet.Cells[1, 4, 1, 14].Style.Fill.BackgroundColor.SetColor(BackColor);
-        //            }
-
-        //            worksheet.Cells[1, 4, 3, 4].Style.Font.Bold = true;
-        //            worksheet.Cells[1, 4, 3, 4].Style.Font.Color.SetColor(Color.White);
-        //            worksheet.Cells[1, 4, 3, 4].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //            worksheet.Cells[1, 4, 3, 4].Style.Fill.PatternColor.SetColor(BackColor);
-        //            worksheet.Cells[1, 4, 3, 4].Style.Fill.BackgroundColor.SetColor(BackColor);
-
-        //            worksheet.Cells[1, 7, 3, 10].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //            worksheet.Cells[1, 7, 3, 10].Style.Fill.PatternColor.SetColor(BackColor);
-        //            worksheet.Cells[1, 7, 3, 10].Style.Fill.BackgroundColor.SetColor(BackColor);
-
-
-
-        //            if (FormatName == "With Exp") //#P : 06-08-2020
-        //            {
-        //                worksheet.Column(11).OutlineLevel = 1;//RapValue
-        //                worksheet.Column(11).Collapsed = true;
-
-        //                worksheet.Column(15).OutlineLevel = 1; //ExpRapValue
-        //                worksheet.Column(15).Collapsed = true;
-        //                worksheet.Column(24).OutlineLevel = 1; //FLShade
-        //                worksheet.Column(24).Collapsed = true;                     
-        //            }
-        //            if (FormatName == "With Rapnet" || FormatName == "With Sale") //#P : 06-08-2020
-        //            {
-        //                worksheet.Column(11).OutlineLevel = 1;//RapValue
-        //                worksheet.Column(11).Collapsed = true;
-
-        //                worksheet.Column(15).OutlineLevel = 1; //ExpRapValue
-        //                worksheet.Column(15).Collapsed = true;
-
-        //                worksheet.Column(19).OutlineLevel = 1; //RapnetRapValue/SaleRapValue
-        //                worksheet.Column(19).Collapsed = true;
-
-        //                worksheet.Column(28).OutlineLevel = 1; //FLShade
-        //                worksheet.Column(28).Collapsed = true;                     
-        //            }
-        //            else
-        //            {
-        //                worksheet.Column(11).OutlineLevel = 1;//RapValue
-        //                worksheet.Column(11).Collapsed = true;
-
-        //                worksheet.Column(20).OutlineLevel = 1;
-        //                worksheet.Column(20).Collapsed = true;
-        //            }
-
-        //            #endregion
-
-        //            #endregion
-
-        //            #region Inclusion Detail
-
-        //            AddInclusionDetail(worksheetInclusion, DTabInclusion);
-
-        //            #endregion
-
-        //            #region Proporstion Detail
-
-        //            worksheetProportion.Cells[2, 2, 3, 17].Value = "Stock Proportion";
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Font.Name = FontName;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Font.Size = 20;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Font.Bold = true;
-
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Medium;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Merge = true;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Center;
-
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Fill.PatternColor.SetColor(BackColor);
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Fill.BackgroundColor.SetColor(BackColor);
-        //            worksheetProportion.Cells[2, 2, 3, 17].Style.Font.Color.SetColor(FontColor);
-
-        //            int NewRow = 6;
-        //            AddProportionDetail(worksheetProportion, DTabSize, worksheet.Name, 6, 2, "SIZE WISE SUMMARY", "Size", "Size", StrStartRow, StrEndRow, DTabDetail);
-
-        //            AddProportionDetail(worksheetProportion, DTabShape, worksheet.Name, 6, 11, "SHAPE WISE SUMMARY", "Shape", "Shape", StrStartRow, StrEndRow, DTabDetail);
-
-        //            if (DTabSize.Rows.Count > DTabShape.Rows.Count)
-        //            {
-        //                NewRow = NewRow + DTabSize.Rows.Count + 5;
-        //            }
-        //            else
-        //            {
-        //                NewRow = NewRow + DTabShape.Rows.Count + 5;
-        //            }
-
-        //            AddProportionDetail(worksheetProportion, DTabClarity, worksheet.Name, NewRow, 2, "CLARITY WISE SUMMARY", "Clarity", "ClaGroup", StrStartRow, StrEndRow, DTabDetail);
-
-        //            AddProportionDetail(worksheetProportion, DTabColor, worksheet.Name, NewRow, 11, "COLOR WISE SUMMARY", "Color", "ColGroup", StrStartRow, StrEndRow, DTabDetail);
-
-
-        //            if (DTabClarity.Rows.Count > DTabColor.Rows.Count)
-        //            {
-        //                NewRow = NewRow + DTabClarity.Rows.Count + 5;
-        //            }
-        //            else
-        //            {
-        //                NewRow = NewRow + DTabColor.Rows.Count + 5;
-        //            }
-
-        //            AddProportionDetail(worksheetProportion, DTabCut, worksheet.Name, NewRow, 2, "CUT WISE SUMMARY", "Cut", "CutGroup", StrStartRow, StrEndRow, DTabDetail);
-
-        //            AddProportionDetail(worksheetProportion, DTabPolish, worksheet.Name, NewRow, 11, "POLISH WISE SUMMARY", "Pol", "PolGroup", StrStartRow, StrEndRow, DTabDetail);
-
-
-        //            if (DTabCut.Rows.Count > DTabPolish.Rows.Count)
-        //            {
-        //                NewRow = NewRow + DTabCut.Rows.Count + 5;
-        //            }
-        //            else
-        //            {
-        //                NewRow = NewRow + DTabPolish.Rows.Count + 5;
-        //            }
-
-        //            AddProportionDetail(worksheetProportion, DTabSym, worksheet.Name, NewRow, 2, "SYM WISE SUMMARY", "Sym", "SymGroup", StrStartRow, StrEndRow, DTabDetail);
-
-        //            AddProportionDetail(worksheetProportion, DTabFL, worksheet.Name, NewRow, 11, "FL WISE SUMMARY", "FL", "FLGroup", StrStartRow, StrEndRow, DTabDetail);
-
-        //            #endregion
-
-        //            xlPackage.Save();
-        //        }
-
-        //        this.Cursor = Cursors.Default;
-        //        return StrFilePath;
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        this.Cursor = Cursors.Default;
-        //        Global.Message(ex.Message);
-        //    }
-        //    return "";
-        //}
 
         public void AddInclusionDetail(ExcelWorksheet worksheet, DataTable pDtab)
         {

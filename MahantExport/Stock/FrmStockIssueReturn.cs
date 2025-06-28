@@ -687,5 +687,10 @@ namespace MahantExport.Stock
                 Global.Message(ex.Message.ToString());
             }
         }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

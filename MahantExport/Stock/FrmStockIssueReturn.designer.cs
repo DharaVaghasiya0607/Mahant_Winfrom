@@ -282,6 +282,7 @@
             this.btnScan.Size = new System.Drawing.Size(88, 31);
             this.btnScan.TabIndex = 182;
             this.btnScan.Text = "Scan";
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
             // BtnRefresh
             // 

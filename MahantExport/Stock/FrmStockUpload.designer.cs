@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStockUpload));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.MainGrdStock = new DevExpress.XtraGrid.GridControl();
             this.GrdDetStock = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.PnlHeader = new AxonContLib.cPanel(this.components);
@@ -122,6 +122,7 @@
             this.cLabel13 = new AxonContLib.cLabel(this.components);
             this.cLabel26 = new AxonContLib.cLabel(this.components);
             this.cLabel24 = new AxonContLib.cLabel(this.components);
+            this.TxtSelectedPcs = new AxonContLib.cTextBox(this.components);
             this.txtSelectedCarat = new AxonContLib.cTextBox(this.components);
             this.cLabel14 = new AxonContLib.cLabel(this.components);
             this.txtSelectedDisc = new AxonContLib.cTextBox(this.components);
@@ -130,6 +131,7 @@
             this.txtSelectedAmount = new AxonContLib.cTextBox(this.components);
             this.txtTotalAvgRap = new AxonContLib.cTextBox(this.components);
             this.cLabel22 = new AxonContLib.cLabel(this.components);
+            this.TxtTotalPcs = new AxonContLib.cTextBox(this.components);
             this.txtTotalCarat = new AxonContLib.cTextBox(this.components);
             this.cLabel25 = new AxonContLib.cLabel(this.components);
             this.txtTotalDisc = new AxonContLib.cTextBox(this.components);
@@ -169,9 +171,9 @@
             // MainGrdStock
             // 
             this.MainGrdStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.MainGrdStock.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode3});
             this.MainGrdStock.Location = new System.Drawing.Point(0, 17);
             this.MainGrdStock.MainView = this.GrdDetStock;
             this.MainGrdStock.Name = "MainGrdStock";
@@ -1276,6 +1278,7 @@
             this.panel2.Controls.Add(this.cLabel13);
             this.panel2.Controls.Add(this.cLabel26);
             this.panel2.Controls.Add(this.cLabel24);
+            this.panel2.Controls.Add(this.TxtSelectedPcs);
             this.panel2.Controls.Add(this.txtSelectedCarat);
             this.panel2.Controls.Add(this.cLabel14);
             this.panel2.Controls.Add(this.txtSelectedDisc);
@@ -1284,6 +1287,7 @@
             this.panel2.Controls.Add(this.txtSelectedAmount);
             this.panel2.Controls.Add(this.txtTotalAvgRap);
             this.panel2.Controls.Add(this.cLabel22);
+            this.panel2.Controls.Add(this.TxtTotalPcs);
             this.panel2.Controls.Add(this.txtTotalCarat);
             this.panel2.Controls.Add(this.cLabel25);
             this.panel2.Controls.Add(this.txtTotalDisc);
@@ -1466,7 +1470,7 @@
             this.txtSelectedAvgRap.ForeColor = System.Drawing.Color.Black;
             this.txtSelectedAvgRap.Format = "";
             this.txtSelectedAvgRap.IsComplusory = false;
-            this.txtSelectedAvgRap.Location = new System.Drawing.Point(277, 27);
+            this.txtSelectedAvgRap.Location = new System.Drawing.Point(375, 27);
             this.txtSelectedAvgRap.MaxLength = 100;
             this.txtSelectedAvgRap.Name = "txtSelectedAvgRap";
             this.txtSelectedAvgRap.ReadOnly = true;
@@ -1483,7 +1487,7 @@
             this.cLabel19.AutoSize = true;
             this.cLabel19.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel19.ForeColor = System.Drawing.Color.Black;
-            this.cLabel19.Location = new System.Drawing.Point(370, 31);
+            this.cLabel19.Location = new System.Drawing.Point(468, 31);
             this.cLabel19.Name = "cLabel19";
             this.cLabel19.Size = new System.Drawing.Size(27, 12);
             this.cLabel19.TabIndex = 231;
@@ -1507,7 +1511,7 @@
             this.cLabel26.AutoSize = true;
             this.cLabel26.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel26.ForeColor = System.Drawing.Color.Black;
-            this.cLabel26.Location = new System.Drawing.Point(636, 31);
+            this.cLabel26.Location = new System.Drawing.Point(734, 31);
             this.cLabel26.Name = "cLabel26";
             this.cLabel26.Size = new System.Drawing.Size(12, 12);
             this.cLabel26.TabIndex = 223;
@@ -1519,12 +1523,35 @@
             this.cLabel24.AutoSize = true;
             this.cLabel24.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel24.ForeColor = System.Drawing.Color.Black;
-            this.cLabel24.Location = new System.Drawing.Point(492, 31);
+            this.cLabel24.Location = new System.Drawing.Point(590, 31);
             this.cLabel24.Name = "cLabel24";
             this.cLabel24.Size = new System.Drawing.Size(37, 12);
             this.cLabel24.TabIndex = 224;
             this.cLabel24.Text = "$/Cts";
             this.cLabel24.ToolTips = "";
+            // 
+            // TxtSelectedPcs
+            // 
+            this.TxtSelectedPcs.ActivationColor = true;
+            this.TxtSelectedPcs.ActivationColorCode = System.Drawing.Color.Empty;
+            this.TxtSelectedPcs.AllowTabKeyOnEnter = false;
+            this.TxtSelectedPcs.BackColor = System.Drawing.Color.AliceBlue;
+            this.TxtSelectedPcs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtSelectedPcs.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.TxtSelectedPcs.ForeColor = System.Drawing.Color.Black;
+            this.TxtSelectedPcs.Format = "";
+            this.TxtSelectedPcs.IsComplusory = false;
+            this.TxtSelectedPcs.Location = new System.Drawing.Point(154, 27);
+            this.TxtSelectedPcs.MaxLength = 100;
+            this.TxtSelectedPcs.Name = "TxtSelectedPcs";
+            this.TxtSelectedPcs.ReadOnly = true;
+            this.TxtSelectedPcs.SelectAllTextOnFocus = true;
+            this.TxtSelectedPcs.Size = new System.Drawing.Size(90, 20);
+            this.TxtSelectedPcs.TabIndex = 218;
+            this.TxtSelectedPcs.TabStop = false;
+            this.TxtSelectedPcs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtSelectedPcs.ToolTips = "";
+            this.TxtSelectedPcs.WaterMarkText = null;
             // 
             // txtSelectedCarat
             // 
@@ -1554,7 +1581,7 @@
             this.cLabel14.AutoSize = true;
             this.cLabel14.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel14.ForeColor = System.Drawing.Color.Black;
-            this.cLabel14.Location = new System.Drawing.Point(254, 31);
+            this.cLabel14.Location = new System.Drawing.Point(352, 31);
             this.cLabel14.Name = "cLabel14";
             this.cLabel14.Size = new System.Drawing.Size(18, 12);
             this.cLabel14.TabIndex = 225;
@@ -1572,7 +1599,7 @@
             this.txtSelectedDisc.ForeColor = System.Drawing.Color.Black;
             this.txtSelectedDisc.Format = "";
             this.txtSelectedDisc.IsComplusory = false;
-            this.txtSelectedDisc.Location = new System.Drawing.Point(181, 27);
+            this.txtSelectedDisc.Location = new System.Drawing.Point(279, 27);
             this.txtSelectedDisc.MaxLength = 100;
             this.txtSelectedDisc.Name = "txtSelectedDisc";
             this.txtSelectedDisc.ReadOnly = true;
@@ -1589,7 +1616,7 @@
             this.cLabel20.AutoSize = true;
             this.cLabel20.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel20.ForeColor = System.Drawing.Color.Black;
-            this.cLabel20.Location = new System.Drawing.Point(151, 31);
+            this.cLabel20.Location = new System.Drawing.Point(249, 31);
             this.cLabel20.Name = "cLabel20";
             this.cLabel20.Size = new System.Drawing.Size(23, 12);
             this.cLabel20.TabIndex = 226;
@@ -1607,7 +1634,7 @@
             this.txtSelectedPricePerCarat.ForeColor = System.Drawing.Color.Black;
             this.txtSelectedPricePerCarat.Format = "";
             this.txtSelectedPricePerCarat.IsComplusory = false;
-            this.txtSelectedPricePerCarat.Location = new System.Drawing.Point(399, 27);
+            this.txtSelectedPricePerCarat.Location = new System.Drawing.Point(497, 27);
             this.txtSelectedPricePerCarat.MaxLength = 100;
             this.txtSelectedPricePerCarat.Name = "txtSelectedPricePerCarat";
             this.txtSelectedPricePerCarat.ReadOnly = true;
@@ -1630,7 +1657,7 @@
             this.txtSelectedAmount.ForeColor = System.Drawing.Color.Black;
             this.txtSelectedAmount.Format = "";
             this.txtSelectedAmount.IsComplusory = false;
-            this.txtSelectedAmount.Location = new System.Drawing.Point(535, 27);
+            this.txtSelectedAmount.Location = new System.Drawing.Point(633, 27);
             this.txtSelectedAmount.MaxLength = 100;
             this.txtSelectedAmount.Name = "txtSelectedAmount";
             this.txtSelectedAmount.ReadOnly = true;
@@ -1653,7 +1680,7 @@
             this.txtTotalAvgRap.ForeColor = System.Drawing.Color.Black;
             this.txtTotalAvgRap.Format = "";
             this.txtTotalAvgRap.IsComplusory = false;
-            this.txtTotalAvgRap.Location = new System.Drawing.Point(277, 3);
+            this.txtTotalAvgRap.Location = new System.Drawing.Point(375, 3);
             this.txtTotalAvgRap.MaxLength = 100;
             this.txtTotalAvgRap.Name = "txtTotalAvgRap";
             this.txtTotalAvgRap.ReadOnly = true;
@@ -1670,12 +1697,35 @@
             this.cLabel22.AutoSize = true;
             this.cLabel22.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel22.ForeColor = System.Drawing.Color.Black;
-            this.cLabel22.Location = new System.Drawing.Point(370, 7);
+            this.cLabel22.Location = new System.Drawing.Point(468, 7);
             this.cLabel22.Name = "cLabel22";
             this.cLabel22.Size = new System.Drawing.Size(27, 12);
             this.cLabel22.TabIndex = 216;
             this.cLabel22.Text = "Rap";
             this.cLabel22.ToolTips = "";
+            // 
+            // TxtTotalPcs
+            // 
+            this.TxtTotalPcs.ActivationColor = true;
+            this.TxtTotalPcs.ActivationColorCode = System.Drawing.Color.Empty;
+            this.TxtTotalPcs.AllowTabKeyOnEnter = false;
+            this.TxtTotalPcs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TxtTotalPcs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtTotalPcs.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.TxtTotalPcs.ForeColor = System.Drawing.Color.Black;
+            this.TxtTotalPcs.Format = "";
+            this.TxtTotalPcs.IsComplusory = false;
+            this.TxtTotalPcs.Location = new System.Drawing.Point(154, 3);
+            this.TxtTotalPcs.MaxLength = 100;
+            this.TxtTotalPcs.Name = "TxtTotalPcs";
+            this.TxtTotalPcs.ReadOnly = true;
+            this.TxtTotalPcs.SelectAllTextOnFocus = true;
+            this.TxtTotalPcs.Size = new System.Drawing.Size(90, 20);
+            this.TxtTotalPcs.TabIndex = 2;
+            this.TxtTotalPcs.TabStop = false;
+            this.TxtTotalPcs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtTotalPcs.ToolTips = "";
+            this.TxtTotalPcs.WaterMarkText = null;
             // 
             // txtTotalCarat
             // 
@@ -1705,7 +1755,7 @@
             this.cLabel25.AutoSize = true;
             this.cLabel25.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel25.ForeColor = System.Drawing.Color.Black;
-            this.cLabel25.Location = new System.Drawing.Point(636, 7);
+            this.cLabel25.Location = new System.Drawing.Point(734, 7);
             this.cLabel25.Name = "cLabel25";
             this.cLabel25.Size = new System.Drawing.Size(12, 12);
             this.cLabel25.TabIndex = 179;
@@ -1723,7 +1773,7 @@
             this.txtTotalDisc.ForeColor = System.Drawing.Color.Black;
             this.txtTotalDisc.Format = "";
             this.txtTotalDisc.IsComplusory = false;
-            this.txtTotalDisc.Location = new System.Drawing.Point(181, 3);
+            this.txtTotalDisc.Location = new System.Drawing.Point(279, 3);
             this.txtTotalDisc.MaxLength = 100;
             this.txtTotalDisc.Name = "txtTotalDisc";
             this.txtTotalDisc.ReadOnly = true;
@@ -1740,7 +1790,7 @@
             this.cLabel23.AutoSize = true;
             this.cLabel23.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel23.ForeColor = System.Drawing.Color.Black;
-            this.cLabel23.Location = new System.Drawing.Point(492, 7);
+            this.cLabel23.Location = new System.Drawing.Point(590, 7);
             this.cLabel23.Name = "cLabel23";
             this.cLabel23.Size = new System.Drawing.Size(37, 12);
             this.cLabel23.TabIndex = 179;
@@ -1758,7 +1808,7 @@
             this.txtTotalPricePerCarat.ForeColor = System.Drawing.Color.Black;
             this.txtTotalPricePerCarat.Format = "";
             this.txtTotalPricePerCarat.IsComplusory = false;
-            this.txtTotalPricePerCarat.Location = new System.Drawing.Point(399, 3);
+            this.txtTotalPricePerCarat.Location = new System.Drawing.Point(497, 3);
             this.txtTotalPricePerCarat.MaxLength = 100;
             this.txtTotalPricePerCarat.Name = "txtTotalPricePerCarat";
             this.txtTotalPricePerCarat.ReadOnly = true;
@@ -1775,7 +1825,7 @@
             this.cLabel21.AutoSize = true;
             this.cLabel21.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel21.ForeColor = System.Drawing.Color.Black;
-            this.cLabel21.Location = new System.Drawing.Point(254, 7);
+            this.cLabel21.Location = new System.Drawing.Point(352, 7);
             this.cLabel21.Name = "cLabel21";
             this.cLabel21.Size = new System.Drawing.Size(18, 12);
             this.cLabel21.TabIndex = 179;
@@ -1793,7 +1843,7 @@
             this.txtTotalAmount.ForeColor = System.Drawing.Color.Black;
             this.txtTotalAmount.Format = "";
             this.txtTotalAmount.IsComplusory = false;
-            this.txtTotalAmount.Location = new System.Drawing.Point(535, 3);
+            this.txtTotalAmount.Location = new System.Drawing.Point(633, 3);
             this.txtTotalAmount.MaxLength = 100;
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.ReadOnly = true;
@@ -1810,7 +1860,7 @@
             this.cLabel16.AutoSize = true;
             this.cLabel16.Font = new System.Drawing.Font("Verdana", 7F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cLabel16.ForeColor = System.Drawing.Color.Black;
-            this.cLabel16.Location = new System.Drawing.Point(151, 7);
+            this.cLabel16.Location = new System.Drawing.Point(249, 7);
             this.cLabel16.Name = "cLabel16";
             this.cLabel16.Size = new System.Drawing.Size(23, 12);
             this.cLabel16.TabIndex = 179;
@@ -1845,9 +1895,9 @@
             // MainGrdDateWiseSum
             // 
             this.MainGrdDateWiseSum.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.MainGrdDateWiseSum.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.MainGrdDateWiseSum.Location = new System.Drawing.Point(0, 17);
             this.MainGrdDateWiseSum.MainView = this.GrdDateWiseSum;
             this.MainGrdDateWiseSum.Name = "MainGrdDateWiseSum";
@@ -2107,5 +2157,7 @@
         private AxonContLib.cComboBox CmbSheetName;
         private AxonContLib.cLabel lblDefaultLayout;
         private AxonContLib.cLabel lblSaveLayout;
+        private AxonContLib.cTextBox TxtSelectedPcs;
+        private AxonContLib.cTextBox TxtTotalPcs;
     }
 }

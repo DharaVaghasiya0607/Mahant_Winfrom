@@ -3930,7 +3930,7 @@ Ope.FillDTab(Config.ConnectionString, Config.ProviderName, DTab, "Trn_MemoEntryP
             Ope.ClearParams();
             DataTable DTab = new DataTable();
             Ope.AddParams("MEMONO", strJangedNo, DbType.Int64, ParameterDirection.Input);
-            Ope.FillDTab(Config.ConnectionString, Config.ProviderName, DTab, "TRN_MemoJangedPrintGetDataNew", CommandType.StoredProcedure);
+            Ope.FillDTab(Config.ConnectionString, Config.ProviderName, DTab, "TRN_JangedPrintGetData", CommandType.StoredProcedure);
             return DTab;
         }
 

@@ -278,6 +278,7 @@ D:\RAJVI\Rajvi Work\Axone DiaSales\Axone Infotech India_19052025\Axone Infotech 
 D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe.config
 D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\bin\Debug\EncrDecr.exe
 D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\bin\Debug\EncrDecr.pdb
+D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.AssemblyReference.cache
 D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Form1.resources
 D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\obj\Debug\EncrDecr.Properties.Resources.resources
 D:\Git\Mahant_Winfrom\EncrDecr\EncrDecr\obj\Debug\EncrDecr.csproj.GenerateResource.cache
